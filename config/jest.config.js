@@ -25,4 +25,4 @@ module.exports = {
       '<rootDir>/tests/__mocks__/file-mock.js',
     '.+\\.(css|styl|less|sass|scss)$': 'identity-obj-proxy'
   }
-};
+}

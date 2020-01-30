@@ -1,8 +1,8 @@
-import React from 'react';
-import Helmet from 'react-helmet';
+import React from 'react'
+import Helmet from 'react-helmet'
 
-import Layout from 'components/Layout';
-import Container from 'components/Container';
+import Layout from 'components/Layout'
+import Container from 'components/Container'
 
 const SecondPage = () => {
   return (
@@ -15,7 +15,7 @@ const SecondPage = () => {
         <p>Welcome to page 2</p>
       </Container>
     </Layout>
-  );
-};
+  )
+}
 
-export default SecondPage;
+export default SecondPage

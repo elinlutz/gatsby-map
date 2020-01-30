@@ -22,6 +22,10 @@ module.exports = {
     }
   },
 
+  rules: {
+    semi: [2, 'never'],
+  },
+
   plugins: ['react', 'react-hooks'],
 
   extends: ['zurgbot', 'plugin:react/recommended']

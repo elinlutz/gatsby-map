@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import Container from 'components/Container';
+import Container from 'components/Container'
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
         <p>&copy; { new Date().getFullYear() }, My Gatsby Site</p>
       </Container>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

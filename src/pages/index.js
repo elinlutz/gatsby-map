@@ -1,29 +1,30 @@
-import React, { useRef } from 'react';
-import Helmet from 'react-helmet';
-import L from 'leaflet';
-import { Marker } from 'react-leaflet';
+import React, { useRef } from 'react'
+import Helmet from 'react-helmet'
+import L from 'leaflet'
+import { Marker } from 'react-leaflet'
 
-import { promiseToFlyTo, getCurrentLocation } from 'lib/map';
+import { promiseToFlyTo, getCurrentLocation } from 'lib/map'
 
-import Layout from 'components/Layout';
-import Container from 'components/Container';
-import Map from 'components/Map';
+import Layout from 'components/Layout'
+import Container from 'components/Container'
+import Map from 'components/Map'
 
-import gatsby_astronaut from 'assets/images/gatsby-astronaut.jpg';
+import gatsby_astronaut from 'assets/images/gatsby-astronaut.jpg'
 
 const LOCATION = {
   lat: 38.9072,
   lng: -77.0369
-};
-const CENTER = [LOCATION.lat, LOCATION.lng];
-const DEFAULT_ZOOM = 2;
-const ZOOM = 10;
+}
 
-const timeToZoom = 2000;
-const timeToOpenPopupAfterZoom = 4000;
-const timeToUpdatePopupAfterZoom = timeToOpenPopupAfterZoom + 3000;
+const CENTER = [LOCATION.lat, LOCATION.lng]
+const DEFAULT_ZOOM = 2
+const ZOOM = 10
 
-const popupContentHello = `<p>Hello 👋</p>`;
+const timeToZoom = 2000
+const timeToOpenPopupAfterZoom = 4000
+const timeToUpdatePopupAfterZoom = timeToOpenPopupAfterZoom + 3000
+
+const popupContentHello = `<p>Hello 👋</p>`
 const popupContentGatsby = `
   <div class="popup-gatsby">
     <div class="popup-gatsby-image">
@@ -34,10 +35,10 @@ const popupContentGatsby = `
       <p>Welcome to your new Gatsby site. Now go build something great!</p>
     </div>
   </div>
-`;
+`
 
 const IndexPage = () => {
-  const markerRef = useRef();
+  const markerRef = useRef()
 
   /**
    * mapEffect
@@ -46,32 +47,32 @@ const IndexPage = () => {
    */
 
   async function mapEffect({ leafletElement } = {}) {
-    if ( !leafletElement ) return;
+    if ( !leafletElement ) return
 
     const popup = L.popup({
       maxWidth: 800
-    });
+    })
 
-    const location = await getCurrentLocation().catch(() => LOCATION );
+    const location = await getCurrentLocation().catch(() => LOCATION )
 
-    const { current = {} } = markerRef || {};
-    const { leafletElement: marker } = current;
+    const { current = {} } = markerRef || {}
+    const { leafletElement: marker } = current
 
-    marker.setLatLng( location );
-    popup.setLatLng( location );
-    popup.setContent( popupContentHello );
+    marker.setLatLng( location )
+    popup.setLatLng( location )
+    popup.setContent( popupContentHello )
 
     setTimeout( async () => {
       await promiseToFlyTo( leafletElement, {
         zoom: ZOOM,
         center: location
-      });
+      })
 
-      marker.bindPopup( popup );
+      marker.bindPopup( popup )
 
-      setTimeout(() => marker.openPopup(), timeToOpenPopupAfterZoom );
-      setTimeout(() => marker.setPopupContent( popupContentGatsby ), timeToUpdatePopupAfterZoom );
-    }, timeToZoom );
+      setTimeout(() => marker.openPopup(), timeToOpenPopupAfterZoom )
+      setTimeout(() => marker.setPopupContent( popupContentGatsby ), timeToUpdatePopupAfterZoom )
+    }, timeToZoom )
   }
 
   const mapSettings = {
@@ -79,7 +80,7 @@ const IndexPage = () => {
     defaultBaseMap: 'OpenStreetMap',
     zoom: 4.5,
     mapEffect
-  };
+  }
 
   return (
     <Layout pageName="home">
@@ -101,7 +102,7 @@ const IndexPage = () => {
         <p className="note">Note: Gatsby CLI required globally for the above command</p>
       </Container>
     </Layout>
-  );
-};
+  )
+}
 
-export default IndexPage;
+export default IndexPage
