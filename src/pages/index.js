@@ -83,27 +83,27 @@ const IndexPage = () => {
     mapEffect
   }
   
-  if (typeof window !== 'undefined') {
-  return (
-    <Layout pageName="home">
-      <Helmet>
-        <title>Äldrekartan</title>
-      </Helmet>
+  if ( typeof window !== 'undefined' ) {
+    return (
+      <Layout pageName="home">
+        <Helmet>
+          <title>Äldrekartan</title>
+        </Helmet>
 
-      <Map {...mapSettings}>
-      <Markers/>
-      </Map>
+        <Map {...mapSettings}>
+          <Markers/>
+        </Map>
 
-      <Container type="content" className="text-center home-start">
-        <h2>Still Getting Started?</h2>
-        <p>Run the following in your terminal!</p>
-        <pre>
-          <code>gatsby new [directory] https://github.com/colbyfayock/gatsby-starter-leaflet</code>
-        </pre>
-        <p className="note">Note: Gatsby CLI required globally for the above command</p>
-      </Container>
-    </Layout>
-  )
+        <Container type="content" className="text-center home-start">
+          <h2>Still Getting Started?</h2>
+          <p>Run the following in your terminal!</p>
+          <pre>
+            <code>gatsby new [directory] https://github.com/colbyfayock/gatsby-starter-leaflet</code>
+          </pre>
+          <p className="note">Note: Gatsby CLI required globally for the above command</p>
+        </Container>
+      </Layout>
+    )
   }
 }
 
