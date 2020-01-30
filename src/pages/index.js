@@ -1,13 +1,14 @@
 import React, { useRef } from 'react'
 import Helmet from 'react-helmet'
 import L from 'leaflet'
-import { Marker } from 'react-leaflet'
+//import { Marker } from 'react-leaflet'
 
 import { promiseToFlyTo, getCurrentLocation } from 'lib/map'
 
 import Layout from 'components/Layout'
 import Container from 'components/Container'
 import Map from 'components/Map'
+import Markers from 'components/Markers'
 
 import gatsby_astronaut from 'assets/images/gatsby-astronaut.jpg'
 
@@ -58,21 +59,21 @@ const IndexPage = () => {
     const { current = {} } = markerRef || {}
     const { leafletElement: marker } = current
 
-    marker.setLatLng( location )
+    // marker.setLatLng( location )
     popup.setLatLng( location )
     popup.setContent( popupContentHello )
 
-    setTimeout( async () => {
-      await promiseToFlyTo( leafletElement, {
-        zoom: ZOOM,
-        center: location
-      })
+    // setTimeout( async () => {
+    //   await promiseToFlyTo( leafletElement, {
+    //     zoom: ZOOM,
+    //     center: location
+    //   })
 
-      marker.bindPopup( popup )
+    //   // marker.bindPopup( popup )
 
-      setTimeout(() => marker.openPopup(), timeToOpenPopupAfterZoom )
-      setTimeout(() => marker.setPopupContent( popupContentGatsby ), timeToUpdatePopupAfterZoom )
-    }, timeToZoom )
+    //   setTimeout(() => marker.openPopup(), timeToOpenPopupAfterZoom )
+    //   setTimeout(() => marker.setPopupContent( popupContentGatsby ), timeToUpdatePopupAfterZoom )
+    // }, timeToZoom )
   }
 
   const mapSettings = {
@@ -89,8 +90,7 @@ const IndexPage = () => {
       </Helmet>
 
       <Map {...mapSettings}>
-        <Marker ref={markerRef} position={CENTER} />
-        <Marker position={[56,15]} />
+      <Markers/>
       </Map>
 
       <Container type="content" className="text-center home-start">

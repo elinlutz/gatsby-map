@@ -6,7 +6,7 @@ import Container from 'components/Container'
 
 const SecondPage = () => {
   return (
-    <Layout pageName="two">
+    <Layout pageName="info">
       <Helmet>
         <title>Page Two</title>
       </Helmet>
