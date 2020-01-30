@@ -86,7 +86,7 @@ const IndexPage = () => {
   return (
     <Layout pageName="home">
       <Helmet>
-        <title>Home Page</title>
+        <title>Äldrekartan</title>
       </Helmet>
 
       <Map {...mapSettings}>

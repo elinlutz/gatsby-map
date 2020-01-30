@@ -7,11 +7,8 @@ const Header = () => {
   return (
     <header>
       <Container type="content">
-        <p>Äldrekartan</p>
+        <p><Link to="/">Äldrekartan</Link></p>
         <ul>
-          <li>
-            <Link to="/">Hem</Link>
-          </li>
           <li>
             <Link to="/info/">Information</Link>
           </li>
