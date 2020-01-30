@@ -1,6 +1,6 @@
-import React from "react"
-import Img from "gatsby-image"
-import { graphql } from "gatsby"
+import React from 'react'
+import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
 
 export default ({ data }) => (
   <div>
@@ -9,17 +9,16 @@ export default ({ data }) => (
   </div>
 )
 
-
 export const query = graphql`
   query {
     file(relativePath: { eq: "gatsby-astronaut.jpg" }) {
-        childImageSharp {
-            # Specify the image processing specifications right in the query.
-            # Makes it trivial to update as your page's design changes.
-            fixed(width: 200, height: 200) {
-              ...GatsbyImageSharpFixed
-            }
-          }
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fixed(width: 200, height: 200) {
+          ...GatsbyImageSharpFixed
         }
       }
-    `
+    }
+  }
+`

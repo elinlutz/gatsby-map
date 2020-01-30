@@ -4,11 +4,14 @@
   "version": "0.1.0",
   "dependencies": {
     "gatsby": "^2.18.21",
+    "gatsby-image": "^2.2.39",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-react-leaflet": "2.0.11",
     "gatsby-plugin-resolve-src": "^2.0.0",
     "gatsby-plugin-sass": "^2.1.27",
+    "gatsby-plugin-sharp": "^2.4.4",
     "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-transformer-sharp": "^2.3.13",
     "leaflet": "^1.6.0",
     "node-sass": "^4.13.0",
     "path": "^0.12.7",
@@ -16,7 +19,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.0",
-    "react-leaflet": "^2.6.1"
+    "react-leaflet": "^2.6.1",
+    "sharp": "^0.24.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
@@ -27,7 +31,6 @@
     "eslint-config-zurgbot": "^0.0.6",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
-    "husky": "^4.0.6",
     "jest": "^24.9.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
