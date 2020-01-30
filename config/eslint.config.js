@@ -14,12 +14,11 @@ module.exports = {
     }
   },
 
-  parser: 'babel-eslint',
-
   parserOptions: {
+    sourceType: 'module',
     ecmaVersion: 9,
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     }
   },
 

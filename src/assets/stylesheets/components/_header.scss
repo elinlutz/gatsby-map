@@ -1,8 +1,8 @@
 header {
 
   width: 100%;
-  color: $white;
-  background-color: $gatsby-purple;
+  color: $black;
+  background-color: $white;
 
   .container {
     display: flex;
@@ -23,7 +23,7 @@ header {
 
   a {
     display: block;
-    color: lighten($gatsby-purple, 50);
+    color: lighten($black, 50);
     text-decoration: none;
     padding: 0 .5em;
   }

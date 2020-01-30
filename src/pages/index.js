@@ -30,7 +30,7 @@ const popupContentGatsby = `
       <img class="gatsby-astronaut" src=${gatsby_astronaut} />
     </div>
     <div class="popup-gatsby-content">
-      <h1>Gatsby Leaflet Starter</h1>
+      <h1>Gatsby Leaflet</h1>
       <p>Welcome to your new Gatsby site. Now go build something great!</p>
     </div>
   </div>
@@ -75,9 +75,9 @@ const IndexPage = () => {
   }
 
   const mapSettings = {
-    center: CENTER,
+    center: [56,15],
     defaultBaseMap: 'OpenStreetMap',
-    zoom: DEFAULT_ZOOM,
+    zoom: 4.5,
     mapEffect
   };
 
@@ -89,6 +89,7 @@ const IndexPage = () => {
 
       <Map {...mapSettings}>
         <Marker ref={markerRef} position={CENTER} />
+        <Marker position={[56,15]} />
       </Map>
 
       <Container type="content" className="text-center home-start">
