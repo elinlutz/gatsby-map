@@ -1,8 +1,7 @@
 {
-  "name": "gatsby-starter-leaflet",
-  "description": "A Gatsby starter with Leafet!",
-  "version": "0.2.0",
-  "author": "Colby Fayock <hello@colbyfayock.com>",
+  "name": "geriatric-map",
+  "description": "A map for nursing homes",
+  "version": "0.1.0",
   "dependencies": {
     "gatsby": "^2.18.21",
     "gatsby-plugin-react-helmet": "^3.1.21",
