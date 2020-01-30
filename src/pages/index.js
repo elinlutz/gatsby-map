@@ -82,7 +82,8 @@ const IndexPage = () => {
     zoom: 4.5,
     mapEffect
   }
-
+  
+  if (typeof window !== 'undefined') {
   return (
     <Layout pageName="home">
       <Helmet>
@@ -103,6 +104,7 @@ const IndexPage = () => {
       </Container>
     </Layout>
   )
+  }
 }
 
 export default IndexPage
