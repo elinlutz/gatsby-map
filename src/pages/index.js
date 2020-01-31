@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import Helmet from 'react-helmet'
 import L from 'leaflet'
 //import { Marker } from 'react-leaflet'
@@ -82,6 +82,12 @@ const IndexPage = () => {
     zoom: 4.5,
     mapEffect
   }
+
+  const [unit, setUnit] = useState(null)
+
+  function onClick(unit) {
+      setUnit(unit)
+  }
   
   if ( typeof window !== 'undefined' ) {
     return (
@@ -91,16 +97,18 @@ const IndexPage = () => {
         </Helmet>
 
         <Map {...mapSettings}>
-          <Markers/>
+          <Markers onClick={onClick}/>
         </Map>
 
         <Container type="content" className="text-center home-start">
-          <h2>Still Getting Started?</h2>
-          <p>Run the following in your terminal!</p>
-          <pre>
-            <code>gatsby new [directory] https://github.com/colbyfayock/gatsby-starter-leaflet</code>
-          </pre>
-          <p className="note">Note: Gatsby CLI required globally for the above command</p>
+          {unit ?  
+          (
+          <>
+          <h2>{unit.name}</h2>
+          <p>{unit.name} ligger i {unit.city}</p>
+          </>
+          ) : <h2>Klicka på kartan för information </h2>
+          }
         </Container>
       </Layout>
     )

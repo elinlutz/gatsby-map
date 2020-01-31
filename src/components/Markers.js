@@ -1,19 +1,26 @@
-import React from 'react'
+import React, { useState }from 'react'
 
 import { Marker, Popup } from 'react-leaflet'
-import { Link } from 'gatsby'
+import { Link, Text } from 'gatsby'
 
 import { units } from 'data/units.js'
 
 
-const Markers = () => {
+const Markers = ({ onClick }) => {
+const [clickedMarker, setClickedMarker] = useState(false)
+
   console.log( units )
   return units.map(( unit ) => {
     return (
       <Marker key={unit.id} position={[unit.lat, unit.lng]}>
-        <Popup>
-          <Link to={unit.id}>{ unit.name }</Link><br />
+        <Popup onClose={() => setClickedMarker(false)}>
+          <a onClick={() => {
+            setClickedMarker(true)
+            onClick(unit)
+            }}>{ unit.name }</a><br />
           { unit.city }
+          <br />
+          {clickedMarker == true ? 'Mer info poppar upp här nere' : null}
         </Popup>
       </Marker>
     )

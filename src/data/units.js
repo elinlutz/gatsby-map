@@ -3,6 +3,6 @@ export const units = [
   { id: 2, name: 'Katarinagården', city: 'Stockholm', lat: 59.3120, lng: 18.09930},
   { id: 3, name: 'Nytorggården', city: 'Stockholm', lat: 59.3140, lng: 18.096920},
   { id: 4, name: 'Attendo Lignagatan', city: 'Stockholm', lat: 59.3130, lng: 18.094620},
-  { id: 5, name: 'Vårdboende Dunkerska huset', city: 'Helsingborg', lat: 56.04673, lng: 12.69437}
-
+  { id: 5, name: 'Vårdboende Dunkerska huset', city: 'Helsingborg', lat: 56.04673, lng: 12.69437},
+  { id: 6, name: 'Oskarslund Vårdboende', city: 'Karlstad', lat: 59.3793, lng: 13.50357}
 ]
