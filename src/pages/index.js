@@ -9,6 +9,7 @@ import Layout from 'components/Layout'
 import Container from 'components/Container'
 import Map from 'components/Map'
 import Markers from 'components/Markers'
+import Comment from 'components/Comment'
 
 import gatsby_astronaut from 'assets/images/gatsby-astronaut.jpg'
 
@@ -48,20 +49,20 @@ const IndexPage = () => {
    */
 
   async function mapEffect({ leafletElement } = {}) {
-    if ( !leafletElement ) return
+    if (!leafletElement) return
 
     const popup = L.popup({
       maxWidth: 800
     })
 
-    const location = await getCurrentLocation().catch(() => LOCATION )
+    const location = await getCurrentLocation().catch(() => LOCATION)
 
     const { current = {} } = markerRef || {}
     const { leafletElement: marker } = current
 
     // marker.setLatLng( location )
-    popup.setLatLng( location )
-    popup.setContent( popupContentHello )
+    popup.setLatLng(location)
+    popup.setContent(popupContentHello)
 
     // setTimeout( async () => {
     //   await promiseToFlyTo( leafletElement, {
@@ -77,7 +78,7 @@ const IndexPage = () => {
   }
 
   const mapSettings = {
-    center: [56,15],
+    center: [56, 15],
     defaultBaseMap: 'OpenStreetMap',
     zoom: 4.5,
     mapEffect
@@ -86,10 +87,23 @@ const IndexPage = () => {
   const [unit, setUnit] = useState(null)
 
   function onClick(unit) {
-      setUnit(unit)
+    setUnit(unit)
   }
-  
-  if ( typeof window !== 'undefined' ) {
+
+  function UnitContent() {
+    return (
+      <>
+        <h2>{unit.name}</h2>
+        <p>{unit.name} ligger på {unit.adress} i {unit.city}</p>
+        <p>Telefonnumret dit är {unit.tel}</p>
+        <br />
+        <p>Vad tycker du om boendet?</p>
+        <p>Skriv en kommentar så hjälper du andra att få rätt information.</p>
+      </>
+    )
+  }
+
+  if (typeof window !== 'undefined') {
     return (
       <Layout pageName="home">
         <Helmet>
@@ -97,17 +111,13 @@ const IndexPage = () => {
         </Helmet>
 
         <Map {...mapSettings}>
-          <Markers onClick={onClick}/>
+          <Markers onClick={onClick} />
         </Map>
 
         <Container type="content" className="text-center home-start">
-          {unit ?  
-          (
-          <>
-          <h2>{unit.name}</h2>
-          <p>{unit.name} ligger i {unit.city}</p>
-          </>
-          ) : <h2>Klicka på kartan för information </h2>
+          {unit ? (<><UnitContent/>
+                  <Comment /></>)
+            : <p> </p>
           }
         </Container>
       </Layout>
