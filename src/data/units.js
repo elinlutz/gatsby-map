@@ -52,5 +52,14 @@ export const units = [
     city: 'Karlstad',
     lat: 59.3793,
     lng: 13.50357
+  },
+  {
+    id: 7,
+    name: 'Jönköping',
+    tel: '070-144 60 05',
+    adress: 'Lignagatan 14',
+    city: 'Jönköping',
+    lat: 57.78145,
+    lng: 14.156
   }
 ]

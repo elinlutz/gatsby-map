@@ -8,7 +8,7 @@ const Header = () => {
     <header>
       <Container type="content">
         <p>
-          <Link to="/">Äldrekartan</Link>
+          <Link to="/">Coronavirus 2019-nCov Europe</Link>
         </p>
         <ul>
           <li>
