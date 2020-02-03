@@ -3,9 +3,10 @@ import Helmet from 'react-helmet'
 
 import Layout from 'components/Layout'
 import Container from 'components/Container'
-import Comment from 'components/Comment'
 
-const Post = () => {
+import Comments from 'components/Comments'
+
+const Post = ({ data }) => {
   return (
     <Layout pageName="Post">
       <Helmet>
@@ -13,8 +14,9 @@ const Post = () => {
       </Helmet>
       <Container type="content" className="text-center">
         <h1>Post</h1>
-        <Comment></Comment>
-        </Container>
+      </Container>
+
+      <Comments />
     </Layout>
   )
 }
