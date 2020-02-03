@@ -1,4 +1,4 @@
 Table 1
-;Number of Confirmed Cases;City;;;;
-Sweden;1;Jönköping;;;;
-Germany;11;Hamburg;;;;
+,Number of Confirmed Cases,City,,,,
+Sweden,1,Jönköping,,,,
+Germany,11,Hamburg,,,,
