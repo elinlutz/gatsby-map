@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true,
+    "es6": true,
+    "node": true
+  },
+
+  "extends": ["plugin:prettier/recommended"],
+
+  "plugins": ["prettier", "react", "react-hooks"],
+
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 9,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}

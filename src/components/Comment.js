@@ -6,23 +6,12 @@ const Comment = () => {
   return (
     <div>
       <h3>Kommentera</h3>
-      <form
-        method="POST"
-        action="YOUR_FORM_URL"
-      >
-        <input
-          name="options[slug]"
-          type="hidden"
-        />
+      <form method="POST" action="YOUR_FORM_URL">
+        <input name="options[slug]" type="hidden" />
         <input name="fields[name]" type="text" placeholder="Namn" required />
         <br />
         <br />
-        <input
-          name="fields[email]"
-          type="email"
-          placeholder="Email"
-          required
-        />
+        <input name="fields[email]" type="email" placeholder="Email" required />
 
         <br />
         <br />
@@ -35,8 +24,7 @@ const Comment = () => {
         <button type="submit">Skicka</button>
       </form>
       <div className="post-single">
-        <div className="post-single__inner">
-        </div>
+        <div className="post-single__inner"></div>
       </div>
     </div>
   )

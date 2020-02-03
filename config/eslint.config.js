@@ -5,13 +5,13 @@ module.exports = {
     browser: true,
     jest: true,
     es6: true,
-    node: true
+    node: true,
   },
 
   settings: {
     react: {
-      version: 'detect'
-    }
+      version: 'detect',
+    },
   },
 
   parserOptions: {
@@ -19,16 +19,12 @@ module.exports = {
     ecmaVersion: 9,
     ecmaFeatures: {
       jsx: true,
-    }
-  },
-
-  rules: {
-    semi: [2, 'never'],
+    },
   },
 
   plugins: ['react', 'react-hooks'],
 
-  extends: ['zurgbot', 'plugin:react/recommended']
-};
+  extends: ['zurgbot', 'plugin:react/recommended'],
+}
 
 /* eslint-enable */

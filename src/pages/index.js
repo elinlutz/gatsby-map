@@ -94,7 +94,9 @@ const IndexPage = () => {
     return (
       <>
         <h2>{unit.name}</h2>
-        <p>{unit.name} ligger på {unit.adress} i {unit.city}</p>
+        <p>
+          {unit.name} ligger på {unit.adress} i {unit.city}
+        </p>
         <p>Telefonnumret dit är {unit.tel}</p>
         <br />
         <p>Vad tycker du om boendet?</p>
@@ -115,10 +117,14 @@ const IndexPage = () => {
         </Map>
 
         <Container type="content" className="text-center home-start">
-          {unit ? (<><UnitContent/>
-                  <Comment /></>)
-            : <p> </p>
-          }
+          {unit ? (
+            <>
+              <UnitContent />
+              <Comment />
+            </>
+          ) : (
+            <p> </p>
+          )}
         </Container>
       </Layout>
     )

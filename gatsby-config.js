@@ -4,12 +4,12 @@ module.exports = {
     title: 'Geriatric Map',
     menuLinks: [
       {
-        name:'home',
-        link:'/'
+        name: 'home',
+        link: '/'
       },
       {
-        name:'info',
-        link:'/info'
+        name: 'info',
+        link: '/info'
       }
     ]
   },
@@ -29,8 +29,8 @@ module.exports = {
       options: {
         name: `data`,
         path: `${__dirname}/src/data/`,
-        ignore: [`**/\.*`], // ignore files starting with a dot
-      },
+        ignore: [`**/\.*`] // ignore files starting with a dot
+      }
     },
     'gatsby-plugin-react-leaflet',
     'gatsby-plugin-sharp',
