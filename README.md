@@ -16,7 +16,7 @@
 * [Yarn](https://yarnpkg.com/en/)
 
 ## Development
-To run the page in developer mode, run the following in your terminal:
+To view the map in development mode, run the following in your terminal:
 ```
 gatsby develop
 ```
