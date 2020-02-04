@@ -8,11 +8,14 @@ const Header = () => {
     <header>
       <Container type="content">
         <p>
-          <Link to="/">Coronavirus 2019-nCov Sweden</Link>
+          <Link to="/">Coronaviruset 2019-nCov Sverige</Link>
         </p>
         <ul>
           <li>
             <Link to="/info/">Information</Link>
+          </li>
+          <li>
+            <Link to="/blog/">Nyheter</Link>
           </li>
         </ul>
       </Container>

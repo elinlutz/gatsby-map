@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from 'components/Layout'
-import Comments from 'components/Comments'
 import Container from 'components/Container'
 
 const SecondPage = () => {

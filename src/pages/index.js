@@ -9,7 +9,6 @@ import Layout from 'components/Layout'
 import Container from 'components/Container'
 import Map from 'components/Map'
 import Markers from 'components/Markers'
-import Comment from 'components/Comment'
 
 import gatsby_astronaut from 'assets/images/gatsby-astronaut.jpg'
 
@@ -93,14 +92,14 @@ const IndexPage = () => {
   function UnitContent() {
     return (
       <>
-        <h2>{unit.name}</h2>
+        <h2>{unit.city}</h2>
         <p>
-          {unit.name} ligger på {unit.adress} i {unit.city}
+          2019-nCov i {unit.city}, {unit.region}
         </p>
-        <p>Telefonnumret dit är {unit.tel}</p>
         <br />
-        <p>Vad tycker du om boendet?</p>
-        <p>Skriv en kommentar så hjälper du andra att få rätt information.</p>
+
+        <p>Bekräftade fall: {unit.confirmed} st</p>
+        <p>Misstänkta fall: {unit.suspect} st</p>
       </>
     )
   }
@@ -120,7 +119,6 @@ const IndexPage = () => {
           {unit ? (
             <>
               <UnitContent />
-              <Comment />
             </>
           ) : (
             <p> </p>
