@@ -28,16 +28,19 @@ const Markers = ({ onClick }) => {
               onClick(unit)
             }}
           >
-            {'Sweden'}
             <br />
 
-            {unit.name}
+            {unit.city}
+            {' i '}
+            {unit.region}
           </a>
           <br />
-          {unit.city}
           <br />
-          {'Information'}
-
+          {'Confirmed cases: '}
+          {unit.confirmed}
+          <br />
+          {'Suspect cases: '}
+          {unit.suspect}
           {/* {clicked == true ? <br /> 'Mer info poppar upp här nere' : null} */}
         </Popup>
       </Marker>
