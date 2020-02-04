@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import Layout from 'components/Layout'
 import Container from 'components/Container'
 
-const SecondPage = () => {
+const InfoPage = () => {
   return (
     <Layout pageName="info">
       <Helmet>
@@ -13,21 +13,33 @@ const SecondPage = () => {
       <Container type="content" className="text-center">
         <h2>Om</h2>
         <p>
-          Denna karta är till för att visa en överblick över Coronaviruset
-          2019-nCoVs spridning i Sverige på lokal och regional nivå. Kartan
-          lanserades då det fanns utrymme för en ökad granuläritet i
-          visualiseringar över virusets spridning som inte återfanns i nationell
-          eller global statistik.
+          Denna karta skapades för att ge en överblick över Coronaviruset
+          2019-nCoVs spridning i Sverige på lokal och regional nivå.
+        </p>
+        <p>
+          Jag som bygger och uppdaterar kartan heter Elin. Jag publicerade den
+          för att jag saknade en interaktiv karta som visade läget i Sverige.
         </p>
         <br />
         <h2>Data</h2>
 
         <p>
-          Datasetet som vi utgår från är sammanställt från officiell data går
-          att ladda ned <a href={'https://freya.se'}>här</a>{' '}
+          Datan som vi utgår från är sammanställd från information från
+          officiella statistik från Folkhälsomyndigheten. Vi rapporterar även
+          misstänkta fall som uppges av nyhetsrapporteringar. Datasetet
+          uppdateras dagligen vid lunchtid, och du kan ladda ned det{' '}
+          <a href={'https://freya.se'}>här</a>.
         </p>
         <br />
-        <h2>Information</h2>
+
+        <h2>Hjälp till</h2>
+        <p>
+          Har du idéer på förbättringar eller vill hjälpa till i projektet?{' '}
+          <br />
+          Hör av dig till mig på <a href={'mailto:elin@vuma.se'}>mejl</a>{' '}
+        </p>
+        <br />
+        <h2>Information om coronaviruset</h2>
 
         <p>
           För fakta och information om coronaviruset 2019-nCoV hänvisar vi till
@@ -57,4 +69,4 @@ const SecondPage = () => {
   )
 }
 
-export default SecondPage
+export default InfoPage

@@ -1,5 +1,4 @@
 header {
-
   width: 100%;
   color: $black;
   background-color: $white;
@@ -7,8 +6,8 @@ header {
   .container {
     display: flex;
     justify-content: space-between;
-    height: 2.5em;
-    line-height: 2.5em;
+    height: 2.8em;
+    line-height: 2.8em;
   }
 
   ul {
@@ -25,7 +24,7 @@ header {
     display: block;
     color: lighten($black, 50);
     text-decoration: none;
-    padding: 0 .5em;
+    padding: 0 0.5em;
   }
 
   p {
@@ -33,5 +32,4 @@ header {
     font-weight: bold;
     margin: 0;
   }
-
 }

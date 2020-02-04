@@ -8,7 +8,7 @@ var virusIcon = L.icon({
   iconUrl: require('assets/icons/red.png'),
   // shadowUrl: require('assets/icons/bacteria.png'),
 
-  iconSize: [30, 30], // size of the icon
+  iconSize: [20, 20], // size of the icon
   // shadowSize: [20, 20], // size of the shadow
   // iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
   // shadowAnchor: [4, 62], // the same for the shadow
@@ -19,7 +19,7 @@ var warningIcon = L.icon({
   iconUrl: require('assets/icons/orange.png'),
   // shadowUrl: require('assets/icons/bacteria.png'),
 
-  iconSize: [30, 30], // size of the icon
+  iconSize: [20, 20], // size of the icon
   // shadowSize: [20, 20], // size of the shadow
   // iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
   // shadowAnchor: [4, 62], // the same for the shadow
@@ -45,11 +45,8 @@ const Markers = ({ onClick }) => {
               onClick(unit)
             }}
           >
-            <br />
-
             {unit.city}
           </a>
-          <br />i {unit.region}
           <br />
           <br />
           {'Bekräftade fall: '}

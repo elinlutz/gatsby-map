@@ -94,12 +94,21 @@ const IndexPage = () => {
       <>
         <h2>{unit.city}</h2>
         <p>
-          2019-nCov i {unit.city}, {unit.region}
+          Coronaviruset 2019-nCov i {unit.city}, {unit.region}
         </p>
         <br />
 
-        <p>Bekräftade fall: {unit.confirmed} st</p>
-        <p>Misstänkta fall: {unit.suspect} st</p>
+        <p>
+          Bekräftade fall: {unit.confirmed} st <br />
+          Misstänkta fall: {unit.suspect} st
+        </p>
+        <br />
+
+        <p>
+          Uppdaterat den {unit.updatedAt}
+          <br />
+          <a href={String(unit.source)}>Källa</a>
+        </p>
       </>
     )
   }
