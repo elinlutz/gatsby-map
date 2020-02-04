@@ -5,7 +5,7 @@ import L from 'leaflet'
 import { units } from 'data/units.js'
 
 var virusIcon = L.icon({
-  iconUrl: require('assets/icons/bacteria.png'),
+  iconUrl: require('assets/icons/red.png'),
   // shadowUrl: require('assets/icons/bacteria.png'),
 
   iconSize: [30, 30], // size of the icon
@@ -16,7 +16,7 @@ var virusIcon = L.icon({
 })
 
 var warningIcon = L.icon({
-  iconUrl: require('assets/icons/error.png'),
+  iconUrl: require('assets/icons/orange.png'),
   // shadowUrl: require('assets/icons/bacteria.png'),
 
   iconSize: [30, 30], // size of the icon
