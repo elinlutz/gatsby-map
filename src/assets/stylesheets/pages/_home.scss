@@ -64,11 +64,12 @@
     justify-content: space-around;
     margin: 0;
     list-style: none;
+    padding: 0 2em;
   }
 
   .flex-item-counter {
     text-align: center;
-    padding: 1em;
+    padding: 1em 2em;
     width: 50%;
     max-width: 20em;
     max-height: 16em;
@@ -77,8 +78,13 @@
   }
 
   .flex-item-info {
-    padding: 1em;
+    padding: 1em 2em;
     max-width: 50%;
+  }
+
+  a {
+    text-decoration: none;
+    color: $blue-400;
   }
 
   h2 {
