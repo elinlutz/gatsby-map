@@ -7,8 +7,8 @@ const NotFoundPage = () => {
   return (
     <Layout>
       <Container type="content" className="text-center">
-        <h1>Page Not Found</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        <h1>Sidan kan inte hittas</h1>
+        <p>Det finns tyvärr ingen sida på den här adressen.</p>
       </Container>
     </Layout>
   )

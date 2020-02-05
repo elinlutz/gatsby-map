@@ -16,24 +16,18 @@ const InfoPage = () => {
           Denna karta skapades för att ge en överblick över Coronaviruset
           2019-nCoVs spridning i Sverige på lokal och regional nivå.
         </p>
-        <p>
-          Jag som bygger och uppdaterar kartan heter Elin, jag publicerade
-          kartan för att jag saknade en interaktiv visualisering över läget i
-          Sverige. Den är till för att visa tillgänlig information och ska inte
-          ses bidra till spridning av onödig oro eller noja.
-        </p>
         <br />
         <h2>Data</h2>
 
         <p>
           Datan som vi utgår från är sammanställd från information från
-          officiella statistik från Folkhälsomyndigheten. Vi rapporterar även
-          misstänkta fall som uppges av nyhetsrapporteringar. Datasetet
-          uppdateras dagligen vid lunchtid, och du kan ladda ned det{' '}
+          officiella statistik från Folkhälsomyndigheten.
+          {/* Datasetet uppdateras
+          dagligen, och du kan ladda ned det{' '}
           <a href={'https://freya.se'} target={'_blank'}>
             här
           </a>
-          .
+          . */}
         </p>
         <br />
 
@@ -62,7 +56,6 @@ const InfoPage = () => {
             {' Folkhälsomyndigheten'}
           </a>
           .
-          <br />
           <br />
           För samlad data lokalt och globalt se{' '}
           <a

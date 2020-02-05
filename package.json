@@ -1,5 +1,5 @@
 {
-  "name": "geriatric-map",
+  "name": "corona-map",
   "description": "A map for nursing homes",
   "version": "0.1.0",
   "dependencies": {
