@@ -1,7 +1,8 @@
 import React, { useRef, useState } from 'react'
+
 import Helmet from 'react-helmet'
 import L from 'leaflet'
-//import { Marker } from 'react-leaflet'
+import Button from '@material-ui/core/Button'
 
 import { promiseToFlyTo, getCurrentLocation } from 'lib/map'
 
@@ -101,14 +102,12 @@ const IndexPage = () => {
 
         <p>
           Bekräftade fall: {unit.confirmed} st <br />
-          Misstänkta fall: {unit.suspect} st
         </p>
         <br />
 
         <p>
-          Uppdaterat den {unit.updatedAt}
-          {' - '}
-          <a href={String(unit.source)}>Källa</a>
+          Uppdaterat den {unit.updatedAt}{' '}
+          <Button href={unit.source}>källa</Button>
         </p>
       </>
     )
