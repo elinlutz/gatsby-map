@@ -9,6 +9,7 @@ import Layout from 'components/Layout'
 import Container from 'components/Container'
 import Map from 'components/Map'
 import Markers from 'components/Markers'
+import Counter from 'components/Counter'
 
 import gatsby_astronaut from 'assets/images/gatsby-astronaut.jpg'
 
@@ -125,6 +126,8 @@ const IndexPage = () => {
         </Map>
 
         <Container type="content" className="text-center home-start">
+          <Counter></Counter>
+
           {unit ? (
             <>
               <UnitContent />

@@ -17,8 +17,10 @@ const InfoPage = () => {
           2019-nCoVs spridning i Sverige på lokal och regional nivå.
         </p>
         <p>
-          Jag som bygger och uppdaterar kartan heter Elin. Jag publicerade den
-          för att jag saknade en interaktiv karta som visade läget i Sverige.
+          Jag som bygger och uppdaterar kartan heter Elin, jag publicerade
+          kartan för att jag saknade en interaktiv visualisering över läget i
+          Sverige. Den är till för att visa tillgänlig information och ska inte
+          ses bidra till spridning av onödig oro eller noja.
         </p>
         <br />
         <h2>Data</h2>
@@ -28,15 +30,23 @@ const InfoPage = () => {
           officiella statistik från Folkhälsomyndigheten. Vi rapporterar även
           misstänkta fall som uppges av nyhetsrapporteringar. Datasetet
           uppdateras dagligen vid lunchtid, och du kan ladda ned det{' '}
-          <a href={'https://freya.se'}>här</a>.
+          <a href={'https://freya.se'} target={'_blank'}>
+            här
+          </a>
+          .
         </p>
         <br />
 
         <h2>Hjälp till</h2>
         <p>
-          Har du idéer på förbättringar eller vill hjälpa till i projektet?{' '}
+          Har du idéer på förbättringar eller vill hjälpa till i projektet?
           <br />
-          Hör av dig till mig på <a href={'mailto:elin@vuma.se'}>mejl</a>{' '}
+          Hör av dig till mig på <a href={'mailto:elin@vuma.se'}>mejl</a>.
+          Projektet har en öppen källkod som du hittar{' '}
+          <a href={'https://github.com/elinlutz/gatsby-map'} target={'_blank'}>
+            här
+          </a>
+          .
         </p>
         <br />
         <h2>Information om coronaviruset</h2>
@@ -47,6 +57,7 @@ const InfoPage = () => {
             href={
               'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/smittsamma-sjukdomar/coronavirus/fragor-och-svar-om-nytt-coronavirus'
             }
+            target={'_blank'}
           >
             {' Folkhälsomyndigheten'}
           </a>
@@ -58,6 +69,7 @@ const InfoPage = () => {
             href={
               'https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases'
             }
+            target={'_blank'}
           >
             {' Europeiska Smittskyddsmyndigheten'}
           </a>
