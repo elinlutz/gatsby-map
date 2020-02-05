@@ -56,7 +56,7 @@
 
 .home-start {
   padding-top: 4em;
-  padding-bottom: 4em;
+  padding-bottom: 1em;
 
   .flex-container {
     display: flex;
@@ -64,7 +64,7 @@
     justify-content: space-around;
     margin: 0;
     list-style: none;
-    padding: 0 2em;
+    padding: 0em 2em;
   }
 
   .flex-item-counter {
@@ -72,7 +72,7 @@
     padding: 1em 2em;
     width: 50%;
     max-width: 20em;
-    max-height: 16em;
+    max-height: 15em;
     background-color: lighten($white, 92);
     color: $dark-black;
     border-radius: 8px;

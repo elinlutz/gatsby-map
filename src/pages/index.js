@@ -98,13 +98,10 @@ const IndexPage = () => {
         <p>
           Coronaviruset 2019-nCov i {unit.city}, {unit.region}
         </p>
-        <br />
-
         <p>
           Bekräftade fall: {unit.confirmed} st <br />
         </p>
         <br />
-
         <p>
           Uppdaterat den {unit.updatedAt}{' '}
           <Button href={unit.source}>källa</Button>
