@@ -20,8 +20,8 @@ const InfoPage = () => {
         <h2>Data</h2>
 
         <p>
-          Datan som vi utgår från är sammanställd från information från
-          officiella statistik från Folkhälsomyndigheten.
+          Siffrorna som vi utgår från är sammanställd ifrån officiell statistik
+          från Folkhälsomyndigheten.
           {/* Datasetet uppdateras
           dagligen, och du kan ladda ned det{' '}
           <a href={'https://freya.se'} target={'_blank'}>
@@ -33,10 +33,9 @@ const InfoPage = () => {
 
         <h2>Hjälp till</h2>
         <p>
-          Har du idéer på förbättringar eller vill hjälpa till i projektet?
-          <br />
-          Hör av dig till mig på <a href={'mailto:elin@vuma.se'}>mejl</a>.
-          Projektet har en öppen källkod som du hittar{' '}
+          Har du idéer på förbättringar? Hör av dig via{' '}
+          <a href={'mailto:elin@vuma.se'}>mejl</a>.
+          <br /> Projektet har en öppen källkod som du hittar{' '}
           <a href={'https://github.com/elinlutz/gatsby-map'} target={'_blank'}>
             här
           </a>
