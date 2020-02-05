@@ -1,5 +1,4 @@
 .page-home {
-
   .map,
   .map-base {
     height: 50vh;
@@ -23,7 +22,6 @@
   }
 
   .popup-gatsby-content {
-
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -33,16 +31,14 @@
     padding-right: 1em;
 
     h1 {
-      margin: 0 0 .2em;
+      margin: 0 0 0.2em;
     }
     p {
-      margin: 0 0 .5em;
+      margin: 0 0 0.5em;
     }
-
   }
 
   .gatsby-astronaut {
-
     overflow: hidden;
     width: 10em;
     height: 10em;
@@ -55,15 +51,35 @@
       width: 100%;
       height: auto;
     }
-
   }
-
 }
 
 .home-start {
-
   padding-top: 4em;
   padding-bottom: 4em;
+
+  .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0;
+    list-style: none;
+  }
+
+  .flex-item-counter {
+    text-align: center;
+    padding: 1em;
+    width: 50%;
+    max-width: 20em;
+    max-height: 16em;
+    background-color: lighten($black, 92);
+    border-radius: 20px;
+  }
+
+  .flex-item-info {
+    padding: 1em;
+    max-width: 50%;
+  }
 
   h2 {
     margin-top: 0;
@@ -76,5 +92,4 @@
   pre {
     margin-bottom: 1.5em;
   }
-
 }

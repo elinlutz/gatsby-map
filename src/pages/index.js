@@ -125,16 +125,22 @@ const IndexPage = () => {
           <Markers onClick={onClick} />
         </Map>
 
-        <Container type="content" className="text-center home-start">
-          <Counter></Counter>
+        <Container className="home-start">
+          <Container className="flex-container">
+            <Container className="flex-item-counter">
+              <Counter></Counter>
+            </Container>
 
-          {unit ? (
-            <>
-              <UnitContent />
-            </>
-          ) : (
-            <p> </p>
-          )}
+            <Container className="flex-item-info">
+              {unit ? (
+                <>
+                  <UnitContent />
+                </>
+              ) : (
+                <p> </p>
+              )}
+            </Container>
+          </Container>
         </Container>
       </Layout>
     )
