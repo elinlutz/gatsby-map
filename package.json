@@ -3,10 +3,13 @@
   "description": "A map for nursing homes",
   "version": "0.1.0",
   "dependencies": {
+    "@material-ui/core": "^4.9.1",
+    "@material-ui/styles": "^4.9.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
     "gatsby": "^2.18.21",
     "gatsby-image": "^2.2.39",
+    "gatsby-plugin-material-ui": "^2.1.6",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-react-leaflet": "2.0.11",
     "gatsby-plugin-resolve-src": "^2.0.0",
