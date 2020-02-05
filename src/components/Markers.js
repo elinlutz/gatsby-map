@@ -4,7 +4,7 @@ import L from 'leaflet'
 
 import { units } from 'data/units.js'
 
-var confirmedIcon = L.icon.extend({
+var ConfirmedIconClass = new L.Icon({
   iconUrl: require('assets/icons/red.png'),
   // shadowUrl: require('assets/icons/bacteria.png'),
 
@@ -15,7 +15,7 @@ var confirmedIcon = L.icon.extend({
   popupAnchor: [-3, -10] // point from which the popup should open relative to the iconAnchor
 })
 
-var suspectIcon = L.icon.extend({
+var SuspectIconClass = new L.Icon({
   iconUrl: require('assets/icons/orange.png'),
   // shadowUrl: require('assets/icons/bacteria.png'),
 
@@ -33,10 +33,10 @@ const Markers = ({ onClick }) => {
     return (
       <Marker
         key={unit.id}
-        icon={unit.confirmed === 1 ? confirmedIcon : suspectIcon}
+        icon={unit.confirmed === 1 ? ConfirmedIconClass : SuspectIconClass}
         position={[unit.lat, unit.lng]}
       >
-        <Popup icon={virusIcon} onClose={() => setClicked(false)}>
+        <Popup icon={ConfirmedIconClass} onClose={() => setClicked(false)}>
           {console.log(unit)}
           {console.log(unit.confirmed === 0)}
           <a
