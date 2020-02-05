@@ -10,7 +10,7 @@ const InfoPage = () => {
       <Helmet>
         <title>Information</title>
       </Helmet>
-      <Container type="content" className="text-center">
+      <Container type="about" className="container">
         <h2>Om</h2>
         <p>
           Denna karta skapades för att ge en överblick över Coronaviruset

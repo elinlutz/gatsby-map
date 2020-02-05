@@ -106,8 +106,9 @@ const IndexPage = () => {
         <br />
 
         <p>
-          Uppdaterat den {unit.updatedAt}{' '}
-          <a href={String(unit.source)}>källa</a>
+          Uppdaterat den {unit.updatedAt}
+          {' - '}
+          <a href={String(unit.source)}>Källa</a>
         </p>
       </>
     )
