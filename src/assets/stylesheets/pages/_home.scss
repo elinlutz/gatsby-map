@@ -73,11 +73,14 @@
     width: 50%;
     max-width: 20em;
     max-height: 16em;
-    background-color: lighten($black, 92);
-    border-radius: 20px;
+    background-color: lighten($white, 92);
+    color: $dark-black;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 $min-black;
   }
 
   .flex-item-info {
+    color: $dark-black;
     padding: 1em 2em;
     max-width: 50%;
   }
