@@ -114,37 +114,35 @@ const IndexPage = () => {
     )
   }
 
-  if (typeof window !== 'undefined') {
-    return (
-      <Layout pageName="home">
-        <Helmet>
-          <title>Coronavirus 2019-nCov Europe</title>
-        </Helmet>
+  return (
+    <Layout pageName="home">
+      <Helmet>
+        <title>Coronavirus 2019-nCov Europe</title>
+      </Helmet>
 
-        <Map {...mapSettings}>
-          <Markers onClick={onClick} />
-        </Map>
+      <Map {...mapSettings}>
+        <Markers onClick={onClick} />
+      </Map>
 
-        <Container className="home-start">
-          <Container className="flex-container">
-            <Container className="flex-item-counter">
-              <Counter></Counter>
-            </Container>
+      <Container className="home-start">
+        <Container className="flex-container">
+          <Container className="flex-item-counter">
+            <Counter></Counter>
+          </Container>
 
-            <Container className="flex-item-info">
-              {unit ? (
-                <>
-                  <UnitContent />
-                </>
-              ) : (
-                <p> </p>
-              )}
-            </Container>
+          <Container className="flex-item-info">
+            {unit ? (
+              <>
+                <UnitContent />
+              </>
+            ) : (
+              <p> </p>
+            )}
           </Container>
         </Container>
-      </Layout>
-    )
-  }
+      </Container>
+    </Layout>
+  )
 }
 
 export default IndexPage

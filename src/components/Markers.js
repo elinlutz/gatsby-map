@@ -1,30 +1,25 @@
 import React, { useState } from 'react'
 import { Marker, Popup } from 'react-leaflet'
-import L from 'leaflet'
+
+// import { icon } from 'assets/icons/Icon'
 
 import { units } from 'data/units.js'
 
-var ConfirmedIconClass = new L.Icon({
-  iconUrl: require('assets/icons/red.png'),
-  // shadowUrl: require('assets/icons/bacteria.png'),
+// const confirmedIcon = Icon({
+//   iconUrl: require('../assets/icons/red.png'),
+//   iconSize: [20, 20], // size of the icon
+//   popupAnchor: [-0, -10] // point from which the popup should open relative to the iconAnchor
+// })
 
-  iconSize: [20, 20], // size of the icon
-  // shadowSize: [20, 20], // size of the shadow
-  // iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
-  // shadowAnchor: [4, 62], // the same for the shadow
-  popupAnchor: [-3, -10] // point from which the popup should open relative to the iconAnchor
-})
-
-var SuspectIconClass = new L.Icon({
-  iconUrl: require('assets/icons/orange.png'),
-  // shadowUrl: require('assets/icons/bacteria.png'),
-
-  iconSize: [20, 20], // size of the icon
-  // shadowSize: [20, 20], // size of the shadow
-  // iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
-  // shadowAnchor: [4, 62], // the same for the shadow
-  popupAnchor: [-0, -10] // point from which the popup should open relative to the iconAnchor
-})
+// var WarningIcon = new L.icon({
+//   iconUrl: orangeIcon,
+//   // shadowUrl: require('assets/icons/bacteria.png'),
+//   iconSize: [20, 20], // size of the icon
+//   // shadowSize: [20, 20], // size of the shadow
+//   // iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
+//   // shadowAnchor: [4, 62], // the same for the shadow
+//   popupAnchor: [-0, -10] // point from which the popup should open relative to the iconAnchor
+// })
 
 const Markers = ({ onClick }) => {
   const [clicked, setClicked] = useState(false)
@@ -33,10 +28,10 @@ const Markers = ({ onClick }) => {
     return (
       <Marker
         key={unit.id}
-        icon={unit.confirmed === 1 ? ConfirmedIconClass : SuspectIconClass}
+        // icon={confirmedIcon}
         position={[unit.lat, unit.lng]}
       >
-        <Popup icon={ConfirmedIconClass} onClose={() => setClicked(false)}>
+        <Popup onClose={() => setClicked(false)}>
           {console.log(unit)}
           {console.log(unit.confirmed === 0)}
           <a
