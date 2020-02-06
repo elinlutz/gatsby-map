@@ -35,6 +35,12 @@ module.exports = {
     'gatsby-plugin-react-leaflet',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-material-ui'
+    'gatsby-plugin-material-ui',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/assets/icons/corona.png'
+      }
+    }
   ]
 }
