@@ -22,9 +22,22 @@ header {
 
   a {
     display: block;
-    color: lighten($black, 50);
+    color: darken($map-blue, 20);
     text-decoration: none;
     padding: 0 0.5em;
+  }
+
+  .title {
+    color: $black;
+  }
+
+  .logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .navigationLink {
+    background-color: $grey-50;
   }
 
   p {

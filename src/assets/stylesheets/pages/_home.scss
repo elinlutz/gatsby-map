@@ -83,6 +83,28 @@
     color: $dark-black;
     padding: 1em 2em;
     max-width: 50%;
+
+    .details {
+      font-size: 14px;
+      color: $light-black;
+    }
+
+    .numbers {
+      line-height: 1.5em;
+      color: $dark-black;
+    }
+
+    .note {
+      font-size: 14px;
+      color: $light-black;
+      padding: 0 0 0 0;
+    }
+    .sourceBtn {
+      margin-left: 1em;
+      font-size: 12px;
+      height: 2em;
+      background-color: $grey-50;
+    }
   }
 
   a {
