@@ -104,7 +104,6 @@ const IndexPage = () => {
           Misstänkta fall: <b>{unit.suspect}</b> st
           <br />
         </p>
-        <br />
         <p className="note">
           Uppdaterat den {unit.updatedAt}{' '}
           <Button className="sourceBtn" href={unit.source}>
