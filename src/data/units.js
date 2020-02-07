@@ -26,19 +26,5 @@ export const units = [
     updatedAt: '2020-02-06',
     lat: 56.8790044,
     lng: 14.805852200000004
-  },
-  {
-    id: 3,
-    city: 'Gävleborgs län',
-    region: 'Gästrikland',
-    confirmed: 0,
-    suspect: 1,
-    recovered: 0,
-    deaths: 0,
-    source:
-      'https://www.svt.se/nyheter/lokalt/gavleborg/person-i-gavleborg-testas-for-coronavirus',
-    updatedAt: '2020-02-07',
-    lat: 60.6764,
-    lng: 17.1208
   }
 ]

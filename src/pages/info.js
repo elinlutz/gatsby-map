@@ -21,8 +21,16 @@ const InfoPage = () => {
 
         <p>
           Antal bekräftade fall utgår ifrån officiella siffror från
-          Folkhälsomyndigheten. Antalet misstänkta fall är taget från
-          nyhetskällor (SVT).
+          Folkhälsomyndigheten. Antalet testade fall är taget från nyhetskällor{' '}
+          <a
+            href={
+              'https://www.svt.se/nyheter/inrikes/minst-40-svenskar-testade-for-coronavirus'
+            }
+            target={'_blank'}
+          >
+            (SVT)
+          </a>
+          .
           {/* Datasetet uppdateras
           dagligen, och du kan ladda ned det{' '}
           <a href={'https://freya.se'} target={'_blank'}>
