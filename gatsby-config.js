@@ -41,6 +41,16 @@ module.exports = {
       options: {
         icon: 'src/assets/icons/corona.png'
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-157947693-1',
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        pageTransitionDelay: 0
+      }
     }
   ]
 }
