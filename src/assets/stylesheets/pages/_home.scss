@@ -103,8 +103,12 @@
       color: darken($map-blue, 20);
       margin-left: 1em;
       font-size: 12px;
-      height: 2em;
+      height: 2.5em;
       background-color: $grey-50;
+    }
+
+    .sourceLink {
+      color: darken($map-blue, 20);
     }
   }
 

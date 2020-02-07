@@ -106,8 +106,10 @@ const IndexPage = () => {
         </p>
         <p className="note">
           Uppdaterat den {unit.updatedAt}{' '}
-          <Button className="sourceBtn" href={unit.source}>
-            källa
+          <Button className="sourceBtn">
+            <a className="sourceLink" href={unit.source} target="_blank">
+              källa
+            </a>
           </Button>
         </p>
       </>

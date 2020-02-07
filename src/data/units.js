@@ -28,7 +28,7 @@ export const units = [
     lng: 14.805852200000004
   },
   {
-    id: 2,
+    id: 3,
     city: 'Gävleborgs län',
     region: 'Gästrikland',
     confirmed: 0,
@@ -37,7 +37,7 @@ export const units = [
     deaths: 0,
     source:
       'https://www.svt.se/nyheter/lokalt/gavleborg/person-i-gavleborg-testas-for-coronavirus',
-    updatedAt: '2020-02-06',
+    updatedAt: '2020-02-07',
     lat: 60.6764,
     lng: 17.1208
   }

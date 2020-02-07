@@ -20,8 +20,9 @@ const InfoPage = () => {
         <h2>Data</h2>
 
         <p>
-          Siffrorna som vi utgår från är sammanställd ifrån officiell statistik
-          från Folkhälsomyndigheten.
+          Antal bekräftade fall utgår ifrån officiella siffror från
+          Folkhälsomyndigheten. Antalet misstänkta fall är taget från
+          nyhetskällor (SVT).
           {/* Datasetet uppdateras
           dagligen, och du kan ladda ned det{' '}
           <a href={'https://freya.se'} target={'_blank'}>
@@ -31,7 +32,7 @@ const InfoPage = () => {
         </p>
         <br />
 
-        <h2>Hjälp till</h2>
+        {/* <h2>Hjälp till</h2>
         <p>
           Har du idéer på förbättringar? Hör av dig via{' '}
           <a href={'mailto:elin@vuma.se'}>mejl</a>.
@@ -40,8 +41,7 @@ const InfoPage = () => {
             här
           </a>
           .
-        </p>
-        <br />
+        </p> */}
         <h2>Information om coronaviruset</h2>
 
         <p>
