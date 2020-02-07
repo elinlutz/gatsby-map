@@ -72,7 +72,7 @@
     padding: 1em 2em;
     width: 50%;
     max-width: 20em;
-    max-height: 15em;
+    max-height: 20em;
     background-color: lighten($white, 92);
     color: $dark-black;
     border-radius: 8px;
@@ -101,7 +101,6 @@
     }
     .sourceBtn {
       color: darken($map-blue, 20);
-      margin-left: 1em;
       font-size: 12px;
       height: 2.5em;
       background-color: $grey-50;
