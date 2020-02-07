@@ -3,10 +3,11 @@ import React from 'react'
 import Container from 'components/Container'
 
 const Footer = () => {
+  const d = new Date()
   return (
     <footer>
       <Container>
-        <p>&copy; {new Date().getFullYear()}</p>
+        <p>&copy; Uppdaterat 2020-02-07</p>
       </Container>
     </footer>
   )
