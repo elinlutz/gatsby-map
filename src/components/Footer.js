@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer>
       <Container>
-        <p>&copy; Uppdaterat 2020-02-07</p>
+        <p>&copy; Uppdaterat 2020-02-09</p>
       </Container>
     </footer>
   )
