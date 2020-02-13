@@ -21,14 +21,15 @@ const InfoPage = () => {
 
         <p>
           Antal bekräftade fall utgår ifrån officiella siffror från
-          Folkhälsomyndigheten. Antalet testade fall är taget från nyhetskällor{' '}
+          Folkhälsomyndigheten. Antal kontrollerade fall är tagna från
+          nyhetskällor{' '}
           <a
             href={
-              'https://www.svt.se/nyheter/inrikes/minst-40-svenskar-testade-for-coronavirus'
+              'https://www.dagensmedicin.se/artiklar/2020/02/13/140-misstankta-covid-19-fall-i-sverige/'
             }
             target={'_blank'}
           >
-            (SVT)
+            (Dagens Medicin)
           </a>
           .
           {/* Datasetet uppdateras
