@@ -96,7 +96,7 @@ const IndexPage = () => {
       <>
         <h2>{unit.city}</h2>
         <p className="details">
-          Coronaviruset 2019-nCov i {unit.city}, {unit.region}
+          Coronaviruset covid-19 i {unit.city}, {unit.region}
         </p>
         <p className="numbers">
           Bekräftade fall: <b>{unit.confirmed}</b> st
