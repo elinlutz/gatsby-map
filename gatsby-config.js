@@ -32,6 +32,7 @@ module.exports = {
         ignore: [`**/\.*`] // ignore files starting with a dot
       }
     },
+    `gatsby-transformer-csv`,
     'gatsby-plugin-react-leaflet',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
