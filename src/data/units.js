@@ -28,7 +28,7 @@ export const units = [
     lng: 15.58661
   },
   {
-    id: 2,
+    id: 3,
     city: 'Skellefteå',
     region: 'Västerbottens län',
     confirmed: 0,

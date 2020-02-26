@@ -17,7 +17,7 @@ import gatsby_astronaut from 'assets/images/gatsby-astronaut.jpg'
 
 const LOCATION = {
   lat: 38.9072,
-  lng: -77.0369
+  lng: -67.0369
 }
 
 const CENTER = [LOCATION.lat, LOCATION.lng]
