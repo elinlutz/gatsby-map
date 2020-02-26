@@ -32,8 +32,6 @@ const Markers = ({ onClick }) => {
         position={[unit.lat, unit.lng]}
       >
         <Popup onClose={() => setClicked(false)}>
-          {console.log(unit)}
-          {console.log(unit.confirmed === 0)}
           <a
             onClick={() => {
               setClicked(true)

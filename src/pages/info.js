@@ -21,7 +21,7 @@ const InfoPage = () => {
 
         <p>
           Antal bekräftade fall utgår ifrån officiella siffror från
-          Folkhälsomyndigheten. Antal kontrollerade fall är tagna från
+          Folkhälsomyndigheten. Antal kontrollerade fall är tagna från ett av
           folkhälsomyndighetens{' '}
           <a
             href={
@@ -29,7 +29,7 @@ const InfoPage = () => {
             }
             target={'_blank'}
           >
-            (pressutlåtande)
+            pressutlåtande
           </a>
           .
           {/* Datasetet uppdateras
