@@ -15,7 +15,7 @@ const Header = () => {
         <p>
           <Link className="title" to="/">
             {/* <img className="logo" src={logo} /> */}
-            Coronavirus covid-19 Sverige
+            Coronakartan
           </Link>
         </p>
         <ul>
