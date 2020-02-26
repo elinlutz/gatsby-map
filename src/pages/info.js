@@ -13,8 +13,10 @@ const InfoPage = () => {
       <Container type="about" className="container">
         <h2>Om</h2>
         <p>
-          Denna karta skapades för att ge en överblick över Coronaviruset
-          2019-nCoVs spridning i Sverige på lokal och regional nivå.
+          Denna karta skapades för att ge en överblick över coronavirusets
+          (Covid-19) spridning i Sverige på lokal och regional nivå. Jag som
+          skapade den heter Elin, jag jobbar som utvecklare och saknade en
+          nationell karta över läget.
         </p>
         <br />
         <h2>Data</h2>
@@ -34,7 +36,7 @@ const InfoPage = () => {
           .
           {/* Datasetet uppdateras
           dagligen, och du kan ladda ned det{' '}
-          <a href={'https://freya.se'} target={'_blank'}>
+          <a href={'https://xxx.se'} target={'_blank'}>
             här
           </a>
           . */}
@@ -45,11 +47,11 @@ const InfoPage = () => {
         <p>
           Har du idéer på förbättringar eller vill hjälpa till i projektet? Hör
           av dig via <a href={'mailto:info@coronakartan.se'}>mejl</a>.
-          <br /> Projektet har en öppen källkod som du hittar{' '}
+          {/* <br /> Projektet har en öppen källkod som du hittar{' '}
           <a href={'https://github.com/elinlutz/gatsby-map'} target={'_blank'}>
             här
           </a>
-          .
+        .*/}
         </p>
         <br />
 
