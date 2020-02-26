@@ -40,5 +40,19 @@ export const units = [
     updatedAt: '2020-02-04',
     lat: 64.75067,
     lng: 20.95279
+  },
+  {
+    id: 4,
+    city: 'Göteborg',
+    region: 'Västra Götalands län',
+    confirmed: 1,
+    suspect: 0,
+    recovered: 0,
+    deaths: 0,
+    source:
+      'https://www.norran.se/nyheter/coronaviruset-tva-skelleftebor-har-testats-efter-italienresa/',
+    updatedAt: '2020-02-04',
+    lat: 57.70887,
+    lng: 11.97456
   }
 ]
