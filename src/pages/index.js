@@ -44,13 +44,13 @@ const IndexPage = ({ data }) => {
       maxWidth: 800
     })
 
-    const location = await getCurrentLocation().catch(() => LOCATION)
+    // const location = await getCurrentLocation().catch(() => LOCATION)
 
     const { current = {} } = markerRef || {}
     const { leafletElement: marker } = current
 
     // marker.setLatLng( location )
-    popup.setLatLng(location)
+    // popup.setLatLng(location)
     // popup.setContent(popupContentHello)
   }
 
