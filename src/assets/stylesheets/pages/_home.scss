@@ -57,14 +57,15 @@
 .home-start {
   padding-top: 4em;
   padding-bottom: 1em;
+  max-width: 80em;
 
   .flex-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
     margin: 0;
     list-style: none;
     padding: 0em 2em;
+    align-self: center;
   }
 
   .flex-item-counter {
