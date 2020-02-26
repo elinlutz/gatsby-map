@@ -51,7 +51,7 @@ const IndexPage = ({ data }) => {
 
     // marker.setLatLng( location )
     popup.setLatLng(location)
-    popup.setContent(popupContentHello)
+    // popup.setContent(popupContentHello)
   }
 
   const mapSettings = {
