@@ -6,11 +6,11 @@ import Button from '@material-ui/core/Button'
 
 import { units } from 'data/units'
 
-const Counter = () => {
+const Counter = ({ confirmed, suspected }) => {
   return (
     <>
-      <h3>Bekräftade fall</h3> <h1>{units[0].confirmed}</h1>
-      <h3>Kontrollerade fall</h3> <h1>140</h1>
+      <h3>Bekräftade fall</h3> <h1>{confirmed}</h1>
+      <h3>Kontrollerade fall</h3> <h1>{suspected}</h1>
       <p></p>
     </>
   )
