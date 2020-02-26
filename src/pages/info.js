@@ -23,15 +23,15 @@ const InfoPage = () => {
 
         <p>
           Antal bekräftade fall utgår ifrån officiella siffror från
-          Folkhälsomyndigheten. Antal kontrollerade fall är tagna från ett av
-          folkhälsomyndighetens{' '}
+          Folkhälsomyndigheten. Antal kontrollerade fall är tagna från
+          nyhetskällor{' '}
           <a
             href={
-              'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/februari/forandrad-riskbedomning-for-fall-av-covid-19-i-sverige/'
+              'https://www.dn.se/nyheter/sverige/nytt-fall-av-coronavirus-i-sverige-patient-vardas-pa-sahlgrenska/'
             }
             target={'_blank'}
           >
-            pressutlåtande
+            (DN)
           </a>
           .
           {/* Datasetet uppdateras
