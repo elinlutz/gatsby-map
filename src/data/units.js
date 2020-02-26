@@ -50,7 +50,7 @@ export const units = [
     recovered: 0,
     deaths: 0,
     source:
-      'https://www.norran.se/nyheter/coronaviruset-tva-skelleftebor-har-testats-efter-italienresa/',
+      'https://www.gp.se/nyheter/g%C3%B6teborg/bekr%C3%A4ftat-fall-av-corona-i-g%C3%B6teborg-1.24573678',
     updatedAt: '2020-02-26',
     lat: 57.70887,
     lng: 11.97456
