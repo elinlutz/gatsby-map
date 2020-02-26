@@ -22,8 +22,8 @@ export const units = [
     recovered: 0,
     deaths: 0,
     source:
-      'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/januari/bekraftat-fall-av-nytt-coronavirus-i-sverige/',
-    updatedAt: '2020-02-04',
+      'https://nxt.blt.se/karlskrona/tre-personer-i-blekinge-testas-just-nu-for-coronavirus/',
+    updatedAt: '2020-02-26',
     lat: 56.16156,
     lng: 15.58661
   }
