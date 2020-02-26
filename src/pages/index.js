@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { graphql } from 'gatsby'
 
 import Helmet from 'react-helmet'
 import L from 'leaflet'
@@ -40,7 +41,7 @@ const popupContentGatsby = `
   </div>
 `
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   const markerRef = useRef()
 
   /**
@@ -64,18 +65,6 @@ const IndexPage = () => {
     // marker.setLatLng( location )
     popup.setLatLng(location)
     popup.setContent(popupContentHello)
-
-    // setTimeout( async () => {
-    //   await promiseToFlyTo( leafletElement, {
-    //     zoom: ZOOM,
-    //     center: location
-    //   })
-
-    //   // marker.bindPopup( popup )
-
-    //   setTimeout(() => marker.openPopup(), timeToOpenPopupAfterZoom )
-    //   setTimeout(() => marker.setPopupContent( popupContentGatsby ), timeToUpdatePopupAfterZoom )
-    // }, timeToZoom )
   }
 
   const mapSettings = {
@@ -96,7 +85,7 @@ const IndexPage = () => {
       <>
         <h2>{unit.city}</h2>
         <p className="details">
-          Coronaviruset covid-19 i {unit.city}, {unit.region}
+          Coronaviruset i {unit.city}, {unit.region}
         </p>
         <p className="numbers">
           Bekräftade fall: <b>{unit.confirmed}</b> st
@@ -127,7 +116,10 @@ const IndexPage = () => {
       <Container className="home-start">
         <Container className="flex-container">
           <Container className="flex-item-counter">
-            <Counter></Counter>
+            <Counter
+              confirmed={data.coronaCsv.Confirmed_Cases}
+              suspected={data.coronaCsv.Suspect_Cases}
+            ></Counter>
           </Container>
 
           <Container className="flex-item-info">
@@ -144,5 +136,14 @@ const IndexPage = () => {
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    coronaCsv {
+      Confirmed_Cases
+      Suspect_Cases
+    }
+  }
+`
 
 export default IndexPage

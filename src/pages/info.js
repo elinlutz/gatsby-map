@@ -22,14 +22,14 @@ const InfoPage = () => {
         <p>
           Antal bekräftade fall utgår ifrån officiella siffror från
           Folkhälsomyndigheten. Antal kontrollerade fall är tagna från
-          nyhetskällor{' '}
+          folkhälsomyndighetens{' '}
           <a
             href={
-              'https://www.dagensmedicin.se/artiklar/2020/02/13/140-misstankta-covid-19-fall-i-sverige/'
+              'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/februari/forandrad-riskbedomning-for-fall-av-covid-19-i-sverige/'
             }
             target={'_blank'}
           >
-            (Dagens Medicin)
+            (pressutlåtande)
           </a>
           .
           {/* Datasetet uppdateras
@@ -65,7 +65,7 @@ const InfoPage = () => {
           </a>
           .
           <br />
-          För samlad data lokalt och globalt se{' '}
+          För samlad data på EU-nivå och globalt se{' '}
           <a
             href={
               'https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases'
