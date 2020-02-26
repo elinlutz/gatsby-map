@@ -37,7 +37,7 @@ export const units = [
     deaths: 0,
     source:
       'https://www.norran.se/nyheter/coronaviruset-tva-skelleftebor-har-testats-efter-italienresa/',
-    updatedAt: '2020-02-04',
+    updatedAt: '2020-02-26',
     lat: 64.75067,
     lng: 20.95279
   },
@@ -51,7 +51,7 @@ export const units = [
     deaths: 0,
     source:
       'https://www.norran.se/nyheter/coronaviruset-tva-skelleftebor-har-testats-efter-italienresa/',
-    updatedAt: '2020-02-04',
+    updatedAt: '2020-02-26',
     lat: 57.70887,
     lng: 11.97456
   }
