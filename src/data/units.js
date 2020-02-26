@@ -16,7 +16,7 @@ export const units = [
   {
     id: 2,
     city: 'Blekinge',
-    region: 'Region Blekinge',
+    region: 'Blekinge län',
     confirmed: 0,
     suspect: 3,
     recovered: 0,
@@ -26,5 +26,19 @@ export const units = [
     updatedAt: '2020-02-26',
     lat: 56.16156,
     lng: 15.58661
+  },
+  {
+    id: 2,
+    city: 'Skellefteå',
+    region: 'Västerbottens län',
+    confirmed: 0,
+    suspect: 2,
+    recovered: 0,
+    deaths: 0,
+    source:
+      'https://www.norran.se/nyheter/coronaviruset-tva-skelleftebor-har-testats-efter-italienresa/',
+    updatedAt: '2020-02-04',
+    lat: 64.75067,
+    lng: 20.95279
   }
 ]
