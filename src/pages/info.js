@@ -45,7 +45,7 @@ const InfoPage = () => {
         <h2>Hjälp till</h2>
         <p>
           Har du idéer på förbättringar eller vill hjälpa till i projektet? Hör
-          av dig via <a href={'mailto:info@coronakartan.se'}>mejl</a>.
+          av dig via <a href={'mailto:elin@vuma.se'}>mejl</a>.
           {/* <br /> Projektet har en öppen källkod som du hittar{' '}
           <a href={'https://github.com/elinlutz/gatsby-map'} target={'_blank'}>
             här
