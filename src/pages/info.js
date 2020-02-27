@@ -57,18 +57,18 @@ const InfoPage = () => {
         <h2>Information om coronaviruset</h2>
 
         <p>
-          För fakta och information om coronaviruset 2019-nCoV hänvisar vi till
+          För fakta och information om nya coronaviruset Covid-19, se
           <a
             href={
               'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/smittsamma-sjukdomar/coronavirus/fragor-och-svar-om-nytt-coronavirus'
             }
             target={'_blank'}
           >
-            {' Folkhälsomyndigheten'}
+            {' Folkhälsomyndighetens hemsida'}
           </a>
           .
           <br />
-          För samlad data på EU-nivå och globalt se{' '}
+          För samlad data på EU-nivå och globalt, se{' '}
           <a
             href={
               'https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases'
