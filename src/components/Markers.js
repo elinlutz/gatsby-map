@@ -28,7 +28,7 @@ const Markers = ({ onClick }) => {
     return (
       <CircleMarker
         key={unit.id}
-        radius={unit.suspect > 1 ? 20 : 10}
+        radius={unit.confirmed > 1 || unit.suspect > 1 ? 20 : 10}
         color={unit.confirmed > 0 ? '#ff0000' : '#ffa500'}
         stroke={false}
         center={[unit.lat, unit.lng]}
