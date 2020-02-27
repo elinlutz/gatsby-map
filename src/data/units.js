@@ -50,7 +50,7 @@ export const units = [
     recovered: 0,
     deaths: 0,
     source:
-      'https://www.svt.se/nyheter/lokalt/uppsala/forsta-bekraftade-coronafall-i-uppsala',
+      'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/februari/inbjudan-till-presstraff-ytterligare-fall-av-covid-19-i-flera-regioner2/',
     updatedAt: '2020-02-27',
     lat: 59.85882,
     lng: 17.63889
@@ -64,7 +64,7 @@ export const units = [
     recovered: 0,
     deaths: 0,
     source:
-      'https://www.svt.se/nyheter/lokalt/uppsala/forsta-bekraftade-coronafall-i-uppsala',
+      'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/februari/inbjudan-till-presstraff-ytterligare-fall-av-covid-19-i-flera-regioner2/',
     updatedAt: '2020-02-27',
     lat: 59.334591,
     lng: 18.06324

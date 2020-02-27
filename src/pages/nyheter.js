@@ -18,6 +18,18 @@ const Blog = () => {
         <br />
         <br />
         <div>
+          <h3>27 Februari 2020</h3>
+          <li>
+            Folkhälsomyndigheten rapporterar 5 nya fall av coronavirus (
+            <a
+              className="sourceLink"
+              href="https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/februari/inbjudan-till-presstraff-ytterligare-fall-av-covid-19-i-flera-regioner2/"
+              target={'_blank'}
+            >
+              källa
+            </a>
+            )
+          </li>{' '}
           <h3>26 Februari 2020</h3>
           <li>
             Folkhälsomyndigheten rapporterar 1 nytt fall av coronavirus (
