@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Marker, Popup, CircleMarker } from 'react-leaflet'
+import { Popup, CircleMarker } from 'react-leaflet'
 
-// import { icon } from 'assets/icons/Icon'
+import Button from '@material-ui/core/Button'
 
 import { units } from 'data/units.js'
 
@@ -35,14 +35,15 @@ const Markers = ({ onClick }) => {
         fillOpacity={0.6}
       >
         <Popup onClose={() => setClicked(false)}>
-          <a
+          <Button
+            className="cityBtn"
             onClick={() => {
               setClicked(true)
               onClick(unit)
             }}
           >
             {unit.city}
-          </a>
+          </Button>
           <br />
           <br />
           {'Bekräftade fall: '}

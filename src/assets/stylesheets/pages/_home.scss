@@ -15,6 +15,15 @@
     border-radius: 1em;
   }
 
+  .cityBtn {
+    justify-content: center;
+    align-content: center;
+    color: darken($map-blue, 20);
+    font-size: 12px;
+    height: 2.5em;
+    background-color: $map-blue, 20;
+  }
+
   .popup-gatsby-image {
     display: flex;
     align-items: center;
@@ -35,21 +44,6 @@
     }
     p {
       margin: 0 0 0.5em;
-    }
-  }
-
-  .gatsby-astronaut {
-    overflow: hidden;
-    width: 10em;
-    height: 10em;
-    background-color: $gatsby-purple;
-    border-radius: 100%;
-    border: solid 6px $gatsby-purple;
-    margin: 0;
-
-    img {
-      width: 100%;
-      height: auto;
     }
   }
 }
