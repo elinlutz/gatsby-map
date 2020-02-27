@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Marker, Popup } from 'react-leaflet'
+import { Marker, Popup, CircleMarker } from 'react-leaflet'
 
 // import { icon } from 'assets/icons/Icon'
 
@@ -26,10 +26,13 @@ const Markers = ({ onClick }) => {
 
   return units.map(unit => {
     return (
-      <Marker
+      <CircleMarker
         key={unit.id}
-        // icon={confirmedIcon}
-        position={[unit.lat, unit.lng]}
+        radius={unit.suspect > 1 ? 20 : 10}
+        color={unit.confirmed > 0 ? '#ff0000' : '#ffa500'}
+        stroke={false}
+        center={[unit.lat, unit.lng]}
+        fillOpacity={0.6}
       >
         <Popup onClose={() => setClicked(false)}>
           <a
@@ -50,7 +53,7 @@ const Markers = ({ onClick }) => {
 
           {/* {clicked == true ? <br /> 'Mer info poppar upp här nere' : null} */}
         </Popup>
-      </Marker>
+      </CircleMarker>
     )
   })
 }

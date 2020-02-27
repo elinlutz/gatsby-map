@@ -50,6 +50,8 @@ const IndexPage = ({ data }) => {
     const { leafletElement: marker } = current
 
     // marker.setLatLng( location )
+
+    // marker.setLatLng( location )
     // popup.setLatLng(location)
     // popup.setContent(popupContentHello)
   }
@@ -97,7 +99,7 @@ const IndexPage = ({ data }) => {
       </Helmet>
 
       <Map {...mapSettings}>
-        <Markers onClick={onClick} />
+        <Markers onClick={onClick} ref={markerRef} />
       </Map>
 
       <Container className="home-start">
