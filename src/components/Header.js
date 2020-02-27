@@ -21,12 +21,14 @@ const Header = () => {
         <ul>
           <li>
             <Button className="header navigationLink">
-              <Link to="/info/">Information</Link>
+              <Link to="/nyheter/">Tidslinje</Link>
             </Button>
           </li>
-          {/* <li>
-            <Link to="/blogg/">Blogg</Link>
-          </li> */}
+          <li>
+            <Button className="header navigationLink">
+              <Link to="/info/">Om</Link>
+            </Button>
+          </li>
         </ul>
       </Container>
     </header>
