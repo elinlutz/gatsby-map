@@ -64,20 +64,33 @@
 
   .flex-item-counter {
     text-align: center;
-    padding: 1em 2em;
+    padding: 1em 1em;
     width: 50%;
     max-width: 20em;
-    max-height: 20em;
+    max-height: 15em;
     background-color: lighten($white, 92);
     color: $dark-black;
     border-radius: 8px;
     box-shadow: 0 2px 4px 0 $min-black;
+
+    @media (max-width: 505px) {
+      /* your conditional / responsive CSS inside this condition */
+      h3 {
+        font-size: 14px;
+      }
+    }
+    @media (max-width: 280px) {
+      /* your conditional / responsive CSS inside this condition */
+      h3 {
+        font-size: 10px;
+      }
+    }
   }
 
   .flex-item-info {
     color: $dark-black;
     padding: 1em 2em;
-    max-width: 50%;
+    width: 50%;
 
     .details {
       font-size: 14px;
