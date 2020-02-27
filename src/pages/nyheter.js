@@ -30,7 +30,7 @@ const Blog = () => {
             </a>
             )
           </li>{' '}
-          <h3>26 Februari 2020</h3>
+          <h3>31 Januari 2020</h3>
           <li>
             Folkhälsomyndigheten rapporterar 1 nytt fall av coronavirus (
             <a
