@@ -14,20 +14,6 @@ export const units = [
     lng: 14.15618
   },
   {
-    id: 2,
-    city: 'Blekinge',
-    region: 'Blekinge län',
-    confirmed: 0,
-    suspect: 3,
-    recovered: 0,
-    deaths: 0,
-    source:
-      'https://nxt.blt.se/karlskrona/tre-personer-i-blekinge-testas-just-nu-for-coronavirus/',
-    updatedAt: '2020-02-26',
-    lat: 56.16156,
-    lng: 15.58661
-  },
-  {
     id: 3,
     city: 'Skellefteå',
     region: 'Västerbottens län',

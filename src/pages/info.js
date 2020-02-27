@@ -15,8 +15,7 @@ const InfoPage = () => {
         <p>
           Denna karta skapades för att ge en överblick över coronavirusets
           (Covid-19) spridning i Sverige på lokal och regional nivå. Jag som
-          skapade den heter Elin, jag jobbar som utvecklare och saknade en
-          nationell karta över läget.
+          skapade den heter Elin och jag saknade en nationell karta över läget.
         </p>
         <br />
         <h2>Data</h2>
