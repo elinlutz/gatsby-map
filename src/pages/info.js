@@ -23,16 +23,16 @@ const InfoPage = () => {
         <p>
           Antal bekräftade fall utgår ifrån officiella siffror från
           Folkhälsomyndigheten. Antal kontrollerade fall är tagna från
-          nyhetskällor{' '}
+          nyhetskällor (
           <a
             href={
-              'https://www.dn.se/nyheter/sverige/nytt-fall-av-coronavirus-i-sverige-patient-vardas-pa-sahlgrenska/'
+              'https://www.svd.se/cirka-500-svenskar-testade-for-coronavirus'
             }
             target={'_blank'}
           >
-            (DN)
+            källa
           </a>
-          .
+          ) .
           {/* Datasetet uppdateras
           dagligen, och du kan ladda ned det{' '}
           <a href={'https://xxx.se'} target={'_blank'}>
