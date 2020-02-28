@@ -5,31 +5,51 @@ import Button from '@material-ui/core/Button'
 
 import { units } from 'data/units.js'
 
-// const confirmedIcon = Icon({
-//   iconUrl: require('../assets/icons/red.png'),
-//   iconSize: [20, 20], // size of the icon
-//   popupAnchor: [-0, -10] // point from which the popup should open relative to the iconAnchor
-// })
-
-// var WarningIcon = new L.icon({
-//   iconUrl: orangeIcon,
-//   // shadowUrl: require('assets/icons/bacteria.png'),
-//   iconSize: [20, 20], // size of the icon
-//   // shadowSize: [20, 20], // size of the shadow
-//   // iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
-//   // shadowAnchor: [4, 62], // the same for the shadow
-//   popupAnchor: [-0, -10] // point from which the popup should open relative to the iconAnchor
-// })
-
 const Markers = ({ onClick }) => {
   const [clicked, setClicked] = useState(false)
 
+  const getBubble = (confirmed, suspect) => {
+    var color
+    var radius
+
+    if (confirmed > 0) {
+      color = '#ff0000'
+      if (confirmed === 1) {
+        radius = 10
+      } else if (confirmed < 3) {
+        radius = 15
+      } else if (confirmed < 5) {
+        radius = 20
+      } else if (confirmed < 10) {
+        radius = 25
+      } else if (confirmed >= 10) {
+        radius = 30
+      }
+    } else if (suspect > 0) {
+      color = '#ffa500'
+      if (suspect === 1) {
+        radius = 10
+      } else if (suspect < 3) {
+        radius = 15
+      } else if (suspect < 5) {
+        radius = 20
+      } else if (suspect < 10) {
+        radius = 25
+      } else if (confirmed >= 10) {
+        radius = 30
+      }
+    }
+
+    return { color, radius }
+  }
+
   return units.map(unit => {
+    const { color, radius } = getBubble(unit.confirmed, unit.suspect)
     return (
       <CircleMarker
         key={unit.id}
-        radius={unit.confirmed > 1 || unit.suspect > 1 ? 20 : 10}
-        color={unit.confirmed > 0 ? '#ff0000' : '#ffa500'}
+        radius={radius}
+        color={color}
         stroke={false}
         center={[unit.lat, unit.lng]}
         fillOpacity={0.6}
