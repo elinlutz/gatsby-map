@@ -22,7 +22,7 @@ export const units = [
     recovered: 0,
     deaths: 0,
     source:
-      'https://www.svt.se/nyheter/lokalt/uppsala/forsta-bekraftade-coronafall-i-uppsala',
+      'https://www.norran.se/nyheter/coronaviruset-tva-skelleftebor-har-testats-efter-italienresa/',
     updatedAt: '2020-02-26',
     lat: 64.75067,
     lng: 20.95279
@@ -31,13 +31,13 @@ export const units = [
     id: 4,
     city: 'Göteborg',
     region: 'Västra Götalands län',
-    confirmed: 3,
+    confirmed: 4,
     suspect: 0,
     recovered: 0,
     deaths: 0,
     source:
       'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/februari/nytt-bekraftat-fall-av-covid-19/',
-    updatedAt: '2020-02-27',
+    updatedAt: '2020-02-28',
     lat: 57.70887,
     lng: 11.97456
   },
