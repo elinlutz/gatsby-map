@@ -9,7 +9,7 @@ export const units = [
     deaths: 0,
     source:
       'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/januari/bekraftat-fall-av-nytt-coronavirus-i-sverige/',
-    updatedAt: '2020-02-04',
+    updatedAt: '2020-02-28',
     lat: 57.78145,
     lng: 14.15618
   },
@@ -23,7 +23,7 @@ export const units = [
     deaths: 0,
     source:
       'https://www.norran.se/nyheter/coronaviruset-tva-skelleftebor-har-testats-efter-italienresa/',
-    updatedAt: '2020-02-26',
+    updatedAt: '2020-02-28',
     lat: 64.75067,
     lng: 20.95279
   },
@@ -51,7 +51,7 @@ export const units = [
     deaths: 0,
     source:
       'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/februari/inbjudan-till-presstraff-ytterligare-fall-av-covid-19-i-flera-regioner2/',
-    updatedAt: '2020-02-27',
+    updatedAt: '2020-02-28',
     lat: 59.85882,
     lng: 17.63889
   },
@@ -65,7 +65,7 @@ export const units = [
     deaths: 0,
     source:
       'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/februari/inbjudan-till-presstraff-ytterligare-fall-av-covid-19-i-flera-regioner2/',
-    updatedAt: '2020-02-27',
+    updatedAt: '2020-02-28',
     lat: 59.334591,
     lng: 18.06324
   }
