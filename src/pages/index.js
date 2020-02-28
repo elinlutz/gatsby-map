@@ -96,6 +96,13 @@ const IndexPage = ({ data }) => {
     <Layout pageName="home">
       <Helmet>
         <title>Coronavirus Sverige</title>
+        <meta
+          name="description"
+          content={
+            'Karta över rapporterade fall av coronaviruset COVID-19 och virusets spridning i Sverige'
+          }
+        />
+        <link rel="canonical" href="http://www.coronaviruset.se/" />
       </Helmet>
 
       <Map {...mapSettings}>
