@@ -55,8 +55,9 @@ const Markers = ({ onClick }) => {
         stroke={false}
         center={[unit.lat, unit.lng]}
         fillOpacity={0.6}
+        onClick={() => onClick(unit)}
       >
-        <Popup onClose={() => setClicked(false)}>
+        {/* <Popup onClose={() => setClicked(false)}>
           <Button
             className="cityBtn"
             onClick={() => {
@@ -73,8 +74,8 @@ const Markers = ({ onClick }) => {
           <br />
           {unit.suspect > 0 ? 'Misstänkta fall ' + unit.suspect : null}
 
-          {/* {clicked == true ? <br /> 'Mer info poppar upp här nere' : null} */}
-        </Popup>
+          {clicked == true ? <br /> 'Mer info poppar upp här nere' : null}
+        </Popup> */}
       </CircleMarker>
     )
   })
