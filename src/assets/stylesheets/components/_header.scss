@@ -1,7 +1,7 @@
 header {
   width: 100%;
   color: $black;
-  background-color: $white;
+  background-color: $map-blue-darker;
 
   .container {
     display: flex;
@@ -28,7 +28,8 @@ header {
   }
 
   .title {
-    color: $black;
+    color: $white;
+    font-size: 24px;
   }
 
   .logo {
@@ -38,7 +39,7 @@ header {
 
   .navigationLink {
     background-color: $grey-50;
-    margin-left: 1em;
+    margin-left: 0.5em;
   }
 
   p {

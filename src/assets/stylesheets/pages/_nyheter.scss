@@ -1,14 +1,10 @@
 .page-nyheter {
   main {
-    padding: 0;
+    padding: 0em 3em;
   }
 
   .sourceLink {
     text-decoration: none;
     color: darken($map-blue, 20);
-  }
-
-  .about-content {
-    max-width: 50%;
   }
 }
