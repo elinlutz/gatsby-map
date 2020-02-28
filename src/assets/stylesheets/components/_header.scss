@@ -7,7 +7,7 @@ header {
     display: flex;
     justify-content: space-between;
     height: 2.8em;
-    line-height: 2.8em;
+    line-height: 2.7em;
   }
 
   ul {
@@ -21,46 +21,41 @@ header {
   }
 
   a {
-    display: block;
     color: darken($map-blue, 20);
     text-decoration: none;
-    padding: 0 0.5em;
   }
 
-  .title {
-    color: $white;
-    font-size: 24px;
-    font-weight: 500;
-    text-transform: uppercase;
-  }
-
-  @media (max-width: 505px) {
-    /* your conditional / responsive CSS inside this condition */
-    .title {
+  .titleContainer {
+    a {
+      margin-left: 0.5em;
       color: $white;
-      font-size: 20px;
+      font-size: 22px;
       font-weight: 500;
       text-transform: uppercase;
     }
-  }
 
-  @media (max-width: 400px) {
-    .title {
-      color: $white;
-      font-size: 14px;
-      font-weight: 500;
-      text-transform: uppercase;
+    @media (max-width: 505px) {
+      /* your conditional / responsive CSS inside this condition */
+      .title {
+        font-size: 20px;
+      }
     }
-  }
 
-  .logo {
-    height: 30px;
-    width: 30px;
+    @media (max-width: 400px) {
+      .title {
+        font-size: 14px;
+      }
+    }
+    @media (max-width: 280px) {
+      .title {
+        font-size: 8px;
+      }
+    }
   }
 
   .navigationLink {
     background-color: $grey-50;
-    margin-left: 0.5em;
+    margin-left: 0.25em;
   }
 
   p {

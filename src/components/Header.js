@@ -13,10 +13,12 @@ const Header = () => {
     <header>
       <Container type="content">
         <p>
-          <Link className="title" to="/">
-            {/* <img className="logo" src={logo} /> */}
-            Coronakartan
-          </Link>
+          <div className="titleContainer">
+            <Link className="title" to="/">
+              {/* <img className="logo" src={logo} /> */}
+              Coronakartan
+            </Link>
+          </div>
         </p>
         <ul>
           <li>

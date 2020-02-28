@@ -8,11 +8,12 @@ import { units } from 'data/units'
 
 const Counter = ({ confirmed, suspected }) => {
   return (
-    <>
-      <h3>Bekräftade fall</h3> <h1>{confirmed}</h1>
-      <h3>Kontrollerade fall</h3> <h1>{suspected}</h1>
-      <p></p>
-    </>
+    <div className="counter-text">
+      <h3>Bekräftade fall</h3>{' '}
+      <h1 className="counter-confirmed">{confirmed}</h1>
+      <h3>Kontrollerade fall</h3>{' '}
+      <h1 className="counter-suspected">{suspected}</h1>
+    </div>
   )
 }
 

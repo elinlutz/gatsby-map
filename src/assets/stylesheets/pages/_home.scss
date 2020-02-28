@@ -73,6 +73,22 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px 0 $min-black;
 
+    // h1 {
+    //   color: $red-bubble;
+    // }
+
+    // .counter-confirmed {
+    //   h1 {
+    //     color: $red-bubble;
+    //   }
+    // }
+
+    // .counter-suspected {
+    //   h1 {
+    //     color: $orange-bubble;
+    //   }
+    // }
+
     @media (max-width: 505px) {
       /* your conditional / responsive CSS inside this condition */
       h3 {

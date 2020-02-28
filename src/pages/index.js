@@ -116,6 +116,7 @@ const IndexPage = ({ data }) => {
         <Container className="flex-container">
           <Container className="flex-item-counter">
             <Counter
+              className="counter-text"
               confirmed={data.coronaCsv.Confirmed_Cases}
               suspected={data.coronaCsv.Suspect_Cases}
             ></Counter>

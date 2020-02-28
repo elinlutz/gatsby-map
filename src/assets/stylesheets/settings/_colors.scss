@@ -93,9 +93,6 @@ $blue-A200: #448aff;
 $blue-A400: #2979ff;
 $blue-A700: #2962ff;
 
-$map-blue: #aad3e0;
-$map-blue-darker: #79acbb;
-
 $light-blue-50: #e1f5fe;
 $light-blue-100: #b3e5fc;
 $light-blue-200: #81d4fa;
@@ -295,3 +292,12 @@ $light-white: rgba(255, 255, 255, 0.54);
 // Custom colors
 
 $gatsby-purple: rebeccapurple;
+$map-blue: #aad3e0;
+$map-blue-darker: #79acbb;
+$red-bubble: $red-A700;
+$orange-bubble: $orange-700;
+
+:export {
+  red: $red-bubble;
+  orange: $orange-bubble;
+}

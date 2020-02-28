@@ -4,7 +4,7 @@ footer {
   line-height: 2em;
   color: $white;
   text-align: center;
-  background-color: $map-blue-darker;
+  background-color: lighten($map-blue-darker, 20);
 
   p {
     font-size: 1em;
