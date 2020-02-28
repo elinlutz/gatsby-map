@@ -25,9 +25,7 @@ const InfoPage = () => {
           Folkhälsomyndigheten. Antal kontrollerade fall är tagna från
           nyhetskällor (
           <a
-            href={
-              'https://www.svd.se/cirka-500-svenskar-testade-for-coronavirus'
-            }
+            href={'https://sverigesradio.se/artikel/7418334'}
             target={'_blank'}
           >
             källa
