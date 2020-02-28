@@ -17,26 +17,26 @@ const Markers = ({ onClick }) => {
     if (confirmed > 0) {
       color = variables.red
       if (confirmed === 1) {
-        radius = 10
+        radius = 5
       } else if (confirmed < 3) {
-        radius = 15
+        radius = 10
       } else if (confirmed < 5) {
-        radius = 20
+        radius = 15
       } else if (confirmed < 10) {
-        radius = 25
+        radius = 20
       } else if (confirmed >= 10) {
         radius = 30
       }
     } else if (suspect > 0) {
       color = variables.orange
       if (suspect === 1) {
-        radius = 10
+        radius = 5
       } else if (suspect < 3) {
-        radius = 15
+        radius = 10
       } else if (suspect < 5) {
-        radius = 20
+        radius = 15
       } else if (suspect < 10) {
-        radius = 25
+        radius = 20
       } else if (confirmed >= 10) {
         radius = 30
       }
