@@ -2,7 +2,7 @@ export const units = [
   {
     id: 1,
     city: 'Jönköping',
-    region: 'Småland',
+    region: 'Region Jönköpings län',
     confirmed: 1,
     suspect: 0,
     recovered: 0,
@@ -16,7 +16,7 @@ export const units = [
   {
     id: 3,
     city: 'Skellefteå',
-    region: 'Västerbottens län',
+    region: 'Region Västerbotten',
     confirmed: 0,
     suspect: 2,
     recovered: 0,
@@ -30,7 +30,7 @@ export const units = [
   {
     id: 4,
     city: 'Göteborg',
-    region: 'Västra Götalands län',
+    region: 'Västra Götalandsregionen',
     confirmed: 4,
     suspect: 0,
     recovered: 0,
@@ -44,7 +44,7 @@ export const units = [
   {
     id: 5,
     city: 'Uppsala',
-    region: 'Uppsala Län',
+    region: 'Region Uppsala',
     confirmed: 1,
     suspect: 0,
     recovered: 0,
@@ -58,7 +58,7 @@ export const units = [
   {
     id: 6,
     city: 'Stockholm',
-    region: 'Stockholms Län',
+    region: 'Region Stockholm',
     confirmed: 1,
     suspect: 0,
     recovered: 0,
