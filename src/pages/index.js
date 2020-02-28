@@ -57,9 +57,9 @@ const IndexPage = ({ data }) => {
   }
 
   const mapSettings = {
-    center: [57.6, 15],
+    center: [58, 15],
     defaultBaseMap: 'OpenStreetMap',
-    zoom: 4.5,
+    zoom: 5,
     mapEffect
   }
 
