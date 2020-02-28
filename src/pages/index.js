@@ -13,6 +13,8 @@ import Map from 'components/Map'
 import Markers from 'components/Markers'
 import Counter from 'components/Counter'
 
+import CoronaImage from 'assets/icons/corona.png'
+
 import gatsby_astronaut from 'assets/images/gatsby-astronaut.jpg'
 
 const LOCATION = {
@@ -102,6 +104,7 @@ const IndexPage = ({ data }) => {
             'Karta över rapporterade fall av coronaviruset COVID-19 och virusets spridning i Sverige'
           }
         />
+        <meta name="image" content={CoronaImage} />
         <link rel="canonical" href="https://www.coronaviruset.se/" />
       </Helmet>
 
