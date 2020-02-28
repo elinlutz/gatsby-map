@@ -71,8 +71,7 @@ const Markers = ({ onClick }) => {
           {'Bekräftade fall: '}
           {unit.confirmed}
           <br />
-          {'Misstänkta fall: '}
-          {unit.suspect}
+          {unit.suspect > 0 ? 'Misstänkta fall ' + unit.suspect : null}
 
           {/* {clicked == true ? <br /> 'Mer info poppar upp här nere' : null} */}
         </Popup>

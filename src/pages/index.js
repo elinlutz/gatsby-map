@@ -81,8 +81,9 @@ const IndexPage = ({ data }) => {
         <p className="numbers">
           Bekräftade fall: <b>{unit.confirmed}</b> st
           <br />
-          Misstänkta fall: <b>{unit.suspect}</b> st
-          <br />
+          {unit.suspect > 0
+            ? 'Misstänkta fall: ' + unit.suspect + ' st'
+            : null}{' '}
         </p>
         <p className="note">Uppdaterat den {unit.updatedAt} </p>
         <Button className="sourceBtn">
