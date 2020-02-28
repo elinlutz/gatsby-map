@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer>
       <Container>
-        <p>&copy; 2020-02-27</p>
+        <p>&copy; {d.getFullYear()}</p>
       </Container>
     </footer>
   )
