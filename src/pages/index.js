@@ -102,7 +102,7 @@ const IndexPage = ({ data }) => {
             'Karta över rapporterade fall av coronaviruset COVID-19 och virusets spridning i Sverige'
           }
         />
-        <link rel="canonical" href="http://www.coronaviruset.se/" />
+        <link rel="canonical" href="https://www.coronaviruset.se/" />
       </Helmet>
 
       <Map {...mapSettings}>
