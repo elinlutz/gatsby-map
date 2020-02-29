@@ -21,8 +21,8 @@ const Blog = () => {
         <div>
           <h3>29 Februari 2020</h3>
           <li>
-            Folkhälsomyndigheten rapporterar 1 nytt fall men fallet dementeras
-            av Västra Götalandsregionen (
+            Folkhälsomyndigheten rapporterar 1 nytt fall som dementeras av
+            Västra Götalandsregionen (
             <a
               className="sourceLink"
               href="https://sverigesradio.se/artikel/7418610"
@@ -85,7 +85,7 @@ const Blog = () => {
         <br />
 
         <h1>Graf</h1>
-        <p>Antal rapporterade fall i Sverige sedan den 25 Februari 2020</p>
+        <p>Antal fall i Sverige sedan den 25 Februari 2020</p>
 
         <Container className="chart-container">
           <Container className="chart">
