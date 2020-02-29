@@ -21,7 +21,8 @@ const Blog = () => {
         <div>
           <h3>29 Februari 2020</h3>
           <li>
-            SR Ekot rapporterar 1 nytt fall av coronavirus (
+            Nytt fall tidigare rapporterat av Folkhälsomyndigheten men
+            dementeras av Västra Götaland (
             <a
               className="sourceLink"
               href="https://sverigesradio.se/artikel/7418610"
