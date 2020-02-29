@@ -89,7 +89,8 @@ const options = {
         ['25 Februari 2020', 1],
         ['26 Februari 2020', 2],
         ['27 Februari 2020', 7],
-        ['28 Februari 2020', 11]
+        ['28 Februari 2020', 11],
+        ['29 Februari 2020', 12]
       ]
     }
   ]

@@ -19,6 +19,18 @@ const Blog = () => {
         <br />
         <br />
         <div>
+          <h3>29 Februari 2020</h3>
+          <li>
+            SR Ekot rapporterar 1 nytt fall av coronavirus (
+            <a
+              className="sourceLink"
+              href="https://sverigesradio.se/artikel/7418610"
+              target={'_blank'}
+            >
+              källa
+            </a>
+            )
+          </li>{' '}
           <h3>28 Februari 2020</h3>
           <li>
             Folkhälsomyndigheten rapporterar 4 nya fall av coronavirus (
