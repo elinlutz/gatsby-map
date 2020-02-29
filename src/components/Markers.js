@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button'
 
 import { units } from 'data/units.js'
 
-import variables from 'assets/stylesheets/settings/_colors.scss'
+import colors from 'assets/stylesheets/settings/_colors.scss'
 
 const Markers = ({ onClick }) => {
   const [clicked, setClicked] = useState(false)
@@ -15,7 +15,7 @@ const Markers = ({ onClick }) => {
     var radius
 
     if (confirmed > 0) {
-      color = variables.red
+      color = colors.red
       if (confirmed === 1) {
         radius = 5
       } else if (confirmed < 3) {
@@ -28,7 +28,7 @@ const Markers = ({ onClick }) => {
         radius = 30
       }
     } else if (suspect > 0) {
-      color = variables.orange
+      color = colors.orange
       if (suspect === 1) {
         radius = 5
       } else if (suspect < 3) {

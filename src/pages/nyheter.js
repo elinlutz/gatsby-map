@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Layout from 'components/Layout'
 import Container from 'components/Container'
 import Comments from 'components/Comments'
+import Chart from 'components/Chart'
 
 const Blog = () => {
   return (
@@ -67,8 +68,12 @@ const Blog = () => {
             )
           </li>{' '}
         </div>
+        <Container className="chart-container">
+          <Container className="chart">
+            <Chart />
+          </Container>
+        </Container>
       </Container>
-      {/* <Comments /> */}
     </Layout>
   )
 }
