@@ -21,8 +21,8 @@ const Blog = () => {
         <div>
           <h3>29 Februari 2020</h3>
           <li>
-            Nytt fall tidigare rapporterat av Folkhälsomyndigheten men
-            dementeras av Västra Götaland (
+            Folkhälsomyndigheten rapporterar 1 nytt fall men fallet dementeras
+            av Västra Götalandsregionen (
             <a
               className="sourceLink"
               href="https://sverigesradio.se/artikel/7418610"
@@ -31,7 +31,7 @@ const Blog = () => {
               källa
             </a>
             )
-          </li>{' '}
+          </li>
           <h3>28 Februari 2020</h3>
           <li>
             Folkhälsomyndigheten rapporterar 4 nya fall av coronavirus (
