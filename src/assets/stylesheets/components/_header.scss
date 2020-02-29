@@ -24,10 +24,23 @@ header {
     color: darken($map-blue, 20);
     text-decoration: none;
   }
+  p {
+    margin: 0;
+  }
 
   .titleContainer {
+    .title {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      .icon {
+        position: relative;
+        margin-left: 0.5em;
+        top: 3px;
+        left: 0px;
+      }
+    }
+
     a {
-      margin-left: 0.5em;
       color: $white;
       font-size: 22px;
       font-weight: 500;
@@ -54,11 +67,21 @@ header {
   }
 
   .navigationLink {
-    background-color: $grey-50;
-    margin-left: 0.25em;
-  }
+    margin-right: 0.25em;
+    background-color: white;
 
-  p {
-    margin: 0;
+    &:hover {
+      background-color: $grey-300;
+      box-shadow: 'none';
+    }
+
+    &:active {
+      box-shadow: 'none';
+      background-color: $grey-400;
+    }
+
+    .navigationlink:focus {
+      box-shadow: '0 0 0 0.2rem rgba(0,123,255,.5)';
+    }
   }
 }
