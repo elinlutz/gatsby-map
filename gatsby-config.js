@@ -1,7 +1,11 @@
 module.exports = {
   pathPrefix: `/mapapp`,
   siteMetadata: {
-    title: 'Geriatric Map',
+    title: 'Coronakartan',
+    description:
+      'En karta över rapporterade fall av coronaviruset COVID-19 i Sverige',
+    keywords: ['Coronavirus', 'Karta', 'covid-19', 'Sverige'],
+    siteURL: 'https://www.coronakartan.se',
     menuLinks: [
       {
         name: 'home',
@@ -10,6 +14,10 @@ module.exports = {
       {
         name: 'info',
         link: '/info'
+      },
+      {
+        name: 'nyheter',
+        link: '/nyheter'
       }
     ]
   },
