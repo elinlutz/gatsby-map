@@ -23,7 +23,8 @@ const options = {
       x: 3,
       y: -3
     },
-    showFirstLabel: false
+    showFirstLabel: false,
+    gridLineWidth: 0
   },
 
   yAxis: {
@@ -36,7 +37,8 @@ const options = {
       align: 'left',
       x: 0,
       y: 16,
-      format: '{value:.,0f}'
+      format: '{value:.,0f}',
+      gridLineWidth: 0
     },
     showFirstLabel: false,
     showLastLabel: true
