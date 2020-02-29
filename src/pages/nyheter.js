@@ -15,8 +15,6 @@ const Blog = () => {
       <Container type="timeline" className="text-center">
         <h1>Tidslinje</h1>
         <p>Tidslinje över rapporterade fall i Sverige</p>
-
-        <br />
         <br />
         <div>
           <h3>29 Februari 2020</h3>
@@ -83,9 +81,8 @@ const Blog = () => {
         <br />
         <br />
 
-        <h1>Graf</h1>
-        <p>Antal fall i Sverige sedan den 25 Februari 2020</p>
-
+        <h1>Utveckling</h1>
+        <p>Graf över antal fall i Sverige</p>
         <Container className="chart-container">
           <Container className="chart">
             <Chart />
