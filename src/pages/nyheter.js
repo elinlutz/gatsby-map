@@ -21,11 +21,10 @@ const Blog = () => {
         <div>
           <h3>29 Februari 2020</h3>
           <li>
-            Folkhälsomyndigheten rapporterar 1 nytt fall som dementeras av
-            Västra Götalandsregionen (
+            SR Ekot rapporterar 1 nytt fall av coronaviruset
             <a
               className="sourceLink"
-              href="https://sverigesradio.se/artikel/7418610"
+              href="https://sverigesradio.se/sida/artikel.aspx?programid=97&artikel=7418659"
               target={'_blank'}
             >
               källa
@@ -34,7 +33,7 @@ const Blog = () => {
           </li>
           <h3>28 Februari 2020</h3>
           <li>
-            Folkhälsomyndigheten rapporterar 4 nya fall av coronavirus (
+            Folkhälsomyndigheten rapporterar 4 nya fall av coronaviruset (
             <a
               className="sourceLink"
               href="https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/februari/fler-fall-upptackta-av-covid-19/"
@@ -46,7 +45,7 @@ const Blog = () => {
           </li>{' '}
           <h3>27 Februari 2020</h3>
           <li>
-            Folkhälsomyndigheten rapporterar 5 nya fall av coronavirus (
+            Folkhälsomyndigheten rapporterar 5 nya fall av coronaviruset (
             <a
               className="sourceLink"
               href="https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/februari/inbjudan-till-presstraff-ytterligare-fall-av-covid-19-i-flera-regioner2/"
@@ -58,7 +57,7 @@ const Blog = () => {
           </li>{' '}
           <h3>26 Februari 2020</h3>
           <li>
-            Folkhälsomyndigheten rapporterar 1 nytt fall av coronavirus (
+            Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset (
             <a
               className="sourceLink"
               href="https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/februari/nytt-bekraftat-fall-av-covid-19/"
@@ -70,7 +69,7 @@ const Blog = () => {
           </li>{' '}
           <h3>31 Januari 2020</h3>
           <li>
-            Folkhälsomyndigheten rapporterar 1 nytt fall av coronavirus (
+            Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset (
             <a
               className="sourceLink"
               href="https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/januari/bekraftat-fall-av-nytt-coronavirus-i-sverige/"

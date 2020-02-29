@@ -31,7 +31,7 @@ export const units = [
     id: 4,
     city: 'Göteborg',
     region: 'Västra Götalandsregionen',
-    confirmed: 4,
+    confirmed: 5,
     suspect: 0,
     recovered: 0,
     deaths: 0,
