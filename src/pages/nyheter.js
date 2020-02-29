@@ -13,7 +13,7 @@ const Blog = () => {
         <title>Nyheter</title>
       </Helmet>
       <Container type="content" className="text-center">
-        <h2>Tidslinje</h2>
+        <h1>Tidslinje</h1>
         <p>Tidslinje över rapporterade fall i Sverige</p>
 
         <br />
@@ -80,6 +80,12 @@ const Blog = () => {
             )
           </li>{' '}
         </div>
+        <br />
+        <br />
+
+        <h1>Graf</h1>
+        <p>Antal rapporterade fall i Sverige sedan den 25 Februari 2020</p>
+
         <Container className="chart-container">
           <Container className="chart">
             <Chart />
