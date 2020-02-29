@@ -20,6 +20,8 @@
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-csv": "^2.1.26",
     "gatsby-transformer-sharp": "^2.3.13",
+    "highcharts": "^8.0.0",
+    "highcharts-react-official": "^3.0.0",
     "leaflet": "^1.6.0",
     "moment": "^2.24.0",
     "node-sass": "^4.13.0",
