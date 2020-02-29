@@ -9,6 +9,7 @@ export const units = [
     deaths: 0,
     source:
       'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/januari/bekraftat-fall-av-nytt-coronavirus-i-sverige/',
+    sources: [],
     updatedAt: '2020-02-28',
     lat: 57.78145,
     lng: 14.15618
@@ -37,6 +38,7 @@ export const units = [
     deaths: 0,
     source:
       'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/februari/nytt-bekraftat-fall-av-covid-19/',
+    sources: [],
     updatedAt: '2020-02-29',
     lat: 57.70887,
     lng: 11.97456
@@ -51,6 +53,7 @@ export const units = [
     deaths: 0,
     source:
       'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/februari/inbjudan-till-presstraff-ytterligare-fall-av-covid-19-i-flera-regioner2/',
+    sources: [],
     updatedAt: '2020-02-28',
     lat: 59.85882,
     lng: 17.63889
@@ -64,6 +67,7 @@ export const units = [
     recovered: 0,
     deaths: 0,
     source: 'https://sverigesradio.se/artikel/7418762',
+    sources: [],
     updatedAt: '2020-02-29',
     lat: 59.334591,
     lng: 18.06324
