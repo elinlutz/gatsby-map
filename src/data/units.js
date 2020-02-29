@@ -59,7 +59,7 @@ export const units = [
     id: 6,
     city: 'Stockholm',
     region: 'Region Stockholm',
-    confirmed: 3,
+    confirmed: 4,
     suspect: 0,
     recovered: 0,
     deaths: 0,

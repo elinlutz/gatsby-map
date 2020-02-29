@@ -22,6 +22,17 @@ const Blog = () => {
             SR Ekot rapporterar 1 nytt fall av coronaviruset (
             <a
               className="sourceLink"
+              href="https://sverigesradio.se/artikel/7418762"
+              target={'_blank'}
+            >
+              källa
+            </a>
+            )
+          </li>
+          <li>
+            SR Ekot rapporterar 1 nytt fall av coronaviruset (
+            <a
+              className="sourceLink"
               href="https://sverigesradio.se/sida/artikel.aspx?programid=97&artikel=7418659"
               target={'_blank'}
             >
