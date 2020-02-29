@@ -10,10 +10,15 @@
 
 .container-about {
   max-width: 50em;
-  padding: 0 3em;
+  padding: 1em 3em;
 
   a {
     color: darken($map-blue, 20);
     text-decoration: none;
   }
+}
+
+.container-timeline {
+  max-width: 50em;
+  padding: 1em 3em;
 }

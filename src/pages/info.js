@@ -4,6 +4,8 @@ import Helmet from 'react-helmet'
 import Layout from 'components/Layout'
 import Container from 'components/Container'
 
+import ShareButtons from 'components/ShareButtons'
+
 const InfoPage = () => {
   return (
     <Layout pageName="info">
@@ -14,8 +16,8 @@ const InfoPage = () => {
         <h2>Om</h2>
         <p>
           Denna karta skapades för att ge en överblick över coronavirusets
-          (Covid-19) spridning i Sverige på lokal och regional nivå. Jag som
-          skapade den heter Elin och jag saknade en nationell karta över läget.
+          spridning i Sverige på regional nivå. Jag som skapade den heter Elin
+          och jag saknade en nationell karta över läget.
         </p>
         <br />
         <h2>Data</h2>
@@ -79,6 +81,8 @@ const InfoPage = () => {
           .
         </p>
         <br />
+
+        <ShareButtons></ShareButtons>
       </Container>
     </Layout>
   )

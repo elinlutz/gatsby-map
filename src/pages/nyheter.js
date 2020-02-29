@@ -12,7 +12,7 @@ const Blog = () => {
       <Helmet>
         <title>Nyheter</title>
       </Helmet>
-      <Container type="content" className="text-center">
+      <Container type="timeline" className="text-center">
         <h1>Tidslinje</h1>
         <p>Tidslinje över rapporterade fall i Sverige</p>
 
