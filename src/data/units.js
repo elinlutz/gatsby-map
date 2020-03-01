@@ -38,7 +38,7 @@ export const units = [
     id: 4,
     city: 'Göteborg',
     region: 'Västra Götalandsregionen',
-    confirmed: 5,
+    confirmed: 6,
     suspect: 0,
     recovered: 0,
     deaths: 0,
@@ -49,6 +49,10 @@ export const units = [
         url:
           'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/februari/nytt-bekraftat-fall-av-covid-19/',
         date: '2020-02-29'
+      },
+      {
+        url: 'https://www.svt.se/nyheter/utrikes/senaste-nytt-om-coronaviruset',
+        date: '2020-03-01'
       }
     ],
     updatedAt: '2020-02-29',
