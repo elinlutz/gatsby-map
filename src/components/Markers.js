@@ -11,35 +11,30 @@ const Markers = ({ onClick }) => {
   const [clicked, setClicked] = useState(false)
 
   const getBubble = (confirmed, suspect) => {
-    var color
-    var radius
+    let color
+    let number
+    let radius
 
     if (confirmed > 0) {
       color = colors.red
-      if (confirmed === 1) {
-        radius = 5
-      } else if (confirmed < 3) {
-        radius = 10
-      } else if (confirmed < 5) {
-        radius = 15
-      } else if (confirmed < 10) {
-        radius = 20
-      } else if (confirmed >= 10) {
-        radius = 30
-      }
-    } else if (suspect > 0) {
+      number = confirmed
+    }
+
+    if (suspect > 0) {
       color = colors.orange
-      if (suspect === 1) {
-        radius = 5
-      } else if (suspect < 3) {
-        radius = 10
-      } else if (suspect < 5) {
-        radius = 15
-      } else if (suspect < 10) {
-        radius = 20
-      } else if (confirmed >= 10) {
-        radius = 30
-      }
+      number = suspect
+    }
+
+    if (number === 1) {
+      radius = 5
+    } else if (number < 3) {
+      radius = 10
+    } else if (number < 5) {
+      radius = 15
+    } else if (number < 10) {
+      radius = 20
+    } else if (number >= 10) {
+      radius = 30
     }
 
     return { color, radius }
