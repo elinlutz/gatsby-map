@@ -129,6 +129,14 @@
       height: 2.5em;
       background-color: $grey-50;
     }
+    .sources {
+      display: flex;
+      flex-direction: column;
+
+      :not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
 
     .sourceLink {
       color: darken($map-blue, 20);

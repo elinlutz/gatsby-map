@@ -30,6 +30,16 @@ const timeToZoom = 2000
 const timeToOpenPopupAfterZoom = 4000
 const timeToUpdatePopupAfterZoom = timeToOpenPopupAfterZoom + 3000
 
+const SourceButton = ({ url, date }) => {
+  return (
+    <Button className="sourceBtn">
+      <a className="sourceLink" href={url} target="_blank">
+        <span>Källa ({date})</span>
+      </a>
+    </Button>
+  )
+}
+
 const IndexPage = ({ data }) => {
   const markerRef = useRef()
 
@@ -86,11 +96,23 @@ const IndexPage = ({ data }) => {
             : null}{' '}
         </p>
         <p className="note">Uppdaterat den {unit.updatedAt} </p>
-        <Button className="sourceBtn">
-          <a className="sourceLink" href={unit.source} target="_blank">
-            källa
-          </a>
-        </Button>
+        <div className="sources">
+          {unit.sources && unit.sources.length > 0 ? (
+            unit.sources.map(source => (
+              <SourceButton
+                key={source.url}
+                url={source.url}
+                date={source.date}
+              />
+            ))
+          ) : (
+            <SourceButton
+              key={unit.source}
+              url={unit.source}
+              date={unit.updatedAt}
+            />
+          )}
+        </div>
       </>
     )
   }
