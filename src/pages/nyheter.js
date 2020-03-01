@@ -24,10 +24,11 @@ const Blog = () => {
           <h1>Tidslinje</h1>
           <h3>1 Mars 2020</h3>
           <li>
-            SVT rapporterar 1 nytt fall av coronaviruset i Västra Götaland (
+            Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset i
+            Västra Götaland (
             <a
               className="sourceLink"
-              href="https://www.svt.se/nyheter/utrikes/senaste-nytt-om-coronaviruset"
+              href="https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/coronavirus-wuhan-kina-januari-2020/"
               target={'_blank'}
             >
               källa
