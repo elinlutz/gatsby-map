@@ -33,7 +33,12 @@ const timeToUpdatePopupAfterZoom = timeToOpenPopupAfterZoom + 3000
 const SourceButton = ({ url, date }) => {
   return (
     <Button className="sourceBtn">
-      <a className="sourceLink" href={url} target="_blank">
+      <a
+        style={{ display: 'table-cell' }}
+        className="sourceLink"
+        href={url}
+        target="_blank"
+      >
         <span>Källa ({date})</span>
       </a>
     </Button>
