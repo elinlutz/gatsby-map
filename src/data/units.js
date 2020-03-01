@@ -55,7 +55,7 @@ export const units = [
         date: '2020-03-01'
       }
     ],
-    updatedAt: '2020-02-29',
+    updatedAt: '2020-03-01',
     lat: 57.70887,
     lng: 11.97456
   },
