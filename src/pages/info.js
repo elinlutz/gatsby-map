@@ -15,9 +15,9 @@ const InfoPage = () => {
       <Container type="about" className="container">
         <h2>Om</h2>
         <p>
-          Denna karta skapades för att ge en överblick över coronavirusets
-          spridning i Sverige på regional nivå. Jag som skapade den heter Elin
-          och jag saknade en nationell karta över läget.
+          Denna sida är till för att ge en överblick över det nya coronavirusets
+          spridning i Sverige, på regionnivå. Jag som skapade den heter Elin och
+          jag saknade en nationell karta över läget.
         </p>
         <br />
         <h2>Data</h2>
@@ -45,19 +45,20 @@ const InfoPage = () => {
         <h2>Hjälp till</h2>
         <p>
           Har du idéer på förbättringar eller vill hjälpa till i projektet? Hör
-          av dig via <a href={'mailto:lutz.elin@gmail.com'}>mejl</a>.
-          {/* <br /> Projektet har en öppen källkod som du hittar{' '}
+          av dig via <a href={'mailto:info@coronakartan.se'}>mejl</a>.
+          <br /> Projektet är byggt i React med Gatsby och Leaflet. Repo hittar
+          du{' '}
           <a href={'https://github.com/elinlutz/gatsby-map'} target={'_blank'}>
             här
           </a>
-        .*/}
+          .
         </p>
         <br />
 
         <h2>Information om coronaviruset</h2>
 
         <p>
-          För fakta och information om nya coronaviruset Covid-19, se
+          För fakta och information om nya coronaviruset COVID-19, se
           <a
             href={
               'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/smittsamma-sjukdomar/coronavirus/fragor-och-svar-om-nytt-coronavirus'
