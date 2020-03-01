@@ -12,14 +12,19 @@ const Blog = () => {
       <Helmet>
         <title>Nyheter</title>
       </Helmet>
-      <Container type="timeline" className="text-center">
-        <h1>Tidslinje</h1>
-        <p>Tidslinje över rapporterade fall i Sverige</p>
-        <br />
-        <div>
+
+      <Container type="timeline-content" className="text">
+        <Container type="chart">
+          <h1>Utveckling</h1>
+
+          <Chart />
+        </Container>
+
+        <Container type="timeline">
+          <h1>Tidslinje</h1>
           <h3>29 Februari 2020</h3>
           <li>
-            SR Ekot rapporterar 1 nytt fall av coronaviruset (
+            SR Ekot rapporterar 1 nytt fall av coronaviruset i Stockholm (
             <a
               className="sourceLink"
               href="https://sverigesradio.se/artikel/7418762"
@@ -30,7 +35,7 @@ const Blog = () => {
             )
           </li>
           <li>
-            SR Ekot rapporterar 1 nytt fall av coronaviruset (
+            SR Ekot rapporterar 1 nytt fall av coronaviruset i Västra Götaland (
             <a
               className="sourceLink"
               href="https://sverigesradio.se/sida/artikel.aspx?programid=97&artikel=7418659"
@@ -88,17 +93,9 @@ const Blog = () => {
             </a>
             )
           </li>{' '}
-        </div>
-        <br />
-        <br />
-
-        <h1>Utveckling</h1>
-        <p>Graf över antal fall i Sverige</p>
-        <Container className="chart-container">
-          <Container className="chart">
-            <Chart />
-          </Container>
         </Container>
+        <br />
+        <br />
       </Container>
     </Layout>
   )

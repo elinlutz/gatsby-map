@@ -18,7 +18,16 @@
   }
 }
 
-.container-timeline {
+.container-timeline-content {
   max-width: 50em;
   padding: 1em 3em;
+}
+
+.container-chart {
+  max-width: 40em;
+}
+
+.container-timeline {
+  margin-top: 3em;
+  max-width: 40em;
 }

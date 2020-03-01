@@ -52,8 +52,6 @@ const IndexPage = ({ data }) => {
     const { leafletElement: marker } = current
 
     // marker.setLatLng( location )
-
-    // marker.setLatLng( location )
     // popup.setLatLng(location)
     // popup.setContent(popupContentHello)
   }
