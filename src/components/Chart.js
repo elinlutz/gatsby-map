@@ -88,6 +88,8 @@ const options = {
     {
       name: 'Antal fall',
       data: [
+        ['23 Februari 2020', 1],
+        ['24 Februari 2020', 1],
         ['25 Februari 2020', 1],
         ['26 Februari 2020', 2],
         ['27 Februari 2020', 7],
