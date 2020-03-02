@@ -5,6 +5,9 @@ import Button from '@material-ui/core/Button'
 import MapIcon from '@material-ui/icons/Map'
 import RoomIcon from '@material-ui/icons/Room'
 import BubbleChart from '@material-ui/icons/BubbleChart'
+import TimelineIcon from '@material-ui/icons/Timeline'
+import EqualizerIcon from '@material-ui/icons/Equalizer'
+import InfoIcon from '@material-ui/icons/Info'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import logo from '../assets/icons/corona.png'
@@ -25,14 +28,28 @@ const Header = () => {
         </p>
         <ul>
           <li>
-            <Button className="navigationLink">
-              <Link to="/nyheter/">Tidslinje</Link>
-            </Button>
+            <Link to="/">
+              <Button className="navigationLink">
+                <MapIcon className="icon" />
+                <div className="text">Karta</div>
+              </Button>
+            </Link>
           </li>
           <li>
-            <Button className="navigationLink">
-              <Link to="/info/">Om</Link>
-            </Button>
+            <Link to="/tidslinje/">
+              <Button className="navigationLink">
+                <EqualizerIcon className="icon" />
+                <div className="text">Tidslinje</div>
+              </Button>
+            </Link>
+          </li>
+          <li>
+            <Link to="/om/">
+              <Button className="navigationLink">
+                <InfoIcon className="icon" />
+                <div className="text">Om</div>
+              </Button>
+            </Link>
           </li>
         </ul>
       </Container>

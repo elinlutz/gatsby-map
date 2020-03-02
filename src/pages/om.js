@@ -8,9 +8,16 @@ import ShareButtons from 'components/ShareButtons'
 
 const InfoPage = () => {
   return (
-    <Layout pageName="info">
+    <Layout pageName="om">
       <Helmet>
-        <title>Information</title>
+        <title>Coronaviruset i Sverige - Om</title>
+        <meta
+          name="description"
+          content={
+            'Denna sida är till för att ge en överblick över det nya coronavirusets spridning i Sverige, på regionnivå. Antal bekräftade fall utgår ifrån officiella siffror ifrån Folkhälsomyndigheten.'
+          }
+        />
+        <link rel="canonical" href="https://www.coronaviruset.se/om/" />
       </Helmet>
       <Container type="about" className="container">
         <h2>Om</h2>

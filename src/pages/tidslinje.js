@@ -8,9 +8,14 @@ import Chart from 'components/Chart'
 
 const Blog = () => {
   return (
-    <Layout pageName="nyheter">
+    <Layout pageName="tidslinje">
       <Helmet>
-        <title>Nyheter</title>
+        <title>Coronaviruset i Sverige - Tidslinje </title>
+        <meta
+          name="description"
+          content={'Följ utvecklingen av coronaviruset COVID-19 i Sverige'}
+        />
+        <link rel="canonical" href="https://www.coronaviruset.se/tidslinje/" />
       </Helmet>
 
       <Container type="timeline-content" className="text">

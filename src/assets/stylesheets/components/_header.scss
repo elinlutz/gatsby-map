@@ -47,28 +47,45 @@ header {
       text-transform: uppercase;
     }
 
-    @media (max-width: 505px) {
-      /* your conditional / responsive CSS inside this condition */
+    @media (max-width: 440px) {
       .title {
-        font-size: 20px;
+        font-size: 18px;
       }
     }
-
     @media (max-width: 400px) {
       .title {
         font-size: 14px;
       }
+      .icon {
+        margin-left: 0em;
+        width: 0.5em;
+      }
     }
-    @media (max-width: 280px) {
+    @media (max-width: 360px) {
       .title {
-        font-size: 8px;
+        font-size: 10px;
+      }
+      .icon {
+        display: none;
       }
     }
   }
 
   .navigationLink {
-    margin-right: 0.25em;
     background-color: white;
+    color: $map-blue-darker;
+    text-decoration: none;
+    margin: 0.25em;
+
+    .icon {
+      margin-right: 0.1em;
+    }
+
+    @media (max-width: 520px) {
+      .text {
+        display: none;
+      }
+    }
 
     &:hover {
       background-color: $grey-300;
