@@ -84,15 +84,15 @@ export const units = [
     id: 6,
     city: 'Stockholm',
     region: 'Region Stockholm',
-    confirmed: 4,
+    confirmed: 5,
     suspect: 0,
     recovered: 0,
     deaths: 0,
-    source: 'https://sverigesradio.se/artikel/7418762',
+    source: 'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/coronanyhet/',
     sources: [
       {
         url: 'https://sverigesradio.se/artikel/7418762',
-        date: '2020-02-29'
+        date: '2020-03-02'
       }
     ],
     updatedAt: '2020-02-29',
