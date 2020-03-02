@@ -5,7 +5,7 @@ module.exports = {
     description:
       'En karta över rapporterade fall av coronaviruset COVID-19 i Sverige',
     keywords: ['Coronavirus', 'Karta', 'covid-19', 'Sverige'],
-    siteURL: 'https://www.coronakartan.se',
+    siteUrl: 'https://www.coronakartan.se',
     image: 'assets/images/screenshot.png',
     menuLinks: [
       {
@@ -13,16 +13,22 @@ module.exports = {
         link: '/'
       },
       {
-        name: 'info',
-        link: '/info'
+        name: 'om',
+        link: '/om'
       },
       {
-        name: 'nyheter',
-        link: '/nyheter'
+        name: 'tidslinje',
+        link: '/tidslinje'
       }
     ]
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        exclude: ['/image/']
+      }
+    },
     'gatsby-plugin-resolve-src',
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',

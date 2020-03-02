@@ -4,18 +4,18 @@ import { graphql } from 'gatsby'
 
 export default ({ data }) => (
   <div>
-    <h1>Test av graphql query för bild</h1>
+    <h1>Bild GraphQL</h1>
     <Img fixed={data.file.childImageSharp.fixed} />
   </div>
 )
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "gatsby-astronaut.jpg" }) {
+    file(relativePath: { eq: "screenshot.png" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
-        fixed(width: 200, height: 200) {
+        fixed(width: 200, height: 100) {
           ...GatsbyImageSharpFixed
         }
       }

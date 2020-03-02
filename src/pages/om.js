@@ -1,12 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
 
 import Layout from 'components/Layout'
 import Container from 'components/Container'
-
 import ShareButtons from 'components/ShareButtons'
 
-const InfoPage = () => {
+const InfoPage = ({ data }) => {
   return (
     <Layout pageName="om">
       <Helmet>
@@ -20,11 +20,11 @@ const InfoPage = () => {
         <link rel="canonical" href="https://www.coronaviruset.se/om/" />
       </Helmet>
       <Container type="about" className="container">
-        <h2>Om</h2>
+        <h2>Om {data.site.siteMetadata.title}</h2>
         <p>
           Denna sida är till för att ge en överblick över det nya coronavirusets
-          spridning i Sverige, på regionnivå. Jag som skapade den heter Elin och
-          jag saknade en nationell karta över läget.
+          spridning i Sverige, på regionnivå. Jag som skapade den heter Elin
+          Lütz och jag saknade en nationell karta över läget.
         </p>
         <br />
         <h2>Data</h2>
@@ -53,7 +53,7 @@ const InfoPage = () => {
         <p>
           Har du idéer på förbättringar eller vill hjälpa till i projektet? Hör
           av dig via <a href={'mailto:info@coronakartan.se'}>mejl</a>.
-          <br /> Projektet är byggt i React med Gatsby och Leaflet. Repo hittar
+          <br /> Projektet är byggt i React med Gatsby och Leaflet. Repot hittar
           du{' '}
           <a href={'https://github.com/elinlutz/gatsby-map'} target={'_blank'}>
             här
@@ -94,5 +94,15 @@ const InfoPage = () => {
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
 
 export default InfoPage
