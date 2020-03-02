@@ -88,16 +88,12 @@ const IndexPage = ({ data }) => {
     return (
       <>
         <h2>{unit.city}</h2>
-        <p className="details">
-          Coronaviruset i {unit.city}, {unit.region}
-        </p>
-        <p className="numbers">
-          Bekräftade fall: <b>{unit.confirmed}</b> st
-          <br />
-          {unit.suspect > 0
-            ? 'Misstänkta fall: ' + unit.suspect + ' st'
-            : null}{' '}
-        </p>
+        <div className="details">
+          Bekräftade fall av Coronaviruset i {unit.city}, {unit.region}
+        </div>
+        <div className="numbers">
+          <b>{unit.confirmed}</b>
+        </div>
         <p className="note">Uppdaterat den {unit.updatedAt} </p>
         <div className="sources">
           {unit.sources && unit.sources.length > 0 ? (
@@ -136,29 +132,27 @@ const IndexPage = ({ data }) => {
 
       <Map {...mapSettings}>
         <Markers onClick={onClick} ref={markerRef} />
-      </Map>
-
-      <Container className="home-start">
-        <Container className="flex-container">
-          <Container className="flex-item-counter">
-            <Counter
-              className="counter-text"
-              confirmed={data.coronaCsv.Confirmed_Cases}
-              suspected={data.coronaCsv.Suspect_Cases}
-            ></Counter>
-          </Container>
-
-          <Container className="flex-item-info">
-            {unit ? (
-              <>
-                <UnitContent />
-              </>
-            ) : (
-              <p> </p>
-            )}
+        <Container className="mapbox">
+          <Container className="flex-container">
+            <Container className="counter">
+              <Counter
+                className="counter"
+                confirmed={data.coronaCsv.Confirmed_Cases}
+                suspected={data.coronaCsv.Suspect_Cases}
+              ></Counter>
+            </Container>
+            <Container className="info">
+              {unit ? (
+                <>
+                  <UnitContent />
+                </>
+              ) : (
+                <p> </p>
+              )}
+            </Container>
           </Container>
         </Container>
-      </Container>
+      </Map>
     </Layout>
   )
 }
