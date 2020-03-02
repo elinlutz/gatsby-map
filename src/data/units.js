@@ -88,7 +88,8 @@ export const units = [
     suspect: 0,
     recovered: 0,
     deaths: 0,
-    source: 'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/coronanyhet/',
+    source:
+      'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/coronanyhet/',
     sources: [
       {
         url: 'https://sverigesradio.se/artikel/7418762',
@@ -98,5 +99,26 @@ export const units = [
     updatedAt: '2020-02-29',
     lat: 59.334591,
     lng: 18.06324
+  },
+  {
+    id: 7,
+    city: 'Skåne',
+    region: 'Region Skåne',
+    confirmed: 1,
+    suspect: 0,
+    recovered: 0,
+    deaths: 0,
+    source:
+      'http://www.mynewsdesk.com/se/region_skane/pressreleases/troligt-fall-av-covid-19-i-skaane-2978003?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news',
+    sources: [
+      {
+        url:
+          'http://www.mynewsdesk.com/se/region_skane/pressreleases/troligt-fall-av-covid-19-i-skaane-2978003?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news',
+        date: '2020-03-02'
+      }
+    ],
+    updatedAt: '2020-03-02',
+    lat: 55.5893,
+    lng: 13.0027
   }
 ]

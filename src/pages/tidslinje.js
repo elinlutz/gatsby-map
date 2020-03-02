@@ -27,8 +27,7 @@ const Blog = () => {
 
         <Container type="timeline">
           <h1>Tidslinje</h1>
-
-<h3>2 Mars 2020</h3>
+          <h3>2 Mars 2020</h3>
           <li>
             Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset i
             Stockholm (
@@ -41,7 +40,17 @@ const Blog = () => {
             </a>
             )
           </li>
-
+          <li>
+            Region Skåne rapporterar 1 nytt fall av coronaviruset i Skåne (
+            <a
+              className="sourceLink"
+              href="http://www.mynewsdesk.com/se/region_skane/pressreleases/troligt-fall-av-covid-19-i-skaane-2978003?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news"
+              target={'_blank'}
+            >
+              källa
+            </a>
+            )
+          </li>
           <h3>1 Mars 2020</h3>
           <li>
             Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset i
