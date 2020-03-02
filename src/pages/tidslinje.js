@@ -41,7 +41,8 @@ const Blog = () => {
             )
           </li>
           <li>
-            Region Skåne rapporterar 1 nytt fall av coronaviruset i Skåne (
+            Region Skåne rapporterar 1 nytt fall av coronaviruset i Skåne
+            (preliminärt) (
             <a
               className="sourceLink"
               href="http://www.mynewsdesk.com/se/region_skane/pressreleases/troligt-fall-av-covid-19-i-skaane-2978003?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news"

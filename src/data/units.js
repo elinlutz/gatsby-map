@@ -103,8 +103,8 @@ export const units = [
   {
     id: 7,
     city: 'Skåne',
-    region: 'Region Skåne',
-    confirmed: 1,
+    region: 'Region Skåne (preliminärt fall)',
+    confirmed: 0,
     suspect: 0,
     recovered: 0,
     deaths: 0,
