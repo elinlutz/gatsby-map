@@ -30,7 +30,7 @@ const Blog = () => {
 
 <h3>2 Mars 2020</h3>
           <li>
-            SLL rapporterar 1 nytt fall av coronaviruset i
+            Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset i
             Stockholm (
             <a
               className="sourceLink"
