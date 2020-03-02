@@ -27,6 +27,21 @@ const Blog = () => {
 
         <Container type="timeline">
           <h1>Tidslinje</h1>
+
+<h3>2 Mars 2020</h3>
+          <li>
+            SLL rapporterar 1 nytt fall av coronaviruset i
+            Stockholm (
+            <a
+              className="sourceLink"
+              href="https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/coronavirus-wuhan-kina-januari-2020/"
+              target={'_blank'}
+            >
+              källa
+            </a>
+            )
+          </li>
+
           <h3>1 Mars 2020</h3>
           <li>
             Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset i
