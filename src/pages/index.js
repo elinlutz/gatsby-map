@@ -131,7 +131,7 @@ const IndexPage = ({ data }) => {
           }
         />
         <meta name="image" content={CoronaImage} />
-        <link rel="canonical" href="https://www.coronaviruset.se/" />
+        <link rel="canonical" href="https://www.coronakartan.se/" />
       </Helmet>
 
       <Map {...mapSettings}>

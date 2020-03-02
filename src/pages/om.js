@@ -17,7 +17,7 @@ const InfoPage = ({ data }) => {
             'Denna sida är till för att ge en överblick över det nya coronavirusets spridning i Sverige, på regionnivå. Antal bekräftade fall utgår ifrån officiella siffror ifrån Folkhälsomyndigheten.'
           }
         />
-        <link rel="canonical" href="https://www.coronaviruset.se/om/" />
+        <link rel="canonical" href="https://www.coronakartan.se/om/" />
       </Helmet>
       <Container type="about" className="container">
         <h2>Om {data.site.siteMetadata.title}</h2>

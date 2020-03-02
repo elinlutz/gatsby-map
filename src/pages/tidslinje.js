@@ -15,7 +15,7 @@ const Blog = () => {
           name="description"
           content={'Följ utvecklingen av coronaviruset COVID-19 i Sverige'}
         />
-        <link rel="canonical" href="https://www.coronaviruset.se/tidslinje/" />
+        <link rel="canonical" href="https://www.coronakartan.se/tidslinje/" />
       </Helmet>
 
       <Container type="timeline-content" className="text">
