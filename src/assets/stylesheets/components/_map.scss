@@ -29,11 +29,15 @@
     height: 15em;
     background-color: lighten($white, 92);
     color: $dark-black;
-    border-radius: 8px;
+    border-radius: 6px;
     // box-shadow: 0 2px 4px 0 $min-black;
 
     h1 {
       font-size: 5em;
+    }
+    p {
+      font-size: 10px;
+      color: $light-black;
     }
   }
 
@@ -41,12 +45,14 @@
     text-align: center;
     max-width: 22em;
     min-width: 12em;
+    min-height: 15em;
+
     margin-left: 0.5em;
 
     padding: 1em 1em;
     background-color: lighten($white, 92);
     color: $dark-black;
-    border-radius: 8px;
+    border-radius: 6px;
     // box-shadow: 0 2px 4px 0 $min-black;
 
     .info-content {
@@ -65,20 +71,19 @@
         margin: 0 2em 0;
         font-size: 0.8em;
         line-height: 1em;
-
         color: $light-black;
       }
 
       .numbers {
-        font-size: 4em;
+        font-size: 5em;
         color: $red-bubble;
       }
 
       .sourceBtn {
         align-self: center;
         color: darken($map-blue, 20);
-        font-size: 12px;
-        height: 2.5em;
+        font-size: 0.8em;
+        height: 2em;
         max-width: 18em;
         background-color: $grey-50;
       }

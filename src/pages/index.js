@@ -143,7 +143,7 @@ const IndexPage = ({ data }) => {
                 <RegionContent />
               </div>
             ) : (
-              <p> </p>
+              <div className="details">Klicka på en bubbla på kartan</div>
             )}
           </Container>
         </Container>
