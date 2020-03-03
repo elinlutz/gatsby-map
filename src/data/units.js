@@ -3,7 +3,7 @@ export const units = [
     id: 1,
     city: 'Jönköping',
     region: 'Region Jönköpings län',
-    confirmed: 2,
+    confirmed: 3,
     suspect: 0,
     recovered: 0,
     deaths: 0,
@@ -14,6 +14,11 @@ export const units = [
         url:
           'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/januari/bekraftat-fall-av-nytt-coronavirus-i-sverige/',
         date: '2020-02-28'
+      },
+      {
+        url:
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/tredje--bekraftade-fallet-i-jonkopings-lan-av-nya-coronaviruset-covid-19-45658',
+        date: '2020-03-03'
       }
     ],
     updatedAt: '2020-02-28',
