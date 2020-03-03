@@ -29,6 +29,18 @@ const Blog = () => {
           <h1>Tidslinje</h1>
           <h3>3 Mars 2020</h3>
           <li>
+            Region Stockholm rapporterar om 6 ytterligare fall av coronaviruset
+            i Stockholm (
+            <a
+              className="sourceLink"
+              href="https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/ny-nyhet-corona/"
+              target={'_blank'}
+            >
+              källa
+            </a>
+            )
+          </li>
+          <li>
             SVT rapporterar om 9 nya fall av coronaviruset, 1 i Skåne, 3 i
             Västra Götaland, 1 i Jönköping och 4 i Stockholm (
             <a
