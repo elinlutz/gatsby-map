@@ -29,8 +29,8 @@ const Blog = () => {
           <h1>Tidslinje</h1>
           <h3>3 Mars 2020</h3>
           <li>
-            Region Stockholm rapporterar om 6 ytterligare fall av coronaviruset
-            i Stockholm (
+            Region Stockholm rapporterar 6 ytterligare fall av coronaviruset i
+            Stockholm (
             <a
               className="sourceLink"
               href="https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/ny-nyhet-corona/"

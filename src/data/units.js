@@ -14,31 +14,12 @@ export const units = [
         url:
           'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/januari/bekraftat-fall-av-nytt-coronavirus-i-sverige/',
         date: '2020-02-28'
-      },
-      {
-        url:
-          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/tredje--bekraftade-fallet-i-jonkopings-lan-av-nya-coronaviruset-covid-19-45658',
-        date: '2020-03-03'
       }
     ],
     updatedAt: '2020-03-03',
     lat: 57.78145,
     lng: 14.15618
   },
-  // {
-  //   id: 3,
-  //   city: 'Skellefteå',
-  //   region: 'Region Västerbotten',
-  //   confirmed: 0,
-  //   suspect: 2,
-  //   recovered: 0,
-  //   deaths: 0,
-  //   source:
-  //     'https://www.norran.se/nyheter/coronaviruset-tva-skelleftebor-har-testats-efter-italienresa/',
-  //   updatedAt: '2020-02-28',
-  //   lat: 64.75067,
-  //   lng: 20.95279
-  // },
   {
     id: 4,
     city: 'Göteborg',
@@ -50,11 +31,6 @@ export const units = [
     source:
       'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/februari/nytt-bekraftat-fall-av-covid-19/',
     sources: [
-      {
-        url:
-          'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/februari/nytt-bekraftat-fall-av-covid-19/',
-        date: '2020-02-29'
-      },
       {
         url: 'https://www.svt.se/nyheter/utrikes/senaste-nytt-om-coronaviruset',
         date: '2020-03-01'

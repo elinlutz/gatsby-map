@@ -39,7 +39,7 @@ const SourceButton = ({ url, date }) => {
         href={url}
         target="_blank"
       >
-        <span>Källa ({date})</span>
+        <span>Källa</span>
       </a>
     </Button>
   )
