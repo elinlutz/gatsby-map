@@ -128,12 +128,12 @@
     list-style: none;
     padding: 0em 1em;
     min-width: 345;
-    min-width: 13em;
 
     .counter {
       text-align: center;
       line-height: 1.5em;
       padding: 1em 1em;
+      min-width: 13em;
       max-width: 22em;
       margin-right: 0.5em;
       height: 15em;
@@ -181,6 +181,8 @@
 
         .numbers {
           font-size: 5em;
+          line-height: 1.1em;
+
           color: $red-bubble;
         }
 

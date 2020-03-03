@@ -76,14 +76,14 @@ const InfoPage = ({ data }) => {
           </a>
           .
           <br />
-          För samlad data på EU-nivå och globalt, se{' '}
+          En bra karta som visualiserar antal globala fall är{' '}
           <a
             href={
-              'https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases'
+              'https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6'
             }
             target={'_blank'}
           >
-            {' Europeiska Smittskyddsmyndigheten'}
+            {' Johns Hopkins CSSE'}
           </a>
           .
         </p>
