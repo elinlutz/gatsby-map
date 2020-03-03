@@ -23,8 +23,8 @@ const InfoPage = ({ data }) => {
         <h2>Om {data.site.siteMetadata.title}</h2>
         <p>
           Denna sida är till för att ge en överblick över det nya coronavirusets
-          smittofall i Sverige, på regionnivå. Jag som skapade den heter Elin
-          Lütz och jag saknade en nationell karta över läget.
+          spridning i Sverige, på regionnivå. Jag som skapade den heter Elin och
+          jag saknade en nationell karta över läget.
         </p>
         <br />
         <h2>Data</h2>
