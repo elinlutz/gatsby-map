@@ -84,21 +84,14 @@ const IndexPage = ({ data }) => {
     setUnit(unit)
   }
 
-  function UnitContent() {
+  function RegionContent() {
     return (
       <>
-        <h2>{unit.city}</h2>
-        <p className="details">
-          Coronaviruset i {unit.city}, {unit.region}
-        </p>
-        <p className="numbers">
-          Bekräftade fall: <b>{unit.confirmed}</b> st
-          <br />
-          {unit.suspect > 0
-            ? 'Misstänkta fall: ' + unit.suspect + ' st'
-            : null}{' '}
-        </p>
-        <p className="note">Uppdaterat den {unit.updatedAt} </p>
+        <h3>{unit.city}</h3>
+        <div className="details">{unit.region}</div>
+        <div className="numbers">
+          <b>{unit.confirmed}</b>
+        </div>
         <div className="sources">
           {unit.sources && unit.sources.length > 0 ? (
             unit.sources.map(source => (
@@ -136,29 +129,25 @@ const IndexPage = ({ data }) => {
 
       <Map {...mapSettings}>
         <Markers onClick={onClick} ref={markerRef} />
-      </Map>
-
-      <Container className="home-start">
-        <Container className="flex-container">
-          <Container className="flex-item-counter">
+        <Container className="mapbox">
+          <Container className="counter">
             <Counter
-              className="counter-text"
+              className="counter"
               confirmed={data.coronaCsv.Confirmed_Cases}
               suspected={data.coronaCsv.Suspect_Cases}
             ></Counter>
           </Container>
-
-          <Container className="flex-item-info">
+          <Container className="info">
             {unit ? (
-              <>
-                <UnitContent />
-              </>
+              <div className="info-content">
+                <RegionContent />
+              </div>
             ) : (
-              <p> </p>
+              <p className="noUnitsText">Klicka på en bubbla på kartan</p>
             )}
           </Container>
         </Container>
-      </Container>
+      </Map>
     </Layout>
   )
 }

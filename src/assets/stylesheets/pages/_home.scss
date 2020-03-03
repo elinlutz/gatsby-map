@@ -1,7 +1,7 @@
 .page-home {
   .map,
   .map-base {
-    height: 60vh;
+    height: 100%;
   }
 
   main {
@@ -53,6 +53,42 @@
   margin-bottom: 2em;
   max-width: 80em;
 
+  .mapbox {
+    position: fixed;
+    bottom: 4em;
+    z-index: 2000;
+    background-color: tomato;
+
+    .counter {
+      text-align: center;
+      padding: 1em 1em;
+      max-width: 20em;
+      min-width: 170px;
+
+      max-height: 5em;
+      background-color: lighten($white, 92);
+      color: $dark-black;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px 0 $min-black;
+    }
+
+    .info {
+      position: fixed;
+      bottom: 4em;
+      right: 1em;
+      text-align: center;
+      padding: 1em 1em;
+      max-width: 20em;
+      min-width: 170px;
+
+      max-height: 15em;
+      background-color: lighten($white, 92);
+      color: $dark-black;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px 0 $min-black;
+    }
+  }
+
   .flex-container {
     display: flex;
     flex-flow: row wrap;
@@ -73,22 +109,6 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px 0 $min-black;
 
-    // h1 {
-    //   color: $red-bubble;
-    // }
-
-    // .counter-confirmed {
-    //   h1 {
-    //     color: $red-bubble;
-    //   }
-    // }
-
-    // .counter-suspected {
-    //   h1 {
-    //     color: $orange-bubble;
-    //   }
-    // }
-
     @media (max-width: 505px) {
       /* your conditional / responsive CSS inside this condition */
       h3 {
@@ -100,47 +120,6 @@
       h3 {
         font-size: 10px;
       }
-    }
-  }
-
-  .flex-item-info {
-    color: $dark-black;
-    padding: 1em 2em;
-    width: 50%;
-
-    .details {
-      font-size: 14px;
-      color: $light-black;
-    }
-
-    .numbers {
-      line-height: 1.5em;
-      color: $dark-black;
-    }
-
-    .note {
-      font-size: 14px;
-      color: $light-black;
-      padding: 0 0 0 0;
-    }
-    .sourceBtn {
-      color: darken($map-blue, 20);
-      font-size: 12px;
-      height: 2.5em;
-      max-width: 15em;
-      background-color: $grey-50;
-    }
-    .sources {
-      display: flex;
-      flex-direction: column;
-
-      :not(:last-child) {
-        margin-bottom: 1rem;
-      }
-    }
-
-    .sourceLink {
-      color: darken($map-blue, 20);
     }
   }
 
