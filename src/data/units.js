@@ -20,20 +20,6 @@ export const units = [
     lat: 57.78145,
     lng: 14.15618
   },
-  // {
-  //   id: 3,
-  //   city: 'Skellefteå',
-  //   region: 'Region Västerbotten',
-  //   confirmed: 0,
-  //   suspect: 2,
-  //   recovered: 0,
-  //   deaths: 0,
-  //   source:
-  //     'https://www.norran.se/nyheter/coronaviruset-tva-skelleftebor-har-testats-efter-italienresa/',
-  //   updatedAt: '2020-02-28',
-  //   lat: 64.75067,
-  //   lng: 20.95279
-  // },
   {
     id: 4,
     city: 'Göteborg',
