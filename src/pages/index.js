@@ -39,7 +39,7 @@ const SourceButton = ({ url, date }) => {
         href={url}
         target="_blank"
       >
-        <span>Källa ({date})</span>
+        <span>Källa</span>
       </a>
     </Button>
   )
@@ -143,7 +143,7 @@ const IndexPage = ({ data }) => {
                 <RegionContent />
               </div>
             ) : (
-              <div className="details">Klicka på en bubbla på kartan</div>
+              <p className="noUnitsText">Klicka på en bubbla på kartan</p>
             )}
           </Container>
         </Container>

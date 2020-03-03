@@ -12,8 +12,8 @@ const Counter = ({ confirmed, suspected }) => {
 
   return (
     <div>
-      <h3>Bekräftade fall</h3>
       <h1>{confirmed}</h1>
+      <h3>Bekräftade fall</h3>
       <p>Uppdaterat {data.currentBuildDate.currentDate}</p>
     </div>
   )

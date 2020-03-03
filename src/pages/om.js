@@ -23,8 +23,8 @@ const InfoPage = ({ data }) => {
         <h2>Om {data.site.siteMetadata.title}</h2>
         <p>
           Denna sida är till för att ge en överblick över det nya coronavirusets
-          smittofall i Sverige, på regionnivå. Jag som skapade den heter Elin
-          Lütz och jag saknade en nationell karta över läget.
+          spridning i Sverige, på regionnivå. Jag som skapade den heter Elin och
+          jag saknade en nationell karta över läget.
         </p>
         <br />
         <h2>Data</h2>
@@ -76,14 +76,14 @@ const InfoPage = ({ data }) => {
           </a>
           .
           <br />
-          För samlad data på EU-nivå och globalt, se{' '}
+          En bra karta som visualiserar antal globala fall är{' '}
           <a
             href={
-              'https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases'
+              'https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6'
             }
             target={'_blank'}
           >
-            {' Europeiska Smittskyddsmyndigheten'}
+            {' Johns Hopkins CSSE'}
           </a>
           .
         </p>
