@@ -21,7 +21,7 @@ export const units = [
         date: '2020-03-03'
       }
     ],
-    updatedAt: '2020-02-28',
+    updatedAt: '2020-03-03',
     lat: 57.78145,
     lng: 14.15618
   },
@@ -60,7 +60,7 @@ export const units = [
         date: '2020-03-01'
       }
     ],
-    updatedAt: '2020-03-01',
+    updatedAt: '2020-03-03',
     lat: 57.70887,
     lng: 11.97456
   },
@@ -101,7 +101,7 @@ export const units = [
         date: '2020-03-02'
       }
     ],
-    updatedAt: '2020-02-29',
+    updatedAt: '2020-03-03',
     lat: 59.334591,
     lng: 18.06324
   },
@@ -122,7 +122,7 @@ export const units = [
         date: '2020-03-02'
       }
     ],
-    updatedAt: '2020-03-02',
+    updatedAt: '2020-03-03',
     lat: 55.5893,
     lng: 13.0027
   }
