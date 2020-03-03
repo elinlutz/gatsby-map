@@ -29,6 +29,18 @@ const Blog = () => {
           <h1>Tidslinje</h1>
           <h3>3 Mars 2020</h3>
           <li>
+            SVT rapporterar om 9 nya fall av coronaviruset, 1 i Skåne, 3 i
+            Västra Götaland, 1 i Jönköping och 4 i Stockholm (
+            <a
+              className="sourceLink"
+              href="https://www.svt.se/nyheter/inrikes/nya-fall-med-coronavirus-i-sverige"
+              target={'_blank'}
+            >
+              källa
+            </a>
+            )
+          </li>
+          <li>
             Region Jönköpings Län rapporterar 1 nytt fall av coronaviruset i
             Jönköpings län (
             <a
