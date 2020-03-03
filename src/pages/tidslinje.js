@@ -40,18 +40,6 @@ const Blog = () => {
             </a>
             )
           </li>
-          <li>
-            Region Jönköpings Län rapporterar 1 nytt fall av coronaviruset i
-            Jönköpings län (
-            <a
-              className="sourceLink"
-              href="https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/tredje--bekraftade-fallet-i-jonkopings-lan-av-nya-coronaviruset-covid-19-45658"
-              target={'_blank'}
-            >
-              källa
-            </a>
-            )
-          </li>
           <h3>2 Mars 2020</h3>
           <li>
             Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset i
