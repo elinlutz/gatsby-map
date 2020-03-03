@@ -11,71 +11,67 @@
 
 .mapbox {
   position: fixed;
-  bottom: 4em;
+  bottom: 2.5em;
   z-index: 2000;
-  margin-top: 80em;
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row;
+  list-style: none;
+  padding: 0em 1em;
 
-  .flex-container {
-    display: flex;
-    flex-flow: row wrap-reverse;
-    list-style: none;
-    padding: 0em 2em;
+  .counter {
+    text-align: center;
+    line-height: 1.5em;
+    padding: 1em 1em;
+    min-width: 12em;
+    max-width: 22em;
+    margin-right: 0.5em;
+    height: 15em;
+    background-color: lighten($white, 92);
+    color: $dark-black;
+    border-radius: 8px;
+    // box-shadow: 0 2px 4px 0 $min-black;
 
-    .counter {
-      text-align: center;
-      vertical-align: middle;
-      margin-top: 1em;
-      line-height: 1.5em;
-      padding: 1em 1em;
-      max-width: 25em;
-      max-height: 22em;
-      background-color: lighten($white, 92);
-      color: $dark-black;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px 0 $min-black;
-
-      h1 {
-        font-size: 5em;
-      }
+    h1 {
+      font-size: 5em;
     }
+  }
 
-    .info {
-      text-align: center;
-      bottom: 4em;
-      right: 1em;
-      max-width: 25em;
-      margin-top: 1em;
-      padding: 1em 1em;
-      background-color: lighten($white, 92);
-      color: $dark-black;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px 0 $min-black;
+  .info {
+    text-align: center;
+    max-width: 22em;
+    min-width: 12em;
+    margin-left: 0.5em;
 
+    padding: 1em 1em;
+    background-color: lighten($white, 92);
+    color: $dark-black;
+    border-radius: 8px;
+    // box-shadow: 0 2px 4px 0 $min-black;
+
+    .info-content {
+      top: 50%;
+      left: 50%;
       p {
         font-size: 20px;
         margin: 1em;
       }
 
-      h2 {
-        font-size: 25px;
+      h3 {
         line-height: 0em;
       }
 
       .details {
         margin: 0 2em 0;
-        font-size: 12px;
+        font-size: 0.8em;
+        line-height: 1em;
+
         color: $light-black;
       }
 
       .numbers {
-        font-size: 5em;
+        font-size: 4em;
         color: $red-bubble;
-      }
-
-      .note {
-        margin: 0px;
-        font-size: 14px;
-        color: $light-black;
       }
 
       .sourceBtn {
