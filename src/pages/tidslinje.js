@@ -30,7 +30,7 @@ const Blog = () => {
           <h3>4 Mars 2020</h3>
           <li>
             Västra götaland rapporterar 2 nya fall av coronaviruset i
-            Göteborgsområdet(
+            Göteborgsområdet (
             <a
               className="sourceLink"
               href="https://news.cision.com/se/vastra-gotalandsregionen/r/4-mars--ytterligare-tva-bekraftade-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3052013"

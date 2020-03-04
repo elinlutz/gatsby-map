@@ -30,8 +30,8 @@ const InfoPage = ({ data }) => {
         <h2>Data</h2>
 
         <p>
-          Antal bekräftade fall utgår från Folkhälsomyndighetens och regionernas
-          rapportering.
+          Antal bekräftade fall utgår från Folkhälsomyndighetens samt
+          regionernas egen rapportering.
           {/* Datasetet uppdateras
           dagligen, och du kan ladda ned det{' '}
           <a href={'https://xxx.se'} target={'_blank'}>
