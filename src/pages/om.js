@@ -23,16 +23,19 @@ const InfoPage = ({ data }) => {
         <h2>Om {data.site.siteMetadata.title}</h2>
         <p>
           Denna sida är till för att ge en överblick över det nya coronavirusets
-          spridning i Sverige, på regionnivå. Jag som skapade den heter Elin och
-          jag saknade en nationell karta över läget.
+          spridning i Sverige, på regionnivå. Jag som skapade kartan heter Elin
+          Lütz och jag saknade ett ställe med bra och snygg information över
+          läget i Sverige. Jag utgör inte någon officiell nyhetsskälla alls,
+          utan är bara en simpel *teknikintresserad*. Jag arbetar på projektet
+          helt ideellt för att jag tycker att bra visualiseringar är viktiga och
+          försöker uppdatera siffrorna så ofta som möjligt.
         </p>
         <br />
         <h2>Data</h2>
 
         <p>
-          Antal bekräftade fall utgår ifrån officiella siffror från regionernas
-          och folkhälsomyndighetens rapportering. Du kan se det kompletta
-          datasetet{' '}
+          Antal bekräftade fall utgår från regionernas och Folkhälsomyndighetens
+          rapportering. Du kan se det kompletta datasetet{' '}
           <a
             href={
               'https://github.com/elinlutz/gatsby-map/blob/master/src/data/Tidsserie.csv'
@@ -41,15 +44,15 @@ const InfoPage = ({ data }) => {
           >
             här
           </a>
-          .
+          . Där finns även länkar till samtliga källor.
         </p>
         <br />
 
         <h2>Hjälp till</h2>
         <p>
           Har du idéer på förbättringar eller vill hjälpa till i projektet? Hör
-          av dig via <a href={'mailto:info@coronakartan.se'}>mejl</a>.
-          <br /> Projektet är byggt i React med Gatsby och Leaflet. Repot finns{' '}
+          av dig via <a href={'mailto:info@coronakartan.se'}>mejl</a>. Projektet
+          är byggt i React med Gatsby och Leaflet, repot finns{' '}
           <a href={'https://github.com/elinlutz/gatsby-map'} target={'_blank'}>
             här
           </a>
@@ -69,16 +72,14 @@ const InfoPage = ({ data }) => {
           >
             {' Folkhälsomyndighetens hemsida'}
           </a>
-          .
-          <br />
-          En bra karta som visualiserar antal globala fall är{' '}
+          . En annan bra och informativ karta som följer globala fall är{' '}
           <a
             href={
               'https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6'
             }
             target={'_blank'}
           >
-            {' Johns Hopkins CSSE'}
+            {' Johns Hopkins CSSE Dashboard'}
           </a>
           .
         </p>

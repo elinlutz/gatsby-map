@@ -61,7 +61,6 @@ const IndexPage = ({ data }) => {
   }
 
   const [region, setRegion] = useState(null)
-  const [total, setTotal] = useState(null)
 
   function onClick(region) {
     setRegion(region)

@@ -63,7 +63,7 @@ const Markers = ({ loadTotal, onClick }) => {
           color={color}
           stroke={false}
           center={[region.Lat, region.Long]}
-          fillOpacity={0.6}
+          fillOpacity={0.7}
           onClick={() => onClick(region)}
         ></CircleMarker>
       )
