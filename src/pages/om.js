@@ -23,19 +23,16 @@ const InfoPage = ({ data }) => {
         <h2>Om {data.site.siteMetadata.title}</h2>
         <p>
           Denna sida är till för att ge en överblick över det nya coronavirusets
-          spridning i Sverige, på regionnivå. Jag som skapade kartan heter Elin
-          Lütz och jag saknade ett ställe med bra och snygg information över
-          läget i Sverige. Jag utgör inte någon officiell nyhetsskälla alls,
-          utan är bara en simpel *teknikintresserad*. Jag arbetar på projektet
-          helt ideellt för att jag tycker att bra visualiseringar är viktiga och
-          försöker uppdatera siffrorna så ofta som möjligt.
+          bekräftade fall i Sverige, på regionnivå. Jag som skapade kartan heter
+          Elin och jag saknade en plats för tydlig och tillgänglig information
+          över läget.
         </p>
         <br />
         <h2>Data</h2>
 
         <p>
           Antal bekräftade fall utgår från regionernas och Folkhälsomyndighetens
-          rapportering. Du kan se det kompletta datasetet{' '}
+          rapportering. Hela datasetet kan du se{' '}
           <a
             href={
               'https://github.com/elinlutz/gatsby-map/blob/master/src/data/Tidsserie.csv'
