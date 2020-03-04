@@ -11,6 +11,8 @@ import Map from 'components/Map'
 import Markers from 'components/Markers'
 import Counter from 'components/Counter'
 
+import getWorld from 'data/getWorld.js'
+
 import CoronaImage from 'assets/icons/corona.png'
 
 const LOCATION = {
