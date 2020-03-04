@@ -86,7 +86,7 @@ export const units = [
     id: 7,
     city: 'Skåne',
     region: 'Region Skåne',
-    confirmed: 1,
+    confirmed: 2,
     suspect: 0,
     recovered: 0,
     deaths: 0,
