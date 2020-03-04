@@ -6,6 +6,8 @@ import Layout from 'components/Layout'
 import Container from 'components/Container'
 import ShareButtons from 'components/ShareButtons'
 
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
+
 const InfoPage = ({ data }) => {
   return (
     <Layout pageName="om">
@@ -24,8 +26,7 @@ const InfoPage = ({ data }) => {
         <p>
           Denna sida är till för att ge en överblick över det nya coronavirusets
           bekräftade fall i Sverige, på regionnivå. Jag som skapade kartan heter
-          Elin och jag saknade en plats för tydlig och tillgänglig information
-          över läget.
+          Elin och jag saknade en plats för tydlig och tillgänglig information .
         </p>
         <br />
         <h2>Data</h2>
@@ -33,14 +34,14 @@ const InfoPage = ({ data }) => {
         <p>
           Antal bekräftade fall utgår från regionernas och Folkhälsomyndighetens
           rapportering. Hela datasetet kan du se{' '}
-          <a
+          <OutboundLink
             href={
               'https://github.com/elinlutz/gatsby-map/blob/master/src/data/Tidsserie.csv'
             }
             target={'_blank'}
           >
             här
-          </a>
+          </OutboundLink>
           .
         </p>
         <br />
