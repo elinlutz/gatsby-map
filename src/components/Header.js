@@ -3,14 +3,9 @@ import { Link } from 'gatsby'
 
 import Button from '@material-ui/core/Button'
 import MapIcon from '@material-ui/icons/Map'
-import RoomIcon from '@material-ui/icons/Room'
 import BubbleChart from '@material-ui/icons/BubbleChart'
-import TimelineIcon from '@material-ui/icons/Timeline'
 import EqualizerIcon from '@material-ui/icons/Equalizer'
 import InfoIcon from '@material-ui/icons/Info'
-import Img from 'gatsby-image'
-import { graphql } from 'gatsby'
-import logo from '../assets/icons/corona.png'
 
 import Container from 'components/Container'
 

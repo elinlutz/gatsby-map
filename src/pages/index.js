@@ -5,8 +5,6 @@ import Helmet from 'react-helmet'
 import L from 'leaflet'
 import Button from '@material-ui/core/Button'
 
-import { promiseToFlyTo, getCurrentLocation } from 'lib/map'
-
 import Layout from 'components/Layout'
 import Container from 'components/Container'
 import Map from 'components/Map'
@@ -15,22 +13,12 @@ import Counter from 'components/Counter'
 
 import CoronaImage from 'assets/icons/corona.png'
 
-import gatsby_astronaut from 'assets/images/gatsby-astronaut.jpg'
-
 const LOCATION = {
   lat: 38.9072,
   lng: -67.0369
 }
 
-const CENTER = [LOCATION.lat, LOCATION.lng]
-const DEFAULT_ZOOM = 2
-const ZOOM = 10
-
-const timeToZoom = 2000
-const timeToOpenPopupAfterZoom = 4000
-const timeToUpdatePopupAfterZoom = timeToOpenPopupAfterZoom + 3000
-
-const SourceButton = ({ url, date }) => {
+const SourceButton = ({ url }) => {
   return (
     <Button className="sourceBtn">
       <a
@@ -39,7 +27,7 @@ const SourceButton = ({ url, date }) => {
         href={url}
         target="_blank"
       >
-        <span>Källa</span>
+        <span>Data</span>
       </a>
     </Button>
   )
@@ -61,14 +49,8 @@ const IndexPage = ({ data }) => {
       maxWidth: 800
     })
 
-    // const location = await getCurrentLocation().catch(() => LOCATION)
-
     const { current = {} } = markerRef || {}
     const { leafletElement: marker } = current
-
-    // marker.setLatLng( location )
-    // popup.setLatLng(location)
-    // popup.setContent(popupContentHello)
   }
 
   const mapSettings = {
@@ -78,39 +60,31 @@ const IndexPage = ({ data }) => {
     mapEffect
   }
 
-  const [unit, setUnit] = useState(null)
+  const [region, setRegion] = useState(null)
 
-  function onClick(unit) {
-    setUnit(unit)
+  function onClick(region) {
+    setRegion(region)
   }
 
   function RegionContent() {
     return (
       <>
-        <h3>{unit.city}</h3>
-        <div className="details">{unit.region}</div>
+        <h3>{region.Display_Name}</h3>
+        <div className="details">{region.Region}</div>
         <div className="numbers">
-          <b>{unit.confirmed}</b>
+          <b>{region.Region_Total}</b>
         </div>
         <div className="sources">
-          {unit.sources && unit.sources.length > 0 ? (
-            unit.sources.map(source => (
-              <SourceButton
-                key={source.url}
-                url={source.url}
-                date={source.date}
-              />
-            ))
-          ) : (
-            <SourceButton
-              key={unit.source}
-              url={unit.source}
-              date={unit.updatedAt}
-            />
-          )}
+          <SourceButton url={'https://coronakartan.se'} />
         </div>
       </>
     )
+  }
+
+  function getTotalConfirmed(edges) {
+    return edges.reduce(function(a, b) {
+      return a + +b.node['Region_Total']
+    }, 0)
   }
 
   return (
@@ -133,12 +107,12 @@ const IndexPage = ({ data }) => {
           <Container className="counter">
             <Counter
               className="counter"
-              confirmed={data.coronaCsv.Confirmed_Cases}
-              suspected={data.coronaCsv.Suspect_Cases}
+              confirmed={getTotalConfirmed(data.allTidsserieCsv.edges)}
+              suspected={0}
             ></Counter>
           </Container>
           <Container className="info">
-            {unit ? (
+            {region ? (
               <div className="info-content">
                 <RegionContent />
               </div>
@@ -154,9 +128,12 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    coronaCsv {
-      Confirmed_Cases
-      Suspect_Cases
+    allTidsserieCsv {
+      edges {
+        node {
+          Region_Total
+        }
+      }
     }
   }
 `
