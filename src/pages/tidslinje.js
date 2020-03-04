@@ -29,6 +29,17 @@ const Blog = () => {
           <h1>Tidslinje</h1>
           <h3>4 Mars 2020</h3>
           <li>
+            Region Värmland rapporterar 2 nya fall av coronaviruset i Värmland (
+            <a
+              className="sourceLink"
+              href="https://www.regionvarmland.se/om-regionen/pressrum/Pressmeddelanden/2020/03/tva-fall-av-nya-coronaviruset-i-varmland/"
+              target={'_blank'}
+            >
+              källa
+            </a>
+            )
+          </li>
+          <li>
             Region Skåne rapporterar 1 nytt fall av coronaviruset i Skåne (
             <a
               className="sourceLink"
