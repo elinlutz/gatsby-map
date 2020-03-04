@@ -9,6 +9,12 @@
   }
 }
 
+.switch {
+  position: fixed;
+  top: 5em;
+  z-index: 2000;
+}
+
 .mapbox {
   position: fixed;
   bottom: 5em;
@@ -29,8 +35,8 @@
     height: 20em;
     background-color: lighten($white, 92);
     color: $dark-black;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px 0 $min-black;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
 
     h1 {
       font-size: 7em;
@@ -55,8 +61,7 @@
     padding: 1em 1em;
     background-color: lighten($white, 92);
     color: $dark-black;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px 0 $min-black;
+    border-radius: 8px;
 
     .noUnitsText {
       position: absolute;
@@ -139,7 +144,7 @@
       height: 15em;
       background-color: lighten($white, 92);
       color: $dark-black;
-      border-radius: 6px;
+      border-radius: 4px;
       // box-shadow: 0 2px 4px 0 $min-black;
 
       h1 {
@@ -162,7 +167,7 @@
       padding: 1em 1em;
       background-color: lighten($white, 92);
       color: $dark-black;
-      border-radius: 6px;
+      border-radius: 4px;
       // box-shadow: 0 2px 4px 0 $min-black;
 
       .info-content {

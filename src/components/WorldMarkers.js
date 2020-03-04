@@ -4,27 +4,26 @@ import { CircleMarker } from 'react-leaflet'
 
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
-const Markers = ({ loadTotal, onClick }) => {
-  const [clicked, setClicked] = useState(false)
+const WorldMarkers = ({ onClick }) => {
+  //   const [clicked, setClicked] = useState(false)
 
   const data = useStaticQuery(graphql`
     query {
-      allTidsserieCsv {
+      allWorldCsv {
         edges {
           node {
             id
-            Region
-            Display_Name
-            Lat
-            Long
-            Region_Total
+            Confirmed
+            Country_Region
+            Latitude
+            Longitude
           }
         }
       }
     }
   `)
 
-  const edges = data.allTidsserieCsv.edges
+  const edges = data.allWorldCsv.edges
 
   const getBubble = confirmed => {
     let color
@@ -32,21 +31,21 @@ const Markers = ({ loadTotal, onClick }) => {
     let radius
 
     if (confirmed > 0) {
-      color = colors.red
+      color = colors.world
     }
 
     if (number == 1) {
-      radius = 8
-    } else if (number < 3) {
-      radius = 10
-      console.log(number)
+      radius = 5
     } else if (number < 5) {
+      radius = 6
+      console.log(number)
+    } else if (number < 500) {
+      radius = 10
+    } else if (number < 2000) {
       radius = 15
-    } else if (number < 10) {
+    } else if (number < 5000) {
       radius = 20
-    } else if (number < 15) {
-      radius = 25
-    } else if (number >= 10) {
+    } else if (number >= 5000) {
       radius = 30
     }
 
@@ -54,23 +53,23 @@ const Markers = ({ loadTotal, onClick }) => {
   }
 
   return edges.map(edge => {
-    const region = edge.node
+    const country = edge.node
 
-    if (region.Region_Total > 0) {
-      const { color, radius } = getBubble(region.Region_Total)
+    if (country.Confirmed > 0) {
+      const { color, radius } = getBubble(country.Confirmed)
       return (
         <CircleMarker
-          key={region.id}
+          key={country.id}
           radius={radius}
           color={color}
           stroke={false}
-          center={[region.Lat, region.Long]}
+          center={[country.Latitude, country.Longitude]}
           fillOpacity={0.7}
-          onClick={() => onClick(region)}
+          onClick={() => onClick(country)}
         ></CircleMarker>
       )
     }
   })
 }
 
-export default Markers
+export default WorldMarkers

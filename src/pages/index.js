@@ -9,7 +9,10 @@ import Layout from 'components/Layout'
 import Container from 'components/Container'
 import Map from 'components/Map'
 import Markers from 'components/Markers'
+import WorldMarkers from 'components/WorldMarkers'
+
 import Counter from 'components/Counter'
+import ToggleViewButton from 'components/ToggleViewButton'
 
 import getWorld from 'data/getWorld.js'
 
@@ -63,9 +66,41 @@ const IndexPage = ({ data }) => {
   }
 
   const [region, setRegion] = useState(null)
+  const [country, setCountry] = useState(null)
+  const [view, setView] = useState('world')
 
-  function onClick(region) {
+  function onClickRegion(region) {
     setRegion(region)
+  }
+
+  function onClickCountry(country) {
+    setCountry(country)
+  }
+
+  function CountryContent() {
+    return (
+      <>
+        <h3>{country.Country_Region}</h3>
+        <div className="details">{country.Country_Region}</div>
+
+        <div className="numbers">
+          {country.Country_Region == 'Sweden' ? (
+            <b>
+              {getTotalConfirmed(data.allTidsserieCsv.edges, 'Region_Total')}
+            </b>
+          ) : (
+            <b>{country.Confirmed}</b>
+          )}
+        </div>
+        <div className="sources">
+          <SourceButton
+            url={
+              'https://github.com/elinlutz/gatsby-map/blob/master/src/data/World.csv'
+            }
+          />
+        </div>
+      </>
+    )
   }
 
   function RegionContent() {
@@ -87,9 +122,9 @@ const IndexPage = ({ data }) => {
     )
   }
 
-  function getTotalConfirmed(edges) {
+  function getTotalConfirmed(edges, prop) {
     return edges.reduce(function(a, b) {
-      return a + +b.node['Region_Total']
+      return a + +b.node[prop]
     }, 0)
   }
 
@@ -108,19 +143,34 @@ const IndexPage = ({ data }) => {
       </Helmet>
 
       <Map {...mapSettings}>
-        <Markers onClick={onClick} ref={markerRef} />
+        {view === 'sweden' ? (
+          <Markers onClick={onClickRegion} ref={markerRef} />
+        ) : (
+          <WorldMarkers onClick={onClickCountry} ref={markerRef} />
+        )}
         <Container className="mapbox">
+          <div className="switch">
+            <ToggleViewButton className="toggleViewButton" setView={setView} />
+          </div>
           <Container className="counter">
             <Counter
               className="counter"
-              confirmed={getTotalConfirmed(data.allTidsserieCsv.edges)}
+              confirmed={
+                view === 'world'
+                  ? getTotalConfirmed(data.allWorldCsv.edges, 'Confirmed')
+                  : getTotalConfirmed(
+                      data.allTidsserieCsv.edges,
+                      'Region_Total'
+                    )
+              }
+              view={view}
               suspected={0}
             ></Counter>
           </Container>
           <Container className="info">
-            {region ? (
+            {region || country ? (
               <div className="info-content">
-                <RegionContent />
+                {region ? <RegionContent /> : <CountryContent />}
               </div>
             ) : (
               <p className="noUnitsText">Klicka på en bubbla på kartan</p>
@@ -138,6 +188,13 @@ export const query = graphql`
       edges {
         node {
           Region_Total
+        }
+      }
+    }
+    allWorldCsv {
+      edges {
+        node {
+          Confirmed
         }
       }
     }

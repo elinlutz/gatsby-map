@@ -29,6 +29,17 @@ const Blog = () => {
           <h1>Tidslinje</h1>
           <h3>4 Mars 2020</h3>
           <li>
+            Region Stockholm rapporterar 16 nya fall av coronaviruset (
+            <a
+              className="sourceLink"
+              href="https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/fall-av-nya-coronaviruset-i-stockholm/"
+              target={'_blank'}
+            >
+              källa
+            </a>
+            )
+          </li>
+          <li>
             Region Örebro län rapporterar 1 nytt fall av coronaviruset i Örebro
             län (
             <a
