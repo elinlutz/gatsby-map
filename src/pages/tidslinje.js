@@ -29,6 +29,18 @@ const Blog = () => {
           <h1>Tidslinje</h1>
           <h3>4 Mars 2020</h3>
           <li>
+            Region Örebro län rapporterar 2 nya fall av coronaviruset i Örebro
+            län (
+            <a
+              className="sourceLink"
+              href="https://via.tt.se/pressmeddelande/inbjudan-till-presskonferens-pa-universitetssjukhuset-orebro-i-dag-onsdag?publisherId=3235654&releaseId=3271215"
+              target={'_blank'}
+            >
+              källa
+            </a>
+            )
+          </li>
+          <li>
             Region Värmland rapporterar 2 nya fall av coronaviruset i Värmland (
             <a
               className="sourceLink"
