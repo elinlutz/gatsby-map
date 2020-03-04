@@ -75,7 +75,11 @@ const IndexPage = ({ data }) => {
           <b>{region.Region_Total}</b>
         </div>
         <div className="sources">
-          <SourceButton url={'https://coronakartan.se'} />
+          <SourceButton
+            url={
+              'https://github.com/elinlutz/gatsby-map/blob/master/src/data/Tidsserie.csv'
+            }
+          />
         </div>
       </>
     )
