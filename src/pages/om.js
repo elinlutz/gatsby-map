@@ -30,22 +30,18 @@ const InfoPage = ({ data }) => {
         <h2>Data</h2>
 
         <p>
-          Antal bekräftade fall utgår ifrån officiella siffror från
-          Folkhälsomyndigheten. Antal kontrollerade fall är tagna från
-          nyhetskällor (
+          Antal bekräftade fall utgår ifrån officiella siffror från regionernas
+          och folkhälsomyndighetens rapportering. Du kan se det kompletta
+          datasetet{' '}
           <a
-            href={'https://sverigesradio.se/artikel/7418334'}
+            href={
+              'https://github.com/elinlutz/gatsby-map/blob/master/src/data/Tidsserie.csv'
+            }
             target={'_blank'}
           >
-            källa
-          </a>
-          ) .
-          {/* Datasetet uppdateras
-          dagligen, och du kan ladda ned det{' '}
-          <a href={'https://xxx.se'} target={'_blank'}>
             här
           </a>
-          . */}
+          .
         </p>
         <br />
 
@@ -53,8 +49,7 @@ const InfoPage = ({ data }) => {
         <p>
           Har du idéer på förbättringar eller vill hjälpa till i projektet? Hör
           av dig via <a href={'mailto:info@coronakartan.se'}>mejl</a>.
-          <br /> Projektet är byggt i React med Gatsby och Leaflet. Repot hittar
-          du{' '}
+          <br /> Projektet är byggt i React med Gatsby och Leaflet. Repot finns{' '}
           <a href={'https://github.com/elinlutz/gatsby-map'} target={'_blank'}>
             här
           </a>

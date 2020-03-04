@@ -1,78 +1,73 @@
 import React, { useState } from 'react'
-import { Popup, CircleMarker } from 'react-leaflet'
-
-import Button from '@material-ui/core/Button'
-
-import { units } from 'data/units.js'
+import { useStaticQuery, graphql } from 'gatsby'
+import { CircleMarker } from 'react-leaflet'
 
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
-const Markers = ({ onClick }) => {
+const Markers = ({ loadTotal, onClick }) => {
   const [clicked, setClicked] = useState(false)
 
-  const getBubble = (confirmed, suspect) => {
+  const data = useStaticQuery(graphql`
+    query {
+      allTidsserieCsv {
+        edges {
+          node {
+            id
+            Region
+            Display_Name
+            Lat
+            Long
+            Region_Total
+          }
+        }
+      }
+    }
+  `)
+
+  const edges = data.allTidsserieCsv.edges
+
+  const getBubble = confirmed => {
     let color
-    let number
+    let number = confirmed
     let radius
 
     if (confirmed > 0) {
       color = colors.red
-      number = confirmed
     }
 
-    if (suspect > 0) {
-      color = colors.orange
-      number = suspect
-    }
-
-    if (number === 1) {
-      radius = 5
+    if (number == 1) {
+      radius = 8
     } else if (number < 3) {
       radius = 10
+      console.log(number)
     } else if (number < 5) {
       radius = 15
     } else if (number < 10) {
       radius = 20
     } else if (number >= 10) {
-      radius = 30
+      radius = 25
     }
 
     return { color, radius }
   }
 
-  return units.map(unit => {
-    const { color, radius } = getBubble(unit.confirmed, unit.suspect)
-    return (
-      <CircleMarker
-        key={unit.id}
-        radius={radius}
-        color={color}
-        stroke={false}
-        center={[unit.lat, unit.lng]}
-        fillOpacity={0.6}
-        onClick={() => onClick(unit)}
-      >
-        {/* <Popup onClose={() => setClicked(false)}>
-          <Button
-            className="cityBtn"
-            onClick={() => {
-              setClicked(true)
-              onClick(unit)
-            }}
-          >
-            {unit.city}
-          </Button>
-          <br />
-          <br />
-          {'Bekräftade fall: '}
-          {unit.confirmed}
-          <br />
-          {unit.suspect > 0 ? 'Misstänkta fall ' + unit.suspect : null}
+  return edges.map(edge => {
+    const region = edge.node
 
-          {clicked == true ? <br /> 'Mer info poppar upp här nere' : null}
-        </Popup> */}
-      </CircleMarker>
-    )
+    if (region.Region_Total > 0) {
+      const { color, radius } = getBubble(region.Region_Total)
+      return (
+        <CircleMarker
+          key={region.id}
+          radius={radius}
+          color={color}
+          stroke={false}
+          center={[region.Lat, region.Long]}
+          fillOpacity={0.6}
+          onClick={() => onClick(region)}
+        ></CircleMarker>
+      )
+    }
   })
 }
 
