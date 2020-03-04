@@ -27,6 +27,30 @@ const Blog = () => {
 
         <Container type="timeline">
           <h1>Tidslinje</h1>
+          <h3>4 Mars 2020</h3>
+          <li>
+            Region Skåne rapporterar 1 nytt fall av coronaviruset i Skåne (
+            <a
+              className="sourceLink"
+              href="http://www.mynewsdesk.com/se/region_skane/news/pressbulletin-om-covid-19-4-mars-395997?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news"
+              target={'_blank'}
+            >
+              källa
+            </a>
+            )
+          </li>
+          <li>
+            Västra götaland rapporterar 2 nya fall av coronaviruset i
+            Göteborgsområdet (
+            <a
+              className="sourceLink"
+              href="https://news.cision.com/se/vastra-gotalandsregionen/r/4-mars--ytterligare-tva-bekraftade-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3052013"
+              target={'_blank'}
+            >
+              källa
+            </a>
+            )
+          </li>
           <h3>3 Mars 2020</h3>
           <li>
             Region Stockholm rapporterar 6 ytterligare fall av coronaviruset i

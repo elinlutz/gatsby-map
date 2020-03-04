@@ -44,7 +44,7 @@ const InfoPage = ({ data }) => {
           >
             här
           </a>
-          . Där finns även länkar till samtliga källor.
+          .
         </p>
         <br />
 
