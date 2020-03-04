@@ -24,7 +24,7 @@ export const units = [
     id: 4,
     city: 'Göteborg',
     region: 'Västra Götalandsregionen',
-    confirmed: 9,
+    confirmed: 11,
     suspect: 0,
     recovered: 0,
     deaths: 0,
@@ -32,11 +32,12 @@ export const units = [
       'https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2020/februari/nytt-bekraftat-fall-av-covid-19/',
     sources: [
       {
-        url: 'https://www.svt.se/nyheter/utrikes/senaste-nytt-om-coronaviruset',
-        date: '2020-03-01'
+        url:
+          'https://news.cision.com/se/vastra-gotalandsregionen/r/4-mars--ytterligare-tva-bekraftade-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3052013',
+        date: '2020-03-04'
       }
     ],
-    updatedAt: '2020-03-03',
+    updatedAt: '2020-03-04',
     lat: 57.70887,
     lng: 11.97456
   },

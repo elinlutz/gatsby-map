@@ -30,16 +30,8 @@ const InfoPage = ({ data }) => {
         <h2>Data</h2>
 
         <p>
-          Antal bekräftade fall utgår ifrån officiella siffror från
-          Folkhälsomyndigheten. Antal kontrollerade fall är tagna från
-          nyhetskällor (
-          <a
-            href={'https://sverigesradio.se/artikel/7418334'}
-            target={'_blank'}
-          >
-            källa
-          </a>
-          ) .
+          Antal bekräftade fall utgår från Folkhälsomyndighetens och regionernas
+          rapportering.
           {/* Datasetet uppdateras
           dagligen, och du kan ladda ned det{' '}
           <a href={'https://xxx.se'} target={'_blank'}>
