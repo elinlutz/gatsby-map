@@ -4,8 +4,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 const Counter = ({ confirmed, suspected }) => {
   const data = useStaticQuery(graphql`
     query {
-      currentBuildDate {
-        currentDate
+      site {
+        buildTimeZone
       }
     }
   `)
@@ -14,7 +14,7 @@ const Counter = ({ confirmed, suspected }) => {
     <div>
       <h1>{confirmed}</h1>
       <h3>Bekräftade fall</h3>
-      <p>Uppdaterat {data.currentBuildDate.currentDate}</p>
+      <p>Uppdaterat {data.site.buildTimeZone}</p>
     </div>
   )
 }
