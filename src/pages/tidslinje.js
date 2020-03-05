@@ -29,10 +29,10 @@ const Blog = () => {
           <h1>Tidslinje</h1>
           <h3>5 Mars 2020</h3>
           <li>
-            Uppsala rapporterar 2 nya fall av coronaviruset i Uppsala (
+            Region Uppsala rapporterar 2 nya fall av coronaviruset i Uppsala (
             <a
               className="sourceLink"
-              href="https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/fall-av-nya-coronaviruset-i-stockholm-den-5-mars/"
+              href="https://www.regionuppsala.se/nyheter"
               target={'_blank'}
             >
               källa
