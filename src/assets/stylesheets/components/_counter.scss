@@ -4,7 +4,7 @@
   padding: 1em 1em;
   max-width: 22em;
   margin-right: 0.5em;
-  height: 18em;
+  max-height: 40em;
   background-color: $white;
   border-radius: 4px;
   //   border: 0.5px solid rgba(0, 0, 0, 0.12);
@@ -15,14 +15,13 @@
     float: left;
     align-items: center;
     position: relative;
-    // background-color: yellow;
     height: 3em;
+    background-color: yellowgreen;
 
     .bubble {
       align-self: center;
       height: 25px;
       width: 25px;
-      float: left;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -39,21 +38,30 @@
   }
 
   .noBubbleHeader {
-    align-self: center;
-    float: left;
-    // background-color: yellow;
+    background-color: pink;
     height: 3em;
-    .main {
+
+    .detailsTitle {
+      background-color: red;
+
       p {
+        padding: 0;
+        margin: 0;
+        line-height: 14px;
         font-size: 14px;
         letter-spacing: 1px;
         color: $light-black;
         text-transform: uppercase;
       }
     }
-    .region {
+    .detailsRegion {
+      background-color: blue;
+
       p {
+        padding: 0;
+        margin: 0;
         font-size: 10px;
+        line-height: 10px;
         letter-spacing: 1px;
         color: $light-black;
         text-transform: uppercase;
@@ -158,23 +166,17 @@
     padding: 0.5em 0.5em;
     max-width: 22em;
     min-width: 128px;
-
     margin-right: 0.5em;
-    height: 10em;
+    height: 12em;
     background-color: $white;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
 
     .header {
-      float: left;
-      align-items: center;
-      position: relative;
       height: 24px;
-      letter-spacing: 1px;
 
       .bubble {
-        align-self: center;
         height: 20px;
         width: 20px;
         float: left;
@@ -186,32 +188,26 @@
       p {
         font-size: 12px;
         margin-left: 25px;
-        float: left;
         color: $light-black;
         text-transform: uppercase;
       }
-      .noBubbleHeader {
-        float: left;
-        align-items: center;
-        position: relative;
-        height: 24px;
-        background-color: purple;
 
-        .main {
-          p {
-            margin-left: 0px;
-            font-size: 10px;
-            float: left;
-            color: $light-black;
-            text-transform: uppercase;
-          }
+      .noBubbleHeader {
+        height: 24px;
+        background-color: blue;
+        width: auto;
+
+        p {
+          margin-left: 0px;
+          font-size: 1em;
+          color: $light-black;
+          text-transform: uppercase;
         }
+
         .region {
+          background-color: red;
           p {
-            margin-left: 0px;
-            float: left;
-            margin-top: 0px;
-            font-size: 8px;
+            font-size: 6px;
             color: $light-black;
             text-transform: uppercase;
           }

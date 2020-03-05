@@ -16,15 +16,13 @@ const DetailsCounter = ({ title, number, view, type, provinceState }) => {
 
   return (
     <Container className="counterCard">
-      <Container className="header">
-        <Container className="noBubbleHeader">
-          <Container className="main">
-            <p>{title}</p>
-          </Container>
-          <Container className="region">
-            <p>{provinceState}</p>
-          </Container>
-        </Container>
+      <Container className="noBubbleHeader">
+        <div className="detailsTitle">
+          <p>{title}</p>
+        </div>
+        <div className="detailsRegion">
+          <p>{provinceState ? provinceState : ' '}</p>
+        </div>
       </Container>
 
       <Container
