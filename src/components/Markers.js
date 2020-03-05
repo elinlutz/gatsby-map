@@ -36,17 +36,19 @@ const Markers = ({ loadTotal, onClick }) => {
     }
 
     if (number == 1) {
-      radius = 8
+      radius = 5
     } else if (number < 3) {
-      radius = 10
+      radius = 8
       console.log(number)
     } else if (number < 5) {
-      radius = 15
+      radius = 10
     } else if (number < 10) {
+      radius = 12
+    } else if (number < 50) {
       radius = 20
-    } else if (number < 15) {
+    } else if (number < 100) {
       radius = 25
-    } else if (number >= 10) {
+    } else if (number >= 100) {
       radius = 30
     }
 
