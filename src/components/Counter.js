@@ -55,7 +55,7 @@ const Counter = ({ title, number, view, type, provinceState }) => {
       ) : (
         <Container
           className={
-            type === 'world' ? 'confirmedNumberWorld' : 'confirmedNumberSweden'
+            view === 'world' ? 'confirmedNumberWorld' : 'confirmedNumberSweden'
           }
         >
           <Container className="line"></Container>

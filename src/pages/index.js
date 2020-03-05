@@ -12,17 +12,12 @@ import Markers from 'components/Markers'
 import WorldMarkers from 'components/WorldMarkers'
 
 import Counter from 'components/Counter'
-import ToggleViewButton from 'components/ToggleViewButton'
-import Bubble from 'components/Bubble'
+import DetailsCounter from 'components/DetailsCounter'
+import NoDetailsCounter from 'components/NoDetailsCounter'
 
-import getWorld from 'data/getWorld.js'
+import ToggleViewButton from 'components/ToggleViewButton'
 
 import CoronaImage from 'assets/icons/corona.png'
-
-const LOCATION = {
-  lat: 38.9072,
-  lng: -67.0369
-}
 
 const SourceButton = ({ url }) => {
   return (
@@ -80,7 +75,7 @@ const IndexPage = ({ data }) => {
 
   function CountryContent() {
     return (
-      <Counter
+      <DetailsCounter
         type={'details'}
         title={country.Country_Region}
         provinceState={country.Province_State}
@@ -90,19 +85,19 @@ const IndexPage = ({ data }) => {
             ? getTotalConfirmed(data.allTidsserieCsv.edges, 'Region_Total')
             : country.Confirmed
         }
-      ></Counter>
+      ></DetailsCounter>
     )
   }
 
   function RegionContent() {
     return (
-      <Counter
+      <DetailsCounter
         type={'details'}
         title={region.Display_Name}
         provinceState={region.Region}
         view={view}
         number={region.Region_Total}
-      ></Counter>
+      ></DetailsCounter>
     )
   }
 
@@ -157,8 +152,7 @@ const IndexPage = ({ data }) => {
               </div>
             ) : (
               <>
-                <Bubble view={view} />
-                <p className="noUnitsText">Klicka på en bubbla på kartan</p>
+                <NoDetailsCounter />
               </>
             )}
           </Container>

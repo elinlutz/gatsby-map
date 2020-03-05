@@ -73,13 +73,6 @@
       padding-bottom: 12px;
       font-size: 50px;
     }
-    // .line {
-    //   width: 120px;
-    //   height: 130px;
-    //   margin-left: 60px;
-    //   border-bottom: 10px solid black;
-    //   position: absolute;
-    // }
   }
 
   .confirmedNumberColor {
@@ -148,6 +141,11 @@
     p {
       font-size: 11px;
       color: $light-black;
+    }
+  }
+  .noDetailsCounter {
+    p {
+      color: yellow;
     }
   }
 }
