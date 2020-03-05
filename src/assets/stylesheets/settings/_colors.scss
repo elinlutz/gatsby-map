@@ -289,6 +289,8 @@ $full-white: rgba(255, 255, 255, 1);
 $dark-white: rgba(255, 255, 255, 0.87);
 $light-white: rgba(255, 255, 255, 0.54);
 
+$dark-theme: #35363a;
+
 // Custom colors
 
 $gatsby-purple: rebeccapurple;
@@ -298,9 +300,14 @@ $map-blue-darker: $red-500;
 
 $red-bubble: $red-500;
 $orange-bubble: $orange-700;
+$world: $blue-900;
+
+$accent: $dark-theme;
 
 :export {
   red: $red-bubble;
   orange: $orange-bubble;
   blue: $map-blue;
+  world: $world;
+  accent: $accent;
 }

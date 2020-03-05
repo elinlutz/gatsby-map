@@ -9,14 +9,15 @@ import Layout from 'components/Layout'
 import Container from 'components/Container'
 import Map from 'components/Map'
 import Markers from 'components/Markers'
+import WorldMarkers from 'components/WorldMarkers'
+
 import Counter from 'components/Counter'
+import DetailsCounter from 'components/DetailsCounter'
+import NoDetailsCounter from 'components/NoDetailsCounter'
+
+import ToggleViewButton from 'components/ToggleViewButton'
 
 import CoronaImage from 'assets/icons/corona.png'
-
-const LOCATION = {
-  lat: 38.9072,
-  lng: -67.0369
-}
 
 const SourceButton = ({ url }) => {
   return (
@@ -61,33 +62,48 @@ const IndexPage = ({ data }) => {
   }
 
   const [region, setRegion] = useState(null)
+  const [country, setCountry] = useState(null)
+  const [view, setView] = useState('sweden')
 
-  function onClick(region) {
+  function onClickRegion(region) {
     setRegion(region)
+  }
+
+  function onClickCountry(country) {
+    setCountry(country)
+  }
+
+  function CountryContent() {
+    return (
+      <DetailsCounter
+        type={'details'}
+        title={country.Country_Region}
+        provinceState={country.Province_State}
+        view={view}
+        number={
+          country.Country_Region == 'Sweden'
+            ? getTotalConfirmed(data.allTidsserieCsv.edges, 'Region_Total')
+            : country.Confirmed
+        }
+      ></DetailsCounter>
+    )
   }
 
   function RegionContent() {
     return (
-      <>
-        <h3>{region.Display_Name}</h3>
-        <div className="details">{region.Region}</div>
-        <div className="numbers">
-          <b>{region.Region_Total}</b>
-        </div>
-        <div className="sources">
-          <SourceButton
-            url={
-              'https://github.com/elinlutz/gatsby-map/blob/master/src/data/Tidsserie.csv'
-            }
-          />
-        </div>
-      </>
+      <DetailsCounter
+        type={'details'}
+        title={region.Display_Name}
+        provinceState={region.Region}
+        view={view}
+        number={region.Region_Total}
+      ></DetailsCounter>
     )
   }
 
-  function getTotalConfirmed(edges) {
+  function getTotalConfirmed(edges, prop) {
     return edges.reduce(function(a, b) {
-      return a + +b.node['Region_Total']
+      return a + +b.node[prop]
     }, 0)
   }
 
@@ -106,23 +122,44 @@ const IndexPage = ({ data }) => {
       </Helmet>
 
       <Map {...mapSettings}>
-        <Markers onClick={onClick} ref={markerRef} />
+        {view === 'sweden' ? (
+          <Markers onClick={onClickRegion} ref={markerRef} />
+        ) : (
+          <WorldMarkers onClick={onClickCountry} ref={markerRef} />
+        )}
         <Container className="mapbox">
-          <Container className="counter">
+          <Container className="mapboxContainer">
+            <ToggleViewButton
+              className="toggleViewButton"
+              setView={setView}
+              setRegion={setRegion}
+              setCountry={setCountry}
+              view={view}
+            />
             <Counter
-              className="counter"
-              confirmed={getTotalConfirmed(data.allTidsserieCsv.edges)}
+              className="counterContainer"
+              number={
+                view === 'world'
+                  ? getTotalConfirmed(data.allWorldCsv.edges, 'Confirmed')
+                  : getTotalConfirmed(
+                      data.allTidsserieCsv.edges,
+                      'Region_Total'
+                    )
+              }
+              view={view}
               suspected={0}
             ></Counter>
-          </Container>
-          <Container className="info">
-            {region ? (
-              <div className="info-content">
-                <RegionContent />
-              </div>
-            ) : (
-              <p className="noUnitsText">Klicka på en bubbla på kartan</p>
-            )}
+            <Container className="info">
+              {region || country ? (
+                <div className="info-content">
+                  {region ? <RegionContent /> : <CountryContent />}
+                </div>
+              ) : (
+                <>
+                  <NoDetailsCounter />
+                </>
+              )}
+            </Container>
           </Container>
         </Container>
       </Map>
@@ -136,6 +173,13 @@ export const query = graphql`
       edges {
         node {
           Region_Total
+        }
+      }
+    }
+    allWorldCsv {
+      edges {
+        node {
+          Confirmed
         }
       }
     }

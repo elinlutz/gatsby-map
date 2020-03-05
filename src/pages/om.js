@@ -32,8 +32,8 @@ const InfoPage = ({ data }) => {
         <h2>Data</h2>
 
         <p>
-          Antal bekräftade fall utgår från regionernas och Folkhälsomyndighetens
-          rapportering. Hela datasetet kan du se{' '}
+          Antal bekräftade fall i Sverige utgår från regionernas och
+          Folkhälsomyndighetens rapportering. Hela datasetet kan du se{' '}
           <OutboundLink
             href={
               'https://github.com/elinlutz/gatsby-map/blob/master/src/data/Tidsserie.csv'
@@ -43,6 +43,19 @@ const InfoPage = ({ data }) => {
             här
           </OutboundLink>
           .
+        </p>
+        <p>
+          Antal bekräftade fall ifrån andra världens länder utgår ifrån Johns
+          Hopkins University dataset, det är därför landet står på engelska.
+          Detta dataset finns{' '}
+          <OutboundLink
+            href={'https://github.com/CSSEGISandData/COVID-19'}
+            target={'_blank'}
+          >
+            här
+          </OutboundLink>
+          . Siffrorna för världens fall uppdateras bara en gång om dagen (på
+          morgonen).
         </p>
         <br />
 
@@ -70,7 +83,7 @@ const InfoPage = ({ data }) => {
           >
             {' Folkhälsomyndighetens hemsida'}
           </a>
-          . En annan bra och informativ karta som följer globala fall är{' '}
+          . En annan bra karta som följer globala fall är{' '}
           <a
             href={
               'https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6'

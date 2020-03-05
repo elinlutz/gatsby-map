@@ -5,12 +5,12 @@
   "dependencies": {
     "@material-ui/core": "^4.9.1",
     "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.45",
     "@material-ui/styles": "^4.9.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
     "gatsby": "^2.18.21",
     "gatsby-image": "^2.2.39",
-    "gatsby-plugin-build-date": "^1.0.0",
     "gatsby-plugin-buildtime-timezone": "^1.0.3",
     "gatsby-plugin-google-analytics": "^2.1.35",
     "gatsby-plugin-manifest": "^2.2.41",
@@ -68,7 +68,8 @@
     "lint": "eslint -c .eslintrc . --ext .js",
     "start": "yarn develop",
     "serve": "gatsby serve",
-    "test": "jest --config ./config/jest.config.js"
+    "test": "jest --config ./config/jest.config.js",
+    "downloadWorld": "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/03-03-2020.csv"
   },
   "husky": {
     "hooks": {

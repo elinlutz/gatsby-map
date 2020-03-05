@@ -1,0 +1,21 @@
+.world {
+  background-color: $world;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: block;
+  opacity: 0.9;
+  line-height: 25px;
+  white-space: nowrap;
+}
+
+.sweden {
+  background-color: $red-bubble;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: block;
+  opacity: 0.8;
+  line-height: 25px;
+  white-space: nowrap;
+}

@@ -1,0 +1,19 @@
+.switchContainer {
+  position: fixed;
+  top: 3.2em;
+  left: 0.3em;
+  z-index: 2000;
+
+  .toggleViewButtonSweden {
+    height: 2em;
+    border-radius: 2px;
+    font-size: 12px;
+    font-family: $font-default;
+  }
+  .toggleViewButtonWorld {
+    height: 2em;
+    border-radius: 2px;
+    font-size: 12px;
+    font-family: $font-default;
+  }
+}
