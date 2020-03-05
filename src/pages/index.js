@@ -128,33 +128,38 @@ const IndexPage = ({ data }) => {
           <WorldMarkers onClick={onClickCountry} ref={markerRef} />
         )}
         <Container className="mapbox">
-          <ToggleViewButton
-            className="toggleViewButton"
-            setView={setView}
-            setRegion={setRegion}
-            setCountry={setCountry}
-            view={view}
-          />
-          <Counter
-            className="counterContainer"
-            number={
-              view === 'world'
-                ? getTotalConfirmed(data.allWorldCsv.edges, 'Confirmed')
-                : getTotalConfirmed(data.allTidsserieCsv.edges, 'Region_Total')
-            }
-            view={view}
-            suspected={0}
-          ></Counter>
-          <Container className="info">
-            {region || country ? (
-              <div className="info-content">
-                {region ? <RegionContent /> : <CountryContent />}
-              </div>
-            ) : (
-              <>
-                <NoDetailsCounter />
-              </>
-            )}
+          <Container className="mapboxContainer">
+            <ToggleViewButton
+              className="toggleViewButton"
+              setView={setView}
+              setRegion={setRegion}
+              setCountry={setCountry}
+              view={view}
+            />
+            <Counter
+              className="counterContainer"
+              number={
+                view === 'world'
+                  ? getTotalConfirmed(data.allWorldCsv.edges, 'Confirmed')
+                  : getTotalConfirmed(
+                      data.allTidsserieCsv.edges,
+                      'Region_Total'
+                    )
+              }
+              view={view}
+              suspected={0}
+            ></Counter>
+            <Container className="info">
+              {region || country ? (
+                <div className="info-content">
+                  {region ? <RegionContent /> : <CountryContent />}
+                </div>
+              ) : (
+                <>
+                  <NoDetailsCounter />
+                </>
+              )}
+            </Container>
           </Container>
         </Container>
       </Map>

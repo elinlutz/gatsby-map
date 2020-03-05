@@ -36,7 +36,7 @@ const DetailsCounter = ({ title, number, view, type, provinceState }) => {
         <h3>Bekräftade fall</h3>
       </Container>
       <Container className="updatedText">
-        <p>KÄLLA</p>
+        <p></p>
       </Container>
     </Container>
   )

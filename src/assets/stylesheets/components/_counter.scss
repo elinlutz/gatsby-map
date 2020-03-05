@@ -116,6 +116,36 @@
     display: flex;
     flex-direction: column;
 
+    .header {
+      float: left;
+      align-items: center;
+      position: relative;
+      height: 4em;
+
+      p {
+        font-size: 15px;
+        margin-top: 11px;
+        margin-left: 26px;
+        letter-spacing: 1px;
+        float: left;
+        color: $light-black;
+        text-transform: uppercase;
+      }
+    }
+
+    .noBubbleHeader {
+      .detailsTitle {
+        p {
+          letter-spacing: 0px;
+        }
+      }
+      .detailsRegion {
+        p {
+          letter-spacing: 0px;
+        }
+      }
+    }
+
     .confirmedNumberContainer {
       line-height: 0px;
 
