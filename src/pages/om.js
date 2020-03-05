@@ -47,16 +47,16 @@ const InfoPage = ({ data }) => {
         </p>
         <p>
           Antal bekräftade fall ifrån andra världens länder utgår ifrån Johns
-          Hopkins University dataset, det är därför landet står på engelska.
-          Detta dataset finns{' '}
+          Hopkins University dataset, samma som är till grund för WHO:s
+          rapporteringar. Detta dataset finns{' '}
           <OutboundLink
             href={'https://github.com/CSSEGISandData/COVID-19'}
             target={'_blank'}
           >
             här
           </OutboundLink>
-          . Siffrorna för världens fall uppdateras bara en gång om dagen (på
-          morgonen).
+          . Siffrorna för världens fall uppdateras en gång om dagen, på
+          förmiddagen.
         </p>
         <br />
 
