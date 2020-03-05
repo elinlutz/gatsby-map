@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
-import { nominalTypeHack } from 'prop-types'
+
+import { useStaticQuery, graphql } from 'gatsby'
 
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
-const options = {
+const getOptions = latestTotal => ({
   title: {
     text: null
   },
@@ -28,7 +29,7 @@ const options = {
   },
 
   yAxis: {
-    tickInterval: 5,
+    tickInterval: 20,
     title: {
       text: null
     },
@@ -79,14 +80,38 @@ const options = {
         ['1 Mars 2020', 14],
         ['2 Mars 2020', 15],
         ['3 Mars 2020', 30],
-        ['4 Mars 2020', 60]
+        ['4 Mars 2020', 52],
+        ['5 Mars 2020', latestTotal]
       ]
     }
   ]
-}
+})
 
-const Chart = () => (
-  <HighchartsReact highcharts={Highcharts} options={options} />
-)
+const Total = () => {}
+
+const Chart = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allTidsserieCsv {
+        edges {
+          node {
+            Region_Total
+          }
+        }
+      }
+    }
+  `)
+
+  function getTotalConfirmed(edges) {
+    return edges.reduce(function(a, b) {
+      return a + +b.node['Region_Total']
+    }, 0)
+  }
+
+  const total = getTotalConfirmed(data.allTidsserieCsv.edges)
+  const chartOptions = getOptions(total)
+
+  return <HighchartsReact highcharts={Highcharts} options={chartOptions} />
+}
 
 export default Chart
