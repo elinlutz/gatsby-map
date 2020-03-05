@@ -14,18 +14,23 @@
   bottom: 5em;
   z-index: 2000;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-flow: row;
-  list-style: none;
   padding: 0em 1em;
   min-width: 345;
+}
 
-  .noUnitsText {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: $light-black;
+@media (max-width: 500px) {
+  .mapbox {
+    position: fixed;
+    bottom: 2.5em;
+    z-index: 2000;
+    display: flex wrap;
+    align-items: flex-start;
+    flex-flow: row;
+    list-style: none;
+    padding: 0em 1em;
+    min-width: 345;
   }
 }
 

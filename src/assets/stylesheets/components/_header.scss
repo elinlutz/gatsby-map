@@ -10,8 +10,8 @@ header {
   .container {
     display: flex;
     justify-content: space-between;
-    height: 2.8em;
-    line-height: 2.7em;
+    height: 2.2em;
+    line-height: 2.1em;
   }
 
   ul {
@@ -80,9 +80,14 @@ header {
     color: $accent;
     text-decoration: none;
     margin: 0.25em;
+    border-radius: 2px;
+    height: 30px;
+    font-size: 12px;
 
     .icon {
-      margin-right: 0.1em;
+      width: 20px;
+      height: 20px;
+      margin-right: 0.3em;
     }
 
     @media (max-width: 520px) {
