@@ -73,11 +73,16 @@ const Counter = ({ title, number, view, type, provinceState }) => {
         {view == 'sweden' ? (
           <p>UPPDATERAT {updatedAt}</p>
         ) : (
-          <p>UPPDATERAT {updatedAt.substring(0, updatedAt.length - 6)}</p>
+          <>
+            <p>GÅRDAGENS SIFFROR</p>
+            <p>(för övriga världen)</p>
+          </>
         )}
       </Container>
     </Container>
   )
 }
+
+// {updatedAt.substring(0, updatedAt.length - 6)}
 
 export default Counter

@@ -26,7 +26,6 @@ const DetailsCounter = ({ title, number, view, type, provinceState }) => {
       </Container>
 
       <Container className={'confirmedNumberContainer'}>
-        <Container className="line"></Container>
         {number > 1000 ? (
           <h2>{number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}</h2>
         ) : (
@@ -37,11 +36,7 @@ const DetailsCounter = ({ title, number, view, type, provinceState }) => {
         <h3>Bekräftade fall</h3>
       </Container>
       <Container className="updatedText">
-        {view == 'sweden' ? (
-          <p>KÄLLA {updatedAt}</p>
-        ) : (
-          <p>KÄLLA {updatedAt.substring(0, updatedAt.length - 6)}</p>
-        )}
+        <p>KÄLLA</p>
       </Container>
     </Container>
   )
