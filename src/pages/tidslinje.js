@@ -29,6 +29,17 @@ const Blog = () => {
           <h1>Tidslinje</h1>
           <h3>5 Mars 2020</h3>
           <li>
+            Region Skåne rapporterar 7 nya fall av coronaviruset i Skåne (
+            <a
+              className="sourceLink"
+              href="https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-5-mars-2979148?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news"
+              target={'_blank'}
+            >
+              källa
+            </a>
+            )
+          </li>
+          <li>
             Västra Götaland rapporterar 1 nytt fall av coronaviruset i Borås (
             <a
               className="sourceLink"
