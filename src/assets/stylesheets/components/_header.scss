@@ -1,12 +1,8 @@
 header {
+  position: fixed;
   width: 100%;
   background-color: $accent;
   z-index: 2000;
-
-  .worldHeader {
-    width: 100%;
-    background-color: $red-800;
-  }
 
   .container {
     display: flex;
