@@ -41,11 +41,11 @@ const Blog = () => {
             )
           </li>
           <li>
-            Region Stockholm rapporterar 28 nya fall av coronaviruset i
-            Stockholm (
+            Region Gävleborg rapporterar 1 nytt fall av coronaviruset i
+            Gävleborg (
             <a
               className="sourceLink"
-              href="https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/fall-av-nya-coronaviruset-i-stockholm-den-5-mars/"
+              href="https://www.svt.se/nyheter/lokalt/gavleborg/forsta-fallet-av-coronaviruset-i-gavleborg"
               target={'_blank'}
             >
               källa
