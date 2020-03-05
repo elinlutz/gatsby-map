@@ -5,6 +5,8 @@ import Layout from 'components/Layout'
 import Container from 'components/Container'
 import Comments from 'components/Comments'
 import Chart from 'components/Chart'
+import TimelineListElement from 'components/TimelineListElement'
+import { withWidth } from '@material-ui/core'
 
 const Blog = () => {
   return (
@@ -28,123 +30,77 @@ const Blog = () => {
         <Container type="timeline">
           <h1>Tidslinje</h1>
           <h3>5 Mars 2020</h3>
-          <li>
-            Region Uppsala rapporterar 2 nya fall av coronaviruset i Uppsala (
-            <a
-              className="sourceLink"
-              href="https://www.regionuppsala.se/nyheter"
-              target={'_blank'}
-            >
-              källa
-            </a>
-            )
-          </li>
-          <li>
-            Region Stockholm rapporterar 28 nya fall av coronaviruset i
-            Stockholm (
-            <a
-              className="sourceLink"
-              href="https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/fall-av-nya-coronaviruset-i-stockholm-den-5-mars/"
-              target={'_blank'}
-            >
-              källa
-            </a>
-            )
-          </li>
-          <li>
-            Region Gävleborg rapporterar 1 nytt fall av coronaviruset i
-            Gävleborg (
-            <a
-              className="sourceLink"
-              href="https://www.svt.se/nyheter/lokalt/gavleborg/forsta-fallet-av-coronaviruset-i-gavleborg"
-              target={'_blank'}
-            >
-              källa
-            </a>
-            )
-          </li>
-          <li>
-            Region Värmland rapporterar 3 nya fall av coronaviruset i Värmland (
-            <a
-              className="sourceLink"
-              href="https://www.regionvarmland.se/om-regionen/pressrum/Pressmeddelanden/2020/03/ytterligare-tre-fall-av-nya-coronaviruset-i-varmland/"
-              target={'_blank'}
-            >
-              källa
-            </a>
-            )
-          </li>
-          <li>
-            Region Skåne rapporterar 7 nya fall av coronaviruset i Skåne (
-            <a
-              className="sourceLink"
-              href="https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-5-mars-2979148?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news"
-              target={'_blank'}
-            >
-              källa
-            </a>
-            )
-          </li>
-          <li>
-            Västra Götaland rapporterar 1 nytt fall av coronaviruset i Borås (
-            <a
-              className="sourceLink"
-              href="https://news.cision.com/se/vastra-gotalandsregionen/r/5-mars--ett-nytt-bekraftat-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3052981"
-              target={'_blank'}
-            >
-              källa
-            </a>
-            )
-          </li>
+          <TimelineListElement
+            number={2}
+            region={'Uppsala'}
+            source={'https://www.regionuppsala.se/nyheter'}
+          ></TimelineListElement>
+          <TimelineListElement
+            number={28}
+            region={'Stockholm'}
+            source={
+              'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/fall-av-nya-coronaviruset-i-stockholm-den-5-mars/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Gävleborg'}
+            source={
+              'https://www.svt.se/nyheter/lokalt/gavleborg/forsta-fallet-av-coronaviruset-i-gavleborg'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={3}
+            region={'Värmland'}
+            source={
+              'https://www.regionvarmland.se/om-regionen/pressrum/Pressmeddelanden/2020/03/ytterligare-tre-fall-av-nya-coronaviruset-i-varmland/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={7}
+            region={'Skåne'}
+            source={
+              'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-5-mars-2979148?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Borås, Västra Götaland'}
+            source={
+              'https://news.cision.com/se/vastra-gotalandsregionen/r/5-mars--ett-nytt-bekraftat-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3052981'
+            }
+          ></TimelineListElement>
           <h3>4 Mars 2020</h3>
+          <TimelineListElement
+            number={16}
+            region={'Stockholm'}
+            source={
+              'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/fall-av-nya-coronaviruset-i-stockholm/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Örebro'}
+            source={
+              'https://via.tt.se/pressmeddelande/inbjudan-till-presskonferens-pa-universitetssjukhuset-orebro-i-dag-onsdag?publisherId=3235654&releaseId=3271215'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={2}
+            region={'Värmland'}
+            source={
+              'https://www.regionvarmland.se/om-regionen/pressrum/Pressmeddelanden/2020/03/tva-fall-av-nya-coronaviruset-i-varmland/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Skåne'}
+            source={
+              'http://www.mynewsdesk.com/se/region_skane/news/pressbulletin-om-covid-19-4-mars-395997?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news'
+            }
+          ></TimelineListElement>
           <li>
-            Region Stockholm rapporterar 16 nya fall av coronaviruset (
-            <a
-              className="sourceLink"
-              href="https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/fall-av-nya-coronaviruset-i-stockholm/"
-              target={'_blank'}
-            >
-              källa
-            </a>
-            )
-          </li>
-          <li>
-            Region Örebro län rapporterar 1 nytt fall av coronaviruset i Örebro
-            län (
-            <a
-              className="sourceLink"
-              href="https://via.tt.se/pressmeddelande/inbjudan-till-presskonferens-pa-universitetssjukhuset-orebro-i-dag-onsdag?publisherId=3235654&releaseId=3271215"
-              target={'_blank'}
-            >
-              källa
-            </a>
-            )
-          </li>
-          <li>
-            Region Värmland rapporterar 2 nya fall av coronaviruset i Värmland (
-            <a
-              className="sourceLink"
-              href="https://www.regionvarmland.se/om-regionen/pressrum/Pressmeddelanden/2020/03/tva-fall-av-nya-coronaviruset-i-varmland/"
-              target={'_blank'}
-            >
-              källa
-            </a>
-            )
-          </li>
-          <li>
-            Region Skåne rapporterar 1 nytt fall av coronaviruset i Skåne (
-            <a
-              className="sourceLink"
-              href="http://www.mynewsdesk.com/se/region_skane/news/pressbulletin-om-covid-19-4-mars-395997?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news"
-              target={'_blank'}
-            >
-              källa
-            </a>
-            )
-          </li>
-          <li>
-            Västra götaland rapporterar 2 nya fall av coronaviruset i
-            Göteborgsområdet (
+            2 nya fall av coronaviruset i Göteborgsområdet (
             <a
               className="sourceLink"
               href="https://news.cision.com/se/vastra-gotalandsregionen/r/4-mars--ytterligare-tva-bekraftade-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3052013"

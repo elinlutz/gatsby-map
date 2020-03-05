@@ -46,17 +46,16 @@ const InfoPage = ({ data }) => {
           .
         </p>
         <p>
-          Antal bekräftade fall ifrån andra världens länder utgår ifrån Johns
-          Hopkins University dataset, samma som är till grund för WHO:s
-          rapporteringar. Detta dataset finns{' '}
+          Antal bekräftade fall i världen utgår ifrån Johns Hopkins Universitys{' '}
           <OutboundLink
             href={'https://github.com/CSSEGISandData/COVID-19'}
             target={'_blank'}
           >
-            här
+            dataset{' '}
           </OutboundLink>
-          . Siffrorna för världens fall uppdateras en gång om dagen, på
-          förmiddagen.
+          . Det är samma siffror som ligger till grund för WHO:s dagliga
+          rapporteringar. Siffrorna för världen uppdateras en gång om dagen och
+          visar gårdagens antal fall.
         </p>
         <br />
 

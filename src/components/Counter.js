@@ -74,8 +74,7 @@ const Counter = ({ title, number, view, type, provinceState }) => {
           <p>UPPDATERAT {updatedAt}</p>
         ) : (
           <>
-            <p>GÅRDAGENS SIFFROR</p>
-            <p>(för övriga världen)</p>
+            <p>UPPDATERAT {updatedAt.substring(0, updatedAt.length - 6)}</p>
           </>
         )}
       </Container>
