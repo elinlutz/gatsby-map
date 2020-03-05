@@ -7,7 +7,7 @@ import 'assets/stylesheets/application.scss'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
 
-const Layout = ({ children, pageName }) => {
+const Layout = ({ children, pageName, view }) => {
   let className = ''
 
   if (pageName) {

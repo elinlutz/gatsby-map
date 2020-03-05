@@ -13,6 +13,7 @@ import WorldMarkers from 'components/WorldMarkers'
 
 import Counter from 'components/Counter'
 import ToggleViewButton from 'components/ToggleViewButton'
+import Bubble from 'components/Bubble'
 
 import getWorld from 'data/getWorld.js'
 
@@ -67,7 +68,7 @@ const IndexPage = ({ data }) => {
 
   const [region, setRegion] = useState(null)
   const [country, setCountry] = useState(null)
-  const [view, setView] = useState('world')
+  const [view, setView] = useState('sweden')
 
   function onClickRegion(region) {
     setRegion(region)
@@ -79,46 +80,29 @@ const IndexPage = ({ data }) => {
 
   function CountryContent() {
     return (
-      <>
-        <h3>{country.Country_Region}</h3>
-        <div className="details">{country.Country_Region}</div>
-
-        <div className="numbers">
-          {country.Country_Region == 'Sweden' ? (
-            <b>
-              {getTotalConfirmed(data.allTidsserieCsv.edges, 'Region_Total')}
-            </b>
-          ) : (
-            <b>{country.Confirmed}</b>
-          )}
-        </div>
-        <div className="sources">
-          <SourceButton
-            url={
-              'https://github.com/elinlutz/gatsby-map/blob/master/src/data/World.csv'
-            }
-          />
-        </div>
-      </>
+      <Counter
+        type={'details'}
+        title={country.Country_Region}
+        provinceState={country.Province_State}
+        view={view}
+        number={
+          country.Country_Region == 'Sweden'
+            ? getTotalConfirmed(data.allTidsserieCsv.edges, 'Region_Total')
+            : country.Confirmed
+        }
+      ></Counter>
     )
   }
 
   function RegionContent() {
     return (
-      <>
-        <h3>{region.Display_Name}</h3>
-        <div className="details">{region.Region}</div>
-        <div className="numbers">
-          <b>{region.Region_Total}</b>
-        </div>
-        <div className="sources">
-          <SourceButton
-            url={
-              'https://github.com/elinlutz/gatsby-map/blob/master/src/data/Tidsserie.csv'
-            }
-          />
-        </div>
-      </>
+      <Counter
+        type={'details'}
+        title={region.Display_Name}
+        provinceState={region.Region}
+        view={view}
+        number={region.Region_Total}
+      ></Counter>
     )
   }
 
@@ -149,31 +133,33 @@ const IndexPage = ({ data }) => {
           <WorldMarkers onClick={onClickCountry} ref={markerRef} />
         )}
         <Container className="mapbox">
-          <div className="switch">
-            <ToggleViewButton className="toggleViewButton" setView={setView} />
-          </div>
-          <Container className="counter">
-            <Counter
-              className="counter"
-              confirmed={
-                view === 'world'
-                  ? getTotalConfirmed(data.allWorldCsv.edges, 'Confirmed')
-                  : getTotalConfirmed(
-                      data.allTidsserieCsv.edges,
-                      'Region_Total'
-                    )
-              }
-              view={view}
-              suspected={0}
-            ></Counter>
-          </Container>
+          <ToggleViewButton
+            className="toggleViewButton"
+            setView={setView}
+            setRegion={setRegion}
+            setCountry={setCountry}
+            view={view}
+          />
+          <Counter
+            className="counterContainer"
+            number={
+              view === 'world'
+                ? getTotalConfirmed(data.allWorldCsv.edges, 'Confirmed')
+                : getTotalConfirmed(data.allTidsserieCsv.edges, 'Region_Total')
+            }
+            view={view}
+            suspected={0}
+          ></Counter>
           <Container className="info">
             {region || country ? (
               <div className="info-content">
                 {region ? <RegionContent /> : <CountryContent />}
               </div>
             ) : (
-              <p className="noUnitsText">Klicka på en bubbla på kartan</p>
+              <>
+                <Bubble view={view} />
+                <p className="noUnitsText">Klicka på en bubbla på kartan</p>
+              </>
             )}
           </Container>
         </Container>

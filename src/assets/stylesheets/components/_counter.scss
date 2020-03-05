@@ -1,0 +1,177 @@
+.counterCard {
+  text-align: center;
+  line-height: 0px;
+  padding: 1em 1em;
+  max-width: 22em;
+  margin-right: 0.5em;
+  height: 18em;
+  background-color: $white;
+  border-radius: 4px;
+  //   border: 0.5px solid rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    float: left;
+    align-items: center;
+    position: relative;
+    // background-color: yellow;
+    height: 3em;
+
+    .bubble {
+      align-self: center;
+      height: 25px;
+      width: 25px;
+      float: left;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-45%);
+    }
+
+    p {
+      font-size: 15px;
+      margin-left: 25px;
+      letter-spacing: 1px;
+      float: left;
+      color: $light-black;
+      text-transform: uppercase;
+    }
+  }
+
+  .noBubbleHeader {
+    align-self: center;
+    float: left;
+    // background-color: yellow;
+    height: 3em;
+    .main {
+      p {
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: $light-black;
+        text-transform: uppercase;
+      }
+    }
+    .region {
+      p {
+        font-size: 10px;
+        letter-spacing: 1px;
+        color: $light-black;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .confirmedNumber {
+    height: 100px;
+    line-height: 0px;
+
+    h1 {
+      font-size: 80px;
+    }
+    h2 {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      font-size: 50px;
+    }
+    // .line {
+    //   width: 120px;
+    //   height: 130px;
+    //   margin-left: 60px;
+    //   border-bottom: 10px solid black;
+    //   position: absolute;
+    // }
+  }
+
+  .confirmedNumberColor {
+    height: 100px;
+    line-height: 0px;
+
+    h1 {
+      color: yellow;
+
+      font-size: 80px;
+    }
+    h2 {
+      color: yellow;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      font-size: 50px;
+    }
+    // .line {
+    //   width: 120px;
+    //   height: 130px;
+    //   margin-left: 60px;
+    //   border-bottom: 10px solid black;
+    //   position: absolute;
+    // }
+  }
+
+  .confirmedNumberSweden {
+    height: 100px;
+    line-height: 0px;
+
+    h1 {
+      color: $red-bubble;
+
+      font-size: 80px;
+    }
+    h2 {
+      color: $red-bubble;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      font-size: 50px;
+    }
+  }
+
+  .confirmedNumberWorld {
+    height: 100px;
+    line-height: 0px;
+
+    h1 {
+      color: $world;
+      font-size: 80px;
+    }
+    h2 {
+      color: $world;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      font-size: 50px;
+    }
+  }
+
+  .confirmedText {
+    h3 {
+      font-size: 18px;
+    }
+  }
+  .updatedText {
+    p {
+      font-size: 11px;
+      color: $light-black;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .counter {
+    text-align: center;
+    line-height: 1.5em;
+    padding: 1em 1em;
+    min-width: 13em;
+    max-width: 22em;
+    margin-right: 0.5em;
+    height: 15em;
+    background-color: lighten($white, 92);
+    color: $dark-black;
+    border-radius: 4px;
+    // box-shadow: 0 2px 4px 0 $min-black;
+
+    h1 {
+      font-size: 5em;
+    }
+    p {
+      font-size: 10px;
+      color: $light-black;
+    }
+  }
+}

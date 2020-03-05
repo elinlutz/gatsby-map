@@ -1,8 +1,17 @@
-.switch {
+.switchContainer {
+  position: fixed;
+  top: 4em;
+  left: 0.5em;
+  z-index: 2000;
+
   .toggleViewButtonSweden {
-    color: $light-black;
+    height: 2em;
+    font-size: 12px;
+    font-family: $font-default;
   }
   .toggleViewButtonWorld {
-    color: $light-black;
+    height: 2em;
+    font-size: 12px;
+    font-family: $font-default;
   }
 }

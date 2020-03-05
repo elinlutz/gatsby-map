@@ -298,10 +298,14 @@ $map-blue-darker: $red-500;
 
 $red-bubble: $red-500;
 $orange-bubble: $orange-700;
+$world: $blue-900;
+
+$accent: $grey-800;
 
 :export {
   red: $red-bubble;
   orange: $orange-bubble;
   blue: $map-blue;
-  world: $yellow-900;
+  world: $world;
+  accent: $accent;
 }

@@ -15,6 +15,7 @@ const WorldMarkers = ({ onClick }) => {
             id
             Confirmed
             Country_Region
+            Province_State
             Latitude
             Longitude
           }
