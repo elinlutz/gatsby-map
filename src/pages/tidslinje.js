@@ -27,6 +27,18 @@ const Blog = () => {
 
         <Container type="timeline">
           <h1>Tidslinje</h1>
+          <h3>5 Mars 2020</h3>
+          <li>
+            Västra Götaland rapporterar 1 nytt fall av coronaviruset i Borås (
+            <a
+              className="sourceLink"
+              href="https://news.cision.com/se/vastra-gotalandsregionen/r/5-mars--ett-nytt-bekraftat-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3052981"
+              target={'_blank'}
+            >
+              källa
+            </a>
+            )
+          </li>
           <h3>4 Mars 2020</h3>
           <li>
             Region Stockholm rapporterar 16 nya fall av coronaviruset (
