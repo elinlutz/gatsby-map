@@ -5,7 +5,8 @@ const NoDetailsCounter = () => {
   return (
     <Container className="counterCard">
       <Container className="noDetailsCounter">
-        <p>Klicka på en bubla på kartan</p>
+        <p>Klicka på en bubbla </p>
+        <p>på kartan</p>
       </Container>
     </Container>
   )

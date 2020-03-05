@@ -21,15 +21,11 @@ const DetailsCounter = ({ title, number, view, type, provinceState }) => {
           <p>{title}</p>
         </div>
         <div className="detailsRegion">
-          <p>{provinceState ? provinceState : ' '}</p>
+          <p>{provinceState ? provinceState : title}</p>
         </div>
       </Container>
 
-      <Container
-        className={
-          view === 'sweden' ? 'confirmedNumberSweden' : 'confirmedNumberWorld'
-        }
-      >
+      <Container className={'confirmedNumberContainer'}>
         <Container className="line"></Container>
         {number > 1000 ? (
           <h2>{number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}</h2>

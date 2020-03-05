@@ -44,7 +44,7 @@ const Counter = ({ title, number, view, type, provinceState }) => {
         </Container>
       )}
       {type != 'details' ? (
-        <Container className="confirmedNumber">
+        <Container className="confirmedNumberContainer">
           <Container className="line"></Container>
           {number > 1000 ? (
             <h2>{number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}</h2>
@@ -53,16 +53,16 @@ const Counter = ({ title, number, view, type, provinceState }) => {
           )}
         </Container>
       ) : (
-        <Container
-          className={
-            view === 'world' ? 'confirmedNumberWorld' : 'confirmedNumberSweden'
-          }
-        >
+        <Container className="confirmedNumberContainer">
           <Container className="line"></Container>
           {number > 1000 ? (
-            <h2>{number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}</h2>
+            <h2 className={view === 'world' ? 'hWorld' : 'hSweden'}>
+              {number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+            </h2>
           ) : (
-            <h1>{number}</h1>
+            <h1 className={view === 'world' ? 'hWorld' : 'hSweden'}>
+              {number}
+            </h1>
           )}
         </Container>
       )}
