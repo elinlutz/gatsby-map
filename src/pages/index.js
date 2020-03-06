@@ -12,6 +12,9 @@ import Markers from 'components/Markers'
 import WorldMarkers from 'components/WorldMarkers'
 
 import Counter from 'components/Counter'
+import CounterSweden from 'components/CounterSweden'
+import CounterWorld from 'components/CounterWorld'
+
 import DetailsCounter from 'components/DetailsCounter'
 import NoDetailsCounter from 'components/NoDetailsCounter'
 
@@ -142,18 +145,21 @@ const IndexPage = ({ data }) => {
                 view={view}
               />
             </div>
+            {view === 'sweden' ? (
+              <CounterSweden
+                view={view}
+                number={getTotalConfirmed(
+                  data.allTidsserieCsv.edges,
+                  'Region_Total'
+                )}
+              ></CounterSweden>
+            ) : (
+              <CounterWorld
+                view={view}
+                number={getTotalConfirmed(data.allWorldCsv.edges, 'Confirmed')}
+              ></CounterWorld>
+            )}
 
-            <Counter
-              number={
-                view === 'world'
-                  ? getTotalConfirmed(data.allWorldCsv.edges, 'Confirmed')
-                  : getTotalConfirmed(
-                      data.allTidsserieCsv.edges,
-                      'Region_Total'
-                    )
-              }
-              view={view}
-            ></Counter>
             <Container className="info">
               {region || country ? (
                 <div className="info-content">
