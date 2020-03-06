@@ -144,7 +144,6 @@ const IndexPage = ({ data }) => {
             </div>
 
             <Counter
-              className="counterContainer"
               number={
                 view === 'world'
                   ? getTotalConfirmed(data.allWorldCsv.edges, 'Confirmed')
@@ -154,7 +153,6 @@ const IndexPage = ({ data }) => {
                     )
               }
               view={view}
-              suspected={0}
             ></Counter>
             <Container className="info">
               {region || country ? (
