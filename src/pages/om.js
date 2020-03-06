@@ -51,7 +51,7 @@ const InfoPage = ({ data }) => {
             href={'https://github.com/CSSEGISandData/COVID-19'}
             target={'_blank'}
           >
-            dataset{' '}
+            dataset
           </OutboundLink>
           . Det är samma siffror som ligger till grund för WHO:s dagliga
           rapporteringar. Siffrorna för världen uppdateras en gång om dagen och

@@ -29,7 +29,7 @@ const Blog = () => {
         <Container type="timeline">
           <h1>Tidslinje</h1>
           {/* <p>Uppdaterat: {data.site.buildTimeZone}</p> */}
-          <h3>6 Mars 2020</h3>
+          <h3>6 Mars 2020: 42</h3>
           <TimelineListElement
             number={21}
             region={'Stockholm'}
@@ -70,7 +70,7 @@ const Blog = () => {
               'https://news.cision.com/se/vastra-gotalandsregionen/r/6-mars--tva-nya-bekraftade-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3053911'
             }
           ></TimelineListElement>
-          <h3>5 Mars 2020</h3>
+          <h3>5 Mars 2020: 42</h3>
           <TimelineListElement
             number={2}
             region={'Uppsala'}
@@ -111,7 +111,7 @@ const Blog = () => {
               'https://news.cision.com/se/vastra-gotalandsregionen/r/5-mars--ett-nytt-bekraftat-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3052981'
             }
           ></TimelineListElement>
-          <h3>4 Mars 2020</h3>
+          <h3>4 Mars 2020: 22</h3>
           <TimelineListElement
             number={16}
             region={'Stockholm'}
@@ -151,7 +151,7 @@ const Blog = () => {
             </a>
             )
           </li>
-          <h3>3 Mars 2020</h3>
+          <h3>3 Mars 2020: 15</h3>
           <li>
             Region Stockholm rapporterar 6 ytterligare fall av coronaviruset i
             Stockholm (
@@ -176,7 +176,7 @@ const Blog = () => {
             </a>
             )
           </li>
-          <h3>2 Mars 2020</h3>
+          <h3>2 Mars 2020: 1</h3>
           <li>
             Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset i
             Stockholm (
@@ -189,19 +189,7 @@ const Blog = () => {
             </a>
             )
           </li>
-          <li>
-            Region Skåne rapporterar 1 nytt fall av coronaviruset i Skåne
-            (preliminärt) (
-            <a
-              className="sourceLink"
-              href="http://www.mynewsdesk.com/se/region_skane/pressreleases/troligt-fall-av-covid-19-i-skaane-2978003?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news"
-              target={'_blank'}
-            >
-              källa
-            </a>
-            )
-          </li>
-          <h3>1 Mars 2020</h3>
+          <h3>1 Mars 2020: 1</h3>
           <li>
             Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset i
             Västra Götaland (
@@ -214,7 +202,7 @@ const Blog = () => {
             </a>
             )
           </li>
-          <h3>29 Februari 2020</h3>
+          <h3>29 Februari 2020: 2</h3>
           <li>
             SR Ekot rapporterar 1 nytt fall av coronaviruset i Stockholm (
             <a
@@ -237,7 +225,7 @@ const Blog = () => {
             </a>
             )
           </li>
-          <h3>28 Februari 2020</h3>
+          <h3>28 Februari 2020: 4</h3>
           <li>
             Folkhälsomyndigheten rapporterar 4 nya fall av coronaviruset (
             <a
@@ -249,7 +237,7 @@ const Blog = () => {
             </a>
             )
           </li>{' '}
-          <h3>27 Februari 2020</h3>
+          <h3>27 Februari 2020: 5</h3>
           <li>
             Folkhälsomyndigheten rapporterar 5 nya fall av coronaviruset (
             <a
@@ -261,7 +249,7 @@ const Blog = () => {
             </a>
             )
           </li>{' '}
-          <h3>26 Februari 2020</h3>
+          <h3>26 Februari 2020: 1</h3>
           <li>
             Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset (
             <a
@@ -273,7 +261,7 @@ const Blog = () => {
             </a>
             )
           </li>{' '}
-          <h3>31 Januari 2020</h3>
+          <h3>31 Januari 2020: 1</h3>
           <li>
             Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset (
             <a
