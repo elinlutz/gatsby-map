@@ -31,6 +31,13 @@ const Blog = () => {
           {/* <p>Uppdaterat: {data.site.buildTimeZone}</p> */}
           <h3>6 Mars 2020</h3>
           <TimelineListElement
+            number={21}
+            region={'Stockholm'}
+            source={
+              'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/fall-av-nya-coronaviruset-i-stockholm-den-6-mars/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={5}
             region={'Jönköping'}
             source={
