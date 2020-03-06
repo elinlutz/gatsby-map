@@ -1,12 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
 
 import Layout from 'components/Layout'
 import Container from 'components/Container'
-import Comments from 'components/Comments'
 import Chart from 'components/Chart'
 import TimelineListElement from 'components/TimelineListElement'
-import { withWidth } from '@material-ui/core'
 
 const Blog = () => {
   return (
@@ -29,7 +28,15 @@ const Blog = () => {
 
         <Container type="timeline">
           <h1>Tidslinje</h1>
+          {/* <p>Uppdaterat: {data.site.buildTimeZone}</p> */}
           <h3>6 Mars 2020</h3>
+          <TimelineListElement
+            number={5}
+            region={'Skåne'}
+            source={
+              'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-6-mars-2979574?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news'
+            }
+          ></TimelineListElement>
           <TimelineListElement
             number={2}
             region={'Västra Götaland'}
@@ -259,5 +266,13 @@ const Blog = () => {
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    site {
+      buildTimeZone
+    }
+  }
+`
 
 export default Blog
