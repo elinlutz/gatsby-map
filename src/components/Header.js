@@ -12,42 +12,38 @@ import Container from 'components/Container'
 const Header = () => {
   return (
     <header>
-      <Container type="content">
-        <p>
-          <div className="titleContainer">
-            <Link className="title" to="/">
-              <BubbleChart className="icon" />
-              Coronakartan
-            </Link>
-          </div>
-        </p>
-        <ul>
-          <li>
-            <Link to="/">
-              <Button className="navigationLink">
-                <MapIcon className="icon" />
-                <div className="text">Karta</div>
-              </Button>
-            </Link>
-          </li>
-          <li>
-            <Link to="/tidslinje/">
-              <Button className="navigationLink">
-                <EqualizerIcon className="icon" />
-                <div className="text">Tidslinje</div>
-              </Button>
-            </Link>
-          </li>
-          <li>
-            <Link to="/om/">
-              <Button className="navigationLink">
-                <InfoIcon className="icon" />
-                <div className="text">Om</div>
-              </Button>
-            </Link>
-          </li>
-        </ul>
-      </Container>
+      <div className="titleContainer">
+        <Link className="title" to="/">
+          <BubbleChart className="icon" />
+          Coronakartan
+        </Link>
+      </div>
+      <ul>
+        <li>
+          <Link to="/">
+            <Button className="navigationLink">
+              <MapIcon className="icon" />
+              <div className="text">Karta</div>
+            </Button>
+          </Link>
+        </li>
+        <li>
+          <Link to="/tidslinje/">
+            <Button className="navigationLink">
+              <EqualizerIcon className="icon" />
+              <div className="text">Tidslinje</div>
+            </Button>
+          </Link>
+        </li>
+        <li>
+          <Link to="/om/">
+            <Button className="navigationLink">
+              <InfoIcon className="icon" />
+              <div className="text">Om</div>
+            </Button>
+          </Link>
+        </li>
+      </ul>
     </header>
   )
 }

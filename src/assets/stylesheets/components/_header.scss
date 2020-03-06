@@ -2,13 +2,10 @@ header {
   width: 100%;
   background-color: $accent;
   z-index: 2000;
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-    height: 2.2em;
-    line-height: 2.1em;
-  }
+  display: flex;
+  justify-content: space-between;
+  height: 2.2em;
+  line-height: 2.1em;
 
   ul {
     list-style: none;
@@ -24,14 +21,9 @@ header {
     color: $accent;
     text-decoration: none;
   }
-  p {
-    margin: 0;
-  }
 
   .titleContainer {
     .title {
-      padding-top: 5px;
-      padding-bottom: 5px;
       .icon {
         position: relative;
         margin-left: 0.5em;
@@ -42,7 +34,7 @@ header {
 
     a {
       color: $white;
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 500;
       text-transform: uppercase;
     }
@@ -75,7 +67,7 @@ header {
     background-color: white;
     color: $accent;
     text-decoration: none;
-    margin: 0.25em;
+    margin-right: 0.25em;
     border-radius: 2px;
     height: 30px;
     font-size: 12px;
