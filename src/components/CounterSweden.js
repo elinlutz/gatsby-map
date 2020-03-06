@@ -29,9 +29,7 @@ const Counter = ({ title, number, view, type, provinceState }) => {
         <Container className="bubble">
           <Bubble view={view} />
         </Container>
-        <p>
-          <CounterTitle view={view} />
-        </p>
+        Sweden
       </Container>
 
       {type != 'details' ? (
