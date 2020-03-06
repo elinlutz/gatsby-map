@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Bubble from 'components/Bubble'
@@ -13,7 +13,22 @@ const Counter = ({ title, number, view, type, provinceState }) => {
     }
   `)
 
-  const updatedAt = data.site.buildTimeZone
+  const getViewTitle = () => {
+    if (view === 'sweden') {
+      return 'SVERIGE'
+    } else {
+      return 'VÄRLDEN'
+    }
+  }
+
+  const getUpdatedAt = () => {
+    const updatedAt = data.site.buildTimeZone
+    if (view === 'sweden') {
+      return updatedAt
+    } else {
+      return updatedAt.substring(0, updatedAt.length - 6)
+    }
+  }
 
   return (
     <Container className="counterCard">
@@ -21,7 +36,7 @@ const Counter = ({ title, number, view, type, provinceState }) => {
         <Container className="bubble">
           <Bubble view={view} />
         </Container>
-        <p>{view === 'sweden' ? 'SVERIGE' : 'VÄRLDEN'}</p>
+        <p>{getViewTitle(view)}</p>
       </Container>
 
       {type != 'details' ? (
@@ -51,13 +66,7 @@ const Counter = ({ title, number, view, type, provinceState }) => {
         <h3>Bekräftade fall</h3>
       </Container>
       <Container className="updatedText">
-        {view === 'sweden' ? (
-          <p>UPPDATERAT {updatedAt}</p>
-        ) : (
-          <>
-            <p>UPPDATERAT {updatedAt.substring(0, updatedAt.length - 6)}</p>
-          </>
-        )}
+        <p>UPPDATERAT {getUpdatedAt()}</p>
       </Container>
     </Container>
   )
