@@ -13,36 +13,17 @@ const Counter = ({ title, number, view, type, provinceState }) => {
     }
   `)
 
-  let head
-  if (title) {
-    head = title
-  } else if (view == 'sweden') {
-    head = 'SVERIGE'
-  } else if ((view = 'world')) {
-    head = 'VÄRLDEN'
-  }
-
   const updatedAt = data.site.buildTimeZone
 
   return (
     <Container className="counterCard">
-      {type != 'details' ? (
-        <Container className="header">
-          <Container className="bubble">
-            <Bubble view={view} />
-          </Container>
-          <p>{head}</p>
+      <Container className="header">
+        <Container className="bubble">
+          <Bubble view={view} />
         </Container>
-      ) : (
-        <Container className="noBubbleHeader">
-          <Container className="main">
-            <p>{head}</p>
-          </Container>
-          <Container className="region">
-            <p>{provinceState}</p>
-          </Container>
-        </Container>
-      )}
+        <p>{view === 'sweden' ? 'SVERIGE' : 'VÄRLDEN'}</p>
+      </Container>
+
       {type != 'details' ? (
         <Container className="confirmedNumberContainer">
           <Container className="line"></Container>
