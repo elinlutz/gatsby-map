@@ -79,6 +79,7 @@ module.exports = {
         respectDNT: true,
         pageTransitionDelay: 0
       }
-    }
+    },
+    `gatsby-plugin-client-side-redirect` // keep it in last in list
   ]
 }

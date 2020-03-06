@@ -51,7 +51,7 @@ const Counter = ({ title, number, view, type, provinceState }) => {
         <h3>Bekräftade fall</h3>
       </Container>
       <Container className="updatedText">
-        {view == 'sweden' ? (
+        {view === 'sweden' ? (
           <p>UPPDATERAT {updatedAt}</p>
         ) : (
           <>
