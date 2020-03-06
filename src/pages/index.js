@@ -138,7 +138,6 @@ const IndexPage = ({ data }) => {
             />
             <Counter
               className="counterContainer"
-              title={view === 'sweden' ? 'SVERIGE' : 'VÄRLDEN'}
               number={
                 view === 'world'
                   ? getTotalConfirmed(data.allWorldCsv.edges, 'Confirmed')

@@ -15,10 +15,10 @@ const Counter = ({ title, number, view, type, provinceState }) => {
 
   const getUpdatedAt = () => {
     const updatedAt = data.site.buildTimeZone
-    if (view === 'sweden') {
-      return updatedAt
-    } else {
+    if (view == 'world') {
       return updatedAt.substring(0, updatedAt.length - 6)
+    } else {
+      return updatedAt
     }
   }
 
@@ -28,7 +28,7 @@ const Counter = ({ title, number, view, type, provinceState }) => {
         <Container className="bubble">
           <Bubble view={view} />
         </Container>
-        <p>{title}</p>
+        <p>{view == 'world' ? 'VÄRLDEN' : 'SVERIGE'}</p>
       </Container>
 
       {type != 'details' ? (
