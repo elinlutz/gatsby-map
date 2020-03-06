@@ -39,7 +39,6 @@ const WorldMarkers = ({ onClick }) => {
       radius = 5
     } else if (number < 5) {
       radius = 6
-      console.log(number)
     } else if (number < 500) {
       radius = 10
     } else if (number < 2000) {

@@ -13,16 +13,14 @@ function ToggleViewButton({ view, setView, setRegion, setCountry }) {
   }
 
   return (
-    <div className="switchContainer">
-      <ToggleButtonGroup value={view} exclusive onChange={handleView}>
-        <ToggleButton className="toggleViewButtonSweden" value="sweden">
-          Sverige
-        </ToggleButton>
-        <ToggleButton className="toggleViewButtonWorld" value="world">
-          Världen
-        </ToggleButton>
-      </ToggleButtonGroup>
-    </div>
+    <ToggleButtonGroup value={view} exclusive onChange={handleView}>
+      <ToggleButton className="toggleViewButtonSweden" value="sweden">
+        Sverige
+      </ToggleButton>
+      <ToggleButton className="toggleViewButtonWorld" value="world">
+        Världen
+      </ToggleButton>
+    </ToggleButtonGroup>
   )
 }
 

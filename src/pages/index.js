@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { graphql } from 'gatsby'
 
 import Helmet from 'react-helmet'
@@ -65,6 +65,10 @@ const IndexPage = ({ data }) => {
   const [country, setCountry] = useState(null)
   const [view, setView] = useState('sweden')
 
+  useEffect(() => {
+    setView(view)
+  })
+
   function onClickRegion(region) {
     setRegion(region)
   }
@@ -129,13 +133,16 @@ const IndexPage = ({ data }) => {
         )}
         <Container className="mapbox">
           <Container className="mapboxContainer">
-            <ToggleViewButton
-              className="toggleViewButton"
-              setView={setView}
-              setRegion={setRegion}
-              setCountry={setCountry}
-              view={view}
-            />
+            <div className="switchContainer">
+              <ToggleViewButton
+                className="toggleViewButton"
+                setView={setView}
+                setRegion={setRegion}
+                setCountry={setCountry}
+                view={view}
+              />
+            </div>
+
             <Counter
               className="counterContainer"
               number={
