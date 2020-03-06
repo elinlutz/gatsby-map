@@ -13,6 +13,14 @@ const getOptions = latestTotal => ({
 
   colors: [colors.blue],
 
+  chart: {
+    style: {
+      fontFamily:
+        '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif',
+      fontWeight: 'medium'
+    }
+  },
+
   xAxis: {
     tickInterval: 7 * 24 * 3600 * 1000, // one week
     tickWidth: 0,
@@ -34,10 +42,10 @@ const getOptions = latestTotal => ({
       text: null
     },
     labels: {
-      enabled: false,
-      align: 'left',
-      x: 0,
-      y: 16,
+      enabled: true,
+      align: 'right',
+      x: -3,
+      y: 4,
       format: '{value:.,0f}',
       gridLineWidth: 0
     },
@@ -45,7 +53,7 @@ const getOptions = latestTotal => ({
     showLastLabel: true
   },
   legend: {
-    enabled: false,
+    enabled: true,
     align: 'right',
     verticalAlign: 'bottom',
     borderWidth: 0
@@ -63,12 +71,17 @@ const getOptions = latestTotal => ({
       cursor: 'pointer',
       marker: {
         lineWidth: 1
+      },
+      events: {
+        legendItemClick: function() {
+          return false
+        }
       }
     }
   },
   series: [
     {
-      name: 'Antal fall',
+      name: 'Bekräftade fall',
       data: [
         ['23 Februari 2020', 1],
         ['24 Februari 2020', 1],
