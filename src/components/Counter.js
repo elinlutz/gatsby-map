@@ -13,14 +13,6 @@ const Counter = ({ title, number, view, type, provinceState }) => {
     }
   `)
 
-  const getViewTitle = () => {
-    if (view === 'sweden') {
-      return 'SVERIGE'
-    } else {
-      return 'VÄRLDEN'
-    }
-  }
-
   const getUpdatedAt = () => {
     const updatedAt = data.site.buildTimeZone
     if (view === 'sweden') {
@@ -36,7 +28,7 @@ const Counter = ({ title, number, view, type, provinceState }) => {
         <Container className="bubble">
           <Bubble view={view} />
         </Container>
-        <p>{getViewTitle(view)}</p>
+        <p>{title}</p>
       </Container>
 
       {type != 'details' ? (
