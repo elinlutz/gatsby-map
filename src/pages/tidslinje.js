@@ -31,6 +31,13 @@ const Blog = () => {
           {/* <p>Uppdaterat: {data.site.buildTimeZone}</p> */}
           <h3>6 Mars 2020</h3>
           <TimelineListElement
+            number={5}
+            region={'Jönköping'}
+            source={
+              'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/ytterligare-fem-bekraftade-fall-i-jonkopings-lan-av-nya-coronaviruset-covid-19-45988'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={8}
             region={'Värmland'}
             source={
