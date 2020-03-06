@@ -31,6 +31,18 @@ const Blog = () => {
           {/* <p>Uppdaterat: {data.site.buildTimeZone}</p> */}
           <h3>6 Mars 2020</h3>
           <TimelineListElement
+            number={8}
+            region={'Värmland'}
+            source={
+              'https://www.regionvarmland.se/om-regionen/pressrum/Pressmeddelanden/2020/03/ytterligare-atta-fall-av-nya-coronaviruset-i-varmland/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Uppsala'}
+            source={'https://www.regionuppsala.se/nyheter'}
+          ></TimelineListElement>
+          <TimelineListElement
             number={5}
             region={'Skåne'}
             source={
