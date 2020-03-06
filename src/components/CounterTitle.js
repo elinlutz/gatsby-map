@@ -8,7 +8,7 @@ const CounterTitle = ({ view }) => {
     title = 'SVERIGE'
   }
 
-  return title
+  return <p>{title}</p>
 }
 
 export default CounterTitle

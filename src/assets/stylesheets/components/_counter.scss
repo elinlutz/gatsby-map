@@ -26,6 +26,33 @@
       transform: translateY(-80%);
     }
 
+    .lol {
+      font-size: 15px;
+      margin-top: 16px;
+      margin-left: 26px;
+      letter-spacing: 1px;
+      float: left;
+      color: $light-black;
+      text-transform: uppercase;
+    }
+  }
+
+  .header {
+    float: left;
+    align-items: center;
+    position: relative;
+    margin-left: 3px;
+    height: 4em;
+
+    .bubble {
+      align-self: center;
+      height: 25px;
+      width: 25px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-80%);
+    }
+
     p {
       font-size: 15px;
       margin-top: 16px;
