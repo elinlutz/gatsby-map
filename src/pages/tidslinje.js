@@ -29,7 +29,14 @@ const Blog = () => {
         <Container type="timeline">
           <h1>Tidslinje</h1>
           {/* <p>Uppdaterat: {data.site.buildTimeZone}</p> */}
-          <h3>6 Mars 2020: 42</h3>
+          <h3>6 Mars 2020: 43</h3>
+          <TimelineListElement
+            number={1}
+            region={'Gävleborg'}
+            source={
+              'https://www.svt.se/nyheter/lokalt/gavleborg/andra-fallet-av-coronavirus-i-gavleborg-bekraftat'
+            }
+          ></TimelineListElement>
           <TimelineListElement
             number={21}
             region={'Stockholm'}
