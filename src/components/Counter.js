@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Bubble from 'components/Bubble'
+import CounterTitle from 'components/CounterTitle'
 import Container from 'components/Container'
 
 const Counter = ({ title, number, view, type, provinceState }) => {
@@ -28,7 +29,7 @@ const Counter = ({ title, number, view, type, provinceState }) => {
         <Container className="bubble">
           <Bubble view={view} />
         </Container>
-        <p>{view == 'world' ? 'VÄRLDEN' : 'SVERIGE'}</p>
+        <CounterTitle view={view} />
       </Container>
 
       {type != 'details' ? (
