@@ -2,7 +2,7 @@ Region,Display_Name,Region_Source,Lat,Long,2020-02-25,2020-02-26,2020-02-27,2020
 Region Blekinge,Blekinge,https://regionblekinge.se/om-webb-platsen/nyheter/nyheter-och-pressmeddelande.html,56.16156,15.58661,0,0,0,0,0,0,0,0,0,0,0,0,0
 Region Dalarna,Dalarna,https://www.regiondalarna.se/press/nyheter-och-pressmeddelanden/,60.602778,15.656111,0,0,0,0,0,0,0,0,0,0,0,0,0
 Region Gotland,Gotland,,57.628889,18.307222,0,0,0,0,0,0,0,0,0,0,0,0,0
-Region Gävleborg,Gävleborg,,60.674722,17.144444,0,0,0,0,0,0,0,0,0,1,1,0,2
+Region Gävleborg,Gävleborg,,60.674722,17.144444,0,0,0,0,0,0,0,0,0,1,1,1,3
 Region Halland,Halland,,56.658333,12.900278,0,0,0,0,0,0,0,0,0,0,0,0,0
 Region Jämtland Härjedalen,Jämtland Härjedalen,,63.158056,14.679167,0,0,0,0,0,0,0,0,0,0,0,0,0
 Region Jönköpings län,Jönköping,,57.78145,14.15618,1,0,0,1,0,0,0,1,0,0,5,0,8
@@ -20,5 +20,5 @@ Region Västmanland,Västmanland,https://regionvastmanland.se/vardgivare/behandl
 Region Örebro län,Örebro län,https://via.tt.se/pressrum/region-orebro-lan?publisherId=3235654,59.266944,15.196389,0,0,0,0,0,0,0,0,1,0,0,0,1
 Region Östergötland,Östergötland,,58.409444,15.625556,0,0,0,0,0,0,0,0,0,0,0,0,0
 Västra Götalandsregionen,Västra Götaland,,57.70887,11.97456,0,1,3,0,1,1,0,3,2,1,2,0,14
-Todays_Total,,,,,1,1,5,4,2,1,1,15,22,42,43,24,
-Total,,,,,1,2,7,11,13,14,15,30,52,94,137,161,
+Todays_Total,,,,,1,1,5,4,2,1,1,15,22,42,43,25,
+Total,,,,,1,2,7,11,13,14,15,30,52,94,137,162,
