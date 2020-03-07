@@ -95,7 +95,8 @@ const getOptions = latestTotal => ({
         ['3 Mars 2020', 30],
         ['4 Mars 2020', 52],
         ['5 Mars 2020', 94],
-        ['6 Mars 2020', latestTotal]
+        ['6 Mars 2020', 137],
+        ['7 Mars 2020', latestTotal]
       ]
     }
   ]

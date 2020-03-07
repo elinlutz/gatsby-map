@@ -29,6 +29,14 @@ const Blog = () => {
         <Container type="timeline">
           <h1>Tidslinje</h1>
           {/* <p>Uppdaterat: {data.site.buildTimeZone}</p> */}
+          <h3>6 Mars 2020</h3>
+          <TimelineListElement
+            number={3}
+            region={'Skåne'}
+            source={
+              'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-7-mars-2979793?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news'
+            }
+          ></TimelineListElement>
           <h3>6 Mars 2020: 43</h3>
           <TimelineListElement
             number={1}
