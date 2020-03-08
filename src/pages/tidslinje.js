@@ -71,12 +71,13 @@ const Blog = ({ data }) => {
           ></TimelineListElement>
           <h3>7 Mars 2020: 25</h3>
           <TimelineListElement
-            number={1}
+            number={0}
             region={'Gävleborg'}
             source={
               'https://www.regiongavleborg.se/nyheter/ytterligare-ett-fall-av-covid-19-i-gavleborg/'
             }
-          ></TimelineListElement>
+          ></TimelineListElement>{' '}
+          Rättelse 8 Mars: Dubbelrapportering, totalt 2 personer i Gävleborg.
           <TimelineListElement
             number={21}
             region={'Stockholm'}
