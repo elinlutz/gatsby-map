@@ -34,7 +34,7 @@ const Blog = () => {
             number={12}
             region={'Västra götaland'}
             source={
-              'https://www.svt.se/nyheter/lokalt/vast/12-nya-coronafall-i-vastra-gotaland'
+              'https://news.cision.com/se/vastra-gotalandsregionen/r/8-mars--12-nya-bekraftade-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3054769'
             }
           ></TimelineListElement>
           <TimelineListElement
