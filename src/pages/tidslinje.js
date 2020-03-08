@@ -35,6 +35,13 @@ const Blog = ({ data }) => {
             source={'https://www.sll.se/Nyheter'}
           ></TimelineListElement> */}
           <TimelineListElement
+            number={7}
+            region={'Värmland'}
+            source={
+              'https://www.regionvarmland.se/om-regionen/pressrum/Pressmeddelanden/2020/03/sju-nya-fall-av-coronavirusinfektion-covid-19-i-varmland/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={3}
             region={'Örebro'}
             source={
