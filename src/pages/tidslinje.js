@@ -31,6 +31,13 @@ const Blog = () => {
           {/* <p>Uppdaterat: {data.site.buildTimeZone}</p> */}
           <h3>8 Mars 2020</h3>
           <TimelineListElement
+            number={5}
+            region={'Skåne'}
+            source={
+              'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-8-mars-2979837?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={1}
             region={'Uppsala'}
             source={'https://www.regionuppsala.se/nyheter'}
