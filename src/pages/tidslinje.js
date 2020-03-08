@@ -42,7 +42,7 @@ const Blog = () => {
             region={'Uppsala'}
             source={'https://www.regionuppsala.se/nyheter'}
           ></TimelineListElement>
-          <h3>7 Mars 2020</h3>
+          <h3>7 Mars 2020: 25</h3>
           <TimelineListElement
             number={1}
             region={'Gävleborg'}
