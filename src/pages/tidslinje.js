@@ -31,6 +31,13 @@ const Blog = () => {
           {/* <p>Uppdaterat: {data.site.buildTimeZone}</p> */}
           <h3>8 Mars 2020</h3>
           <TimelineListElement
+            number={12}
+            region={'Västra götaland'}
+            source={
+              'https://www.svt.se/nyheter/lokalt/vast/12-nya-coronafall-i-vastra-gotaland'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={5}
             region={'Skåne'}
             source={
