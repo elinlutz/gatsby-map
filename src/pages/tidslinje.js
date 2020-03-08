@@ -30,6 +30,11 @@ const Blog = () => {
           <h1>Tidslinje</h1>
           {/* <p>Uppdaterat: {data.site.buildTimeZone}</p> */}
           <h3>8 Mars 2020</h3>
+          <TimelineListElement
+            number={1}
+            region={'Uppsala'}
+            source={'https://www.regionuppsala.se/nyheter'}
+          ></TimelineListElement>
           <h3>7 Mars 2020</h3>
           <TimelineListElement
             number={1}
