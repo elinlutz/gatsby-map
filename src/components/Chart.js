@@ -81,7 +81,7 @@ const getOptions = latestTotal => ({
   },
   series: [
     {
-      name: 'Bekräftade fall',
+      name: 'Antal bekräftade fall',
       data: [
         ['23 Februari 2020', 1],
         ['24 Februari 2020', 1],

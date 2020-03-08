@@ -7,7 +7,7 @@ import Container from 'components/Container'
 import Chart from 'components/Chart'
 import TimelineListElement from 'components/TimelineListElement'
 
-const Blog = () => {
+const Blog = ({ data }) => {
   return (
     <Layout pageName="tidslinje">
       <Helmet>
@@ -22,13 +22,12 @@ const Blog = () => {
       <Container type="timeline-content" className="text">
         <Container type="chart">
           <h1>Utveckling</h1>
+          <p className="updatedAt">Uppdaterat {data.site.buildTimeZone}</p>
 
           <Chart />
         </Container>
-
         <Container type="timeline">
           <h1>Tidslinje</h1>
-          {/* <p>Uppdaterat: {data.site.buildTimeZone}</p> */}
           <h3>8 Mars 2020</h3>
           {/* <TimelineListElement
             number={0}
