@@ -37,7 +37,7 @@ const getOptions = latestTotal => ({
   },
 
   yAxis: {
-    tickInterval: 20,
+    tickInterval: 25,
     title: {
       text: null
     },
