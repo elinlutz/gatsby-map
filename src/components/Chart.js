@@ -81,7 +81,7 @@ const getOptions = latestTotal => ({
   },
   series: [
     {
-      name: 'Antal bekräftade fall',
+      name: 'Antal bekräftade fall totalt',
       data: [
         ['23 Februari 2020', 1],
         ['24 Februari 2020', 1],
@@ -97,8 +97,31 @@ const getOptions = latestTotal => ({
         ['5 Mars 2020', 94],
         ['6 Mars 2020', 137],
         ['7 Mars 2020', 162],
-        ['8 Mars 2020', latestTotal]
-      ]
+        ['8 Mars 2020', 203]
+        // ['9 Mars 2020', latestTotal]
+      ],
+      color: colors.red
+    },
+    {
+      name: 'Antal bekräftade fall per dag',
+      data: [
+        ['23 Februari 2020', 0],
+        ['24 Februari 2020', 0],
+        ['25 Februari 2020', 1],
+        ['26 Februari 2020', 1],
+        ['27 Februari 2020', 5],
+        ['28 Februari 2020', 4],
+        ['29 Februari 2020', 2],
+        ['1 Mars 2020', 1],
+        ['2 Mars 2020', 1],
+        ['3 Mars 2020', 15],
+        ['4 Mars 2020', 22],
+        ['5 Mars 2020', 42],
+        ['6 Mars 2020', 43],
+        ['7 Mars 2020', 24],
+        ['8 Mars 2020', 42]
+      ],
+      color: colors.blue
     }
   ]
 })

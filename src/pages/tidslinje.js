@@ -69,15 +69,15 @@ const Blog = ({ data }) => {
             region={'Uppsala'}
             source={'https://www.regionuppsala.se/nyheter'}
           ></TimelineListElement>
-          <h3>7 Mars 2020: 25</h3>
+          <h3>7 Mars 2020</h3>
           <TimelineListElement
             number={0}
             region={'Gävleborg'}
             source={
               'https://www.regiongavleborg.se/nyheter/ytterligare-ett-fall-av-covid-19-i-gavleborg/'
             }
-          ></TimelineListElement>{' '}
-          Rättelse 8 Mars: Dubbelrapportering, totalt 2 personer i Gävleborg.
+          ></TimelineListElement>
+          {'Rättelse: Dubbelrapportering, totalt 2 personer i Gävleborg.'}
           <TimelineListElement
             number={21}
             region={'Stockholm'}
@@ -92,7 +92,7 @@ const Blog = ({ data }) => {
               'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-7-mars-2979793?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news'
             }
           ></TimelineListElement>
-          <h3>6 Mars 2020: 43</h3>
+          <h3>6 Mars 2020</h3>
           <TimelineListElement
             number={1}
             region={'Gävleborg'}
@@ -140,7 +140,7 @@ const Blog = ({ data }) => {
               'https://news.cision.com/se/vastra-gotalandsregionen/r/6-mars--tva-nya-bekraftade-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3053911'
             }
           ></TimelineListElement>
-          <h3>5 Mars 2020: 42</h3>
+          <h3>5 Mars 2020</h3>
           <TimelineListElement
             number={2}
             region={'Uppsala'}
@@ -181,7 +181,7 @@ const Blog = ({ data }) => {
               'https://news.cision.com/se/vastra-gotalandsregionen/r/5-mars--ett-nytt-bekraftat-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3052981'
             }
           ></TimelineListElement>
-          <h3>4 Mars 2020: 22</h3>
+          <h3>4 Mars 2020</h3>
           <TimelineListElement
             number={16}
             region={'Stockholm'}
@@ -221,7 +221,7 @@ const Blog = ({ data }) => {
             </a>
             )
           </li>
-          <h3>3 Mars 2020: 15</h3>
+          <h3>3 Mars 2020</h3>
           <li>
             Region Stockholm rapporterar 6 ytterligare fall av coronaviruset i
             Stockholm (
@@ -246,7 +246,7 @@ const Blog = ({ data }) => {
             </a>
             )
           </li>
-          <h3>2 Mars 2020: 1</h3>
+          <h3>2 Mars 2020</h3>
           <li>
             Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset i
             Stockholm (
@@ -259,7 +259,7 @@ const Blog = ({ data }) => {
             </a>
             )
           </li>
-          <h3>1 Mars 2020: 1</h3>
+          <h3>1 Mars 2020</h3>
           <li>
             Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset i
             Västra Götaland (
@@ -272,7 +272,7 @@ const Blog = ({ data }) => {
             </a>
             )
           </li>
-          <h3>29 Februari 2020: 2</h3>
+          <h3>29 Februari 2020</h3>
           <li>
             SR Ekot rapporterar 1 nytt fall av coronaviruset i Stockholm (
             <a
@@ -295,7 +295,7 @@ const Blog = ({ data }) => {
             </a>
             )
           </li>
-          <h3>28 Februari 2020: 4</h3>
+          <h3>28 Februari 2020</h3>
           <li>
             Folkhälsomyndigheten rapporterar 4 nya fall av coronaviruset (
             <a
@@ -307,7 +307,7 @@ const Blog = ({ data }) => {
             </a>
             )
           </li>{' '}
-          <h3>27 Februari 2020: 5</h3>
+          <h3>27 Februari 2020</h3>
           <li>
             Folkhälsomyndigheten rapporterar 5 nya fall av coronaviruset (
             <a
@@ -319,7 +319,7 @@ const Blog = ({ data }) => {
             </a>
             )
           </li>{' '}
-          <h3>26 Februari 2020: 1</h3>
+          <h3>26 Februari 2020</h3>
           <li>
             Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset (
             <a
@@ -331,7 +331,7 @@ const Blog = ({ data }) => {
             </a>
             )
           </li>{' '}
-          <h3>31 Januari 2020: 1</h3>
+          <h3>31 Januari 2020</h3>
           <li>
             Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset (
             <a
