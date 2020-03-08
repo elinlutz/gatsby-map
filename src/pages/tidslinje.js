@@ -30,9 +30,21 @@ const Blog = () => {
           <h1>Tidslinje</h1>
           {/* <p>Uppdaterat: {data.site.buildTimeZone}</p> */}
           <h3>8 Mars 2020</h3>
+          {/* <TimelineListElement
+            number={0}
+            region={'Stockholm'}
+            source={'https://www.sll.se/Nyheter'}
+          ></TimelineListElement> */}
+          <TimelineListElement
+            number={3}
+            region={'Örebro'}
+            source={
+              'https://www.regionorebrolan.se/sv/Om-regionorebrolan/Press/Nyheter/Nyheter-2020/Tre-personer-fran-Orebro-lan-har-testats-positivt-for-coronavirus/'
+            }
+          ></TimelineListElement>
           <TimelineListElement
             number={12}
-            region={'Västra götaland'}
+            region={'Västra Götaland'}
             source={
               'https://news.cision.com/se/vastra-gotalandsregionen/r/8-mars--12-nya-bekraftade-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3054769'
             }
