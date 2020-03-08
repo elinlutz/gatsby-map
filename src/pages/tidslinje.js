@@ -22,7 +22,7 @@ const Blog = ({ data }) => {
       <Container type="timeline-content" className="text">
         <Container type="chart">
           <h1>Utveckling</h1>
-          <p className="updatedAt">Uppdaterat {data.site.buildTimeZone}</p>
+          <p>Uppdaterat {data.site.buildTimeZone}</p>
 
           <Chart />
         </Container>
