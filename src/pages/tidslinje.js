@@ -29,6 +29,7 @@ const Blog = () => {
         <Container type="timeline">
           <h1>Tidslinje</h1>
           {/* <p>Uppdaterat: {data.site.buildTimeZone}</p> */}
+          <h3>8 Mars 2020</h3>
           <h3>7 Mars 2020</h3>
           <TimelineListElement
             number={1}
