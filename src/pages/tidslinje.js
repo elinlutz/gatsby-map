@@ -31,6 +31,13 @@ const Blog = ({ data }) => {
           <h3>9 Mars 2020</h3>
           <TimelineListElement
             number={1}
+            region={'Norrbotten'}
+            source={
+              'https://www.svt.se/nyheter/lokalt/norrbotten/forsta-coronafallet-i-norrbotten'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
             region={'Sörmland'}
             source={
               'https://www.svt.se/nyheter/lokalt/sormland/bekraftat-fall-av-coronavirus-i-sormland'
