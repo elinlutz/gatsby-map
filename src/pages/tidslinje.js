@@ -31,6 +31,20 @@ const Blog = ({ data }) => {
           <h3>9 Mars 2020</h3>
           <TimelineListElement
             number={1}
+            region={'Västra Götaland'}
+            source={
+              'https://news.cision.com/se/vastra-gotalandsregionen/r/bekraftat-fall-av-covid-19-pa-kungalvs-sjukhus,c3055700'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Östergötland'}
+            source={
+              'https://www.regionostergotland.se/Om-regionen/Pressrum/Nyheter/ett-fall-av-coronavirus-bekraftat-i-ostergotland/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
             region={'Östergötland'}
             source={
               'https://www.regionostergotland.se/Om-regionen/Pressrum/Nyheter/ett-fall-av-coronavirus-bekraftat-i-ostergotland/'
