@@ -28,6 +28,7 @@ const Blog = ({ data }) => {
         </Container>
         <Container type="timeline">
           <h1>Tidslinje</h1>
+          {/* <h3>9 Mars 2020</h3> */}
           <h3>8 Mars 2020</h3>
           <TimelineListElement
             number={14}
