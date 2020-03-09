@@ -6,6 +6,8 @@ import 'assets/stylesheets/application.scss'
 
 import Header from 'components/Header'
 import Footer from 'components/Footer'
+import { Link } from 'gatsby'
+import Button from '@material-ui/core/Button'
 
 const Layout = ({ children, pageName, view }) => {
   let className = ''
