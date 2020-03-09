@@ -30,6 +30,13 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>9 Mars 2020</h3>
           <TimelineListElement
+            number={5}
+            region={'Västerbotten'}
+            source={
+              'https://www.svt.se/nyheter/lokalt/vasterbotten/fem-personer-i-vasterbotten-smittade-av-coronaviruset'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={1}
             region={'Norrbotten'}
             source={
