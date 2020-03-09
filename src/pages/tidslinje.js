@@ -30,9 +30,18 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>9 Mars 2020</h3>
           <TimelineListElement
-            number={4}
+            number={1}
+            region={'Sörmland'}
+            source={
+              'https://www.svt.se/nyheter/lokalt/sormland/bekraftat-fall-av-coronavirus-i-sormland'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={5}
             region={'Halland'}
-            source={'https://press.regionhalland.se/posts/pressreleases/'}
+            source={
+              'https://www.svt.se/nyheter/lokalt/halland/fem-bekraftade-fall-av-coronavirus-i-halland'
+            }
           ></TimelineListElement>
           <TimelineListElement
             number={32}
@@ -60,13 +69,6 @@ const Blog = ({ data }) => {
             region={'Jönköping'}
             source={
               'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/daglig-uppdatering-om-covid-19-ytterligare-tva-bekraftade-fall-i-jonkopings-lan-46021'
-            }
-          ></TimelineListElement>
-          <TimelineListElement
-            number={1}
-            region={'Halland'}
-            source={
-              'https://press.regionhalland.se/posts/pressreleases/ett-bekraftat-fall-i-halland-av-coronavirus'
             }
           ></TimelineListElement>
           <h3>8 Mars 2020</h3>
