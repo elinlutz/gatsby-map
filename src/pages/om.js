@@ -26,8 +26,7 @@ const InfoPage = ({ data }) => {
         <p>
           Denna sida är till för att ge en överblick över det nya coronavirusets
           bekräftade fall i Sverige, på regionnivå. Jag som skapade kartan heter
-          Elin Lütz och jag saknade en plats för tydlig och tillgänglig
-          information.
+          Elin Lütz.
         </p>
         <br />
         <h2>Data</h2>

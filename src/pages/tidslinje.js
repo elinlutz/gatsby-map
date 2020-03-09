@@ -28,7 +28,42 @@ const Blog = ({ data }) => {
         </Container>
         <Container type="timeline">
           <h1>Tidslinje</h1>
-          {/* <h3>9 Mars 2020</h3> */}
+          <h3>9 Mars 2020</h3>
+          <TimelineListElement
+            number={32}
+            region={'Stockholm'}
+            source={
+              'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/fall-av-nya-coronaviruset-i-stockholm-den-9-mars/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={6}
+            region={'Västra Götaland'}
+            source={
+              'https://news.cision.com/se/vastra-gotalandsregionen/r/9-mars--sex-nya-bekraftade-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3055189'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Värmland'}
+            source={
+              'https://www.regionvarmland.se/om-regionen/pressrum/Pressmeddelanden/2020/03/ytterligare-ett-fall-av-coronavirusinfektion-covid-19-i-varmland/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={2}
+            region={'Jönköping'}
+            source={
+              'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/daglig-uppdatering-om-covid-19-ytterligare-tva-bekraftade-fall-i-jonkopings-lan-46021'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Halland'}
+            source={
+              'https://press.regionhalland.se/posts/pressreleases/ett-bekraftat-fall-i-halland-av-coronavirus'
+            }
+          ></TimelineListElement>
           <h3>8 Mars 2020</h3>
           <TimelineListElement
             number={14}
