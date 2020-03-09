@@ -73,9 +73,9 @@ const getOptions = latestTotal => ({
         lineWidth: 1
       },
       events: {
-        legendItemClick: function() {
-          return false
-        }
+        // legendItemClick: function() {
+        //   return false
+        // }
       }
     }
   },
