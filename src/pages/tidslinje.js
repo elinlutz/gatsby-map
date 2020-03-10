@@ -33,6 +33,13 @@ const Blog = ({ data }) => {
           <h3>10 Mars 2020</h3>
           <TimelineListElement
             number={1}
+            region={'Kronobergs Län'}
+            source={
+              'http://www.regionkronoberg.se/nyheter/en-person-i-kronobergs-lan-har-testats-positivt-for-coronavirus/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
             region={'Jämtlands Län'}
             source={
               'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/enpersonijamtlandslankonstateratsmittadavcoronaviruset.5.55412b91170402c7d222e632.html'
