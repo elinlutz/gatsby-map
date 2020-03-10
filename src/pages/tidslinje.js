@@ -31,6 +31,28 @@ const Blog = ({ data }) => {
         <Container type="timeline">
           <h1>Tidslinje</h1>
           <h3>10 Mars 2020</h3>
+          17.30 OBS! uppdatering med källor till de 9 senaste fallen kommer kl
+          19.00:
+          <TimelineListElement
+            number={1}
+            region={'Kalmar Län'}
+            source={''}
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Norrbotten'}
+            source={''}
+          ></TimelineListElement>
+          <TimelineListElement
+            number={3}
+            region={'Halland'}
+            source={''}
+          ></TimelineListElement>
+          <TimelineListElement
+            number={4}
+            region={'Västernorrland'}
+            source={''}
+          ></TimelineListElement>
           <TimelineListElement
             number={1}
             region={'Region Sörmland'}
