@@ -34,18 +34,22 @@ const Blog = ({ data }) => {
           <TimelineListElement
             number={1}
             region={'Region Sörmland'}
-            source={''}
+            source={
+              'https://regionsormland.se/nyheter/nyhetslista-2019/ytterligare-fall-med-covid-19-i-sormland/'
+            }
           ></TimelineListElement>
           <TimelineListElement
             number={15}
             region={'Västra Götaland'}
-            source={'https://news.cision.com/se/vastra-gotalandsregionen/'}
+            source={
+              'https://news.cision.com/se/vastra-gotalandsregionen/r/10-mars--nya-bekraftade-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3056443'
+            }
           ></TimelineListElement>
           <TimelineListElement
             number={1}
             region={'Örebro'}
             source={
-              'https://www.regionorebrolan.se/sv/Om-regionorebrolan/Press/Nyheter/'
+              'https://www.regionorebrolan.se/sv/Om-regionorebrolan/Press/Nyheter/Nyheter-2020/Ytterligare-en-lansbo-smittad-av-det-nya-coronaviruset/'
             }
           ></TimelineListElement>
           <TimelineListElement
