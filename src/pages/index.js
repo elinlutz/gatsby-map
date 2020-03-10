@@ -117,7 +117,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout pageName="home">
       <Helmet>
-        <title>Coronaviruset i Sverige - Karta</title>
+        <title>Coronakartan: Coronaviruset i Sverige - Karta</title>
         <meta
           name="description"
           content={

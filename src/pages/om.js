@@ -12,7 +12,7 @@ const InfoPage = ({ data }) => {
   return (
     <Layout pageName="om">
       <Helmet>
-        <title>Coronaviruset i Sverige - Om</title>
+        <title>Coronakartan: Coronaviruset i Sverige - Om</title>
         <meta
           name="description"
           content={

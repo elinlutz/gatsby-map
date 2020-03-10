@@ -11,14 +11,14 @@ const Tabell = ({ data }) => {
   return (
     <Layout pageName="tabell">
       <Helmet>
-        <title>Coronaviruset i Sverige - Tabell</title>
+        <title>Coronakartan: Coronaviruset i Sverige - Tabell</title>
         <meta
           name="description"
           content={
-            'Karta över rapporterade fall av coronaviruset COVID-19 och virusets spridning i Sverige'
+            'Samlad statistik över regionernas antal bekräftade fall av det nya oronaviruset COVID-19 i Sverige'
           }
         />
-        <link rel="canonical" href="https://www.coronakartan.se/" />
+        <link rel="canonical" href="https://www.coronakartan.se/tabell" />
       </Helmet>
       <Container>
         <Container type="table">

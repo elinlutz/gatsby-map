@@ -11,12 +11,14 @@ const Blog = ({ data }) => {
   return (
     <Layout pageName="tidslinje">
       <Helmet>
-        <title>Coronaviruset i Sverige - Tidslinje </title>
+        <title>Coronakartan: Coronaviruset i Sverige - Tidslinje </title>
         <meta
           name="description"
-          content={'Följ utvecklingen av coronaviruset COVID-19 i Sverige'}
+          content={
+            'Följ utvecklingen av det nya coronaviruset COVID-19 i Sverige dag för dag'
+          }
         />
-        <link rel="canonical" href="https://www.coronakartan.se/tidslinje/" />
+        <link rel="canonical" href="https://www.coronakartan.se/tidslinje" />
       </Helmet>
 
       <Container type="timeline-content" className="text">
