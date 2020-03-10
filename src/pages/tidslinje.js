@@ -32,10 +32,22 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>10 Mars 2020</h3>
           <TimelineListElement
+            number={15}
+            region={'Västra Götaland'}
+            source={'https://news.cision.com/se/vastra-gotalandsregionen/'}
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Örebro'}
+            source={
+              'https://www.regionorebrolan.se/sv/Om-regionorebrolan/Press/Nyheter/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={60}
             region={'Stockholm'}
             source={
-              'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard'
+              'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/fall-av-nya-coronaviruset-i-stockholm-den-10-mars2/'
             }
           ></TimelineListElement>
           <TimelineListElement
