@@ -32,6 +32,13 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>10 Mars 2020</h3>
           <TimelineListElement
+            number={60}
+            region={'Stockholm'}
+            source={
+              'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={3}
             region={'Skåne'}
             source={'https://www.mynewsdesk.com/se/region_skane/pressreleases/'}
