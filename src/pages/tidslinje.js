@@ -47,6 +47,13 @@ const Blog = ({ data }) => {
           ></TimelineListElement>
           <TimelineListElement
             number={1}
+            region={'Värmland'}
+            source={
+              'https://www.regionvarmland.se/om-regionen/pressrum/Pressmeddelanden/2020/03/ytterligare-ett-fall-av-coronavirusinfektion-covid-19-i-varmland2/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
             region={'Kalmar Län'}
             source={'https://www.regionkalmar.se/nyhetslista/corona/'}
           ></TimelineListElement>
