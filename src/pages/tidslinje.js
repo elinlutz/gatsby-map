@@ -32,6 +32,11 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>10 Mars 2020</h3>
           <TimelineListElement
+            number={1}
+            region={'Region Sörmland'}
+            source={''}
+          ></TimelineListElement>
+          <TimelineListElement
             number={15}
             region={'Västra Götaland'}
             source={'https://news.cision.com/se/vastra-gotalandsregionen/'}
