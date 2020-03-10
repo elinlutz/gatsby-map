@@ -31,27 +31,38 @@ const Blog = ({ data }) => {
         <Container type="timeline">
           <h1>Tidslinje</h1>
           <h3>10 Mars 2020</h3>
-          17.30 OBS! uppdatering med källor till de 9 senaste fallen kommer kl
-          19.00:
+          <TimelineListElement
+            number={1}
+            region={'Jämtlands Län'}
+            source={
+              'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/enpersonijamtlandslankonstateratsmittadavcoronaviruset.5.55412b91170402c7d222e632.html'
+            }
+          ></TimelineListElement>
           <TimelineListElement
             number={1}
             region={'Kalmar Län'}
-            source={''}
+            source={'https://www.regionkalmar.se/nyhetslista/corona/'}
           ></TimelineListElement>
           <TimelineListElement
             number={1}
             region={'Norrbotten'}
-            source={''}
-          ></TimelineListElement>
-          <TimelineListElement
-            number={3}
-            region={'Halland'}
-            source={''}
+            source={
+              'https://www.svt.se/nyheter/lokalt/norrbotten/nytt-fall-av-cornavirus-i-norrbotten'
+            }
           ></TimelineListElement>
           <TimelineListElement
             number={4}
+            region={'Halland'}
+            source={
+              'https://www.hn.se/nyheter/halland/ytterligare-fyra-fall-av-coronasmitta-i-halland-1.25172832'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={6}
             region={'Västernorrland'}
-            source={''}
+            source={
+              'https://www.rvn.se/sv/Om-regionen/Pressrum/Pressmeddelanden/tre-personer-i-vasternorrland-smittade-av-coronaviruset/'
+            }
           ></TimelineListElement>
           <TimelineListElement
             number={1}
@@ -85,11 +96,6 @@ const Blog = ({ data }) => {
             number={3}
             region={'Skåne'}
             source={'https://www.mynewsdesk.com/se/region_skane/pressreleases/'}
-          ></TimelineListElement>
-          <TimelineListElement
-            number={1}
-            region={'Halland'}
-            source={''}
           ></TimelineListElement>
           <h3>9 Mars 2020</h3>
           <TimelineListElement

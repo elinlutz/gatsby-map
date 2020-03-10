@@ -4,7 +4,7 @@ Region Dalarna,Dalarna,https://www.regiondalarna.se/press/nyheter-och-pressmedde
 Region Gotland,Gotland,,59686,57.628889,18.307222,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Region Gävleborg,Gävleborg,,287382,60.674722,17.144444,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,2
 Region Halland,Halland,,333848,56.658333,12.900278,0,0,0,0,0,0,0,0,0,0,0,0,0,5,4,9
-Region Jämtland Härjedalen,Jämtland Härjedalen,,130810,63.158056,14.679167,0,0,0,0,0,0,0,0,0,0,0,0,0,,0,0
+Region Jämtland Härjedalen,Jämtland Härjedalen,,130810,63.158056,14.679167,0,0,0,0,0,0,0,0,0,0,0,0,0,,1,1
 Region Jönköpings län,Jönköping,,363599,57.78145,14.15618,1,0,0,1,0,0,0,1,0,0,5,0,0,2,0,10
 Region Kalmar län,Kalmar,,245446,56.669444,16.321667,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
 Region Kronoberg,Kronoberg,,201469,56.889167,14.802778,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -20,5 +20,5 @@ Region Västmanland,Västmanland,https://regionvastmanland.se/vardgivare/behandl
 Region Örebro län,Örebro län,https://via.tt.se/pressrum/region-orebro-lan?publisherId=3235654,304805,59.266944,15.196389,0,0,0,0,0,0,0,0,1,0,0,0,3,0,1,5
 Region Östergötland,Östergötland,,465495,58.409444,15.625556,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1
 Västra Götalandsregionen,Västra Götaland,,1725881,57.70887,11.97456,0,1,3,0,1,1,0,3,2,1,2,0,12,7,15,48
-Todays_Total,,,,,,1,1,5,4,2,1,1,15,22,42,43,24,42,58,90,
-Total,,,,,,1,2,7,11,13,14,15,30,52,94,137,161,203,261,351,
+Todays_Total,,,,,,1,1,5,4,2,1,1,15,22,42,43,24,42,58,91,
+Total,,,,,,1,2,7,11,13,14,15,30,52,94,137,161,203,261,352,
