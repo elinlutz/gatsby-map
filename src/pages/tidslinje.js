@@ -52,13 +52,6 @@ const Blog = ({ data }) => {
             }
           ></TimelineListElement>
           <TimelineListElement
-            number={1}
-            region={'Östergötland'}
-            source={
-              'https://www.regionostergotland.se/Om-regionen/Pressrum/Nyheter/ett-fall-av-coronavirus-bekraftat-i-ostergotland/'
-            }
-          ></TimelineListElement>
-          <TimelineListElement
             number={5}
             region={'Västerbotten'}
             source={
