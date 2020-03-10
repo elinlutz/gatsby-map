@@ -134,17 +134,17 @@ const IndexPage = ({ data }) => {
         ) : (
           <WorldMarkers onClick={onClickCountry} ref={markerRef} />
         )}
+        <div className="switchContainer">
+          <ToggleViewButton
+            className="toggleViewButton"
+            setView={setView}
+            setRegion={setRegion}
+            setCountry={setCountry}
+            view={view}
+          />
+        </div>
         <Container className="mapbox">
           <Container className="mapboxContainer">
-            <div className="switchContainer">
-              <ToggleViewButton
-                className="toggleViewButton"
-                setView={setView}
-                setRegion={setRegion}
-                setCountry={setCountry}
-                view={view}
-              />
-            </div>
             {view === 'sweden' ? (
               <CounterSweden
                 view={view}

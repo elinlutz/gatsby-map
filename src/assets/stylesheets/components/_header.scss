@@ -47,10 +47,10 @@ header {
     @media (max-width: 400px) {
       .title {
         font-size: 10px;
+        margin-left: 10px;
       }
       .icon {
-        margin-left: 0em;
-        width: 0em;
+        display: none;
       }
     }
     @media (max-width: 360px) {

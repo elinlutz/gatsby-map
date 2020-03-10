@@ -28,6 +28,14 @@ const Blog = ({ data }) => {
         </Container>
         <Container type="timeline">
           <h1>Tidslinje</h1>
+          <h3>10 Mars 2020</h3>
+          {/* <TimelineListElement
+            number={1}
+            region={'Västra Götaland'}
+            source={
+              'https://news.cision.com/se/vastra-gotalandsregionen/r/bekraftat-fall-av-covid-19-pa-kungalvs-sjukhus,c3055700'
+            }
+          ></TimelineListElement> */}
           <h3>9 Mars 2020</h3>
           <TimelineListElement
             number={1}
