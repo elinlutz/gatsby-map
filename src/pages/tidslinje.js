@@ -33,7 +33,7 @@ const Blog = ({ data }) => {
           <h3>11 Mars 2020</h3>
           <TimelineListElement
             number={116}
-            region={'Sverige, källor kommer ikväll.'}
+            region={'Sverige, källor kommer ikväll. Se tabell så länge.'}
             source={''}
           ></TimelineListElement>
           <h3>10 Mars 2020</h3>
