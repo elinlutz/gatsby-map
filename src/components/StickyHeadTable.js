@@ -11,28 +11,25 @@ import TableRow from '@material-ui/core/TableRow'
 
 const columns = [
   { id: 'region', label: 'Region', minWidth: 40 },
-
   { id: 'total', label: 'Antal fall', minWidth: 40, align: 'center' },
-
-  {
-    id: 'population',
-    label: 'Befolkning',
-    minWidth: 40,
-    align: 'center',
-    format: value => value.replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
-  },
   {
     id: 'density',
     label: 'Antal fall per 100 000',
     minWidth: 40,
     align: 'center'
+  },
+  {
+    id: 'deaths',
+    label: 'Antal dödsfall',
+    minWidth: 40,
+    align: 'center'
   }
 ]
 
-function createData(region, total, population) {
+function createData(region, total, population, deaths) {
   const perHundredK = (total / population) * 100000
   const density = perHundredK.toFixed(1)
-  return { region, total, population, density }
+  return { region, total, density, deaths }
 }
 
 const useStyles = makeStyles({
@@ -53,6 +50,7 @@ export default function StickyHeadTable() {
             id
             Display_Name
             Region_Total
+            Region_Deaths
             Population
           }
         }
@@ -71,7 +69,8 @@ export default function StickyHeadTable() {
         const newRow = createData(
           region.Display_Name,
           region.Region_Total,
-          region.Population
+          region.Population,
+          region.Region_Deaths
         )
         rows.push(newRow)
       }
