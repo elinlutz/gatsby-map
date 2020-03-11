@@ -3,7 +3,14 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import Container from 'components/Container'
 
-const DetailsCounter = ({ title, number, view, type, provinceState }) => {
+const DetailsCounter = ({
+  title,
+  number,
+  deaths,
+  view,
+  type,
+  provinceState
+}) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -36,7 +43,7 @@ const DetailsCounter = ({ title, number, view, type, provinceState }) => {
         <h3>Bekräftade fall</h3>
       </Container>
       <Container className="updatedText">
-        <p></p>
+        <h3>{deaths} DÖDSFALL </h3>
       </Container>
     </Container>
   )

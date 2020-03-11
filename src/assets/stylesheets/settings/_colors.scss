@@ -298,6 +298,7 @@ $map-blue: #aad3e0;
 $map-blue-dark: #79acbb;
 $map-blue-darker: $red-500;
 
+$black-bubble: $full-black;
 $red-bubble: $red-500;
 $orange-bubble: $orange-700;
 $world: $blue-900;
@@ -307,6 +308,7 @@ $accent: $dark-theme;
 :export {
   red: $red-bubble;
   orange: $orange-bubble;
+  black: $black-bubble;
   blue: $map-blue;
   world: $world;
   accent: $accent;

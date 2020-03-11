@@ -8,7 +8,9 @@ import Button from '@material-ui/core/Button'
 import Layout from 'components/Layout'
 import Container from 'components/Container'
 import Map from 'components/Map'
+
 import Markers from 'components/Markers'
+import DeathMarkers from '../components/DeathMarkers'
 import WorldMarkers from 'components/WorldMarkers'
 
 import Counter from 'components/Counter'
@@ -65,6 +67,7 @@ const IndexPage = ({ data }) => {
   }
 
   const [region, setRegion] = useState(null)
+  const [regionDeaths, setRegionDeaths] = useState(null)
   const [country, setCountry] = useState(null)
   const [view, setView] = useState('sweden')
 
@@ -73,6 +76,10 @@ const IndexPage = ({ data }) => {
   })
 
   function onClickRegion(region) {
+    setRegion(region)
+  }
+
+  function onClickDeaths(region) {
     setRegion(region)
   }
 
@@ -104,6 +111,19 @@ const IndexPage = ({ data }) => {
         provinceState={region.Region}
         view={view}
         number={region.Region_Total}
+        deaths={region.Region_Deaths}
+      ></DetailsCounter>
+    )
+  }
+
+  function RegionDeathContent() {
+    return (
+      <DetailsCounter
+        type={'details'}
+        title={region.Display_Name}
+        provinceState={region.Region}
+        view={view}
+        number={region.Region_Deaths}
       ></DetailsCounter>
     )
   }
@@ -130,7 +150,10 @@ const IndexPage = ({ data }) => {
 
       <Map {...mapSettings}>
         {view === 'sweden' ? (
-          <Markers onClick={onClickRegion} ref={markerRef} />
+          <>
+            <Markers onClick={onClickRegion} ref={markerRef} />
+            <DeathMarkers onClick={onClickDeaths} />
+          </>
         ) : (
           <WorldMarkers onClick={onClickCountry} ref={markerRef} />
         )}
@@ -163,7 +186,11 @@ const IndexPage = ({ data }) => {
             <Container className="info">
               {region || country ? (
                 <div className="info-content">
-                  {region ? <RegionContent /> : <CountryContent />}
+                  {region || regionDeaths ? (
+                    <RegionContent />
+                  ) : (
+                    <CountryContent />
+                  )}
                 </div>
               ) : (
                 <>

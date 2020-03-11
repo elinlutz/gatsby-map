@@ -4,7 +4,7 @@ import { CircleMarker } from 'react-leaflet'
 
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
-const Markers = ({ loadTotal, onClick }) => {
+const DeathMarkers = ({ loadTotal, onClick }) => {
   const [clicked, setClicked] = useState(false)
 
   const data = useStaticQuery(graphql`
@@ -33,7 +33,7 @@ const Markers = ({ loadTotal, onClick }) => {
     let radius
 
     if (confirmed > 0) {
-      color = colors.red
+      color = colors.black
     }
 
     if (number == 1) {
@@ -58,8 +58,8 @@ const Markers = ({ loadTotal, onClick }) => {
   return edges.map(edge => {
     const region = edge.node
 
-    if (region.Region_Total > 0) {
-      const { color, radius } = getBubble(region.Region_Total)
+    if (region.Region_Deaths > 0) {
+      const { color, radius } = getBubble(region.Region_Deaths)
       return (
         <CircleMarker
           key={region.id}
@@ -75,4 +75,4 @@ const Markers = ({ loadTotal, onClick }) => {
   })
 }
 
-export default Markers
+export default DeathMarkers
