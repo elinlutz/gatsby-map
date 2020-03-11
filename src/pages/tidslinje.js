@@ -53,9 +53,11 @@ const Blog = ({ data }) => {
             }
           ></TimelineListElement>
           <TimelineListElement
-            number={1}
+            number={2}
             region={'Kalmar Län'}
-            source={'https://www.regionkalmar.se/nyhetslista/corona/'}
+            source={
+              'https://www.regionkalmar.se/nyhetslista/annu-en-smittad-av-nya-coronaviruset/'
+            }
           ></TimelineListElement>
           <TimelineListElement
             number={1}
