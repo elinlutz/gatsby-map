@@ -42,8 +42,8 @@ const DetailsCounter = ({
       <Container className="confirmedText">
         <h3>Bekräftade fall</h3>
       </Container>
-      <Container className="updatedText">
-        <h3>{deaths} DÖDSFALL </h3>
+      <Container className="confirmedDeathsText">
+        {deaths > 0 ? <h3>{deaths} dödsfall </h3> : null}
       </Container>
     </Container>
   )
