@@ -2,11 +2,12 @@ module.exports = {
   pathPrefix: `/mapapp`,
   siteMetadata: {
     title: 'Coronakartan',
+    titleTemplate: 'Coronaviruset i Sverige',
     description:
-      'En karta över rapporterade fall av coronaviruset COVID-19 i Sverige',
+      'Karta över rapporterade fall av coronaviruset COVID-19 i Sverige',
     keywords: ['Coronavirus', 'Karta', 'covid-19', 'Sverige'],
     siteUrl: 'https://www.coronakartan.se',
-    image: 'assets/images/screenshot.png',
+    image: '/images/coronakartan.png',
     menuLinks: [
       {
         name: 'home',
