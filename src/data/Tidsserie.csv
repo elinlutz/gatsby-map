@@ -2,7 +2,7 @@ Region,Display_Name,Region_Source,Population,Lat,Long,2020-02-25,2020-02-26,2020
 Region Blekinge,Blekinge,https://regionblekinge.se/om-webb-platsen/nyheter/nyheter-och-pressmeddelande.html,159606,56.16156,15.58661,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
 Region Dalarna,Dalarna,https://www.regiondalarna.se/press/nyheter-och-pressmeddelanden/,287966,60.602778,15.656111,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
 Region Gotland,Gotland,https://www.gotland.se/nyhetsarkiv,59686,57.628889,18.307222,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Region Gävleborg,Gävleborg,https://www.regiongavleborg.se/nyheter/,287382,60.674722,17.144444,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,2
+Region Gävleborg,Gävleborg,https://www.regiongavleborg.se/nyheter/,287382,60.674722,17.144444,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,14,16
 Region Halland,Halland,https://press.regionhalland.se/,333848,56.658333,12.900278,0,0,0,0,0,0,0,0,0,0,0,0,0,5,4,0,9
 Region Jämtland Härjedalen,Jämtland Härjedalen,https://www.regionjh.se/press/press.4.7f464a791555012adc8837.html,130810,63.158056,14.679167,0,0,0,0,0,0,0,0,0,0,0,0,0,,1,0,1
 Region Jönköpings län,Jönköping,https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/,363599,57.78145,14.15618,1,0,0,1,0,0,0,1,0,0,5,0,0,2,0,3,13
@@ -20,5 +20,5 @@ Region Västmanland,Västmanland,https://regionvastmanland.se/vardgivare/behandl
 Region Örebro län,Örebro län,https://via.tt.se/pressrum/region-orebro-lan?publisherId=3235654,304805,59.266944,15.196389,0,0,0,0,0,0,0,0,1,0,0,0,3,0,1,2,7
 Region Östergötland,Östergötland,https://www.regionostergotland.se/Om-regionen/Pressrum/Nyheter/,465495,58.409444,15.625556,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1
 Västra Götalandsregionen,Västra Götaland,"https://news.cision.com/se/vastra-gotalandsregionen/r/10-mars--nya-bekraftade-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3056443",1725881,57.70887,11.97456,0,1,3,0,1,1,0,3,2,1,2,0,12,7,15,36,84
-Todays_Total,,,,,,1,1,5,4,2,1,1,15,22,42,43,24,42,57,96,116,
-Total,,,,,,1,2,7,11,13,14,15,30,52,94,137,161,203,260,356,472,
+Todays_Total,,,,,,1,1,5,4,2,1,1,15,22,42,43,24,42,57,96,130,
+Total,,,,,,1,2,7,11,13,14,15,30,52,94,137,161,203,260,356,486,
