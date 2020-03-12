@@ -125,8 +125,8 @@ const getOptions = latestTotal => ({
         ['8 Mars 2020', 42],
         ['9 Mars 2020', 57],
         ['10 Mars 2020', 96],
-        ['11 Mars 2020', 144]
-        // ['11 Mars 2020', latestTotal - 500]
+        ['11 Mars 2020', 144],
+        ['12 Mars 2020', latestTotal - 500]
       ],
       color: colors.blue
     }
