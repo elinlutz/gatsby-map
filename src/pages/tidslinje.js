@@ -34,6 +34,13 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>12 Mars 2020</h3>
           <TimelineListElement
+            number={6}
+            region={'Östergötland'}
+            source={
+              'https://www.regionostergotland.se/Om-regionen/Pressrum/Nyheter/ytterligare-sex-coronosmittade-i-lanet/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={4}
             region={
               'Halland, och 2 missade från gårdagen, totalt 22 st enligt pressmeddelande'
