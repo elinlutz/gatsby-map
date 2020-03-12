@@ -34,6 +34,15 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>12 Mars 2020</h3>
           <TimelineListElement
+            number={4}
+            region={
+              'Halland, och 2 missade från gårdagen, totalt 22 st enligt pressmeddelande'
+            }
+            source={
+              'https://press.regionhalland.se/posts/pressreleases/fyra-nya-fall-av-bekraftad-covid-19-hos-medar'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={3}
             region={'Dalarna'}
             source={
