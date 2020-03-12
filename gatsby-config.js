@@ -7,7 +7,7 @@ module.exports = {
       'Karta över rapporterade fall av coronaviruset COVID-19 i Sverige',
     keywords: ['Coronavirus', 'Karta', 'covid-19', 'Sverige'],
     siteUrl: 'https://www.coronakartan.se',
-    image: '/images/coronakartan.png',
+    image: 'static/coronakartan.png',
     twitterUsername: '@utzle',
     menuLinks: [
       {
