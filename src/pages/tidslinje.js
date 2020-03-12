@@ -33,6 +33,36 @@ const Blog = ({ data }) => {
         <Container type="timeline">
           <h1>Tidslinje</h1>
           <h3>12 Mars 2020</h3>
+          Källor till samtliga fall kommer vid 18-snåret.
+          <TimelineListElement
+            number={3}
+            region={'Värmland'}
+            source={''}
+          ></TimelineListElement>
+          <TimelineListElement
+            number={3}
+            region={'Dalarna'}
+            source={''}
+          ></TimelineListElement>
+          <TimelineListElement
+            number={2}
+            region={'Kronoberg'}
+            source={''}
+          ></TimelineListElement>
+          <TimelineListElement
+            number={31}
+            region={'Stockholm'}
+            source={
+              'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/fall-av-nya-coronaviruset-i-stockholm-den-12-mars/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={31}
+            region={'Västra Götaland'}
+            source={
+              'https://news.cision.com/se/vastra-gotalandsregionen/r/12-mars--nytt-om-coronavirusinfektion-covid-19,c3058053'
+            }
+          ></TimelineListElement>
           <TimelineListElement
             number={38}
             region={'Skåne'}
