@@ -35,13 +35,10 @@ const Blog = ({ data }) => {
           <h3>12 Mars 2020</h3>
           <TimelineListElement
             number={1}
-            region={'Örebro'}
-            source={''}
-          ></TimelineListElement>
-          <TimelineListElement
-            number={1}
             region={'Västmanland'}
-            source={''}
+            source={
+              'https://newsroom.notified.com/region-vastmanland/posts/pressreleases/ett-ytterligare-bekraftat-fall-av-covid-19-i'
+            }
           ></TimelineListElement>
           <TimelineListElement
             number={14}
@@ -51,12 +48,21 @@ const Blog = ({ data }) => {
           <TimelineListElement
             number={4}
             region={'Sörmland'}
-            source={''}
+            source={
+              'https://regionsormland.se/nyheter/nyhetslista-2019/ytterligare-fall-med-covid-19-i-sormland---en-person-vardas-pa-sjukhus/'
+            }
           ></TimelineListElement>
           <TimelineListElement
             number={1}
             region={'Norrbotten'}
             source={''}
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Örebro'}
+            source={
+              'https://via.tt.se/pressmeddelande/ett-ytterligare-fall-av-coronasmitta-i-orebro-lan-pa-onsdagen?publisherId=3235654&releaseId=3272401'
+            }
           ></TimelineListElement>
           <TimelineListElement
             number={2}
