@@ -33,21 +33,89 @@ const Blog = ({ data }) => {
         <Container type="timeline">
           <h1>Tidslinje</h1>
           <h3>12 Mars 2020</h3>
-          Källor till samtliga fall kommer vid 18-snåret.
           <TimelineListElement
-            number={3}
-            region={'Värmland'}
+            number={1}
+            region={'Örebro'}
             source={''}
           ></TimelineListElement>
           <TimelineListElement
-            number={3}
-            region={'Dalarna'}
+            number={1}
+            region={'Västmanland'}
+            source={''}
+          ></TimelineListElement>
+          <TimelineListElement
+            number={14}
+            region={'Uppsala'}
+            source={''}
+          ></TimelineListElement>
+          <TimelineListElement
+            number={4}
+            region={'Sörmland'}
+            source={''}
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Norrbotten'}
             source={''}
           ></TimelineListElement>
           <TimelineListElement
             number={2}
             region={'Kronoberg'}
+            source={
+              'http://www.regionkronoberg.se/nyheter/tva-bekraftade-coronafall-i-lanet/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={2}
+            region={'Kalmar'}
+            source={
+              'https://www.regionkalmar.se/nyhetslista/tva-nya-fall-i-lanet-av-covid-19/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={3}
+            region={'Västernorrland'}
+            source={
+              'https://www.rvn.se/sv/Om-regionen/Aktuellt-i-Region-Vasternorrland/Nyheter/tre-nya-fall-av-covid-19-i-vasternorrland/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={3}
+            region={'Jämtland Härjedalen'}
+            source={
+              'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200312coronacovid19.5.236a06661703ffc4fb61f800.html'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={13}
+            region={'Jönköping'}
             source={''}
+          ></TimelineListElement>
+          <TimelineListElement
+            number={2}
+            region={'Gävleborg'}
+            source={
+              'https://www.1177.se/Gavleborg/aktuellt/aktuellt-i-gavleborg/bekraftade-fall-av-covid-19-i-lanet/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={2}
+            region={'Gotland'}
+            source={'https://www.gotland.se/106271'}
+          ></TimelineListElement>
+          <TimelineListElement
+            number={3}
+            region={'Värmland'}
+            source={
+              'https://www.regionvarmland.se/om-regionen/pressrum/Pressmeddelanden/2020/03/tre-nya-fall-av-coronavirusinfektion-covid-19-i-varmland/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={5}
+            region={'Blekinge'}
+            source={
+              'https://regionblekinge.se/om-webb-platsen/nyheter/nyheter-och-pressmeddelande/2020-03-12-fler-fall-av-coronasmittade-i-blekinge.html'
+            }
           ></TimelineListElement>
           <TimelineListElement
             number={31}
@@ -57,7 +125,7 @@ const Blog = ({ data }) => {
             }
           ></TimelineListElement>
           <TimelineListElement
-            number={31}
+            number={34}
             region={'Västra Götaland'}
             source={
               'https://news.cision.com/se/vastra-gotalandsregionen/r/12-mars--nytt-om-coronavirusinfektion-covid-19,c3058053'
@@ -78,12 +146,10 @@ const Blog = ({ data }) => {
             }
           ></TimelineListElement>
           <TimelineListElement
-            number={4}
-            region={
-              'Halland, och 2 missade från gårdagen, totalt 22 st enligt pressmeddelande'
-            }
+            number={15}
+            region={'Halland'}
             source={
-              'https://press.regionhalland.se/posts/pressreleases/fyra-nya-fall-av-bekraftad-covid-19-hos-medar'
+              'https://www.hn.se/nyheter/halland/elever-p%C3%A5-p%C3%A5skbergsskolan-har-satts-i-karant%C3%A4n-1.25301387'
             }
           ></TimelineListElement>
           <TimelineListElement
