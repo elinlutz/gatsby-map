@@ -6,10 +6,12 @@ import Layout from 'components/Layout'
 import Container from 'components/Container'
 import Chart from 'components/Chart'
 import TimelineListElement from 'components/TimelineListElement'
+import SEO from '../components/SEO'
 
 const Blog = ({ data }) => {
   return (
     <Layout pageName="tidslinje">
+      <SEO />
       <Helmet>
         <title>Coronakartan: Coronaviruset i Sverige - Tidslinje </title>
         <meta

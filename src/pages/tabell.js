@@ -6,11 +6,14 @@ import { graphql } from 'gatsby'
 import StickyHeadTable from 'components/StickyHeadTable'
 import Layout from 'components/Layout'
 import Container from 'components/Container'
+import SEO from '../components/SEO'
 
 const Tabell = ({ data }) => {
   return (
     <Layout pageName="tabell">
       <Helmet>
+        <SEO />
+
         <title>Coronakartan: Coronaviruset i Sverige - Tabell</title>
         <meta
           name="description"

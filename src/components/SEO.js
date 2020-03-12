@@ -13,7 +13,8 @@ const SEO = ({ title, description, image, pathname, article }) => (
           titleTemplate,
           defaultDescription,
           siteUrl,
-          defaultImage
+          defaultImage,
+          twitterUsername
         }
       }
     }) => {
@@ -81,6 +82,7 @@ const query = graphql`
         defaultDescription: description
         siteUrl
         defaultImage: image
+        twitterUsername
       }
     }
   }

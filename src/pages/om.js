@@ -8,6 +8,7 @@ import ShareButtons from 'components/ShareButtons'
 import Bubble from 'components/Bubble'
 
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import SEO from '../components/SEO'
 
 const InlineBubble = () => {
   return <span className={'inlineBubble'}></span>
@@ -16,6 +17,7 @@ const InlineBubble = () => {
 const InfoPage = ({ data }) => {
   return (
     <Layout pageName="om">
+      <SEO />
       <Helmet>
         <title>Coronakartan: Coronaviruset i Sverige - Om</title>
         <meta

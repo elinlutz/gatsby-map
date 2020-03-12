@@ -8,6 +8,7 @@ module.exports = {
     keywords: ['Coronavirus', 'Karta', 'covid-19', 'Sverige'],
     siteUrl: 'https://www.coronakartan.se',
     image: '/images/coronakartan.png',
+    twitterUsername: '@utzle',
     menuLinks: [
       {
         name: 'home',

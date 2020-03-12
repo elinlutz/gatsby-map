@@ -23,6 +23,7 @@ import NoDetailsCounter from 'components/NoDetailsCounter'
 import ToggleViewButton from 'components/ToggleViewButton'
 
 import CoronaImage from 'assets/icons/corona.png'
+import SEO from '../components/SEO'
 
 const SourceButton = ({ url }) => {
   return (
@@ -136,6 +137,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout pageName="home">
+      <SEO />
       <Helmet>
         <title>Coronakartan: Coronaviruset i Sverige - Karta</title>
         <meta
