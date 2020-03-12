@@ -5,8 +5,13 @@ import { graphql } from 'gatsby'
 import Layout from 'components/Layout'
 import Container from 'components/Container'
 import ShareButtons from 'components/ShareButtons'
+import Bubble from 'components/Bubble'
 
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+
+const InlineBubble = () => {
+  return <span className={'inlineBubble'}></span>
+}
 
 const InfoPage = ({ data }) => {
   return (
@@ -22,6 +27,30 @@ const InfoPage = ({ data }) => {
         <link rel="canonical" href="https://www.coronakartan.se/om/" />
       </Helmet>
       <Container type="about" className="container">
+        {/* <Container type="card" className="container">
+          <h2>📌 Viktigt meddelande</h2>
+          <p>
+            Internet är kraftfullt just nu och vi har chans att använda det
+            rätt.
+            <br />
+            <br />
+            Coronakartan har över 60 000 användare i skrivande stund, med detta
+            följer ett ansvar. Nu söker jag personer som vill bidra till att{' '}
+            <b>#jämnautkurvan</b> (ett svenskt svar på initiativet
+            <a href={'https://flattenthecurve.com'}> Flatten The Curve</a>)
+            genom att sammanställa text och grafik utefter samlade riktlinjer på
+            svenska. Målet är att jämna ut kurvan över antal fall genom att
+            bidra till ett medmänskligt beteende. Det är viktigt att vi agerar
+            snabbt. Är du duktig på till exempel epidemiologi, folkhälsa,
+            statistik, medicin, hygien, design eller kommunikation? Tror du på
+            transparent och evidensbaserad information?
+            <br />
+            <br />
+            Hör av er via <a href={'mailto:info@coronakartan.se'}>mejl</a> eller
+            skriv till mig på <a href={'https://twitter.com/utzle'}>twitter</a>.
+          </p>
+        </Container> */}
+
         <h2>Om {data.site.siteMetadata.title}</h2>
         <p>
           Denna sida är till för att ge en överblick över det nya coronavirusets
@@ -70,9 +99,7 @@ const InfoPage = ({ data }) => {
           .
         </p>
         <br />
-
         <h2>Information om coronaviruset</h2>
-
         <p>
           För fakta och information om nya coronaviruset COVID-19, se
           <a
