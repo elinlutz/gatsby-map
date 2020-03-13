@@ -34,19 +34,26 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>13 Mars 2020</h3>
           <TimelineListElement
+            number={7}
+            region={'Jönköping'}
+            source={
+              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={3}
             region={'Jämtland Härjedalen'}
             source={
               'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200313coronacovid19.5.4faf1114170d0bf514f103a.html'
             }
           ></TimelineListElement>
-          {/* <TimelineListElement
-            number={3}
+          <TimelineListElement
+            number={2}
             region={'Värmland'}
             source={
-              'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200313coronacovid19.5.4faf1114170d0bf514f103a.html'
+              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
             }
-          ></TimelineListElement> */}
+          ></TimelineListElement>
           <TimelineListElement
             number={9}
             region={'Halland'}
