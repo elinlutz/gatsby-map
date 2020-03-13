@@ -13,28 +13,25 @@ import { red } from '@material-ui/core/colors'
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
 const columns = [
-  { id: 'region', label: 'Region', minWidth: 60, fontWeight: 'bold' },
-  { id: 'total', label: 'Antal fall', minWidth: 10, align: 'center' },
+  { id: 'region', label: 'Region', minWidth: 0, fontWeight: 'bold' },
+  { id: 'total', label: 'Antal fall', minWidth: 0, align: 'center' },
   {
     id: 'today',
-    label: 'Dagens förändring',
-    minWidth: 10,
+    label: 'Förändring idag',
     align: 'center',
     color: `${colors.red}`
   },
-  {
-    id: 'density',
-    label: 'Antal fall per 100\xa0000',
-    minWidth: 10,
-    align: 'center',
-    color: `${colors.gray}`
-  },
-
+  // {
+  //   id: 'density',
+  //   label: 'Antal fall per 100\xa0000',
+  //   align: 'center',
+  //   color: `${colors.gray}`
+  // },
   {
     id: 'deaths',
-    label: 'Antal dödsfall',
-    minWidth: 10,
-    align: 'center'
+    label: 'Dödsfall',
+    align: 'center',
+    minWidth: 0
   }
 ]
 

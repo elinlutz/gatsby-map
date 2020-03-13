@@ -51,6 +51,13 @@ const Blog = ({ data }) => {
             }
           ></TimelineListElement>
           <TimelineListElement
+            number={1}
+            region={'Västernorrland'}
+            source={
+              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={3}
             region={'Jämtland Härjedalen'}
             source={
