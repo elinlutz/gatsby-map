@@ -33,13 +33,13 @@ const Blog = ({ data }) => {
         <Container type="timeline">
           <h1>Tidslinje</h1>
           <h3>13 Mars 2020</h3>
-          {/* <TimelineListElement
-            number={4}
-            region={'Östergötland'}
+          <TimelineListElement
+            number={1}
+            region={'Kalmar'}
             source={
-              'https://www.regionostergotland.se/Om-regionen/Pressrum/Nyheter/fyra-nya-fall-av-corona-i-lanet/'
+              'https://www.regionkalmar.se/nyhetslista/ett-nytt-fall-i-lanet-av-covid-19/'
             }
-          ></TimelineListElement> */}
+          ></TimelineListElement>
           <h3>12 Mars 2020</h3>
           <TimelineListElement
             number={4}
