@@ -3,12 +3,13 @@
     padding: 0em 0em;
   }
 
-  p {
+  .updatedAt {
     margin-left: 8px;
     font-size: 11px;
     color: $light-black;
     text-transform: uppercase;
   }
+
   .sourceLink {
     text-decoration: none;
     color: darken($map-blue, 20);

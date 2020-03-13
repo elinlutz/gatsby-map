@@ -24,15 +24,25 @@ const Blog = ({ data }) => {
       </Helmet>
 
       <Container type="timeline-content" className="text">
+        <Container type="card" className="container">
+          <h2>📉 En liten uppdatering</h2>
+          <p>
+            Folkhälsomyndigheten rekommenderar nu att bara personer som är i
+            behov av sjukhusvård ska provtas. Detta kommer att påverka
+            statistiken och utvecklingen av antal fall markant.
+          </p>
+        </Container>
         <Container type="chart">
           <h1>Utveckling</h1>
-          <p>Uppdaterat {data.site.buildTimeZone}</p>
+
+          <p className="updatedAt">Uppdaterat {data.site.buildTimeZone}</p>
 
           <Chart />
         </Container>
         <Container type="timeline">
           <h1>Tidslinje</h1>
           <h3>13 Mars 2020</h3>
+          <br />
           <TimelineListElement
             number={7}
             region={'Jönköping'}
