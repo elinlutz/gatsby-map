@@ -30,6 +30,16 @@ const Blog = ({ data }) => {
             Folkhälsomyndigheten rekommenderar nu att bara personer som är i
             behov av sjukhusvård ska provtas. Detta kommer att påverka
             statistiken och utvecklingen av antal fall markant.
+            <br />
+            {/* <br />
+            Samtidigt så kommer statistiken börja sluta rapporteras av
+            regionerna var för sig. Vilket i och för sig är bra - dock stämmer
+            inte siffrorna överrens med regionernas i nuläget. Jämför till
+            exempel <a href="hej">Folkhälsomyndighetens</a> siffror med{' '}
+            <a href="https://www.regionostergotland.se/Om-regionen/Pressrum/Nyheter/totalt-17-fall-av-coronasmitta-hittills-i-lanet/">
+              Region Östergötlands
+            </a>{' '}
+            pressmeddelande. Jag återkommer med hur vi gör här framöver. */}
           </p>
         </Container>
         <Container type="chart">
@@ -42,7 +52,6 @@ const Blog = ({ data }) => {
         <Container type="timeline">
           <h1>Tidslinje</h1>
           <h3>13 Mars 2020</h3>
-          <br />
           <TimelineListElement
             number={7}
             region={'Jönköping'}
