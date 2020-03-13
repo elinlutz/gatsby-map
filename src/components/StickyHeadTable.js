@@ -13,7 +13,7 @@ import { red } from '@material-ui/core/colors'
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
 const columns = [
-  { id: 'region', label: 'Region', minWidth: 60 },
+  { id: 'region', label: 'Region', minWidth: 60, fontWeight: 'bold' },
   { id: 'total', label: 'Antal fall', minWidth: 10, align: 'center' },
   {
     id: 'today',
@@ -26,7 +26,8 @@ const columns = [
     id: 'density',
     label: 'Antal fall per 100\xa0000',
     minWidth: 10,
-    align: 'center'
+    align: 'center',
+    color: `${colors.gray}`
   },
 
   {
@@ -134,7 +135,8 @@ export default function StickyHeadTable() {
                         style={{
                           color: column.color,
                           minWidth: column.minWidth,
-                          fontSize: 12
+                          fontSize: 12,
+                          fontWeight: column.fontWeight
                         }}
                       >
                         {column.format && typeof value === 'string'
