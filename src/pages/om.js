@@ -103,7 +103,7 @@ const InfoPage = ({ data }) => {
         <br />
         <h2>Information om coronaviruset</h2>
         <p>
-          För fakta och information om nya coronaviruset COVID-19, se
+          För fakta och information om det nya coronaviruset SARS-CoV-2, se
           <a
             href={
               'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/smittsamma-sjukdomar/coronavirus/fragor-och-svar-om-nytt-coronavirus'
