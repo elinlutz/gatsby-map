@@ -8,28 +8,39 @@ import TableCell from '@material-ui/core/TableCell'
 import TableContainer from '@material-ui/core/TableContainer'
 import TableHead from '@material-ui/core/TableHead'
 import TableRow from '@material-ui/core/TableRow'
+import { red } from '@material-ui/core/colors'
+
+import colors from 'assets/stylesheets/settings/_colors.scss'
 
 const columns = [
-  { id: 'region', label: 'Region', minWidth: 40 },
-  { id: 'total', label: 'Antal fall', minWidth: 40, align: 'center' },
+  { id: 'region', label: 'Region', minWidth: 60 },
+  { id: 'total', label: 'Antal fall', minWidth: 10, align: 'center' },
+  {
+    id: 'today',
+    label: 'Dagens förändring',
+    minWidth: 10,
+    align: 'center',
+    color: `${colors.red}`
+  },
   {
     id: 'density',
-    label: 'Antal fall per 100 000',
-    minWidth: 40,
+    label: 'Antal fall per 100\xa0000',
+    minWidth: 10,
     align: 'center'
   },
+
   {
     id: 'deaths',
     label: 'Antal dödsfall',
-    minWidth: 40,
+    minWidth: 10,
     align: 'center'
   }
 ]
 
-function createData(region, total, population, deaths) {
+function createData(region, total, population, deaths, today) {
   const perHundredK = (total / population) * 100000
   const density = perHundredK.toFixed(1)
-  return { region, total, density, deaths }
+  return { region, total, density, deaths, today }
 }
 
 const useStyles = makeStyles({
@@ -52,6 +63,7 @@ export default function StickyHeadTable() {
             Region_Total
             Region_Deaths
             Population
+            Today
           }
         }
       }
@@ -70,7 +82,8 @@ export default function StickyHeadTable() {
           region.Display_Name,
           region.Region_Total,
           region.Population,
-          region.Region_Deaths
+          region.Region_Deaths,
+          `+ ${region.Today}`
         )
         rows.push(newRow)
       }
@@ -95,7 +108,7 @@ export default function StickyHeadTable() {
                   align={column.align}
                   style={{
                     minWidth: column.minWidth,
-                    fontSize: 10,
+                    fontSize: 8,
                     textTransform: 'uppercase'
                   }}
                 >
@@ -114,7 +127,11 @@ export default function StickyHeadTable() {
                       <TableCell
                         key={column.id}
                         align={column.align}
-                        style={{ minWidth: column.minWidth, fontSize: 12 }}
+                        style={{
+                          color: column.color,
+                          minWidth: column.minWidth,
+                          fontSize: 12
+                        }}
                       >
                         {column.format && typeof value === 'string'
                           ? column.format(value)
