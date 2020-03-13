@@ -78,12 +78,16 @@ export default function StickyHeadTable() {
     edges.map(edge => {
       const region = edge.node
       if (region.Region_Total > 0) {
+        const today = region.Today > 0 ? `+ ${region.Today}` : ' '
+        const deaths =
+          region.Region_Deaths > 0 ? `${region.Region_Deaths}` : ' '
+
         const newRow = createData(
           region.Display_Name,
           region.Region_Total,
           region.Population,
-          region.Region_Deaths,
-          `+ ${region.Today}`
+          deaths,
+          today
         )
         rows.push(newRow)
       }
