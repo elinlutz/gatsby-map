@@ -34,6 +34,11 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>13 Mars 2020</h3>
           <TimelineListElement
+            number={2}
+            region={'Blekinge'}
+            source={'https://regionblekinge.se/5.5a4dd3be170c00810e9d553.html'}
+          ></TimelineListElement>
+          <TimelineListElement
             number={6}
             region={'Östergötland'}
             source={
