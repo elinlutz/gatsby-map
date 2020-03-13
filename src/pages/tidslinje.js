@@ -34,6 +34,13 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>13 Mars 2020</h3>
           <TimelineListElement
+            number={2}
+            region={'Kronoberg'}
+            source={
+              'http://www.regionkronoberg.se/nyheter/ytterligare-tva-fall-av-covid-19-i-lanet/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={6}
             region={'Sörmland'}
             source={
