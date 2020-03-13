@@ -36,7 +36,9 @@ const Blog = ({ data }) => {
           <TimelineListElement
             number={33}
             region={'Skåne'}
-            source={'https://www.mynewsdesk.com/se/region_skane/latest_news'}
+            source={
+              'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-13-mars-2981681'
+            }
           ></TimelineListElement>
           <TimelineListElement
             number={1}
