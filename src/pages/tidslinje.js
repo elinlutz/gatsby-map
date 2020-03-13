@@ -41,6 +41,13 @@ const Blog = ({ data }) => {
             }
           ></TimelineListElement> */}
           <TimelineListElement
+            number={18}
+            region={'Västra Götaland'}
+            source={
+              'https://www.gp.se/nyheter/v%C3%A4stsverige/18-nya-fall-av-coronaviruset-i-v%C3%A4stra-g%C3%B6taland-1.25352900'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={1}
             region={'Västerbotten'}
             source={
