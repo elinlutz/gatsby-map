@@ -24,7 +24,7 @@ const Layout = ({ children, pageName, view }) => {
       <div className="wrapper">
         <Header />
         <main>{children}</main>
-        <Footer />
+        {pageName == 'home' ? null : <Footer />}
       </div>
     </>
   )

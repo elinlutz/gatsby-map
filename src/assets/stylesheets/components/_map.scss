@@ -11,7 +11,7 @@
 
 .mapbox {
   position: fixed;
-  bottom: 5em;
+  bottom: 3em;
   z-index: 1000;
   width: 100%;
 
@@ -27,7 +27,7 @@
 @media (max-width: 500px) {
   .mapbox {
     position: fixed;
-    bottom: 2.5em;
+    bottom: 1.5em;
     z-index: 2000;
     display: flex wrap;
     align-items: flex-start;
