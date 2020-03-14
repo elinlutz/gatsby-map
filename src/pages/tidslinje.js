@@ -29,7 +29,8 @@ const Blog = ({ data }) => {
           <p>
             Folkhälsomyndigheten rekommenderar nu att bara personer som är i
             behov av sjukhusvård ska provtas. Detta kommer att påverka
-            statistiken och utvecklingen av antal fall markant.
+            statistiken och utvecklingen av antal bekräftade fall markant, från
+            och med den 12:e mars.
             <br />
             {/* <br />
             Samtidigt så kommer statistiken börja sluta rapporteras av
@@ -43,6 +44,7 @@ const Blog = ({ data }) => {
           </p>
         </Container>
         <Container type="chart">
+          <br />
           <h1>Utveckling</h1>
 
           <p className="updatedAt">Uppdaterat {data.site.buildTimeZone}</p>
