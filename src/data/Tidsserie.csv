@@ -1,24 +1,24 @@
-Region,Display_Name,Region_Source,Population,Lat,Long,2020-02-25,2020-02-26,2020-02-27,2020-02-28,2020-02-29,2020-03-01,2020-03-02,2020-03-03,2020-03-04,2020-03-05,2020-03-06,2020-03-07,2020-03-08,2020-03-09,2020-03-10,2020-03-11,2020-03-12,2020-03-13,Today,Region_Total,FHM,Diff,Region_Deaths,
-Region Blekinge,Blekinge,https://regionblekinge.se/om-webb-platsen/nyheter/nyheter-och-pressmeddelande.html,159606,56.16156,15.58661,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,5,2,0,8,8,0,0,https://regionblekinge.se/om-webb-platsen/nyheter/nyheter-och-pressmeddelande/2020-03-12-fler-fall-av-coronasmittade-i-blekinge.html
-Region Dalarna,Dalarna,https://www.regiondalarna.se/press/nyheter-och-pressmeddelanden/,287966,60.602778,15.656111,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,0,0,4,3,1,0,https://www.regiondalarna.se/press/nyheter-och-pressmeddelanden/tre-nya-fall-av-coronavirus-i-dalarna-den-12-mars/
+Region,Display_Name,Region_Source,Population,Lat,Long,2020-02-25,2020-02-26,2020-02-27,2020-02-28,2020-02-29,2020-03-01,2020-03-02,2020-03-03,2020-03-04,2020-03-05,2020-03-06,2020-03-07,2020-03-08,2020-03-09,2020-03-10,2020-03-11,2020-03-12,2020-03-13,Today,Region_Total,FHM_Today,Diff,Region_Deaths,
+Region Blekinge,Blekinge,https://regionblekinge.se/om-webb-platsen/nyheter/nyheter-och-pressmeddelande.html,159606,56.16156,15.58661,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,5,2,0,8,8,0,0,
+Region Dalarna,Dalarna,https://www.regiondalarna.se/press/nyheter-och-pressmeddelanden/,287966,60.602778,15.656111,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,0,0,4,4,0,0,
 Region Gotland,Gotland,https://www.gotland.se/nyhetsarkiv,59686,57.628889,18.307222,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,2,2,0,0,
-Region Gävleborg,Gävleborg,https://www.regiongavleborg.se/nyheter/,287382,60.674722,17.144444,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,2,0,0,5,5,0,0,https://www.1177.se/Gavleborg/aktuellt/aktuellt-i-gavleborg/bekraftade-fall-av-covid-19-i-lanet/
-Region Halland,Halland,https://press.regionhalland.se/,333848,56.658333,12.900278,0,0,0,0,0,0,0,0,0,0,0,0,0,5,4,7,15,9,0,40,33,7,0,
-Region Jämtland Härjedalen,Jämtland Härjedalen,https://www.regionjh.se/press/press.4.7f464a791555012adc8837.html,130810,63.158056,14.679167,0,0,0,0,0,0,0,0,0,0,0,0,0,,1,4,3,3,0,11,5,6,0,https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200312coronacovid19.5.236a06661703ffc4fb61f800.html
-Region Jönköpings län,Jönköping,https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/,363599,57.78145,14.15618,1,0,0,1,0,0,0,1,0,0,5,0,0,2,0,3,13,7,0,33,33,0,0,
-Region Kalmar län,Kalmar,https://www.regionkalmar.se/nyhetslista/,245446,56.669444,16.321667,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,1,0,5,5,0,0,https://www.regionkalmar.se/nyhetslista/tva-nya-fall-i-lanet-av-covid-19/
-Region Kronoberg,Kronoberg,http://www.regionkronoberg.se/nyheter/,201469,56.889167,14.802778,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,7,2,2,0,12,10,2,0,http://www.regionkronoberg.se/nyheter/tva-bekraftade-coronafall-i-lanet/
-Region Norrbotten,Norrbotten,https://www.norrbotten.se/sv/Om-Region-Norrbotten/Press/Pressmeddelanden-2020/,250093,65.584819,22.1567026,0,0,0,0,0,0,0,0,,0,0,0,0,1,1,3,1,0,0,6,5,1,0,
-Region Skåne,Skåne,https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-10-mars-2980402?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news,1377827,55.6087551,13.000484099,0,0,0,0,0,0,0,1,1,7,5,3,5,0,3,35,38,33,44,175,128,47,0,
-Region Stockholm,Stockholm,https://www.sll.se/Nyheter,2377081,59.334591,18.06324,0,0,1,2,1,0,1,10,16,28,21,21,14,32,60,26,34,42,33,342,308,34,1,https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/fall-av-nya-coronaviruset-i-stockholm-den-12-mars/
-Region Sörmland,Sörmland,https://regionsormland.se/om-region-sormland/pressrum/,297540,58.7556833,16.9947833,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,5,4,6,0,17,10,7,0,https://regionsormland.se/halsa-vard/information-om-coronaviruset-covid-19/antal-konstaterade-fall-av-coronaviruset-covid-19/
-Region Uppsala,Uppsala,https://www.regionuppsala.se/nyheter,383713,59.85882,17.63889,0,0,1,1,0,0,0,0,0,2,1,0,1,2,0,3,14,0,0,25,25,0,0,
-Region Värmland,Värmland,https://www.regionvarmland.se/om-regionen/pressrum/Pressmeddelanden/,282414,59.3875,13.51,0,0,0,0,0,0,0,0,2,3,8,0,7,1,1,2,3,2,0,29,29,0,0,https://www.regionvarmland.se/om-regionen/pressrum/Pressmeddelanden/2020/03/tre-nya-fall-av-coronavirusinfektion-covid-19-i-varmland/
-Region Västerbotten,Västerbotten,https://www.mynewsdesk.com/se/regionvasterbotten,271736,63.828333,20.270556,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,3,0,1,2,11,9,2,0,
-Region Västernorrland,Västernorrland,https://www.rvn.se/sv/Om-regionen/Pressrum/,245347,62.632222,17.938056,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,3,1,0,10,10,0,0,https://www.rvn.se/sv/Om-regionen/Aktuellt-i-Region-Vasternorrland/Nyheter/tre-nya-fall-av-covid-19-i-vasternorrland/
+Region Gävleborg,Gävleborg,https://www.regiongavleborg.se/nyheter/,287382,60.674722,17.144444,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,2,0,1,6,6,1,0,
+Region Halland,Halland,https://press.regionhalland.se/,333848,56.658333,12.900278,0,0,0,0,0,0,0,0,0,0,0,0,0,5,4,7,15,9,0,40,40,0,0,
+Region Jämtland Härjedalen,Jämtland Härjedalen,https://www.regionjh.se/press/press.4.7f464a791555012adc8837.html,130810,63.158056,14.679167,0,0,0,0,0,0,0,0,0,0,0,0,0,,1,4,3,3,0,11,11,0,0,
+Region Jönköpings län,Jönköping,https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/,363599,57.78145,14.15618,1,0,0,1,0,0,0,1,0,0,5,0,0,2,0,3,13,7,5,38,38,5,0,
+Region Kalmar län,Kalmar,https://www.regionkalmar.se/nyhetslista/,245446,56.669444,16.321667,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,1,0,5,5,0,0,
+Region Kronoberg,Kronoberg,http://www.regionkronoberg.se/nyheter/,201469,56.889167,14.802778,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,7,2,2,0,12,12,0,0,
+Region Norrbotten,Norrbotten,https://www.norrbotten.se/sv/Om-Region-Norrbotten/Press/Pressmeddelanden-2020/,250093,65.584819,22.1567026,0,0,0,0,0,0,0,0,,0,0,0,0,1,1,3,1,0,0,6,5,-1,0,
+Region Skåne,Skåne,https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-10-mars-2980402?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news,1377827,55.6087551,13.000484099,0,0,0,0,0,0,0,1,1,7,5,3,5,0,3,35,38,33,44,175,170,-5,0,
+Region Stockholm,Stockholm,https://www.sll.se/Nyheter,2377081,59.334591,18.06324,0,0,1,2,1,0,1,10,16,28,21,21,14,32,60,26,34,42,33,342,341,-1,1,
+Region Sörmland,Sörmland,https://regionsormland.se/om-region-sormland/pressrum/,297540,58.7556833,16.9947833,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,5,4,6,0,17,16,-1,0,
+Region Uppsala,Uppsala,https://www.regionuppsala.se/nyheter,383713,59.85882,17.63889,0,0,1,1,0,0,0,0,0,2,1,0,1,2,0,3,14,0,11,36,36,11,0,
+Region Värmland,Värmland,https://www.regionvarmland.se/om-regionen/pressrum/Pressmeddelanden/,282414,59.3875,13.51,0,0,0,0,0,0,0,0,2,3,8,0,7,1,1,2,3,2,1,30,30,1,0,
+Region Västerbotten,Västerbotten,https://www.mynewsdesk.com/se/regionvasterbotten,271736,63.828333,20.270556,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,3,0,1,2,11,9,0,0,
+Region Västernorrland,Västernorrland,https://www.rvn.se/sv/Om-regionen/Pressrum/,245347,62.632222,17.938056,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,3,1,1,11,11,1,0,
 Region Västmanland,Västmanland,https://newsroom.notified.com/region-vastmanland,275845,59.60746,16.55215,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,1,0,0,5,5,0,0,
-Västra Götalandsregionen,Västra Götaland,"https://news.cision.com/se/vastra-gotalandsregionen/r/10-mars--nya-bekraftade-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3056443",1725881,57.70887,11.97456,0,1,3,0,1,1,0,3,2,1,2,0,12,7,15,37,31,18,0,134,134,0,1,
-Region Örebro län,Örebro län,https://via.tt.se/pressrum/region-orebro-lan?publisherId=3235654,304805,59.266944,15.196389,0,0,0,0,0,0,0,0,1,0,0,0,3,0,1,2,1,0,0,8,7,1,0,
-Region Östergötland,Östergötland,https://www.regionostergotland.se/Om-regionen/Pressrum/Nyheter/,465495,58.409444,15.625556,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,10,6,0,17,1,16,0,
-Todays_Total,,,,,,1,1,5,4,2,1,1,15,22,42,43,24,42,57,96,144,187,133,79,,,,,
-Total,,,,,,1,2,7,11,13,14,15,30,52,94,137,161,203,260,356,500,687,820,899,,,,,
+Västra Götalandsregionen,Västra Götaland,"https://news.cision.com/se/vastra-gotalandsregionen/r/10-mars--nya-bekraftade-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3056443",1725881,57.70887,11.97456,0,1,3,0,1,1,0,3,2,1,2,0,12,7,15,37,31,18,21,155,155,0,1,
+Region Örebro län,Örebro län,https://via.tt.se/pressrum/region-orebro-lan?publisherId=3235654,304805,59.266944,15.196389,0,0,0,0,0,0,0,0,1,0,0,0,3,0,1,2,1,0,1,9,9,1,0,
+Region Östergötland,Östergötland,https://www.regionostergotland.se/Om-regionen/Pressrum/Nyheter/,465495,58.409444,15.625556,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,10,6,0,17,11,-6,0,
+Todays_Total,,,,,,1,1,5,4,2,1,1,15,22,42,43,24,42,57,96,144,187,133,120,,,,,
+Total,,,,,,1,2,7,11,13,14,15,30,52,94,137,161,203,260,356,500,687,820,940,,,,,

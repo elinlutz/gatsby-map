@@ -24,6 +24,13 @@ const getOptions = latestTotal => ({
   xAxis: {
     tickInterval: 7 * 24 * 3600 * 1000, // one week
     tickWidth: 0,
+    // breaks: [
+    //   {
+    //     from: '1 Mars 2020',
+    //     to: '10 Mars 2020',
+    //     breakSize: 3
+    //   }
+    // ],
     gridLineWidth: 1,
     labels: {
       enabled: false,
