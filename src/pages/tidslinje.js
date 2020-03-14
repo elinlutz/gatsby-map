@@ -53,6 +53,34 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>14 Mars 2020</h3>
           <TimelineListElement
+            number={5}
+            region={'Östergötland'}
+            source={
+              'https://www.svt.se/nyheter/lokalt/ost/ytterligare-fem-fall-av-coronasmitta-i-ostergotland'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={2}
+            region={'Norrbotten'}
+            source={
+              'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={8}
+            region={'Sörmland'}
+            source={
+              'https://regionsormland.se/halsa-vard/information-om-coronaviruset-covid-19/antal-konstaterade-fall-av-coronaviruset-covid-19/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={3}
+            region={'Jämtland Härjedalen'}
+            source={
+              'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200314coronacovid19.5.613e2f39170d0c32a9566.html'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={1}
             region={'Örebro'}
             source={
