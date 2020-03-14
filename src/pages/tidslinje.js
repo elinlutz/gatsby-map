@@ -51,7 +51,14 @@ const Blog = ({ data }) => {
         </Container>
         <Container type="timeline">
           <h1>Tidslinje</h1>
-          <h3>14 Mars 2020</h3>
+          <h3>14 Mars 2020</h3>'
+          <TimelineListElement
+            number={33}
+            region={'Stockholm'}
+            source={
+              'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/fall-av-nya-coronaviruset-i-stockholm-den-14-mars/'
+            }
+          ></TimelineListElement>
           <TimelineListElement
             number={2}
             region={'Västerbotten'}
