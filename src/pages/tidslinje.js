@@ -70,6 +70,13 @@ const Blog = ({ data }) => {
           ></TimelineListElement>
           <h3>14 Mars 2020</h3>
           <TimelineListElement
+            number={6}
+            region={'Västmanland (tillagt 15 mars)'}
+            source={
+              'https://newsroom.notified.com/region-vastmanland/posts/pressreleases/sex-nya-bekraftade-fall-av-covid-19-i-vastman'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={5}
             region={'Östergötland'}
             source={
@@ -168,13 +175,6 @@ const Blog = ({ data }) => {
             }
           ></TimelineListElement>
           <h3>13 Mars 2020</h3>
-          <TimelineListElement
-            number={6}
-            region={'Västmanland, (rättelse, tillagda idag 14 mars)'}
-            source={
-              'https://newsroom.notified.com/region-vastmanland/posts/pressreleases/sex-nya-bekraftade-fall-av-covid-19-i-vastman'
-            }
-          ></TimelineListElement>
           <TimelineListElement
             number={7}
             region={'Jönköping'}
