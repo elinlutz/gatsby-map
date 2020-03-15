@@ -55,6 +55,13 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>15 Mars 2020</h3>
           <TimelineListElement
+            number={5}
+            region={'Östergötland'}
+            source={
+              'https://www.nt.se/nyheter/antalet-coronasmittade-i-lanet-stiger-om6542168.aspx'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={20}
             region={'Skåne'}
             source={
