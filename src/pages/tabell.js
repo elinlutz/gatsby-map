@@ -25,7 +25,7 @@ const Tabell = ({ data }) => {
       </Helmet>
       <Container>
         <Container type="table">
-          <h1>Antal fall per region</h1>
+          <h1>Antal bekräftade fall per region</h1>
           <p className="updatedAt">Uppdaterat {data.site.buildTimeZone}</p>
         </Container>
         <Container type="table">
