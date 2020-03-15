@@ -70,13 +70,6 @@ const Blog = ({ data }) => {
           ></TimelineListElement>
           <TimelineListElement
             number={2}
-            region={'Skåne'}
-            source={
-              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-            }
-          ></TimelineListElement>
-          <TimelineListElement
-            number={2}
             region={'Kalmar'}
             source={
               'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
