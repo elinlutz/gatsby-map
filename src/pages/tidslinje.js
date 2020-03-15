@@ -72,7 +72,7 @@ const Blog = ({ data }) => {
             number={2}
             region={'Kalmar'}
             source={
-              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+              'https://www.regionkalmar.se/nyhetslista/covid-19-och-laget-i-kalmar-lan/'
             }
           ></TimelineListElement>
           <TimelineListElement
