@@ -60,17 +60,18 @@ const IndexPage = ({ data }) => {
     const { leafletElement: marker } = current
   }
 
-  const mapSettings = {
-    center: [58, 15],
-    defaultBaseMap: 'OpenStreetMap',
-    zoom: 5,
-    mapEffect
-  }
-
   const [region, setRegion] = useState(null)
   const [regionDeaths, setRegionDeaths] = useState(null)
   const [country, setCountry] = useState(null)
   const [view, setView] = useState('sweden')
+  const [mapCenter, setMapCenter] = useState({ center: [58, 15], zoom: 5 })
+
+  const mapSettings = {
+    center: mapCenter.center,
+    defaultBaseMap: 'OpenStreetMap',
+    zoom: mapCenter.zoom,
+    mapEffect
+  }
 
   useEffect(() => {
     setView(view)
@@ -113,18 +114,6 @@ const IndexPage = ({ data }) => {
         view={view}
         number={region.Region_Total}
         deaths={region.Region_Deaths}
-      ></DetailsCounter>
-    )
-  }
-
-  function RegionDeathContent() {
-    return (
-      <DetailsCounter
-        type={'details'}
-        title={region.Display_Name}
-        provinceState={region.Region}
-        view={view}
-        number={region.Region_Deaths}
       ></DetailsCounter>
     )
   }
