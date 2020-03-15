@@ -55,6 +55,13 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>15 Mars 2020</h3>
           <TimelineListElement
+            number={3}
+            region={'Sörmland'}
+            source={
+              'https://regionsormland.se/nyheter/nyhetslista-2019/ytterligare-fall-med-covid-19-i-region-sormland4/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={1}
             region={'Kronoberg'}
             source={
