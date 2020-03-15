@@ -56,9 +56,12 @@ const InfoPage = ({ data }) => {
         <h2>Om {data.site.siteMetadata.title}</h2>
         <p>
           Denna sida är till för att ge en överblick över det nya coronavirusets
-          bekräftade fall i Sverige, på regionnivå. Jag som skapade kartan heter
-          Elin Lütz. Markeringarna på kartan visar inte exakta städer eller
-          adresser, utan är placerade i den stad som utgör regionens säte.
+          bekräftade fall i Sverige, på regionnivå. Jag som skapade kartan heter{' '}
+          <OutboundLink href={'https://twitter.com/utzle'} target={'_blank'}>
+            Elin Lütz.
+          </OutboundLink>{' '}
+          Markeringarna på kartan visar inte exakta städer eller adresser, utan
+          är placerade i den stad som utgör regionens säte.
         </p>
         <br />
         <h2>Data</h2>
