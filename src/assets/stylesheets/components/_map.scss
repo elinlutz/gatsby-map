@@ -11,16 +11,31 @@
 
 .mapbox {
   position: fixed;
-  bottom: 3em;
   z-index: 1000;
-  width: 100%;
+  width: 60em;
+  height: 25em;
+  bottom: 20em;
+  margin: 0;
 
   .mapboxContainer {
-    max-width: 46em;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  }
+  .mapboxContainer > div {
+    flex: 0 0 48%; /* width of first flex item in main container */
+  }
+  .mapboxContainer {
+    flex: 0 0 48%; /* width of second flex item in main container */
+    display: flex; /* nested flex container to arrange smaller items */
+    flex-wrap: wrap; /* make container multi-line */
+  }
+  .mapboxContainer > .item {
+    flex: 0 0 40%; /* width of smaller items; two max per row */
+    height: 50px;
+  }
+  .mapboxContainer {
+    background-color: #ccc;
+    padding: 5px;
+    margin: 5px;
   }
 }
 

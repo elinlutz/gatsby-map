@@ -160,13 +160,36 @@ const IndexPage = ({ data }) => {
         <Container className="mapbox">
           <Container className="mapboxContainer">
             {view === 'sweden' ? (
-              <CounterSweden
-                view={view}
-                number={getTotalConfirmed(
-                  data.allTidsserieCsv.edges,
-                  'Region_Total'
-                )}
-              ></CounterSweden>
+              <>
+                <CounterSweden
+                  view={view}
+                  number={getTotalConfirmed(
+                    data.allTidsserieCsv.edges,
+                    'Region_Total'
+                  )}
+                ></CounterSweden>
+                <CounterSweden
+                  view={view}
+                  number={getTotalConfirmed(
+                    data.allTidsserieCsv.edges,
+                    'Region_Total'
+                  )}
+                ></CounterSweden>
+                <CounterSweden
+                  view={view}
+                  number={getTotalConfirmed(
+                    data.allTidsserieCsv.edges,
+                    'Region_Total'
+                  )}
+                ></CounterSweden>
+                <CounterSweden
+                  view={view}
+                  number={getTotalConfirmed(
+                    data.allTidsserieCsv.edges,
+                    'Region_Total'
+                  )}
+                ></CounterSweden>
+              </>
             ) : (
               <CounterWorld
                 view={view}
@@ -184,9 +207,7 @@ const IndexPage = ({ data }) => {
                   )}
                 </div>
               ) : (
-                <>
-                  <NoDetailsCounter />
-                </>
+                <>{/* <NoDetailsCounter /> */}</>
               )}
             </Container>
           </Container>
