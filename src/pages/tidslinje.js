@@ -55,6 +55,20 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>15 Mars 2020</h3>
           <TimelineListElement
+            number={4}
+            region={'Västra Götaland'}
+            source={
+              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={13}
+            region={'Uppsala'}
+            source={
+              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={18}
             region={'Stockholm'}
             source={
