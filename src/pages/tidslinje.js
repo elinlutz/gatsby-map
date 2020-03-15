@@ -55,6 +55,13 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>15 Mars 2020</h3>
           <TimelineListElement
+            number={4}
+            region={'Örebro, utgår från totala fall 13 st'}
+            source={
+              'https://www.svt.se/nyheter/lokalt/orebro/coronaviruset-i-orebro-lan'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={5}
             region={'Östergötland'}
             source={
