@@ -14,6 +14,7 @@ const getOptions = latestTotal => ({
   colors: [colors.blue],
 
   chart: {
+    type: 'spline',
     style: {
       fontFamily:
         '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif',
@@ -110,7 +111,8 @@ const getOptions = latestTotal => ({
         ['11 Mars 2020', 500],
         ['12 Mars 2020', 687],
         ['13 Mars 2020', 820],
-        ['14 Mars 2020', latestTotal]
+        ['14 Mars 2020', 957],
+        ['15 Mars 2020', latestTotal]
       ],
       color: colors.red
     },
@@ -137,7 +139,8 @@ const getOptions = latestTotal => ({
         ['11 Mars 2020', 144],
         ['12 Mars 2020', 187],
         ['13 Mars 2020', 133],
-        ['14 Mars 2020', latestTotal - 820]
+        ['14 Mars 2020', 137]
+        // ['15 Mars 2020', latestTotal - 957]
       ],
       color: colors.blue
     }
