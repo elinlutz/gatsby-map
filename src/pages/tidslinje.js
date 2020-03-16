@@ -55,6 +55,13 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>16 Mars 2020</h3>
           <TimelineListElement
+            number={8}
+            region={'Uppsala'}
+            source={
+              'https://www.svt.se/nyheter/lokalt/uppsala/coronalaget-i-uppsala-46-smittade-i-lanet'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={5}
             region={'Sörmland'}
             source={
