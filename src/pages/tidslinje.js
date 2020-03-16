@@ -53,11 +53,117 @@ const Blog = ({ data }) => {
         </Container>
         <Container type="timeline">
           <h1>Tidslinje</h1>
-          <h3>15 Mars 2020</h3>
+          <h3>16 Mars 2020</h3>
+          <TimelineListElement
+            number={5}
+            region={'Sörmland'}
+            source={
+              'https://regionsormland.se/nyheter/nyhetslista-2019/ytterligare-smittade-och-en-avliden-i-covid-19/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={2}
+            region={'Dalarna'}
+            source={
+              'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-16-mars-2982343'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={17}
+            region={'Västra Götaland'}
+            source={
+              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Västernorrland'}
+            source={
+              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Värmland'}
+            source={
+              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={2}
+            region={'Kronoberg'}
+            source={
+              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={4}
+            region={'Jönköping'}
+            source={
+              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={3}
+            region={'Jämtland Härjedalen'}
+            source={
+              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Gävleborg'}
+            source={
+              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={18}
+            region={'Stockholm'}
+            source={
+              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+            }
+          ></TimelineListElement>
           <TimelineListElement
             number={2}
             region={'Blekinge'}
             source={'https://regionblekinge.se/5.3282a4ad170bffa376718c51.html'}
+          ></TimelineListElement>
+          <TimelineListElement
+            number={8}
+            region={'Östergötland'}
+            source={
+              'https://www.regionostergotland.se/Om-regionen/Pressrum/Nyheter/fortsatt-starkt-beredskap-kring-coronaviruset/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={9}
+            region={'Skåne'}
+            source={
+              'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-16-mars-2982186'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={3}
+            region={'Halland'}
+            source={
+              'https://www.hn.se/nyheter/halland/tre-nya-coronafall-i-halland-1.25458378'
+            }
+          ></TimelineListElement>
+          <h3>15 Mars 2020</h3>
+          <TimelineListElement
+            number={2}
+            region={'Jämtland'}
+            source={
+              'https://www.svt.se/nyheter/lokalt/jamtland/corona-smittan-drabbar-sjukvarden'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={3}
+            region={'Sörmland'}
+            source={
+              'https://regionsormland.se/nyheter/nyhetslista-2019/ytterligare-fall-med-covid-19-i-region-sormland4/'
+            }
           ></TimelineListElement>
           <TimelineListElement
             number={1}

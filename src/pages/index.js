@@ -142,6 +142,7 @@ const IndexPage = ({ data }) => {
         {view === 'sweden' ? (
           <>
             <Markers onClick={onClickRegion} ref={markerRef} />
+            {/* <DeathMarkers onClick={onClickDeaths} /> */}
           </>
         ) : (
           <WorldMarkers onClick={onClickCountry} ref={markerRef} />
