@@ -55,6 +55,13 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>16 Mars 2020</h3>
           <TimelineListElement
+            number={2}
+            region={'Dalarna'}
+            source={
+              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={17}
             region={'Västra Götaland'}
             source={
@@ -119,7 +126,7 @@ const Blog = ({ data }) => {
             number={8}
             region={'Östergötland'}
             source={
-              'https://www.nt.se/nyheter/atta-nya-fall-av-coronasmittade-om6542976.aspx'
+              'https://www.regionostergotland.se/Om-regionen/Pressrum/Nyheter/fortsatt-starkt-beredskap-kring-coronaviruset/'
             }
           ></TimelineListElement>
           <TimelineListElement
