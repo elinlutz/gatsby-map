@@ -58,14 +58,14 @@ const Blog = ({ data }) => {
             number={5}
             region={'Sörmland'}
             source={
-              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+              'https://regionsormland.se/nyheter/nyhetslista-2019/ytterligare-smittade-och-en-avliden-i-covid-19/'
             }
           ></TimelineListElement>
           <TimelineListElement
             number={2}
             region={'Dalarna'}
             source={
-              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+              'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-16-mars-2982343'
             }
           ></TimelineListElement>
           <TimelineListElement
