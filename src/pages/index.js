@@ -61,7 +61,6 @@ const IndexPage = ({ data }) => {
   }
 
   const [region, setRegion] = useState(null)
-  const [regionDeaths, setRegionDeaths] = useState(null)
   const [country, setCountry] = useState(null)
   const [view, setView] = useState('sweden')
   const [mapCenter, setMapCenter] = useState({ center: [58, 15], zoom: 5 })
@@ -87,12 +86,12 @@ const IndexPage = ({ data }) => {
 
   function onClickCountry(country) {
     setCountry(country)
+    console.log(country.Deaths)
   }
 
   function CountryContent() {
     return (
       <DetailsCounter
-        type={'details'}
         title={country.Country_Region}
         provinceState={country.Province_State}
         view={view}
@@ -101,6 +100,7 @@ const IndexPage = ({ data }) => {
             ? getTotalConfirmed(data.allTidsserieCsv.edges, 'Region_Total')
             : country.Confirmed
         }
+        deaths={country.Deaths}
       ></DetailsCounter>
     )
   }
@@ -108,7 +108,6 @@ const IndexPage = ({ data }) => {
   function RegionContent() {
     return (
       <DetailsCounter
-        type={'details'}
         title={region.Display_Name}
         provinceState={region.Region}
         view={view}
@@ -143,7 +142,6 @@ const IndexPage = ({ data }) => {
         {view === 'sweden' ? (
           <>
             <Markers onClick={onClickRegion} ref={markerRef} />
-            <DeathMarkers onClick={onClickDeaths} />
           </>
         ) : (
           <WorldMarkers onClick={onClickCountry} ref={markerRef} />
@@ -160,54 +158,37 @@ const IndexPage = ({ data }) => {
         <Container className="mapbox">
           <Container className="mapboxContainer">
             {view === 'sweden' ? (
-              <>
-                <CounterSweden
-                  view={view}
-                  number={getTotalConfirmed(
-                    data.allTidsserieCsv.edges,
-                    'Region_Total'
-                  )}
-                ></CounterSweden>
-                <CounterSweden
-                  view={view}
-                  number={getTotalConfirmed(
-                    data.allTidsserieCsv.edges,
-                    'Region_Total'
-                  )}
-                ></CounterSweden>
-                <CounterSweden
-                  view={view}
-                  number={getTotalConfirmed(
-                    data.allTidsserieCsv.edges,
-                    'Region_Total'
-                  )}
-                ></CounterSweden>
-                <CounterSweden
-                  view={view}
-                  number={getTotalConfirmed(
-                    data.allTidsserieCsv.edges,
-                    'Region_Total'
-                  )}
-                ></CounterSweden>
-              </>
+              <CounterSweden
+                view={view}
+                number={getTotalConfirmed(
+                  data.allTidsserieCsv.edges,
+                  'Region_Total'
+                )}
+                deathNumber={getTotalConfirmed(
+                  data.allTidsserieCsv.edges,
+                  'Region_Deaths'
+                )}
+              ></CounterSweden>
             ) : (
               <CounterWorld
                 view={view}
                 number={getTotalConfirmed(data.allWorldCsv.edges, 'Confirmed')}
+                deathNumber={getTotalConfirmed(
+                  data.allWorldCsv.edges,
+                  'Deaths'
+                )}
               ></CounterWorld>
             )}
 
             <Container className="info">
               {region || country ? (
                 <div className="info-content">
-                  {region || regionDeaths ? (
-                    <RegionContent />
-                  ) : (
-                    <CountryContent />
-                  )}
+                  {region ? <RegionContent /> : <CountryContent />}
                 </div>
               ) : (
-                <>{/* <NoDetailsCounter /> */}</>
+                <>
+                  <NoDetailsCounter />
+                </>
               )}
             </Container>
           </Container>
@@ -223,6 +204,7 @@ export const query = graphql`
       edges {
         node {
           Region_Total
+          Region_Deaths
         }
       }
     }
@@ -230,6 +212,7 @@ export const query = graphql`
       edges {
         node {
           Confirmed
+          Deaths
         }
       }
     }

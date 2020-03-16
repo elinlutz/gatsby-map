@@ -102,14 +102,14 @@
   }
 
   .confirmedNumberContainer {
-    height: 100px;
+    height: 60px;
     line-height: 0px;
     h1 {
       font-size: 80px;
     }
     h2 {
-      padding-top: 12px;
-      padding-bottom: 12px;
+      padding-top: 0px;
+      padding-bottom: 0px;
       font-size: 50px;
     }
   }
@@ -145,7 +145,7 @@
     min-width: 150px;
     margin-right: 0.25em;
     margin-left: 0.25em;
-    max-height: 14em;
+    max-height: 15em;
     background-color: $white;
     border-radius: 4px;
     display: flex;
@@ -189,8 +189,7 @@
     }
 
     .confirmedNumberContainer {
-      line-height: 0px;
-
+      height: 30px;
       h1 {
         font-size: 55px;
       }
