@@ -14,6 +14,7 @@ const WorldMarkers = ({ onClick }) => {
           node {
             id
             Confirmed
+            Deaths
             Country_Region
             Province_State
             Latitude
