@@ -55,6 +55,13 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>16 Mars 2020</h3>
           <TimelineListElement
+            number={5}
+            region={'Jämtland Härjedalen'}
+            source={
+              'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200316coronacovid19.5.4faf1114170d0bf514f6afb.html'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={8}
             region={'Uppsala'}
             source={
@@ -97,7 +104,7 @@ const Blog = ({ data }) => {
             }
           ></TimelineListElement>
           <TimelineListElement
-            number={2}
+            number={3}
             region={'Kronoberg'}
             source={
               'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
@@ -106,13 +113,6 @@ const Blog = ({ data }) => {
           <TimelineListElement
             number={4}
             region={'Jönköping'}
-            source={
-              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-            }
-          ></TimelineListElement>
-          <TimelineListElement
-            number={3}
-            region={'Jämtland Härjedalen'}
             source={
               'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
             }
@@ -158,6 +158,13 @@ const Blog = ({ data }) => {
             }
           ></TimelineListElement>
           <h3>15 Mars 2020</h3>
+          <TimelineListElement
+            number={3}
+            region={'Västmanland'}
+            source={
+              'https://www.svt.se/datajournalistik/har-sprider-sig-coronaviruset/'
+            }
+          ></TimelineListElement>
           <TimelineListElement
             number={2}
             region={'Jämtland'}
