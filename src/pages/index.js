@@ -100,7 +100,11 @@ const IndexPage = ({ data }) => {
             ? getTotalConfirmed(data.allTidsserieCsv.edges, 'Region_Total')
             : country.Confirmed
         }
-        deaths={country.Deaths}
+        deaths={
+          country.Country_Region == 'Sweden'
+            ? getTotalConfirmed(data.allTidsserieCsv.edges, 'Region_Deaths')
+            : country.Deaths
+        }
       ></DetailsCounter>
     )
   }
