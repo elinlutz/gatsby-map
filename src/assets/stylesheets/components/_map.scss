@@ -11,17 +11,18 @@
 
 .mapbox {
   position: fixed;
+  bottom: 3em;
   z-index: 1000;
-  height: 25em;
-  bottom: 20em;
-  margin: 0;
+  width: 100%;
 
   .mapboxContainer {
+    max-width: 46em;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
-
 @media (max-width: 500px) {
   .mapbox {
     position: fixed;
