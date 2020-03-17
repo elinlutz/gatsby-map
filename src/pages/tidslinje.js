@@ -54,13 +54,20 @@ const Blog = ({ data }) => {
         <Container type="timeline">
           <h1>Tidslinje</h1>
           <h3>17 Mars 2020</h3>
-          {/* <TimelineListElement
-            number={0}
+          <TimelineListElement
+            number={5}
+            region={'Västerbotten'}
+            source={
+              'https://www.mynewsdesk.com/se/regionvasterbotten/pressreleases/nya-konstaterade-fall-av-coronasmitta-i-laenet-2982660'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={3}
             region={'Skåne'}
             source={
-              ''
+              'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-17-mars-2982614'
             }
-          ></TimelineListElement> */}
+          ></TimelineListElement>
           <h3>16 Mars 2020</h3>
           <TimelineListElement
             number={2}
