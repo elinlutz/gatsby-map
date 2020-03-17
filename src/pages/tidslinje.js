@@ -56,6 +56,41 @@ const Blog = ({ data }) => {
           <h3>17 Mars 2020</h3>
           <TimelineListElement
             number={1}
+            region={'Västmanland'}
+            source={
+              'https://www.vlt.se/logga-in/nya-fall-av-coronasmittade-i-vastmanland-vet-inte-hur-snabbt-det-kommer-att-ga'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Västernorrland'}
+            source={
+              'https://www.rvn.se/sv/Vard-o-halsa/Fakta-och-rad/coronavirus---for-dig-som-vill-veta-mer/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={10}
+            region={'Örebro'}
+            source={
+              'https://www.svt.se/nyheter/lokalt/orebro/coronaviruset-i-orebro-lan'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={7}
+            region={'Östergötland'}
+            source={
+              'https://www.svt.se/nyheter/lokalt/ost/nya-fall-av-coronavirus-i-norrkoping-42-bekraftade-fall'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Halland'}
+            source={
+              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
             region={'Blekinge'}
             source={
               'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
