@@ -55,6 +55,13 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>17 Mars 2020</h3>
           <TimelineListElement
+            number={2}
+            region={'Kronoberg'}
+            source={
+              'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={1}
             region={'Västmanland'}
             source={
@@ -76,6 +83,13 @@ const Blog = ({ data }) => {
             }
           ></TimelineListElement>
           <TimelineListElement
+            number={2}
+            region={'Norrbotten'}
+            source={
+              'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={7}
             region={'Östergötland'}
             source={
@@ -86,7 +100,7 @@ const Blog = ({ data }) => {
             number={1}
             region={'Halland'}
             source={
-              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+              'https://www.hn.se/nyheter/halland/coronaviruset-intensiv-provtagning-i-halland-har-gett-resultat-s%C3%B6ker-man-s%C3%A5-hittar-man-1.25495900'
             }
           ></TimelineListElement>
           <TimelineListElement
@@ -105,7 +119,7 @@ const Blog = ({ data }) => {
           ></TimelineListElement>
           <TimelineListElement
             number={1}
-            region={'Jämtland'}
+            region={'Jämtland Härjedalen'}
             source={
               'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
             }
