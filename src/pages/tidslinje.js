@@ -90,13 +90,6 @@ const Blog = ({ data }) => {
             }
           ></TimelineListElement>
           <TimelineListElement
-            number={1}
-            region={'Västerbotten'}
-            source={
-              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-            }
-          ></TimelineListElement>
-          <TimelineListElement
             number={6}
             region={'Uppsala'}
             source={
@@ -113,6 +106,13 @@ const Blog = ({ data }) => {
           <TimelineListElement
             number={2}
             region={'Västmanland'}
+            source={
+              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Västerbotten'}
             source={
               'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
             }
