@@ -54,6 +54,11 @@ const Blog = ({ data }) => {
         <Container type="timeline">
           <h1>Tidslinje</h1>
           <h3>18 Mars 2020</h3>
+          <TimelineListElement
+            number={2}
+            region={'Gotland'}
+            source={'https://gotland.se/106352'}
+          ></TimelineListElement>
           <h3>17 Mars 2020</h3>
           <TimelineListElement
             number={2}
