@@ -55,6 +55,13 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>18 Mars 2020</h3>
           <TimelineListElement
+            number={1}
+            region={'Kalmar'}
+            source={
+              'https://www.regionkalmar.se/nyhetslista/ytterligare-en-person-bekraftad-smittad/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={36}
             region={'Stockholm'}
             source={
