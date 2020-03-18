@@ -55,6 +55,13 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>18 Mars 2020</h3>
           <TimelineListElement
+            number={13}
+            region={'Östergötland'}
+            source={
+              'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={1}
             region={'Kalmar'}
             source={
@@ -127,13 +134,6 @@ const Blog = ({ data }) => {
           <TimelineListElement
             number={20}
             region={'Västra Götaland'}
-            source={
-              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-            }
-          ></TimelineListElement>
-          <TimelineListElement
-            number={10}
-            region={'Östergötland'}
             source={
               'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
             }
