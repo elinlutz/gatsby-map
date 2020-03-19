@@ -55,6 +55,20 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>19 Mars 2020</h3>
           <TimelineListElement
+            number={7}
+            region={'Skåne'}
+            source={
+              'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-19-mars-2983416'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={2}
+            region={'Norrbotten'}
+            source={
+              'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={1}
             region={'Västernorrland'}
             source={
@@ -73,13 +87,6 @@ const Blog = ({ data }) => {
             region={'Västerbotten'}
             source={
               'https://regionvasterbotten.mynewsdesk.com/pressreleases/region-vaesterbotten-infoer-besoeksfoerbud-foer-att-minska-smittan-2983413'
-            }
-          ></TimelineListElement>
-          <TimelineListElement
-            number={1}
-            region={'Norrbotten'}
-            source={
-              'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
             }
           ></TimelineListElement>
           <h3>18 Mars 2020</h3>
