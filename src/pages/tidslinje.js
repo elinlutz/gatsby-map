@@ -55,6 +55,13 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>19 Mars 2020</h3>
           <TimelineListElement
+            number={8}
+            region={'Västra Götaland'}
+            source={
+              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={1}
             region={'Sörmland'}
             source={
@@ -92,13 +99,6 @@ const Blog = ({ data }) => {
           <TimelineListElement
             number={2}
             region={'Örebro'}
-            source={
-              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-            }
-          ></TimelineListElement>
-          <TimelineListElement
-            number={2}
-            region={'Västra Götaland'}
             source={
               'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
             }
