@@ -55,6 +55,27 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>19 Mars 2020</h3>
           <TimelineListElement
+            number={5}
+            region={'Dalarna'}
+            source={
+              'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-19-mars-2983593'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Västmanland'}
+            source={
+              'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/covid-19-laget-i-lanet/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Kalmar'}
+            source={
+              'https://www.regionkalmar.se/nyhetslista/nionde-fallet-av-covid-19-i-lanet/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={3}
             region={'Jämtland'}
             source={
