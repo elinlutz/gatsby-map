@@ -55,11 +55,16 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>19 Mars 2020</h3>
           <TimelineListElement
+            number={1}
+            region={'Halland'}
+            source={
+              'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={8}
             region={'Västra Götaland'}
-            source={
-              'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-            }
+            source={'https://www.vgregion.se/covid-19-corona/'}
           ></TimelineListElement>
           <TimelineListElement
             number={1}
