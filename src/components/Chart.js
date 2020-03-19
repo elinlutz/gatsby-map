@@ -35,13 +35,22 @@ const getOptions = latestTotal => ({
     gridLineWidth: 1,
     labels: {
       enabled: false,
-
       align: 'left',
       x: 3,
       y: -3
     },
     showFirstLabel: false,
-    gridLineWidth: 0
+    gridLineWidth: 0,
+    plotLines: [{
+      show: true,
+      color: '#424242',
+      dashStyle: 'Dot',
+      value: 18, // Index of data point representing 2020-03-12
+      width: 2,
+      label: {
+        align: 'left'
+      }
+    }]
   },
 
   yAxis: {
@@ -178,7 +187,6 @@ const Chart = () => {
 
   const total = getTotalConfirmed(data.allTidsserieCsv.edges)
   const chartOptions = getOptions(total)
-
   return <HighchartsReact highcharts={Highcharts} options={chartOptions} />
 }
 
