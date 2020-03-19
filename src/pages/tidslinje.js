@@ -55,6 +55,20 @@ const Blog = ({ data }) => {
           <h1>Tidslinje</h1>
           <h3>19 Mars 2020</h3>
           <TimelineListElement
+            number={33}
+            region={'Östergötland'}
+            source={
+              'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={1}
+            region={'Västerbotten'}
+            source={
+              'https://regionvasterbotten.mynewsdesk.com/pressreleases/region-vaesterbotten-infoer-besoeksfoerbud-foer-att-minska-smittan-2983413'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
             number={1}
             region={'Norrbotten'}
             source={
