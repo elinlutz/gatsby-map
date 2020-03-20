@@ -53,7 +53,15 @@ const Blog = ({ data }) => {
         </Container>
         <Container type="timeline">
           <h1>Tidslinje</h1>
+          <h3>20 Mars 2020</h3>
           <h3>19 Mars 2020</h3>
+          <TimelineListElement
+            number={3}
+            region={'Norrbotten'}
+            source={
+              'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+            }
+          ></TimelineListElement>
           <TimelineListElement
             number={5}
             region={'Dalarna'}
@@ -155,13 +163,6 @@ const Blog = ({ data }) => {
             region={'Skåne'}
             source={
               'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-19-mars-2983416'
-            }
-          ></TimelineListElement>
-          <TimelineListElement
-            number={2}
-            region={'Norrbotten'}
-            source={
-              'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
             }
           ></TimelineListElement>
           <TimelineListElement
