@@ -56,6 +56,20 @@ const Blog = ({ data }) => {
           <h3>20 Mars 2020</h3>
           <TimelineListElement
             number={2}
+            region={'Dalarna'}
+            source={
+              'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-20-mars-2984002'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={4}
+            region={'Jämtland Härjedalen'}
+            source={
+              'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200320coronacovid19.5.613e2f39170d0c32a9566c8.html'
+            }
+          ></TimelineListElement>
+          <TimelineListElement
+            number={2}
             region={'Västmanland'}
             source={
               'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/covid-19-laget-i-lanet/'
