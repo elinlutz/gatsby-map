@@ -26,12 +26,12 @@ const Blog = ({ data }) => {
 
       <Container type="timeline-content" className="text">
         <Container type="card" className="container">
-          <h2>📉 En liten uppdatering</h2>
+          <h2>📉 Uppdatering</h2>
           <p>
-            Folkhälsomyndigheten rekommenderar nu att bara personer som är i
-            behov av sjukhusvård ska provtas. Detta kommer att påverka
-            statistiken och utvecklingen av antal bekräftade fall markant, från
-            och med den 12:e mars.
+            Folkhälsomyndigheten rekommenderar att bara personer som är i behov
+            av sjukhusvård ska provtas. Detta kommer att påverka statistiken och
+            utvecklingen av antal bekräftade fall markant, från och med den 12:e
+            mars.
             <br />
           </p>
         </Container>

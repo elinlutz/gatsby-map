@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
+
 import { makeStyles } from '@material-ui/core/styles'
 import Paper from '@material-ui/core/Paper'
 import Table from '@material-ui/core/Table'
@@ -8,7 +9,6 @@ import TableCell from '@material-ui/core/TableCell'
 import TableContainer from '@material-ui/core/TableContainer'
 import TableHead from '@material-ui/core/TableHead'
 import TableRow from '@material-ui/core/TableRow'
-import { red } from '@material-ui/core/colors'
 
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
@@ -21,34 +21,45 @@ const columns = [
     align: 'center',
     color: `${colors.red}`
   },
-  // {
-  //   id: 'density',
-  //   label: 'Antal fall per 100\xa0000',
-  //   align: 'center',
-  //   color: `${colors.gray}`
-  // },
   {
     id: 'deaths',
     label: 'Dödsfall',
     align: 'center',
+    color: `${colors.black}`,
     minWidth: 0
   }
 ]
 
 function createData(region, total, population, deaths, today) {
   const perHundredK = (total / population) * 100000
-  const density = perHundredK.toFixed(1)
+  const density = perHundredK ? perHundredK.toFixed(1) : null
   return { region, total, density, deaths, today }
 }
 
 const useStyles = makeStyles({
   root: {
-    width: '100%'
+    width: '100%',
+    maxWidth: '100%'
+  },
+  cell: {
+    overflow: 'hidden'
   }
 })
 
-export default function StickyHeadTable() {
-  useEffect(() => {})
+const StickyHeadTable = () => {
+  const [isMobile, setIsMobile] = useState(
+    typeof window !== 'undefined' && window.innerWidth < 500 ? true : false
+  )
+
+  if (!isMobile && columns.length <= 4) {
+    columns.splice(2, 0, {
+      id: 'density',
+      label: 'Antal fall per 100\xa0000',
+      align: 'center',
+      color: `${colors.lightgrey}`
+    })
+  }
+
   const classes = useStyles()
 
   const data = useStaticQuery(graphql`
@@ -110,8 +121,10 @@ export default function StickyHeadTable() {
                   align={column.align}
                   style={{
                     minWidth: column.minWidth,
-                    fontSize: 8,
-                    textTransform: 'uppercase'
+                    fontSize: isMobile ? 8 : 10,
+                    textTransform: 'uppercase',
+                    paddingRight: isMobile ? 0 : 'default',
+                    paddingLeft: isMobile ? 5 : 'default'
                   }}
                 >
                   {column.label}
@@ -132,8 +145,10 @@ export default function StickyHeadTable() {
                         style={{
                           color: column.color,
                           minWidth: column.minWidth,
-                          fontSize: 12,
-                          fontWeight: column.fontWeight
+                          fontSize: isMobile ? 11 : 12,
+                          fontWeight: column.fontWeight,
+                          paddingRight: isMobile ? 0 : 'default',
+                          paddingLeft: isMobile ? 5 : 'default'
                         }}
                       >
                         {column.format && typeof value === 'string'
@@ -151,3 +166,5 @@ export default function StickyHeadTable() {
     </Paper>
   )
 }
+
+export default StickyHeadTable

@@ -23,14 +23,14 @@ const Tabell = ({ data }) => {
         />
         <link rel="canonical" href="https://www.coronakartan.se/tabell" />
       </Helmet>
-      <Container>
-        <Container type="table">
+      <Container type="table">
+        <Container type="table-content">
           <h1>Antal bekräftade fall per region</h1>
           <p className="updatedAt">Uppdaterat {data.site.buildTimeZone}</p>
         </Container>
-        <Container type="table">
+        <div className="table">
           <StickyHeadTable></StickyHeadTable>
-        </Container>
+        </div>
       </Container>
     </Layout>
   )
