@@ -45,7 +45,7 @@ const getOptions = latestTotal => ({
   },
 
   yAxis: {
-    tickInterval: 100,
+    tickInterval: 25,
     title: {
       text: null
     },
@@ -120,7 +120,10 @@ const getOptions = latestTotal => ({
         ['20 Mars 2020', 1651],
         ['21 Mars 2020', latestTotal]
       ],
-      color: colors.red
+      color: colors.red,
+      marker: {
+        symbol: 'none'
+      }
     },
     {
       name: 'Antal bekräftade fall per dag',
@@ -154,7 +157,48 @@ const getOptions = latestTotal => ({
         ['20 Mars 2020', 208]
         // ['21 Mars 2020', latestTotal - 1651]
       ],
-      color: colors.blue
+      color: colors.blue,
+      marker: {
+        symbol: 'none'
+      }
+    },
+    {
+      name: 'Antal dödsfall',
+      data: [
+        ['23 Februari 2020', 0],
+        ['24 Februari 2020', 0],
+        ['25 Februari 2020', 0],
+        ['26 Februari 2020', 0],
+        ['27 Februari 2020', 0],
+        ['28 Februari 2020', 0],
+        ['29 Februari 2020', 0],
+        ['1 Mars 2020', 0],
+        ['2 Mars 2020', 0],
+        ['3 Mars 2020', 0],
+        ['4 Mars 2020', 0],
+        ['5 Mars 2020', 0],
+        ['6 Mars 2020', 0],
+        ['7 Mars 2020', 0],
+        ['8 Mars 2020', 0],
+        ['9 Mars 2020', 0],
+        ['10 Mars 2020', 0],
+        ['11 Mars 2020', 1],
+        ['12 Mars 2020', 1],
+        ['13 Mars 2020', 1],
+        ['14 Mars 2020', 2],
+        ['15 Mars 2020', 3],
+        ['16 Mars 2020', 7],
+        ['17 Mars 2020', 8],
+        ['18 Mars 2020', 10],
+        ['19 Mars 2020', 11],
+        ['20 Mars 2020', 16],
+        ['21 Mars 2020', 20]
+        // ['21 Mars 2020', latestTotal - 1651]
+      ],
+      color: colors.black,
+      marker: {
+        symbol: 'none'
+      }
     }
   ]
 })
