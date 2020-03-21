@@ -48,7 +48,11 @@ const useStyles = makeStyles({
 
 const StickyHeadTable = () => {
   const [isMobile, setIsMobile] = useState(
+<<<<<<< HEAD
     typeof window !== 'undefined' && window.innerWidth < 500 ? true : false
+=======
+    window.innerWidth < 500 ? true : false
+>>>>>>> 5dc6622e65f7f7d4f8b0d76398b85b5ac72c895d
   )
 
   if (!isMobile && columns.length <= 4) {
