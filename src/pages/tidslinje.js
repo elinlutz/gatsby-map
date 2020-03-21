@@ -36,19 +36,14 @@ const Blog = ({ data }) => {
           </p>
         </Container>
         <Container type="chart">
-          <br />
           <h1>Utveckling</h1>
-
           <p className="updatedAt">Uppdaterat {data.site.buildTimeZone}</p>
-
-          <Chart />
+          <Chart className="chart" />
         </Container>
         <Container type="timeline">
           <h1>Tidslinje</h1>
           <Timeline></Timeline>
         </Container>
-        <br />
-        <br />
       </Container>
     </Layout>
   )

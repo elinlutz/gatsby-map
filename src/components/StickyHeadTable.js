@@ -75,7 +75,7 @@ export default function StickyHeadTable() {
   const getData = () => {
     edges.map(edge => {
       const region = edge.node
-      if (region.Region_Total > 0) {
+      if (region.Region_Total > 0 || region.Region_Deaths > 0) {
         const today = region.Today > 0 ? `+ ${region.Today}` : ' '
         const deaths =
           region.Region_Deaths > 0 ? `${region.Region_Deaths}` : ' '

@@ -1,0 +1,10 @@
+.toggleLogButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+
+  .toggleLogButton {
+    height: 2.5em;
+    font-size: 11px;
+    width: 10em;
+  }
+}

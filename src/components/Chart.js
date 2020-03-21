@@ -4,9 +4,10 @@ import HighchartsReact from 'highcharts-react-official'
 
 import { useStaticQuery, graphql } from 'gatsby'
 
+import ToggleLogButton from './ToggleLogButton'
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
-const getOptions = latestTotal => ({
+const getOptions = (latestTotal, type) => ({
   title: {
     text: null
   },
@@ -25,13 +26,6 @@ const getOptions = latestTotal => ({
   xAxis: {
     tickInterval: 7 * 24 * 3600 * 1000, // one week
     tickWidth: 0,
-    // breaks: [
-    //   {
-    //     from: '1 Mars 2020',
-    //     to: '10 Mars 2020',
-    //     breakSize: 3
-    //   }
-    // ],
     gridLineWidth: 1,
     labels: {
       enabled: false,
@@ -45,10 +39,11 @@ const getOptions = latestTotal => ({
   },
 
   yAxis: {
-    tickInterval: 25,
+    tickInterval: type === 'logarithmic' ? 1 : 100,
     title: {
       text: null
     },
+    type: type,
     labels: {
       enabled: true,
       align: 'right',
@@ -154,8 +149,8 @@ const getOptions = latestTotal => ({
         ['17 Mars 2020', 75],
         ['18 Mars 2020', 99],
         ['19 Mars 2020', 148],
-        ['20 Mars 2020', 208]
-        // ['21 Mars 2020', latestTotal - 1651]
+        ['20 Mars 2020', 208],
+        ['21 Mars 2020', latestTotal - 1651]
       ],
       color: colors.blue,
       marker: {
@@ -193,7 +188,6 @@ const getOptions = latestTotal => ({
         ['19 Mars 2020', 11],
         ['20 Mars 2020', 16],
         ['21 Mars 2020', 20]
-        // ['21 Mars 2020', latestTotal - 1651]
       ],
       color: colors.black,
       marker: {
@@ -202,8 +196,6 @@ const getOptions = latestTotal => ({
     }
   ]
 })
-
-const Total = () => {}
 
 const Chart = () => {
   const data = useStaticQuery(graphql`
@@ -224,10 +216,20 @@ const Chart = () => {
     }, 0)
   }
 
+  const [type, setType] = useState('linear')
   const total = getTotalConfirmed(data.allTidsserieCsv.edges)
-  const chartOptions = getOptions(total)
+  const options = getOptions(total, type)
 
-  return <HighchartsReact highcharts={Highcharts} options={chartOptions} />
+  return (
+    <>
+      <ToggleLogButton
+        className="toggleLogButton"
+        type={type}
+        setType={setType}
+      ></ToggleLogButton>
+      <HighchartsReact highcharts={Highcharts} options={options} />
+    </>
+  )
 }
 
 export default Chart
