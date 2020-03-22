@@ -102,7 +102,7 @@ const Timeline = () => {
         number={5}
         region={'Norrbotten (tillagt 22 mars)'}
         source={
-          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200321coronacovid19.5.613e2f39170d0c32a959379.html'
+          'https://www.norrbotten.se/sv/Om-Region-Norrbotten/Press/Pressmeddelanden-2020/Nu-maste-alla-norrbottningar-hjalpas-at-att-sakta-ner-spridningen/'
         }
       ></TimelineListElement>
       <TimelineListElement
