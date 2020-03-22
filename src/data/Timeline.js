@@ -7,6 +7,20 @@ const Timeline = () => {
     <>
       <h3>22 mars 2020</h3>
       <TimelineListElement
+        number={1}
+        region={'Kalmar'}
+        source={
+          'https://www.regionkalmar.se/nyhetslista/tolfte-bekraftade-fallet-av-covid-19-i-lanet/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={1}
+        region={'Västmanland'}
+        source={
+          'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/covid-19-laget-i-lanet/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={3}
         region={'Halland'}
         source={
