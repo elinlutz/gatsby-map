@@ -219,7 +219,7 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={3}
+        number={4}
         region={'Jämtland Härjedalen'}
         source={
           'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200320coronacovid19.5.613e2f39170d0c32a9566c8.html'
