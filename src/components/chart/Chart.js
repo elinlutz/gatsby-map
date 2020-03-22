@@ -35,16 +35,18 @@ const getOptions = (total, deaths, type) => ({
     },
     showFirstLabel: false,
     gridLineWidth: 0,
-    plotLines: [{
-      show: true,
-      color: '#424242',
-      dashStyle: 'Dot',
-      value: 18, // Index of data point representing 2020-03-12
-      width: 2,
-      label: {
-        align: 'left'
+    plotLines: [
+      {
+        show: true,
+        color: '#424242',
+        dashStyle: 'Dot',
+        value: 18, // Index of data point representing 2020-03-12
+        width: 2,
+        label: {
+          align: 'left'
+        }
       }
-    }]
+    ]
   },
 
   yAxis: {
@@ -135,7 +137,7 @@ const getOptions = (total, deaths, type) => ({
       data: [
         ['23 Februari 2020', 0],
         ['24 Februari 2020', 0],
-        ['25 Februari 2020', 1],
+        ['25 Februari 2020', 0],
         ['26 Februari 2020', 1],
         ['27 Februari 2020', 5],
         ['28 Februari 2020', 4],
