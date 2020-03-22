@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import Bubble from 'components/Bubble'
+import Bubble from './Bubble'
 import CounterTitle from 'components/CounterTitle'
 import Container from 'components/Container'
 

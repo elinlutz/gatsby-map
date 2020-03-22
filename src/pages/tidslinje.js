@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 
 import Layout from 'components/Layout'
 import Container from 'components/Container'
-import Chart from 'components/Chart'
+import Chart from 'components/chart/Chart'
 import SEO from '../components/SEO'
 
 import Timeline from '../data/Timeline'

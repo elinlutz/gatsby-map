@@ -9,16 +9,13 @@ import Layout from 'components/Layout'
 import Container from 'components/Container'
 import Map from 'components/Map'
 
-import Markers from 'components/Markers'
-import DeathMarkers from '../components/DeathMarkers'
-import WorldMarkers from 'components/WorldMarkers'
+import Markers from 'components/markers/Markers'
+import WorldMarkers from 'components/markers/WorldMarkers'
 
-import Counter from 'components/Counter'
-import CounterSweden from 'components/CounterSweden'
-import CounterWorld from 'components/CounterWorld'
-
-import DetailsCounter from 'components/DetailsCounter'
-import NoDetailsCounter from 'components/NoDetailsCounter'
+import CounterSweden from 'components/cards/CounterSweden'
+import CounterWorld from 'components/cards/CounterWorld'
+import DetailsCounter from 'components/cards/DetailsCounter'
+import NoDetailsCounter from 'components/cards/NoDetailsCounter'
 
 import ToggleViewButton from 'components/ToggleViewButton'
 

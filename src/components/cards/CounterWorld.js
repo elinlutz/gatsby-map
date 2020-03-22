@@ -1,17 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import Bubble from 'components/Bubble'
+import Bubble from './Bubble'
 import Container from 'components/Container'
 
-const CounterSweden = ({
-  title,
-  number,
-  deathNumber,
-  view,
-  type,
-  provinceState
-}) => {
+const CounterWorld = ({ number, deathNumber, view }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -20,14 +13,7 @@ const CounterSweden = ({
     }
   `)
 
-  const getUpdatedAt = () => {
-    const updatedAt = data.site.buildTimeZone
-    if (view == 'world') {
-      return updatedAt.substring(0, updatedAt.length - 6)
-    } else {
-      return updatedAt
-    }
-  }
+  const updatedAt = data.site.buildTimeZone
 
   return (
     <Container className="counterCard">
@@ -35,17 +21,13 @@ const CounterSweden = ({
         <Container className="bubble">
           <Bubble view={view} />
         </Container>
-        <p>Sverige</p>
+        <p>Världen</p>
       </Container>
-
       <Container className="confirmedNumberContainer">
-        <Container className="line"></Container>
         {number > 1000 ? (
-          <h2 className={view === 'world' ? 'hWorld' : 'hSweden'}>
-            {number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
-          </h2>
+          <h2>{number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}</h2>
         ) : (
-          <h1 className={view === 'world' ? 'hWorld' : 'hSweden'}>{number}</h1>
+          <h2>{number}</h2>
         )}
       </Container>
       <Container className="confirmedText">
@@ -53,25 +35,21 @@ const CounterSweden = ({
       </Container>
       <Container className="confirmedNumberContainer">
         {deathNumber > 1000 ? (
-          <h2 className={view === 'world' ? 'hWorld' : 'hSweden'}>
+          <h2>
             {deathNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
           </h2>
         ) : (
-          <h2 className={view === 'world' ? 'hWorld' : 'hSweden'}>
-            {deathNumber}
-          </h2>
+          <h2>{deathNumber}</h2>
         )}
       </Container>
       <Container className="confirmedText">
         <h3>Dödsfall</h3>
       </Container>
       <Container className="updatedText">
-        <p>UPPDATERAT {getUpdatedAt()}</p>
+        <p>UPPDATERAT {updatedAt.substring(0, updatedAt.length - 6)}</p>
       </Container>
     </Container>
   )
 }
 
-// {updatedAt.substring(0, updatedAt.length - 6)}
-
-export default CounterSweden
+export default CounterWorld

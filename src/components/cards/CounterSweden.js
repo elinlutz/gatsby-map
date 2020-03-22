@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import Bubble from 'components/Bubble'
+import Bubble from './Bubble'
 import Container from 'components/Container'
 
-const CounterWorld = ({ number, deathNumber, view }) => {
+const CounterSweden = ({
+  title,
+  number,
+  deathNumber,
+  view,
+  type,
+  provinceState
+}) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -13,7 +20,14 @@ const CounterWorld = ({ number, deathNumber, view }) => {
     }
   `)
 
-  const updatedAt = data.site.buildTimeZone
+  const getUpdatedAt = () => {
+    const updatedAt = data.site.buildTimeZone
+    if (view == 'world') {
+      return updatedAt.substring(0, updatedAt.length - 6)
+    } else {
+      return updatedAt
+    }
+  }
 
   return (
     <Container className="counterCard">
@@ -21,13 +35,17 @@ const CounterWorld = ({ number, deathNumber, view }) => {
         <Container className="bubble">
           <Bubble view={view} />
         </Container>
-        <p>Världen</p>
+        <p>Sverige</p>
       </Container>
+
       <Container className="confirmedNumberContainer">
+        <Container className="line"></Container>
         {number > 1000 ? (
-          <h2>{number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}</h2>
+          <h2 className={view === 'world' ? 'hWorld' : 'hSweden'}>
+            {number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+          </h2>
         ) : (
-          <h2>{number}</h2>
+          <h1 className={view === 'world' ? 'hWorld' : 'hSweden'}>{number}</h1>
         )}
       </Container>
       <Container className="confirmedText">
@@ -35,21 +53,25 @@ const CounterWorld = ({ number, deathNumber, view }) => {
       </Container>
       <Container className="confirmedNumberContainer">
         {deathNumber > 1000 ? (
-          <h2>
+          <h2 className={view === 'world' ? 'hWorld' : 'hSweden'}>
             {deathNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
           </h2>
         ) : (
-          <h2>{deathNumber}</h2>
+          <h2 className={view === 'world' ? 'hWorld' : 'hSweden'}>
+            {deathNumber}
+          </h2>
         )}
       </Container>
       <Container className="confirmedText">
         <h3>Dödsfall</h3>
       </Container>
       <Container className="updatedText">
-        <p>UPPDATERAT {updatedAt.substring(0, updatedAt.length - 6)}</p>
+        <p>UPPDATERAT {getUpdatedAt()}</p>
       </Container>
     </Container>
   )
 }
 
-export default CounterWorld
+// {updatedAt.substring(0, updatedAt.length - 6)}
+
+export default CounterSweden

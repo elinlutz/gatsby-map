@@ -5,7 +5,6 @@ import { graphql } from 'gatsby'
 import Layout from 'components/Layout'
 import Container from 'components/Container'
 import ShareButtons from 'components/ShareButtons'
-import Bubble from 'components/Bubble'
 
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import SEO from '../components/SEO'
