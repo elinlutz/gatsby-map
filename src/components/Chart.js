@@ -7,7 +7,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import ToggleLogButton from './ToggleLogButton'
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
-const getOptions = (latestTotal, type) => ({
+const getOptions = (total, deaths, type) => ({
   title: {
     text: null
   },
@@ -113,7 +113,8 @@ const getOptions = (latestTotal, type) => ({
         ['18 Mars 2020', 1295],
         ['19 Mars 2020', 1443],
         ['20 Mars 2020', 1651],
-        ['21 Mars 2020', latestTotal]
+        ['21 Mars 2020', 1765],
+        ['22 Mars 2020', total]
       ],
       color: colors.red,
       marker: {
@@ -150,7 +151,8 @@ const getOptions = (latestTotal, type) => ({
         ['18 Mars 2020', 99],
         ['19 Mars 2020', 148],
         ['20 Mars 2020', 208],
-        ['21 Mars 2020', latestTotal - 1651]
+        ['21 Mars 2020', 114],
+        ['22 Mars 2020', total - 1765]
       ],
       color: colors.blue,
       marker: {
@@ -187,7 +189,8 @@ const getOptions = (latestTotal, type) => ({
         ['18 Mars 2020', 10],
         ['19 Mars 2020', 11],
         ['20 Mars 2020', 16],
-        ['21 Mars 2020', 20]
+        ['21 Mars 2020', 20],
+        ['22 Mars 2020', deaths]
       ],
       color: colors.black,
       marker: {
@@ -204,6 +207,7 @@ const Chart = () => {
         edges {
           node {
             Region_Total
+            Region_Deaths
           }
         }
       }
@@ -216,9 +220,16 @@ const Chart = () => {
     }, 0)
   }
 
+  function getTotalDeaths(edges) {
+    return edges.reduce(function(a, b) {
+      return a + +b.node['Region_Deaths']
+    }, 0)
+  }
+
   const [type, setType] = useState('linear')
   const total = getTotalConfirmed(data.allTidsserieCsv.edges)
-  const options = getOptions(total, type)
+  const deaths = getTotalDeaths(data.allTidsserieCsv.edges)
+  const options = getOptions(total, deaths, type)
 
   return (
     <>
