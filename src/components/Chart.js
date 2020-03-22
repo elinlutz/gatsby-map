@@ -4,9 +4,10 @@ import HighchartsReact from 'highcharts-react-official'
 
 import { useStaticQuery, graphql } from 'gatsby'
 
+import ToggleLogButton from './ToggleLogButton'
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
-const getOptions = latestTotal => ({
+const getOptions = (total, deaths, type) => ({
   title: {
     text: null
   },
@@ -25,13 +26,6 @@ const getOptions = latestTotal => ({
   xAxis: {
     tickInterval: 7 * 24 * 3600 * 1000, // one week
     tickWidth: 0,
-    // breaks: [
-    //   {
-    //     from: '1 Mars 2020',
-    //     to: '10 Mars 2020',
-    //     breakSize: 3
-    //   }
-    // ],
     gridLineWidth: 1,
     labels: {
       enabled: false,
@@ -54,10 +48,11 @@ const getOptions = latestTotal => ({
   },
 
   yAxis: {
-    tickInterval: 100,
+    tickInterval: type === 'logarithmic' ? 1 : 100,
     title: {
       text: null
     },
+    type: type,
     labels: {
       enabled: true,
       align: 'right',
@@ -125,9 +120,15 @@ const getOptions = latestTotal => ({
         ['16 Mars 2020', 1121],
         ['17 Mars 2020', 1196],
         ['18 Mars 2020', 1295],
-        ['19 Mars 2020', latestTotal]
+        ['19 Mars 2020', 1443],
+        ['20 Mars 2020', 1651],
+        ['21 Mars 2020', 1765],
+        ['22 Mars 2020', total]
       ],
-      color: colors.red
+      color: colors.red,
+      marker: {
+        symbol: 'none'
+      }
     },
     {
       name: 'Antal bekräftade fall per dag',
@@ -156,15 +157,57 @@ const getOptions = latestTotal => ({
         ['15 Mars 2020', 66],
         ['16 Mars 2020', 89],
         ['17 Mars 2020', 75],
-        ['18 Mars 2020', 99]
-        // ['19 Mars 2020', latestTotal - 1295]
+        ['18 Mars 2020', 99],
+        ['19 Mars 2020', 148],
+        ['20 Mars 2020', 208],
+        ['21 Mars 2020', 114]
+        // ['22 Mars 2020', total - 1765]
       ],
-      color: colors.blue
+      color: colors.blue,
+      marker: {
+        symbol: 'none'
+      }
+    },
+    {
+      name: 'Antal dödsfall',
+      data: [
+        ['23 Februari 2020', 0],
+        ['24 Februari 2020', 0],
+        ['25 Februari 2020', 0],
+        ['26 Februari 2020', 0],
+        ['27 Februari 2020', 0],
+        ['28 Februari 2020', 0],
+        ['29 Februari 2020', 0],
+        ['1 Mars 2020', 0],
+        ['2 Mars 2020', 0],
+        ['3 Mars 2020', 0],
+        ['4 Mars 2020', 0],
+        ['5 Mars 2020', 0],
+        ['6 Mars 2020', 0],
+        ['7 Mars 2020', 0],
+        ['8 Mars 2020', 0],
+        ['9 Mars 2020', 0],
+        ['10 Mars 2020', 0],
+        ['11 Mars 2020', 1],
+        ['12 Mars 2020', 1],
+        ['13 Mars 2020', 1],
+        ['14 Mars 2020', 2],
+        ['15 Mars 2020', 3],
+        ['16 Mars 2020', 7],
+        ['17 Mars 2020', 8],
+        ['18 Mars 2020', 10],
+        ['19 Mars 2020', 11],
+        ['20 Mars 2020', 16],
+        ['21 Mars 2020', 20],
+        ['22 Mars 2020', deaths]
+      ],
+      color: colors.black,
+      marker: {
+        symbol: 'none'
+      }
     }
   ]
 })
-
-const Total = () => {}
 
 const Chart = () => {
   const data = useStaticQuery(graphql`
@@ -173,6 +216,7 @@ const Chart = () => {
         edges {
           node {
             Region_Total
+            Region_Deaths
           }
         }
       }
@@ -185,9 +229,27 @@ const Chart = () => {
     }, 0)
   }
 
+  function getTotalDeaths(edges) {
+    return edges.reduce(function(a, b) {
+      return a + +b.node['Region_Deaths']
+    }, 0)
+  }
+
+  const [type, setType] = useState('linear')
   const total = getTotalConfirmed(data.allTidsserieCsv.edges)
-  const chartOptions = getOptions(total)
-  return <HighchartsReact highcharts={Highcharts} options={chartOptions} />
+  const deaths = getTotalDeaths(data.allTidsserieCsv.edges)
+  const options = getOptions(total, deaths, type)
+
+  return (
+    <>
+      <ToggleLogButton
+        className="toggleLogButton"
+        type={type}
+        setType={setType}
+      ></ToggleLogButton>
+      <HighchartsReact highcharts={Highcharts} options={options} />
+    </>
+  )
 }
 
 export default Chart
