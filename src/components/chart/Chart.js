@@ -124,7 +124,7 @@ const getOptions = (total, deaths, type) => ({
         ['18 Mars 2020', 1295],
         ['19 Mars 2020', 1443],
         ['20 Mars 2020', 1650],
-        ['21 Mars 2020', 1779],
+        ['21 Mars 2020', 1784],
         ['22 Mars 2020', total]
       ],
       color: colors.red,
@@ -162,8 +162,8 @@ const getOptions = (total, deaths, type) => ({
         ['18 Mars 2020', 99],
         ['19 Mars 2020', 148],
         ['20 Mars 2020', 207],
-        ['21 Mars 2020', 129],
-        ['22 Mars 2020', total - 1779]
+        ['21 Mars 2020', 134],
+        ['22 Mars 2020', total - 1784]
       ],
       color: colors.blue,
       marker: {

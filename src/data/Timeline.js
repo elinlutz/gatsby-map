@@ -99,6 +99,13 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
+        number={5}
+        region={'Norrbotten (tillagt 22 mars)'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200321coronacovid19.5.613e2f39170d0c32a959379.html'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={1}
         region={'Kalmar'}
         source={
