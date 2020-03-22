@@ -5,7 +5,7 @@ import TimelineListElement from 'components/TimelineListElement'
 const Timeline = () => {
   return (
     <>
-      <h3>22 Mars 2020</h3>
+      <h3>22 mars 2020</h3>
       <TimelineListElement
         number={5}
         region={'Skåne'}
@@ -20,7 +20,14 @@ const Timeline = () => {
           'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
         }
       ></TimelineListElement>
-      <h3>21 Mars 2020</h3>
+      <h3>21 mars 2020</h3>
+      <TimelineListElement
+        number={15}
+        region={'Jämtland Härjedalen (tillagt 22 mars)'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200321coronacovid19.5.613e2f39170d0c32a959379.html'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={1}
         region={'Kalmar'}
@@ -119,7 +126,7 @@ const Timeline = () => {
           'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
         }
       ></TimelineListElement>
-      <h3>20 Mars 2020</h3>
+      <h3>20 mars 2020</h3>
       <TimelineListElement
         number={4}
         region={'Norrbotten'}
@@ -135,7 +142,7 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={4}
+        number={3}
         region={'Jämtland Härjedalen'}
         source={
           'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200320coronacovid19.5.613e2f39170d0c32a9566c8.html'
@@ -246,7 +253,7 @@ const Timeline = () => {
           'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-19-mars-2983416'
         }
       ></TimelineListElement>
-      <h3>19 Mars 2020</h3>
+      <h3>19 mars 2020</h3>
       <TimelineListElement
         number={3}
         region={'Norrbotten'}
@@ -378,7 +385,7 @@ const Timeline = () => {
           'https://regionvasterbotten.mynewsdesk.com/pressreleases/region-vaesterbotten-infoer-besoeksfoerbud-foer-att-minska-smittan-2983413'
         }
       ></TimelineListElement>
-      <h3>18 Mars 2020</h3>
+      <h3>18 mars 2020</h3>
       <TimelineListElement
         number={2}
         region={'Jämtland'}
@@ -475,7 +482,7 @@ const Timeline = () => {
         region={'Gotland'}
         source={'https://gotland.se/106352'}
       ></TimelineListElement>
-      <h3>17 Mars 2020</h3>
+      <h3>17 mars 2020</h3>
       <TimelineListElement
         number={2}
         region={'Kronoberg'}
@@ -588,7 +595,7 @@ const Timeline = () => {
           'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-17-mars-2982614'
         }
       ></TimelineListElement>
-      <h3>16 Mars 2020</h3>
+      <h3>16 mars 2020</h3>
       <TimelineListElement
         number={2}
         region={'Örebro'}
@@ -699,7 +706,7 @@ const Timeline = () => {
           'https://www.hn.se/nyheter/halland/tre-nya-coronafall-i-halland-1.25458378'
         }
       ></TimelineListElement>
-      <h3>15 Mars 2020</h3>
+      <h3>15 mars 2020</h3>
       <TimelineListElement
         number={3}
         region={'Västmanland'}
@@ -798,7 +805,7 @@ const Timeline = () => {
           'https://www.mynewsdesk.com/se/regionvasterbotten/pressreleases/tvaa-nya-fall-av-coronavirus-i-vaesterbotten-2982020'
         }
       ></TimelineListElement>
-      <h3>14 Mars 2020</h3>
+      <h3>14 mars 2020</h3>
       <TimelineListElement
         number={6}
         region={'Västmanland (tillagt 15 mars)'}
@@ -904,7 +911,7 @@ const Timeline = () => {
           'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-14-mars-2981871'
         }
       ></TimelineListElement>
-      <h3>13 Mars 2020</h3>
+      <h3>13 mars 2020</h3>
       <TimelineListElement
         number={7}
         region={'Jönköping'}
@@ -1001,7 +1008,7 @@ const Timeline = () => {
           'https://www.regionkalmar.se/nyhetslista/ett-nytt-fall-i-lanet-av-covid-19/'
         }
       ></TimelineListElement>
-      <h3>12 Mars 2020</h3>
+      <h3>12 mars 2020</h3>
       <TimelineListElement
         number={4}
         region={'Östergötland'}
@@ -1141,7 +1148,7 @@ const Timeline = () => {
           'https://www.regiondalarna.se/press/nyheter-och-pressmeddelanden/tre-nya-fall-av-coronavirus-i-dalarna-den-12-mars/'
         }
       ></TimelineListElement>
-      <h3>11 Mars 2020</h3>
+      <h3>11 mars 2020</h3>
       <TimelineListElement
         number={37}
         region={'Västra Götaland'}
@@ -1266,7 +1273,7 @@ const Timeline = () => {
           'https://www.regiondalarna.se/press/nyheter-och-pressmeddelanden/forsta-fallet-av-det-nya-coronaviruset-i-dalarna/'
         }
       ></TimelineListElement>
-      <h3>10 Mars 2020</h3>
+      <h3>10 mars 2020</h3>
       <TimelineListElement
         number={1}
         region={'Kronobergs Län'}
@@ -1349,7 +1356,7 @@ const Timeline = () => {
         region={'Skåne'}
         source={'https://www.mynewsdesk.com/se/region_skane/pressreleases/'}
       ></TimelineListElement>
-      <h3>9 Mars 2020</h3>
+      <h3>9 mars 2020</h3>
       <TimelineListElement
         number={1}
         region={'Västra Götaland'}
@@ -1420,7 +1427,7 @@ const Timeline = () => {
           'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/daglig-uppdatering-om-covid-19-ytterligare-tva-bekraftade-fall-i-jonkopings-lan-46021'
         }
       ></TimelineListElement>
-      <h3>8 Mars 2020</h3>
+      <h3>8 mars 2020</h3>
       <TimelineListElement
         number={14}
         region={'Stockholm'}
@@ -1461,7 +1468,7 @@ const Timeline = () => {
         region={'Uppsala'}
         source={'https://www.regionuppsala.se/nyheter'}
       ></TimelineListElement>
-      <h3>7 Mars 2020</h3>
+      <h3>7 mars 2020</h3>
       <TimelineListElement
         number={0}
         region={'Gävleborg'}
@@ -1484,7 +1491,7 @@ const Timeline = () => {
           'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-7-mars-2979793?utm_source=rss&utm_medium=rss&utm_campaign=Subscription&utm_content=current_news'
         }
       ></TimelineListElement>
-      <h3>6 Mars 2020</h3>
+      <h3>6 mars 2020</h3>
       <TimelineListElement
         number={1}
         region={'Gävleborg'}
@@ -1532,7 +1539,7 @@ const Timeline = () => {
           'https://news.cision.com/se/vastra-gotalandsregionen/r/6-mars--tva-nya-bekraftade-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3053911'
         }
       ></TimelineListElement>
-      <h3>5 Mars 2020</h3>
+      <h3>5 mars 2020</h3>
       <TimelineListElement
         number={2}
         region={'Uppsala'}
@@ -1573,7 +1580,7 @@ const Timeline = () => {
           'https://news.cision.com/se/vastra-gotalandsregionen/r/5-mars--ett-nytt-bekraftat-fall-av-coronavirusinfektion--covid-19--i-vastra-gotaland,c3052981'
         }
       ></TimelineListElement>
-      <h3>4 Mars 2020</h3>
+      <h3>4 mars 2020</h3>
       <TimelineListElement
         number={16}
         region={'Stockholm'}
@@ -1613,7 +1620,7 @@ const Timeline = () => {
         </a>
         )
       </li>
-      <h3>3 Mars 2020</h3>
+      <h3>3 mars 2020</h3>
       <li>
         Region Stockholm rapporterar 6 ytterligare fall av coronaviruset i
         Stockholm (
@@ -1638,7 +1645,7 @@ const Timeline = () => {
         </a>
         )
       </li>
-      <h3>2 Mars 2020</h3>
+      <h3>2 mars 2020</h3>
       <li>
         Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset i
         Stockholm (
@@ -1651,7 +1658,7 @@ const Timeline = () => {
         </a>
         )
       </li>
-      <h3>1 Mars 2020</h3>
+      <h3>1 mars 2020</h3>
       <li>
         Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset i Västra
         Götaland (
@@ -1664,7 +1671,7 @@ const Timeline = () => {
         </a>
         )
       </li>
-      <h3>29 Februari 2020</h3>
+      <h3>29 februari 2020</h3>
       <li>
         SR Ekot rapporterar 1 nytt fall av coronaviruset i Stockholm (
         <a
@@ -1687,7 +1694,7 @@ const Timeline = () => {
         </a>
         )
       </li>
-      <h3>28 Februari 2020</h3>
+      <h3>28 februari 2020</h3>
       <li>
         Folkhälsomyndigheten rapporterar 4 nya fall av coronaviruset (
         <a
@@ -1699,7 +1706,7 @@ const Timeline = () => {
         </a>
         )
       </li>{' '}
-      <h3>27 Februari 2020</h3>
+      <h3>27 februari 2020</h3>
       <li>
         Folkhälsomyndigheten rapporterar 5 nya fall av coronaviruset (
         <a
@@ -1711,7 +1718,7 @@ const Timeline = () => {
         </a>
         )
       </li>{' '}
-      <h3>26 Februari 2020</h3>
+      <h3>26 februari 2020</h3>
       <li>
         Folkhälsomyndigheten rapporterar 1 nytt fall av coronaviruset (
         <a
