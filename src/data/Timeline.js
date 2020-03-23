@@ -7,6 +7,13 @@ const Timeline = () => {
     <>
       <h3>23 mars 2020</h3>
       <TimelineListElement
+        number={2}
+        region={'Kalmar'}
+        source={
+          'https://www.regionkalmar.se/nyhetslista/avvakta-med-vardbesok-som-inte-ar-akuta/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={9}
         region={'Dalarna'}
         source={
