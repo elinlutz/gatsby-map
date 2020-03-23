@@ -5,6 +5,28 @@ import TimelineListElement from 'components/TimelineListElement'
 const Timeline = () => {
   return (
     <>
+      <h3>23 mars 2020</h3>
+      <TimelineListElement
+        number={3}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-23-mars-2984416'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={0}
+        region={'Västra Götaland'}
+        source={
+          'https://www.vgregion.se/aktuellt/nyhetslista/regional-lagesrapport-covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={15}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
       <h3>22 mars 2020</h3>
       <TimelineListElement
         number={1}
