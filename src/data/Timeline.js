@@ -7,6 +7,13 @@ const Timeline = () => {
     <>
       <h3>23 mars 2020</h3>
       <TimelineListElement
+        number={9}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-23-mars-2984515'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={1}
         region={'Jönköping'}
         source={
