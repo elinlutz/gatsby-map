@@ -43,7 +43,7 @@ const Timeline = () => {
       ></TimelineListElement>
       <TimelineListElement
         number={3}
-        region={'Jäntland Härjedalen'}
+        region={'Jämtland Härjedalen'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
