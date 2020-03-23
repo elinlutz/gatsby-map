@@ -31,9 +31,15 @@ const columns = [
 ]
 
 function createData(region, total, population, deaths, today) {
-  const perHundredK = (total / population) * 100000
+  const totalCases = total ? total : undefined
+
+  const perHundredK = (totalCases / population) * 100000
+  const deathsPerCase = (deaths / totalCases) * 100
+
   const density = perHundredK ? perHundredK.toFixed(1) : null
-  return { region, total, density, deaths, today }
+  const deathRatio = deathsPerCase ? `${deathsPerCase.toFixed(2)}%` : null
+
+  return { region, total, density, deathRatio, deaths, today }
 }
 
 const useStyles = makeStyles({
@@ -52,12 +58,22 @@ const StickyHeadTable = () => {
   )
 
   if (!isMobile && columns.length <= 4) {
-    columns.splice(2, 0, {
-      id: 'density',
-      label: 'Antal fall per 100\xa0000',
-      align: 'center',
-      color: `${colors.lightgrey}`
-    })
+    columns.splice(
+      2,
+      0,
+      {
+        id: 'density',
+        label: 'Antal fall per 100\xa0000',
+        align: 'center',
+        color: `${colors.lightgrey}`
+      },
+      {
+        id: 'deathRatio',
+        label: 'Andel dödsfall per fall',
+        align: 'center',
+        color: `${colors.lightgrey}`
+      }
+    )
   }
 
   const classes = useStyles()
