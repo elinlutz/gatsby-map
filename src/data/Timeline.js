@@ -7,6 +7,13 @@ const Timeline = () => {
     <>
       <h3>23 mars 2020</h3>
       <TimelineListElement
+        number={10}
+        region={'Jämtland Härjedalen'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200323coronacovid19.5.4faf1114170d0bf514f190d3.html'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={2}
         region={'Kalmar'}
         source={
@@ -51,13 +58,6 @@ const Timeline = () => {
       <TimelineListElement
         number={1}
         region={'Västerbotten'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={3}
-        region={'Jämtland Härjedalen'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
