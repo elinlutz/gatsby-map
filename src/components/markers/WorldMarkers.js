@@ -59,8 +59,11 @@ const WorldMarkers = ({ onClick }) => {
     if (country.Confirmed > 0) {
       const { color, radius } = getBubble(country.Confirmed)
 
-      const latitude = country.Lat === 0 ? null : country.Lat
-      const longitude = country.Long_ === 0 ? null : country.Long_
+      console.log(country.Lat.substring(0, 10))
+
+      const latitude = country.Lat === 0 ? null : country.Lat.substring(0, 10)
+      const longitude =
+        country.Long_ === 0 ? null : country.Long_.substring(0, 10)
       return (
         <CircleMarker
           key={country.id}
