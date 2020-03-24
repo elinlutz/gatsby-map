@@ -129,7 +129,7 @@ const getOptions = (total, deaths, type) => ({
         ['23 Mars 2020', 2059],
         ['24 Mars 2020', total]
       ],
-      color: colors.red,
+      color: colors.sweden,
       marker: {
         symbol: 'none'
       }

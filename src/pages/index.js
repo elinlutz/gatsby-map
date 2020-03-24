@@ -83,7 +83,6 @@ const IndexPage = ({ data }) => {
 
   function onClickCountry(country) {
     setCountry(country)
-    console.log(country.Deaths)
   }
 
   function CountryContent() {
@@ -94,12 +93,12 @@ const IndexPage = ({ data }) => {
         view={view}
         number={
           country.Country_Region == 'Sweden'
-            ? getTotalConfirmed(data.allTidsserieCsv.edges, 'Region_Total')
+            ? getTotal(data.allTidsserieCsv.edges, 'Region_Total')
             : country.Confirmed
         }
         deaths={
           country.Country_Region == 'Sweden'
-            ? getTotalConfirmed(data.allTidsserieCsv.edges, 'Region_Deaths')
+            ? getTotal(data.allTidsserieCsv.edges, 'Region_Deaths')
             : country.Deaths
         }
       ></DetailsCounter>
@@ -107,6 +106,7 @@ const IndexPage = ({ data }) => {
   }
 
   function RegionContent() {
+    console.log(region.Hospital_Total)
     return (
       <DetailsCounter
         title={region.Display_Name}
@@ -114,11 +114,12 @@ const IndexPage = ({ data }) => {
         view={view}
         number={region.Region_Total}
         deaths={region.Region_Deaths}
+        hospitalized={region.Hospital_Total}
       ></DetailsCounter>
     )
   }
 
-  function getTotalConfirmed(edges, prop) {
+  function getTotal(edges, prop) {
     return edges.reduce(function(a, b) {
       return a + +b.node[prop]
     }, 0)
@@ -162,23 +163,21 @@ const IndexPage = ({ data }) => {
             {view === 'sweden' ? (
               <CounterSweden
                 view={view}
-                number={getTotalConfirmed(
-                  data.allTidsserieCsv.edges,
-                  'Region_Total'
-                )}
-                deathNumber={getTotalConfirmed(
+                number={getTotal(data.allTidsserieCsv.edges, 'Region_Total')}
+                deathNumber={getTotal(
                   data.allTidsserieCsv.edges,
                   'Region_Deaths'
+                )}
+                hospitalized={getTotal(
+                  data.allTidsserieCsv.edges,
+                  'Hospital_Total'
                 )}
               ></CounterSweden>
             ) : (
               <CounterWorld
                 view={view}
-                number={getTotalConfirmed(data.allWorldCsv.edges, 'Confirmed')}
-                deathNumber={getTotalConfirmed(
-                  data.allWorldCsv.edges,
-                  'Deaths'
-                )}
+                number={getTotal(data.allWorldCsv.edges, 'Confirmed')}
+                deathNumber={getTotal(data.allWorldCsv.edges, 'Deaths')}
               ></CounterWorld>
             )}
 
@@ -207,6 +206,7 @@ export const query = graphql`
         node {
           Region_Total
           Region_Deaths
+          Hospital_Total
         }
       }
     }

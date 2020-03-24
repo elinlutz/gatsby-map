@@ -6,6 +6,7 @@ const DetailsCounter = ({
   title,
   number,
   deaths,
+  hospitalized,
   view,
   type,
   provinceState
@@ -37,9 +38,9 @@ const DetailsCounter = ({
       <div className="confirmedNumberContainerBottom">
         {view === 'sweden' ? (
           <div className="numberContainer">
-            <h2 className>160</h2>
+            <h2 className>{hospitalized >= 0 ? hospitalized : '?'}</h2>
             <div className="textContainer">
-              <h3>Intensivvård</h3>
+              <h3>På sjukhus</h3>
             </div>
           </div>
         ) : null}

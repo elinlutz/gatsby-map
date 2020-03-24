@@ -9,6 +9,7 @@ const CounterSweden = ({
   number,
   deathNumber,
   view,
+  hospitalized,
   type,
   provinceState
 }) => {
@@ -57,9 +58,9 @@ const CounterSweden = ({
 
       <div className="confirmedNumberContainerBottom">
         <div className="numberContainer">
-          <h2 className>160</h2>
+          <h2 className>{hospitalized > 0 ? hospitalized : '?'}</h2>
           <div className="textContainer">
-            <h3>Intensivvård</h3>
+            <h3>På sjukhus</h3>
           </div>
         </div>
         <div className="numberContainer">
