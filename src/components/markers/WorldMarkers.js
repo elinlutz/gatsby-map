@@ -56,7 +56,7 @@ const WorldMarkers = ({ onClick }) => {
   return edges.map(edge => {
     const country = edge.node
 
-    if (country.Confirmed > 0) {
+    if (country.Confirmed > 0 && country.Country_Region != 'US') {
       const { color, radius } = getBubble(country.Confirmed)
 
       const latitude = country.Lat === 0 ? null : country.Lat

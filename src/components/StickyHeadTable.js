@@ -31,13 +31,14 @@ const columns = [
 ]
 
 function createData(region, total, population, deaths, today) {
-  const totalCases = total ? total : undefined
-
-  const perHundredK = (totalCases / population) * 100000
-  const deathsPerCase = (deaths / totalCases) * 100
+  const perHundredK = total ? (total / population) * 100000 : undefined
+  const deathsPerCase = deaths && total ? (deaths / total) * 100 : undefined
 
   const density = perHundredK ? perHundredK.toFixed(1) : null
-  const deathRatio = deathsPerCase ? `${deathsPerCase.toFixed(2)}%` : null
+  const deathRatio =
+    deathsPerCase < 100 && deathsPerCase > 0
+      ? `${deathsPerCase.toFixed(2)}%`
+      : undefined
 
   return { region, total, density, deathRatio, deaths, today }
 }
