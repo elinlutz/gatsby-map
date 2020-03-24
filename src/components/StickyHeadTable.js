@@ -19,20 +19,23 @@ const columns = [
     id: 'today',
     label: 'Förändring idag',
     align: 'center',
-    color: `${colors.red}`
+    color: `${colors.sweden}`
   },
   {
     id: 'deaths',
     label: 'Dödsfall',
     align: 'center',
     color: `${colors.black}`,
-    minWidth: 0
+    minWidth: 0,
+    fontWeight: '800'
   }
 ]
 
-function createData(region, total, population, deaths, today) {
+function createData(region, total, population, deaths, today, hospitalized) {
   const perHundredK = total ? (total / population) * 100000 : undefined
   const deathsPerCase = deaths && total ? (deaths / total) * 100 : undefined
+
+  const atHospital = hospitalized > 0 ? hospitalized : '?'
 
   const density = perHundredK ? perHundredK.toFixed(1) : null
   const deathRatio =
@@ -40,7 +43,7 @@ function createData(region, total, population, deaths, today) {
       ? `${deathsPerCase.toFixed(2)}%`
       : undefined
 
-  return { region, total, density, deathRatio, deaths, today }
+  return { region, total, density, deathRatio, deaths, today, atHospital }
 }
 
 const useStyles = makeStyles({
@@ -60,7 +63,7 @@ const StickyHeadTable = () => {
 
   if (!isMobile && columns.length <= 4) {
     columns.splice(
-      2,
+      3,
       0,
       {
         id: 'density',
@@ -69,8 +72,15 @@ const StickyHeadTable = () => {
         color: `${colors.lightgrey}`
       },
       {
+        id: 'atHospital',
+        label: 'Vårdas på sjukhus',
+        align: 'center',
+        color: `${colors.lightgrey}`,
+        maxWidth: '20em'
+      },
+      {
         id: 'deathRatio',
-        label: 'Andel dödsfall per fall',
+        label: 'Andel dödsfall',
         align: 'center',
         color: `${colors.lightgrey}`
       }
@@ -90,6 +100,7 @@ const StickyHeadTable = () => {
             Region_Deaths
             Population
             Today
+            Hospital_Total
           }
         }
       }
@@ -103,7 +114,10 @@ const StickyHeadTable = () => {
   const getData = () => {
     edges.map(edge => {
       const region = edge.node
-      if (region.Region_Total > 0 || region.Region_Deaths > 0) {
+      if (
+        (region.Display_Name && region.Region_Total > 0) ||
+        (region.Display_Name && region.Region_Deaths > 0)
+      ) {
         const today = region.Today > 0 ? `+ ${region.Today}` : ' '
         const deaths =
           region.Region_Deaths > 0 ? `${region.Region_Deaths}` : ' '
@@ -113,7 +127,8 @@ const StickyHeadTable = () => {
           region.Region_Total,
           region.Population,
           deaths,
-          today
+          today,
+          region.Hospital_Total
         )
         rows.push(newRow)
       }
@@ -137,6 +152,7 @@ const StickyHeadTable = () => {
                   key={column.id}
                   align={column.align}
                   style={{
+                    maxWidth: column.maxWidth,
                     minWidth: column.minWidth,
                     fontSize: isMobile ? 8 : 10,
                     textTransform: 'uppercase',
