@@ -7,6 +7,34 @@ const Timeline = () => {
     <>
       <h3>24 mars 2020</h3>
       <TimelineListElement
+        number={1}
+        region={'Örebro'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={1}
+        region={'Kalmar'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={2}
+        region={'Värmland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={2}
+        region={'Sörmland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={3}
         region={'Norrbotten'}
         source={
