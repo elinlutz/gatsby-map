@@ -1,26 +1,23 @@
 .counterCard {
   text-align: center;
   line-height: 0px;
-  padding: 0.7em 0.7em;
-  max-width: 22em;
+  padding: 1em 1em;
+  max-width: 24em;
   min-width: 145px;
   margin-right: 0.5em;
-  height: 20em;
+  height: 22em;
   background-color: $white;
-  border-radius: 4px;
   display: flex;
   flex-direction: column;
 
   .header {
-    align-items: center;
-    margin-left: 3px;
-    line-height: 0;
-    height: 3em;
     display: flex;
+    align-items: center;
+    min-height: 3em;
 
     .bubble {
       align-self: center;
-      position: relative;
+      justify-content: flex-start;
     }
 
     p {
@@ -43,19 +40,14 @@
   }
 
   .noBubbleHeader {
-    padding-left: 0em;
-    padding-top: 0.5em;
-    text-transform: uppercase;
-    text-align: center;
     display: flex;
     flex-direction: column;
+    text-transform: uppercase;
+    text-align: center;
     height: 3em;
 
     .detailsTitle {
       p {
-        padding: 0;
-        margin: 0;
-        line-height: 18px;
         font-size: 16px;
         letter-spacing: 1px;
         color: $light-black;
@@ -63,39 +55,62 @@
     }
     .detailsRegion {
       p {
-        padding: 0;
         margin-top: 4px;
         font-size: 10px;
-        line-height: 10px;
         letter-spacing: 1px;
         color: $light-black;
       }
     }
   }
 
-  .confirmedNumberContainer {
-    height: 65px;
-    line-height: 0px;
-    h1 {
-      font-size: 60px;
-    }
-    h2 {
-      padding-top: 0px;
-      padding-bottom: 0px;
-      font-size: 50px;
+  .confirmedNumberContainerTop {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0;
+    .numberContainer {
+      border-radius: 1px;
+      margin: 2px;
+      h1 {
+        font-size: 60px;
+      }
+      h2 {
+        font-size: 50px;
+      }
+      .textContainer {
+        height: 1em;
+        h3 {
+          text-transform: uppercase;
+          font-size: 14px;
+        }
+      }
     }
   }
 
-  .confirmedText {
-    h3 {
-      text-transform: uppercase;
-      font-size: 12px;
+  .confirmedNumberContainerBottom {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5em 0;
+
+    .numberContainer {
+      width: 50%;
+      margin: 2px;
+
+      h2 {
+        font-size: 35px;
+      }
+      .textContainer {
+        h3 {
+          text-transform: uppercase;
+          font-size: 12px;
+        }
+      }
     }
   }
+
   .updatedText {
     p {
       justify-content: center;
-      margin: 5px 0 0px 0px;
+      padding: 2px 0 0px 0px;
       font-size: 8px;
       color: $light-black;
     }
@@ -105,29 +120,33 @@
 @media screen and (max-width: 500px), screen and (max-height: 800px) {
   .counterCard {
     padding: 0.5em 0.5em;
-    margin-right: 0.25em;
-    margin-left: 0.25em;
     max-height: 15em;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
 
     .noBubbleHeader {
       display: flex;
       flex-direction: column;
-      height: 3em;
+      height: 2.5em;
+      letter-spacing: 0px;
+
       .detailsTitle {
         p {
-          font-size: 14px;
-          letter-spacing: 0px;
+          font-size: 12px;
         }
       }
       .detailsRegion {
         p {
-          margin-top: 1px;
           font-size: 8px;
-          letter-spacing: 0px;
         }
+      }
+    }
+    .header {
+      min-height: 2.5em;
+    }
+
+    .noDetailsCounter {
+      margin-top: 90px;
+      p {
+        color: $grey-500;
       }
     }
 
@@ -138,30 +157,40 @@
       }
     }
 
-    .confirmedNumberContainer {
-      height: 40px;
-      h1 {
-        font-size: 55px;
-      }
-      h2 {
-        font-size: 30px;
+    .confirmedNumberContainerTop {
+      padding: 0 0;
+
+      .numberContainer {
+        h1 {
+          font-size: 60px;
+        }
+        h2 {
+          font-size: 32px;
+        }
+        .textContainer {
+          height: 1em;
+          h3 {
+            text-transform: uppercase;
+            font-size: 10px;
+          }
+        }
       }
     }
 
-    .confirmedText {
-      margin-bottom: 0px;
-
-      h3 {
-        text-transform: uppercase;
-        font-size: 10px;
-      }
-    }
-
-    .confirmedDeathsText {
-      h3 {
-        margin-top: 2px;
-        text-transform: uppercase;
-        font-size: 10px;
+    .confirmedNumberContainerBottom {
+      padding: 0 0;
+      .numberContainer {
+        width: 100%;
+        margin: 2px;
+        h2 {
+          font-size: 22px;
+        }
+        .textContainer {
+          h3 {
+            text-transform: uppercase;
+            font-size: 9px;
+          }
+        }
       }
     }
 

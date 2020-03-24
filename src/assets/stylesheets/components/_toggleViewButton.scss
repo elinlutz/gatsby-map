@@ -3,17 +3,19 @@
   top: 0.3em;
   left: 0.3em;
   z-index: 1000;
-
+  border: none;
   .toggleViewButtonSweden {
     height: 2em;
-    border-radius: 2px;
+    border-radius: 1px;
     font-size: 12px;
     font-family: $font-default;
+    border: none;
   }
   .toggleViewButtonWorld {
     height: 2em;
-    border-radius: 2px;
+    border-radius: 1px;
     font-size: 12px;
     font-family: $font-default;
+    border: none;
   }
 }

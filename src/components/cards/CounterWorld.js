@@ -23,28 +23,35 @@ const CounterWorld = ({ number, deathNumber, view }) => {
         </Container>
         <p>Världen</p>
       </Container>
-      <Container className="confirmedNumberContainer">
-        {number > 1000 ? (
-          <h2>{number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}</h2>
-        ) : (
-          <h2>{number}</h2>
-        )}
-      </Container>
-      <Container className="confirmedText">
-        <h3>Bekräftade fall</h3>
-      </Container>
-      <Container className="confirmedNumberContainer">
-        {deathNumber > 1000 ? (
-          <h2>
-            {deathNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+      <div className="confirmedNumberContainerTop">
+        <div className="numberContainer">
+          {number > 1000 ? (
+            <h2 className={view === 'world' ? 'hWorld' : 'hSweden'}>
+              {number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+            </h2>
+          ) : (
+            <h1 className={view === 'world' ? 'hWorld' : 'hSweden'}>
+              {number}
+            </h1>
+          )}
+          <div className="textContainer">
+            <h3>Bekräftade fall</h3>
+          </div>
+        </div>
+      </div>
+
+      <div className="confirmedNumberContainerBottom">
+        <div className="numberContainer">
+          <h2 className>
+            {deathNumber > 1000
+              ? deathNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
+              : deathNumber}
           </h2>
-        ) : (
-          <h2>{deathNumber}</h2>
-        )}
-      </Container>
-      <Container className="confirmedText">
-        <h3>Dödsfall</h3>
-      </Container>
+          <div className="textContainer">
+            <h3>Dödsfall</h3>
+          </div>
+        </div>
+      </div>
       <Container className="updatedText">
         <p>UPPDATERAT {updatedAt.substring(0, updatedAt.length - 6)}</p>
       </Container>
