@@ -17,8 +17,8 @@ const WorldMarkers = ({ onClick }) => {
             Deaths
             Country_Region
             Province_State
-            Latitude
-            Longitude
+            Lat
+            Long_
           }
         }
       }
@@ -58,13 +58,16 @@ const WorldMarkers = ({ onClick }) => {
 
     if (country.Confirmed > 0) {
       const { color, radius } = getBubble(country.Confirmed)
+
+      const latitude = country.Lat === 0 ? null : country.Lat
+      const longitude = country.Long_ === 0 ? null : country.Long_
       return (
         <CircleMarker
           key={country.id}
           radius={radius}
           color={color}
           stroke={false}
-          center={[country.Latitude, country.Longitude]}
+          center={[latitude, longitude]}
           fillOpacity={0.7}
           onClick={() => onClick(country)}
         ></CircleMarker>
