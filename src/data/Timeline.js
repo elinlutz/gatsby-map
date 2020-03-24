@@ -6,11 +6,13 @@ const Timeline = () => {
   return (
     <>
       <h3>24 mars 2020</h3>
-      {/* <TimelineListElement
-        number={}
-        region={'Skåne'}
-        source={''}
-      ></TimelineListElement> */}
+      <TimelineListElement
+        number={4}
+        region={'Västmanland'}
+        source={
+          'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/covid-19-laget-i-lanet/'
+        }
+      ></TimelineListElement>
       <h3>23 mars 2020</h3>
       <TimelineListElement
         number={5}
