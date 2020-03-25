@@ -2,7 +2,7 @@
   text-align: center;
   line-height: 0px;
   padding: 1em 1em;
-  max-width: 24em;
+  max-width: 26em;
   min-width: 145px;
   margin-right: 0.5em;
   border-radius: 2px;
@@ -23,7 +23,7 @@
 
     p {
       position: absolute;
-      margin-top: 0;
+      margin-top: 1px;
       font-size: 15px;
       margin-left: 26px;
       letter-spacing: 1px;
@@ -93,7 +93,6 @@
     padding: 0.5em 0;
 
     .numberContainer {
-      width: 50%;
       margin: 2px;
 
       h2 {
@@ -118,7 +117,7 @@
   }
 }
 
-@media screen and (max-width: 500px), screen and (max-height: 800px) {
+@media screen and (max-width: 530px), screen and (max-height: 800px) {
   .counterCard {
     padding: 0.5em 0.5em;
     max-height: 15em;
@@ -159,7 +158,7 @@
     }
 
     .confirmedNumberContainerTop {
-      padding: 0 0;
+      padding: 0.2rem 0;
 
       .numberContainer {
         h1 {
@@ -184,12 +183,12 @@
         width: 100%;
         margin: 2px;
         h2 {
-          font-size: 22px;
+          font-size: 16px;
         }
         .textContainer {
           h3 {
             text-transform: uppercase;
-            font-size: 9px;
+            font-size: 8px;
           }
         }
       }

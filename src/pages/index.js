@@ -101,6 +101,7 @@ const IndexPage = ({ data }) => {
             ? getTotal(data.allTidsserieCsv.edges, 'Region_Deaths')
             : country.Deaths
         }
+        recovered={country.Recovered}
       ></DetailsCounter>
     )
   }
@@ -178,6 +179,7 @@ const IndexPage = ({ data }) => {
                 view={view}
                 number={getTotal(data.allWorldCsv.edges, 'Confirmed')}
                 deathNumber={getTotal(data.allWorldCsv.edges, 'Deaths')}
+                recovered={getTotal(data.allWorldCsv.edges, 'Recovered')}
               ></CounterWorld>
             )}
 
@@ -215,6 +217,7 @@ export const query = graphql`
         node {
           Confirmed
           Deaths
+          Recovered
         }
       }
     }

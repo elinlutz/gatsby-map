@@ -15,6 +15,7 @@ const WorldMarkers = ({ onClick }) => {
             id
             Confirmed
             Deaths
+            Recovered
             Country_Region
             Province_State
             Lat

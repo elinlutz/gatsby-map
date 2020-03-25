@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Bubble from './Bubble'
 import Container from 'components/Container'
 
-const CounterWorld = ({ number, deathNumber, view }) => {
+const CounterWorld = ({ number, deathNumber, recovered, view }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -43,12 +43,18 @@ const CounterWorld = ({ number, deathNumber, view }) => {
       <div className="confirmedNumberContainerBottom">
         <div className="numberContainer">
           <h2 className>
-            {deathNumber > 1000
-              ? deathNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
-              : deathNumber}
+            {deathNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
           </h2>
           <div className="textContainer">
             <h3>Dödsfall</h3>
+          </div>
+        </div>
+        <div className="numberContainer">
+          <h2 className>
+            {recovered.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+          </h2>
+          <div className="textContainer">
+            <h3>Tillfrisknade</h3>
           </div>
         </div>
       </div>
