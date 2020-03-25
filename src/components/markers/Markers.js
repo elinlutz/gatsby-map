@@ -10,7 +10,7 @@ const Markers = ({ loadTotal, onClick }) => {
 
   const data = useStaticQuery(graphql`
     query {
-      allTidsserieCsv {
+      allTimeSeriesConfimedConfirmedCsv {
         edges {
           node {
             id
@@ -27,7 +27,7 @@ const Markers = ({ loadTotal, onClick }) => {
     }
   `)
 
-  const edges = data.allTidsserieCsv.edges
+  const edges = data.allTimeSeriesConfimedConfirmedCsv.edges
 
   const getBubble = confirmed => {
     let color
@@ -74,7 +74,7 @@ const Markers = ({ loadTotal, onClick }) => {
           color={color}
           stroke={false}
           center={[region.Lat, region.Long]}
-          fillOpacity={active === region.id ? 0.9 : 0.6}
+          fillOpacity={active === region.id ? 0.9 : 0.7}
           onClick={() => {
             onClick(region)
             setActive(region.id)

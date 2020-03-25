@@ -9,7 +9,7 @@ const DeathMarkers = ({ loadTotal, onClick }) => {
 
   const data = useStaticQuery(graphql`
     query {
-      allTidsserieCsv {
+      allTimeSeriesConfimedConfirmedCsv {
         edges {
           node {
             id

@@ -27,17 +27,9 @@ const Blog = ({ data }) => {
       <Container type="timeline-content" className="text">
         <Container type="chart">
           <h1>Utveckling</h1>
-          <p className="updatedAt">Uppdaterat {data.site.buildTimeZone}</p>
           <Chart className="chart" />
         </Container>
-        <Container type="card" className="container">
-          <p>
-            Folkhälsomyndigheten rekommenderar att bara personer som är i behov
-            av sjukhusvård ska provtas. Detta påverkar statistiken på antalet
-            bekräftade fall från och med 12 mars (markerat i grafen).
-            <br />
-          </p>
-        </Container>
+        {/* <p className="updatedAt">Uppdaterat {data.site.buildTimeZone}</p> */}
         <Container type="timeline">
           <h1>Tidslinje</h1>
           <Timeline></Timeline>

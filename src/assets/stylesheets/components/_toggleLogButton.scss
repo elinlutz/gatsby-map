@@ -1,7 +1,7 @@
 .toggleLogButtonContainer {
   display: flex;
   justify-content: flex-end;
-  margin: 15px 0px 10px 8px;
+  margin: 5px 0px 5px 8px;
 
   .toggleLogButton {
     height: 2.5em;
@@ -13,5 +13,10 @@
 @media screen and (max-width: 500px) {
   .toggleLogButtonContainer {
     justify-content: flex-start;
+    .toggleLogButton {
+      height: 2em;
+      font-size: 10px;
+      width: 10em;
+    }
   }
 }

@@ -164,13 +164,16 @@ const IndexPage = ({ data }) => {
             {view === 'sweden' ? (
               <CounterSweden
                 view={view}
-                number={getTotal(data.allTidsserieCsv.edges, 'Region_Total')}
+                number={getTotal(
+                  data.allTimeSeriesConfimedConfirmedCsv.edges,
+                  'Region_Total'
+                )}
                 deathNumber={getTotal(
-                  data.allTidsserieCsv.edges,
+                  data.allTimeSeriesDeathsDeathsCsv.edges,
                   'Region_Deaths'
                 )}
                 hospitalized={getTotal(
-                  data.allTidsserieCsv.edges,
+                  data.allTimeSeriesConfimedConfirmedCsv.edges,
                   'Hospital_Total'
                 )}
               ></CounterSweden>
@@ -203,12 +206,19 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allTidsserieCsv {
+    allTimeSeriesConfimedConfirmedCsv {
       edges {
         node {
           Region_Total
           Region_Deaths
           Hospital_Total
+        }
+      }
+    }
+    allTimeSeriesDeathsDeathsCsv {
+      edges {
+        node {
+          Region_Deaths
         }
       }
     }

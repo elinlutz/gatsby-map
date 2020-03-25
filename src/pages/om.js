@@ -66,12 +66,11 @@ const InfoPage = ({ data }) => {
         <h2>Data</h2>
 
         <p>
-          Antal bekräftade fall i Sverige utgår från regionernas och
-          Folkhälsomyndighetens rapportering. Hela datasetet kan du se{' '}
+          Antal bekräftade fall, dödsfall och sjukhusfall i Sverige utgår från
+          regionernas och Folkhälsomyndighetens rapportering. Hela datasetet kan
+          du se{' '}
           <OutboundLink
-            href={
-              'https://github.com/elinlutz/gatsby-map/blob/master/src/data/Tidsserie.csv'
-            }
+            href={'https://github.com/elinlutz/gatsby-map/blob/master/src/data'}
             target={'_blank'}
           >
             här

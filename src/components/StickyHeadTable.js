@@ -91,7 +91,7 @@ const StickyHeadTable = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      allTidsserieCsv {
+      allTimeSeriesConfimedConfirmedCsv {
         edges {
           node {
             id
@@ -109,7 +109,7 @@ const StickyHeadTable = () => {
 
   let rows = []
 
-  const edges = data.allTidsserieCsv.edges
+  const edges = data.allTimeSeriesConfimedConfirmedCsv.edges
 
   const getData = () => {
     edges.map(edge => {
@@ -142,61 +142,59 @@ const StickyHeadTable = () => {
   getData()
 
   return (
-    <Paper className={classes.root}>
-      <TableContainer className={classes.container}>
-        <Table stickyHeader aria-label="sticky table">
-          <TableHead>
-            <TableRow>
-              {columns.map(column => (
-                <TableCell
-                  key={column.id}
-                  align={column.align}
-                  style={{
-                    maxWidth: column.maxWidth,
-                    minWidth: column.minWidth,
-                    fontSize: isMobile ? 8 : 10,
-                    textTransform: 'uppercase',
-                    paddingRight: isMobile ? 0 : 'default',
-                    paddingLeft: isMobile ? 5 : 'default'
-                  }}
-                >
-                  {column.label}
-                </TableCell>
-              ))}
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows.map(row => {
-              return (
-                <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
-                  {columns.map(column => {
-                    const value = row[column.id]
-                    return (
-                      <TableCell
-                        key={column.id}
-                        align={column.align}
-                        style={{
-                          color: column.color,
-                          minWidth: column.minWidth,
-                          fontSize: isMobile ? 11 : 12,
-                          fontWeight: column.fontWeight,
-                          paddingRight: isMobile ? 0 : 'default',
-                          paddingLeft: isMobile ? 5 : 'default'
-                        }}
-                      >
-                        {column.format && typeof value === 'string'
-                          ? column.format(value)
-                          : value}
-                      </TableCell>
-                    )
-                  })}
-                </TableRow>
-              )
-            })}
-          </TableBody>
-        </Table>
-      </TableContainer>
-    </Paper>
+    <TableContainer className={classes.container}>
+      <Table stickyHeader aria-label="sticky table">
+        <TableHead>
+          <TableRow>
+            {columns.map(column => (
+              <TableCell
+                key={column.id}
+                align={column.align}
+                style={{
+                  maxWidth: column.maxWidth,
+                  minWidth: column.minWidth,
+                  fontSize: isMobile ? 8 : 10,
+                  textTransform: 'uppercase',
+                  paddingRight: isMobile ? 0 : 'default',
+                  paddingLeft: isMobile ? 5 : 'default'
+                }}
+              >
+                {column.label}
+              </TableCell>
+            ))}
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.map(row => {
+            return (
+              <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
+                {columns.map(column => {
+                  const value = row[column.id]
+                  return (
+                    <TableCell
+                      key={column.id}
+                      align={column.align}
+                      style={{
+                        color: column.color,
+                        minWidth: column.minWidth,
+                        fontSize: isMobile ? 11 : 12,
+                        fontWeight: column.fontWeight,
+                        paddingRight: isMobile ? 0 : 'default',
+                        paddingLeft: isMobile ? 5 : 'default'
+                      }}
+                    >
+                      {column.format && typeof value === 'string'
+                        ? column.format(value)
+                        : value}
+                    </TableCell>
+                  )
+                })}
+              </TableRow>
+            )
+          })}
+        </TableBody>
+      </Table>
+    </TableContainer>
   )
 }
 
