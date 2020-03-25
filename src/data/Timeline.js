@@ -5,6 +5,12 @@ import TimelineListElement from 'components/TimelineListElement'
 const Timeline = () => {
   return (
     <>
+      <h3>25 mars 2020</h3>
+      {/* <TimelineListElement
+        number={10}
+        region={'Skåne'}
+        source={''}
+      ></TimelineListElement> */}
       <h3>24 mars 2020</h3>
       <TimelineListElement
         number={10}
