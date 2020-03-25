@@ -1,11 +1,11 @@
 import React from 'react'
 
 import TimelineListElement from 'components/TimelineListElement'
+import DeathElement from 'components/DeathElement'
 
 const Timeline = () => {
   return (
     <>
-      <h3>25 mars 2020</h3>
       <TimelineListElement
         number={3}
         region={'Kalmar'}
