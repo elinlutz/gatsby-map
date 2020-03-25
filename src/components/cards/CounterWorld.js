@@ -43,18 +43,18 @@ const CounterWorld = ({ number, deathNumber, recovered, view }) => {
       <div className="confirmedNumberContainerBottom">
         <div className="numberContainer">
           <h2 className>
-            {deathNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
-          </h2>
-          <div className="textContainer">
-            <h3>Dödsfall</h3>
-          </div>
-        </div>
-        <div className="numberContainer">
-          <h2 className>
             {recovered.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
           </h2>
           <div className="textContainer">
             <h3>Tillfrisknade</h3>
+          </div>
+        </div>
+        <div className="numberContainer">
+          <h2 className>
+            {deathNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+          </h2>
+          <div className="textContainer">
+            <h3>Dödsfall</h3>
           </div>
         </div>
       </div>
