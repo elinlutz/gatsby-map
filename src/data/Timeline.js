@@ -7,6 +7,13 @@ const Timeline = () => {
     <>
       <h3>25 mars 2020</h3>
       <TimelineListElement
+        number={3}
+        region={'Kalmar'}
+        source={
+          'https://www.regionkalmar.se/nyhetslista/covid-19-konstaterat-pa-sarskilt-boende/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={10}
         region={'Västra Götaland'}
         source={
@@ -270,13 +277,6 @@ const Timeline = () => {
         region={'Jämtland Härjedalen'}
         source={
           'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={2}
-        region={'Kalmar'}
-        source={
-          'https://www.regionkalmar.se/nyhetslista/avvakta-med-vardbesok-som-inte-ar-akuta/'
         }
       ></TimelineListElement>
       <TimelineListElement
