@@ -34,7 +34,7 @@ const Blog = ({ data }) => {
           <p>
             Folkhälsomyndigheten rekommenderar att bara personer som är i behov
             av sjukhusvård ska provtas. Detta påverkar statistiken på antalet
-            bekräftade fall från och med 12 mars (markerade linjen).
+            bekräftade fall från och med 12 mars (markerat i grafen).
             <br />
           </p>
         </Container>
