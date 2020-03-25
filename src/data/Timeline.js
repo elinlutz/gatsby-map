@@ -7,10 +7,108 @@ const Timeline = () => {
     <>
       <h3>25 mars 2020</h3>
       <TimelineListElement
+        number={10}
+        region={'Västra Götaland'}
+        source={
+          'https://www.vgregion.se/aktuellt/nyhetslista/regional-lagesrapport-covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={23}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={111}
+        region={'Stockholm'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={19}
+        region={'Sörmland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={10}
+        region={'Dalarna'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={9}
+        region={'Uppsala'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={3}
+        region={'Värmland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={3}
+        region={'Västerbotten'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={3}
+        region={'Västernorrland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={6}
+        region={'Jönköping'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={5}
+        region={'Gävleborg'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={2}
+        region={'Halland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={2}
+        region={'Kalmar'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={1}
+        region={'Örebro'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={8}
         region={'Skåne'}
         source={
-          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-25-mars-2985243'
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
       ></TimelineListElement>
       <TimelineListElement
