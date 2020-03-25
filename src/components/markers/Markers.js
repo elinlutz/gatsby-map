@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { CircleMarker } from 'react-leaflet'
 
@@ -6,6 +6,7 @@ import colors from 'assets/stylesheets/settings/_colors.scss'
 
 const Markers = ({ loadTotal, onClick }) => {
   const [clicked, setClicked] = useState(false)
+  const [active, setActive] = useState(false)
 
   const data = useStaticQuery(graphql`
     query {
@@ -19,6 +20,7 @@ const Markers = ({ loadTotal, onClick }) => {
             Long
             Region_Total
             Region_Deaths
+            Hospital_Total
           }
         }
       }
@@ -33,7 +35,7 @@ const Markers = ({ loadTotal, onClick }) => {
     let radius
 
     if (confirmed > 0) {
-      color = colors.red
+      color = colors.sweden
     }
 
     if (number == 1) {
@@ -64,6 +66,7 @@ const Markers = ({ loadTotal, onClick }) => {
 
     if (region.Region_Total > 0) {
       const { color, radius } = getBubble(region.Region_Total)
+
       return (
         <CircleMarker
           key={region.id}
@@ -71,8 +74,11 @@ const Markers = ({ loadTotal, onClick }) => {
           color={color}
           stroke={false}
           center={[region.Lat, region.Long]}
-          fillOpacity={0.8}
-          onClick={() => onClick(region)}
+          fillOpacity={active === region.id ? 0.9 : 0.6}
+          onClick={() => {
+            onClick(region)
+            setActive(region.id)
+          }}
         ></CircleMarker>
       )
     }

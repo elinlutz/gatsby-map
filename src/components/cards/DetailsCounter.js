@@ -6,6 +6,8 @@ const DetailsCounter = ({
   title,
   number,
   deaths,
+  hospitalized,
+  recovered,
   view,
   type,
   provinceState
@@ -21,26 +23,48 @@ const DetailsCounter = ({
         </div>
       </Container>
 
-      <Container className={'confirmedNumberContainer'}>
-        {number > 1000 ? (
-          <h2>{number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}</h2>
+      <div className="confirmedNumberContainerTop">
+        <div className="numberContainer">
+          {number > 1000 ? (
+            <h2>{number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}</h2>
+          ) : (
+            <h2>{number}</h2>
+          )}
+          <div className="textContainer">
+            <h3>Bekräftade fall</h3>
+          </div>
+        </div>
+      </div>
+
+      <div className="confirmedNumberContainerBottom">
+        {view === 'sweden' ? (
+          <div className="numberContainer">
+            <h2>{hospitalized >= 0 ? hospitalized : '?'}</h2>
+            <div className="textContainer">
+              <h3>På sjukhus</h3>
+            </div>
+          </div>
         ) : (
-          <h2>{number}</h2>
+          <div className="numberContainer">
+            <h2>
+              {recovered.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+            </h2>
+            <div className="textContainer">
+              <h3>Tillfrisknade</h3>
+            </div>
+          </div>
         )}
-      </Container>
-      <Container className="confirmedText">
-        <h3>Bekräftade fall</h3>
-      </Container>
-      <Container className={'confirmedNumberContainer'}>
-        {deaths > 1000 ? (
-          <h2>{deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}</h2>
-        ) : (
-          <h2>{deaths}</h2>
-        )}
-      </Container>
-      <Container className="confirmedText">
-        <h3>Dödsfall</h3>
-      </Container>
+        <div className="numberContainer">
+          <h2>
+            {deaths > 1000
+              ? deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
+              : deaths}
+          </h2>
+          <div className="textContainer">
+            <h3>Dödsfall</h3>
+          </div>
+        </div>
+      </div>
     </Container>
   )
 }

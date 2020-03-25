@@ -5,7 +5,7 @@ import { CircleMarker } from 'react-leaflet'
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
 const WorldMarkers = ({ onClick }) => {
-  //   const [clicked, setClicked] = useState(false)
+  const [active, setActive] = useState(false)
 
   const data = useStaticQuery(graphql`
     query {
@@ -15,6 +15,7 @@ const WorldMarkers = ({ onClick }) => {
             id
             Confirmed
             Deaths
+            Recovered
             Country_Region
             Province_State
             Lat
@@ -59,8 +60,6 @@ const WorldMarkers = ({ onClick }) => {
     if (country.Confirmed > 0) {
       const { color, radius } = getBubble(country.Confirmed)
 
-      console.log(country.Lat.substring(0, 10))
-
       const latitude = country.Lat === 0 ? null : country.Lat.substring(0, 10)
       const longitude =
         country.Long_ === 0 ? null : country.Long_.substring(0, 10)
@@ -71,8 +70,11 @@ const WorldMarkers = ({ onClick }) => {
           color={color}
           stroke={false}
           center={[latitude, longitude]}
-          fillOpacity={0.7}
-          onClick={() => onClick(country)}
+          fillOpacity={active === country.id ? 0.9 : 0.6}
+          onClick={() => {
+            setActive(country.id)
+            onClick(country)
+          }}
         ></CircleMarker>
       )
     }

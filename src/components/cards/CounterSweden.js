@@ -9,6 +9,7 @@ const CounterSweden = ({
   number,
   deathNumber,
   view,
+  hospitalized,
   type,
   provinceState
 }) => {
@@ -38,33 +39,41 @@ const CounterSweden = ({
         <p>Sverige</p>
       </Container>
 
-      <Container className="confirmedNumberContainer">
-        <Container className="line"></Container>
-        {number > 1000 ? (
-          <h2 className={view === 'world' ? 'hWorld' : 'hSweden'}>
-            {number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+      <div className="confirmedNumberContainerTop">
+        <div className="numberContainer">
+          {number > 1000 ? (
+            <h2 className={view === 'world' ? 'hWorld' : 'hSweden'}>
+              {number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+            </h2>
+          ) : (
+            <h1 className={view === 'world' ? 'hWorld' : 'hSweden'}>
+              {number}
+            </h1>
+          )}
+          <div className="textContainer">
+            <h3>Bekräftade fall</h3>
+          </div>
+        </div>
+      </div>
+
+      <div className="confirmedNumberContainerBottom">
+        <div className="numberContainer">
+          <h2 className>{hospitalized > 0 ? hospitalized : '?'}</h2>
+          <div className="textContainer">
+            <h3>På sjukhus</h3>
+          </div>
+        </div>
+        <div className="numberContainer">
+          <h2 className>
+            {deathNumber > 1000
+              ? deathNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
+              : deathNumber}
           </h2>
-        ) : (
-          <h1 className={view === 'world' ? 'hWorld' : 'hSweden'}>{number}</h1>
-        )}
-      </Container>
-      <Container className="confirmedText">
-        <h3>Bekräftade fall</h3>
-      </Container>
-      <Container className="confirmedNumberContainer">
-        {deathNumber > 1000 ? (
-          <h2 className={view === 'world' ? 'hWorld' : 'hSweden'}>
-            {deathNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
-          </h2>
-        ) : (
-          <h2 className={view === 'world' ? 'hWorld' : 'hSweden'}>
-            {deathNumber}
-          </h2>
-        )}
-      </Container>
-      <Container className="confirmedText">
-        <h3>Dödsfall</h3>
-      </Container>
+          <div className="textContainer">
+            <h3>Dödsfall</h3>
+          </div>
+        </div>
+      </div>
       <Container className="updatedText">
         <p>UPPDATERAT {getUpdatedAt()}</p>
       </Container>
