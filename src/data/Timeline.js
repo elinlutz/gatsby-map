@@ -7,6 +7,27 @@ const Timeline = () => {
     <>
       <h3>24 mars 2020</h3>
       <TimelineListElement
+        number={10}
+        region={'Örebro'}
+        source={
+          'https://www.regionorebrolan.se/sv/Om-regionorebrolan/Press/Nyheter/Nyheter-2020/Presskonferens-24-mars-Region-Orebro-lan/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={3}
+        region={'Jämtland Häjedalen'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200324coronacovid19.5.613e2f39170d0c32a95df71.html'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={1}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={1}
         region={'Örebro'}
         source={
