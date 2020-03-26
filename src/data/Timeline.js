@@ -8,6 +8,13 @@ const Timeline = () => {
     <>
       <h3>26 mars 2020</h3>
       <DeathElement
+        number={6}
+        region={'Stockholm'}
+        source={
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/26-mars-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
+        }
+      ></DeathElement>
+      <DeathElement
         number={1}
         region={'Dalarna'}
         source={
@@ -43,13 +50,6 @@ const Timeline = () => {
         }
       ></DeathElement>
       <DeathElement
-        number={5}
-        region={'Stockholm'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></DeathElement>
-      <DeathElement
         number={1}
         region={'Norrbotten'}
         source={
@@ -78,10 +78,10 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={1}
+        number={3}
         region={'Kalmar'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+          'https://www.regionkalmar.se/kontakta-oss/kontakta-sjukvarden/coronaviruset/'
         }
       ></TimelineListElement>
       <TimelineListElement
