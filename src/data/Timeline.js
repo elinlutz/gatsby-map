@@ -8,6 +8,13 @@ const Timeline = () => {
     <>
       <h3>26 mars 2020</h3>
       <DeathElement
+        number={3}
+        region={'Sörmland'}
+        source={
+          'https://regionsormland.se/nyheter/nyhetslista-2019/uppdatering-covid-19-patienter-i-region-sormland-den-263-2020/'
+        }
+      ></DeathElement>
+      <DeathElement
         number={6}
         region={'Stockholm'}
         source={
@@ -42,13 +49,6 @@ const Timeline = () => {
           'https://www.mynewsdesk.com/se/regionvasterbotten/pressreleases/haelso-och-sjukvaardsnaemnden-har-sammantraett-2985338'
         }
       ></TimelineListElement>
-      <DeathElement
-        number={1}
-        region={'Sörmland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></DeathElement>
       <DeathElement
         number={1}
         region={'Norrbotten'}
