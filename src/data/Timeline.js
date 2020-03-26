@@ -195,6 +195,13 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <h3>25 mars 2020</h3>
+      <DeathElement
+        number={2}
+        region={'Sörmland (tillagt 26 mars)'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200325coronacovid19.5.613e2f39170d0c32a95f8e5.html'
+        }
+      ></DeathElement>
       <TimelineListElement
         number={4}
         region={'Jämtland Häjedalen (tillagt 26 mars)'}

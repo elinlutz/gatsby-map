@@ -219,7 +219,7 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['22 Mars 2020', 23],
               ['23 Mars 2020', 33],
               ['24 Mars 2020', 40],
-              ['25 Mars 2020', 63],
+              ['25 Mars 2020', 64],
               ['26 Mars 2020', deaths]
             ],
             color: colors.black,
@@ -256,8 +256,8 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['22 Mars 2020', 3],
               ['23 Mars 2020', 10],
               ['24 Mars 2020', 7],
-              ['25 Mars 2020', 23],
-              ['26 Mars 2020', deaths - 63]
+              ['25 Mars 2020', 24],
+              ['26 Mars 2020', deaths - 64]
             ],
             color: colors.blue,
             type: `${chartType}`,
