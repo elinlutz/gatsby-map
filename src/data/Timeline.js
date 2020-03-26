@@ -7,6 +7,13 @@ const Timeline = () => {
   return (
     <>
       <h3>26 mars 2020</h3>
+      <DeathElement
+        number={1}
+        region={'Jönköping'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid-19-13-personer-i-jonkopings-lan-vardas-pa-sjukhus-47082'
+        }
+      ></DeathElement>
       <TimelineListElement
         number={8}
         region={'Västmanland'}

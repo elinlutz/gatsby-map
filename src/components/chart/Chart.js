@@ -180,8 +180,8 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['22 Mars 2020', 145],
               ['23 Mars 2020', 129],
               ['24 Mars 2020', 240],
-              ['25 Mars 2020', 228]
-              // ['26 Mars 2020', total - 2527]
+              ['25 Mars 2020', 228],
+              ['26 Mars 2020', total - 2527]
             ],
             type: `${chartType}`,
             color: colors.blue,
@@ -256,8 +256,8 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['22 Mars 2020', 3],
               ['23 Mars 2020', 10],
               ['24 Mars 2020', 7],
-              ['25 Mars 2020', 23]
-              // ['26 Mars 2020', deaths - 63]
+              ['25 Mars 2020', 23],
+              ['26 Mars 2020', deaths - 63]
             ],
             color: colors.blue,
             type: `${chartType}`,
@@ -276,6 +276,13 @@ const Chart = () => {
         edges {
           node {
             Region_Total
+            Region_Deaths
+          }
+        }
+      }
+      allTimeSeriesDeathsDeathsCsv {
+        edges {
+          node {
             Region_Deaths
           }
         }
@@ -299,7 +306,7 @@ const Chart = () => {
   const [chartType, setChartType] = useState('column')
 
   const total = getTotalConfirmed(data.allTimeSeriesConfimedConfirmedCsv.edges)
-  const deaths = getTotalDeaths(data.allTimeSeriesConfimedConfirmedCsv.edges)
+  const deaths = getTotalDeaths(data.allTimeSeriesDeathsDeathsCsv.edges)
   const confirmedOptions = getOptions(
     total,
     deaths,
