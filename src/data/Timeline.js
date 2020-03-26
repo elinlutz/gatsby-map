@@ -7,6 +7,20 @@ const Timeline = () => {
   return (
     <>
       <h3>26 mars 2020</h3>
+      <TimelineListElement
+        number={8}
+        region={'Västmanland'}
+        source={
+          'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/covid-19-laget-i-lanet/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={5}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
       <h3>25 mars 2020</h3>
       <TimelineListElement
         number={3}
