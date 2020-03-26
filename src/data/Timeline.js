@@ -7,6 +7,20 @@ const Timeline = () => {
   return (
     <>
       <h3>26 mars 2020</h3>
+      <TimelineListElement
+        number={3}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={3}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200326coronacovid19regionjamtlandharjedalen.5.613e2f39170d0c32a95112c5.html'
+        }
+      ></TimelineListElement>
       <DeathElement
         number={3}
         region={'Sörmland'}
