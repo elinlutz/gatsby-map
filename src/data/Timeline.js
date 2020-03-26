@@ -28,6 +28,13 @@ const Timeline = () => {
           'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
         }
       ></TimelineListElement>
+      <TimelineListElement
+        number={6}
+        region={'Västerbotten'}
+        source={
+          'https://www.mynewsdesk.com/se/regionvasterbotten/pressreleases/haelso-och-sjukvaardsnaemnden-har-sammantraett-2985338'
+        }
+      ></TimelineListElement>
       <DeathElement
         number={1}
         region={'Sörmland'}
@@ -103,13 +110,6 @@ const Timeline = () => {
         region={'Dalarna'}
         source={
           'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-26-mars-2985860'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={4}
-        region={'Västerbotten'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
       ></TimelineListElement>
       <TimelineListElement
