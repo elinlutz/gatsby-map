@@ -9,6 +9,27 @@ const Timeline = () => {
       <h3>26 mars 2020</h3>
       <DeathElement
         number={1}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-26-mars-2985860'
+        }
+      ></DeathElement>
+      <DeathElement
+        number={2}
+        region={'Halland'}
+        source={
+          'https://www.hn.se/nyheter/halland/sex-nya-coronafall-i-halland-tv%C3%A5-d%C3%B6da-1.25985406'
+        }
+      ></DeathElement>
+      <TimelineListElement
+        number={11}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <DeathElement
+        number={1}
         region={'Sörmland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
@@ -71,13 +92,6 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={1}
-        region={'Jämtland Härjedalen'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
         number={3}
         region={'Blekinge'}
         source={
@@ -85,17 +99,10 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={12}
+        number={14}
         region={'Dalarna'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={12}
-        region={'Dalarna'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-26-mars-2985860'
         }
       ></TimelineListElement>
       <TimelineListElement
@@ -139,13 +146,6 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={5}
-        region={'Halland'}
-        source={
-          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
         number={3}
         region={'Kronoberg'}
         source={
@@ -181,6 +181,13 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <h3>25 mars 2020</h3>
+      <TimelineListElement
+        number={4}
+        region={'Jämtland Häjedalen (tillagt 26 mars)'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200325coronacovid19.5.613e2f39170d0c32a95f8e5.html'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={3}
         region={'Kalmar'}
