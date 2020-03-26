@@ -25,7 +25,7 @@ const DeathMarkers = ({ loadTotal, onClick }) => {
     }
   `)
 
-  const edges = data.allTidsserieCsv.edges
+  const edges = data.allTimeSeriesConfimedConfirmedCsv.edges
 
   const getBubble = confirmed => {
     let color

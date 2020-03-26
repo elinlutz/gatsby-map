@@ -93,12 +93,15 @@ const IndexPage = ({ data }) => {
         view={view}
         number={
           country.Country_Region == 'Sweden'
-            ? getTotal(data.allTidsserieCsv.edges, 'Region_Total')
+            ? getTotal(
+                data.allTimeSeriesConfimedConfirmedCsv.edges,
+                'Region_Total'
+              )
             : country.Confirmed
         }
         deaths={
           country.Country_Region == 'Sweden'
-            ? getTotal(data.allTidsserieCsv.edges, 'Region_Deaths')
+            ? getTotal(data.allTimeSeriesDeathsDeathsCsv.edges, 'Region_Deaths')
             : country.Deaths
         }
         recovered={country.Recovered}
