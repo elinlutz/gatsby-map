@@ -8,6 +8,13 @@ const Timeline = () => {
     <>
       <h3>27 mars 2020</h3>
       <h3>26 mars 2020</h3>
+      <DeathElement
+        number={1}
+        region={'Blekinge (tillagt 27 mars)'}
+        source={
+          'https://regionblekinge.se/om-webb-platsen/nyheter/nyheter-och-pressmeddelande/2020-03-26-forsta-dodsfallet-i-coronavirus-i-blekinge---nya-fall-tyder-pa-samhallsspridning.html'
+        }
+      ></DeathElement>
       <TimelineListElement
         number={3}
         region={'Värmland'}
