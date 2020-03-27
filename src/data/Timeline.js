@@ -120,20 +120,6 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={153}
-        region={'Sverige, källor kommer strax'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></TimelineListElement>
-      <DeathElement
-        number={13}
-        region={'Sverige, källor kommer strax'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></DeathElement>
-      <TimelineListElement
         number={5}
         region={'Västra Götaland'}
         source={
