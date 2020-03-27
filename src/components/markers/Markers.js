@@ -42,20 +42,22 @@ const Markers = ({ loadTotal, onClick }) => {
       radius = 4
     } else if (number < 10) {
       radius = 7
-    } else if (number < 20) {
-      radius = 10
-    } else if (number < 30) {
-      radius = 12
     } else if (number < 50) {
-      radius = 15
+      radius = 12
     } else if (number < 100) {
-      radius = 20
+      radius = 18
     } else if (number < 200) {
-      radius = 22
-    } else if (number < 300) {
-      radius = 25
-    } else if (number >= 300) {
+      radius = 20
+    } else if (number < 400) {
+      radius = 24
+    } else if (number < 800) {
       radius = 28
+    } else if (number < 1600) {
+      radius = 30
+    } else if (number < 3000) {
+      radius = 32
+    } else if (number >= 3000) {
+      radius = 34
     }
 
     return { color, radius }
