@@ -9,6 +9,41 @@ const Timeline = () => {
       <h3>27 mars 2020</h3>
       <DeathElement
         number={1}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+        }
+      ></DeathElement>
+      <TimelineListElement
+        number={4}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={2}
+        region={'Västernorrland'}
+        source={
+          'https://www.rvn.se/sv/Vard-o-halsa/Fakta-och-rad/coronavirus---for-dig-som-vill-veta-mer/'
+        }
+      ></TimelineListElement>
+      <DeathElement
+        number={2}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-27-mars-2986312'
+        }
+      ></DeathElement>
+      <TimelineListElement
+        number={8}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-27-mars-2986312'
+        }
+      ></TimelineListElement>
+      <DeathElement
+        number={1}
         region={'Skåne'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
@@ -57,13 +92,6 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={7}
-        region={'Dalarna'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
         number={20}
         region={'Gävleborg'}
         source={
@@ -73,13 +101,6 @@ const Timeline = () => {
       <TimelineListElement
         number={20}
         region={'Västra Götaland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={2}
-        region={'Västernorrland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
