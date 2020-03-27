@@ -6,6 +6,7 @@ import DeathElement from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
+      <h3>27 mars 2020</h3>
       <h3>26 mars 2020</h3>
       <TimelineListElement
         number={3}
