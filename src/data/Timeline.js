@@ -8,6 +8,27 @@ const Timeline = () => {
     <>
       <h3>27 mars 2020</h3>
       <TimelineListElement
+        number={18}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={4}
+        region={'Kalmar'}
+        source={
+          'https://www.regionkalmar.se/nyhetslista/forsta-dodsfallet-i-covid-19-i-kalmar-lan/'
+        }
+      ></TimelineListElement>
+      <DeathElement
+        number={1}
+        region={'Kalmar'}
+        source={
+          'https://www.regionkalmar.se/nyhetslista/forsta-dodsfallet-i-covid-19-i-kalmar-lan/'
+        }
+      ></DeathElement>
+      <TimelineListElement
         number={6}
         region={'Skåne'}
         source={
