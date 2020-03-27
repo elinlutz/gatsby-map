@@ -9,6 +9,20 @@ const Timeline = () => {
       <h3>27 mars 2020</h3>
       <DeathElement
         number={1}
+        region={'Jönköping'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid-19-ytterligare-en-person-har-avlidit-och-20-personer-i-jonkopings-lan-vardas-pa-sjukhus--47189'
+        }
+      ></DeathElement>
+      <TimelineListElement
+        number={3}
+        region={'Västerbotten'}
+        source={
+          'https://www.mynewsdesk.com/se/regionvasterbotten/pressreleases/aktuellt-om-region-vaesterbottens-arbete-med-corona-2986267'
+        }
+      ></TimelineListElement>
+      <DeathElement
+        number={1}
         region={'Halland'}
         source={
           'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
@@ -101,13 +115,6 @@ const Timeline = () => {
       <TimelineListElement
         number={20}
         region={'Västra Götaland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={1}
-        region={'Västerbotten'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
