@@ -43,16 +43,13 @@ const InfoPage = ({ data }) => {
         <br />
         <h2>Vanliga frågor</h2>
         <Dropdown
-          title={
-            'Varför är Coronakartans siffror högre än Folkhälsomyndighetens?'
-          }
+          title={'Varför är siffrorna högre än Folkhälsomyndighetens siffror?'}
         >
           <p>
             Folkhälsomyndigheten meddelar antal fall som har inkommit fram till
-            klockan 11.30 varje dag, och publicerar sina siffror runt klockan
-            14.00. Här tas fall in som rapporteras utav regionerna via
-            pressmeddelanden under hela dagen, så siffrorna ligger om möjligt
-            lite närmre realtid.
+            klockan 11.30 samma dag. Här tas fall in som rapporteras utav
+            regionerna via pressmeddelanden under hela dagen, så siffrorna
+            ligger om möjligt lite närmre realtid.
             <br />
             <br />
             Metoden för att samla in siffrorna är att i första hand ta
