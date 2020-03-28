@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import { makeStyles } from '@material-ui/core/styles'
-import Paper from '@material-ui/core/Paper'
 import Table from '@material-ui/core/Table'
 import TableBody from '@material-ui/core/TableBody'
 import TableCell from '@material-ui/core/TableCell'
@@ -11,7 +10,6 @@ import TableHead from '@material-ui/core/TableHead'
 import TableRow from '@material-ui/core/TableRow'
 
 import colors from 'assets/stylesheets/settings/_colors.scss'
-import { blue } from '@material-ui/core/colors'
 
 const Bar = props => {
   const [isHovering, setIsHovering] = useState(false)
@@ -120,7 +118,7 @@ function createData(region, total, population, deaths, today, hospitalized) {
   const density = per10k ? per10k.toFixed(1) : null
   const deathRatio =
     deathsPerCase < 100 && deathsPerCase > 0
-      ? deathsPerCase.toFixed(2)
+      ? deathsPerCase.toFixed(1)
       : undefined
 
   return { region, total, density, deathRatio, deaths, today, atHospital }
