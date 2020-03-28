@@ -65,7 +65,6 @@ module.exports = {
     'gatsby-plugin-react-leaflet',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-material-ui',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -80,6 +79,14 @@ module.exports = {
         anonymize: true,
         respectDNT: true,
         pageTransitionDelay: 0
+      }
+    },
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        stylesProvider: {
+          injectFirst: true
+        }
       }
     },
     `gatsby-plugin-styled-components`,
