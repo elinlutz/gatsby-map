@@ -145,8 +145,6 @@ const StickyHeadTable = () => {
 
   getData()
 
-  console.log(render)
-
   return (
     render && (
       <TableContainer className={classes.container}>

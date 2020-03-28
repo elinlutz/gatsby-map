@@ -110,7 +110,6 @@ const IndexPage = ({ data }) => {
   }
 
   function RegionContent() {
-    console.log(region.Hospital_Total)
     return (
       <DetailsCounter
         title={region.Display_Name}
