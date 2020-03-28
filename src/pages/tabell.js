@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 import { graphql } from 'gatsby'
 
-import StickyHeadTable from 'components/StickyHeadTable'
+import StickyHeadTable from 'components/table/StickyHeadTable'
 import Layout from 'components/Layout'
 import Container from 'components/Container'
 import SEO from '../components/SEO'

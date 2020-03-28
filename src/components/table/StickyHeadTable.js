@@ -11,83 +11,8 @@ import TableRow from '@material-ui/core/TableRow'
 
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
-const Bar = props => {
-  const [isHovering, setIsHovering] = useState(false)
-  return (
-    <div
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
-      style={{
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        border: 'solid 1px',
-        borderColor: isHovering ? 'white' : colors.bar,
-        borderRadius: '1px',
-        width: '100px',
-        backgroundColor: isHovering ? 'white' : colors.bar
-      }}
-    >
-      <div
-        style={{
-          backgroundColor: colors.black,
-          width: 1 * props.value,
-          height: '18px',
-          borderRadius: '1px'
-        }}
-      ></div>
-      {isHovering && (
-        <div
-          style={{
-            color: colors.black,
-            marginLeft: '10px',
-            fontSize: '10px',
-            fontWeight: 'bold'
-          }}
-        >
-          {props.value + ' %'}
-        </div>
-      )}
-    </div>
-  )
-}
-
-const Today = props => {
-  return (
-    <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderRadius: '15px',
-        height: '30px'
-      }}
-    >
-      {props.value > 0 ? (
-        <div
-          style={{
-            display: 'flex',
-            backgroundColor: colors.sweden,
-            alignItems: 'center',
-            justifyContent: 'center',
-            borderRadius: '15px',
-            height: '30px'
-          }}
-        >
-          <p
-            style={{
-              color: 'white',
-              padding: '10px',
-              fontWeight: 'bold'
-            }}
-          >
-            {'+ ' + props.value}
-          </p>
-        </div>
-      ) : null}
-    </div>
-  )
-}
+import Bar from './Bar'
+import TodayNumber from './TodayNumber'
 
 const columns = [
   { id: 'region', label: 'Region', minWidth: 0, fontWeight: 'bold' },
@@ -247,12 +172,14 @@ const StickyHeadTable = () => {
                 {columns.map(column => {
                   var value = row[column.id]
 
-                  column.id === 'deathRatio' && row[column.id] !== undefined
+                  column.id === 'deathRatio' && row[column.id] !== null
                     ? (value = <Bar value={row[column.id]}></Bar>)
                     : null
 
-                  column.id === 'today' && row[column.id] != undefined
-                    ? (value = <Today value={row[column.id]}></Today>)
+                  column.id === 'today' && row[column.id] != null
+                    ? (value = (
+                        <TodayNumber value={row[column.id]}></TodayNumber>
+                      ))
                     : null
 
                   return (
