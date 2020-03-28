@@ -134,7 +134,7 @@ const useStyles = makeStyles({
 
 const StickyHeadTable = () => {
   const [isMobile, setIsMobile] = useState(
-    typeof window !== 'undefined' && window.innerWidth < 500 ? true : false
+    typeof window !== 'undefined' && window.innerWidth < 650 ? true : false
   )
 
   const [render, setRender] = useState(false)
@@ -222,66 +222,81 @@ const StickyHeadTable = () => {
 
   return (
     render && (
-      <TableContainer className={classes.container}>
-        <Table stickyHeader aria-label="sticky table">
-          <TableHead>
-            <TableRow>
-              {columns.map(column => (
-                <TableCell
-                  key={column.id}
-                  align={column.align}
-                  style={{
-                    maxWidth: column.maxWidth,
-                    minWidth: column.minWidth,
-                    fontSize: isMobile ? 8 : 10,
-                    textTransform: 'uppercase',
-                    paddingRight: isMobile ? 0 : 'default',
-                    paddingLeft: isMobile ? 5 : 'default'
-                  }}
-                >
-                  {column.label}
-                </TableCell>
-              ))}
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows.map(row => {
-              return (
-                <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
-                  {columns.map(column => {
-                    var value = row[column.id]
+      <>
+        <TableContainer className={classes.container}>
+          <Table stickyHeader aria-label="sticky table">
+            <TableHead>
+              <TableRow>
+                {columns.map(column => (
+                  <TableCell
+                    key={column.id}
+                    align={column.align}
+                    style={{
+                      maxWidth: column.maxWidth,
+                      minWidth: column.minWidth,
+                      fontSize: isMobile ? 8 : 10,
+                      textTransform: 'uppercase',
+                      paddingRight: isMobile ? 0 : 'default',
+                      paddingLeft: isMobile ? 5 : 'default'
+                    }}
+                  >
+                    {column.label}
+                  </TableCell>
+                ))}
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {rows.map(row => {
+                return (
+                  <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
+                    {columns.map(column => {
+                      var value = row[column.id]
 
-                    column.id === 'deathRatio' && row[column.id] !== undefined
-                      ? (value = <Bar value={row[column.id]}></Bar>)
-                      : null
+                      column.id === 'deathRatio' && row[column.id] !== undefined
+                        ? (value = <Bar value={row[column.id]}></Bar>)
+                        : null
 
-                    column.id === 'today' && row[column.id] != undefined
-                      ? (value = <Today value={row[column.id]}></Today>)
-                      : null
+                      column.id === 'today' && row[column.id] != undefined
+                        ? (value = <Today value={row[column.id]}></Today>)
+                        : null
 
-                    return (
-                      <TableCell
-                        key={column.id}
-                        align={column.align}
-                        style={{
-                          color: column.color,
-                          minWidth: column.minWidth,
-                          fontSize: isMobile ? 11 : 12,
-                          fontWeight: column.fontWeight,
-                          paddingRight: isMobile ? 0 : 'default',
-                          paddingLeft: isMobile ? 5 : 'default'
-                        }}
-                      >
-                        {value}
-                      </TableCell>
-                    )
-                  })}
-                </TableRow>
-              )
-            })}
-          </TableBody>
-        </Table>
-      </TableContainer>
+                      return (
+                        <TableCell
+                          key={column.id}
+                          align={column.align}
+                          style={{
+                            color: column.color,
+                            minWidth: column.minWidth,
+                            fontSize: isMobile ? 11 : 12,
+                            fontWeight: column.fontWeight,
+                            paddingRight: isMobile ? 0 : 'default',
+                            paddingLeft: isMobile ? 5 : 'default'
+                          }}
+                        >
+                          {value}
+                        </TableCell>
+                      )
+                    })}
+                  </TableRow>
+                )
+              })}
+            </TableBody>
+          </Table>
+        </TableContainer>
+        {isMobile ? (
+          <p
+            style={{
+              fontSize: 11,
+              textTransform: 'uppercase',
+              padding: 10,
+              fontColor: colors.lightgrey
+            }}
+          >
+            För mer statistik: Lägg mobilen / paddan horisontellt och uppdatera
+            sidan, eller besök tabellen på datorn 💻
+          </p>
+        ) : null}
+      </>
     )
   )
 }
