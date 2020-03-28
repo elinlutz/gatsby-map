@@ -34,7 +34,10 @@ const Bar = props => {
   `
 
   return (
-    <div onMouseEnter={() => setIsHovering(true)}>
+    <div
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+    >
       <BarContainer>
         <BlackBar />
         {isHovering && <Percentage>{value + ' %'}</Percentage>}

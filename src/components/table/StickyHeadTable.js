@@ -172,14 +172,12 @@ const StickyHeadTable = () => {
                 {columns.map(column => {
                   var value = row[column.id]
 
-                  column.id === 'deathRatio' && row[column.id] !== null
-                    ? (value = <Bar value={row[column.id]}></Bar>)
+                  column.id === 'deathRatio'
+                    ? (value = <Bar value={value}></Bar>)
                     : null
 
-                  column.id === 'today' && row[column.id] != null
-                    ? (value = (
-                        <TodayNumber value={row[column.id]}></TodayNumber>
-                      ))
+                  column.id === 'today'
+                    ? (value = <TodayNumber value={value}></TodayNumber>)
                     : null
 
                   return (
