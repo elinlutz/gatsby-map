@@ -29,7 +29,6 @@ const Bar = props => {
       }}
     >
       <div
-        className="deathRatioBar"
         style={{
           backgroundColor: colors.black,
           width: 1 * props.value,
@@ -39,7 +38,6 @@ const Bar = props => {
       ></div>
       {isHovering && (
         <div
-          className="deathRatioNumber"
           style={{
             color: colors.black,
             marginLeft: '10px',
