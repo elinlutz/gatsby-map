@@ -82,6 +82,7 @@ module.exports = {
         pageTransitionDelay: 0
       }
     },
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-client-side-redirect` // keep it in last in list
   ]
 }
