@@ -11,6 +11,87 @@ import TableHead from '@material-ui/core/TableHead'
 import TableRow from '@material-ui/core/TableRow'
 
 import colors from 'assets/stylesheets/settings/_colors.scss'
+import { blue } from '@material-ui/core/colors'
+
+const Bar = props => {
+  const [isHovering, setIsHovering] = useState(false)
+  return (
+    <div
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+      style={{
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        border: 'solid 1px',
+        borderColor: isHovering ? 'white' : colors.bar,
+        borderRadius: '1px',
+        width: '100px',
+        backgroundColor: isHovering ? 'white' : colors.bar
+      }}
+    >
+      <div
+        className="deathRatioBar"
+        style={{
+          backgroundColor: colors.black,
+          width: 1 * props.value,
+          height: '18px',
+          borderRadius: '1px'
+        }}
+      ></div>
+      {isHovering && (
+        <div
+          className="deathRatioNumber"
+          style={{
+            color: colors.black,
+            marginLeft: '10px',
+            fontSize: '10px',
+            fontWeight: 'bold'
+          }}
+        >
+          {props.value + ' %'}
+        </div>
+      )}
+    </div>
+  )
+}
+
+const Today = props => {
+  return (
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: '15px',
+        height: '30px'
+      }}
+    >
+      {props.value > 0 ? (
+        <div
+          style={{
+            display: 'flex',
+            backgroundColor: colors.sweden,
+            alignItems: 'center',
+            justifyContent: 'center',
+            borderRadius: '15px',
+            height: '30px'
+          }}
+        >
+          <p
+            style={{
+              color: 'white',
+              padding: '10px',
+              fontWeight: 'bold'
+            }}
+          >
+            {'+ ' + props.value}
+          </p>
+        </div>
+      ) : null}
+    </div>
+  )
+}
 
 const columns = [
   { id: 'region', label: 'Region', minWidth: 0, fontWeight: 'bold' },
@@ -18,8 +99,7 @@ const columns = [
   {
     id: 'today',
     label: 'Förändring idag',
-    align: 'center',
-    color: `${colors.sweden}`
+    align: 'center'
   },
   {
     id: 'deaths',
@@ -32,15 +112,15 @@ const columns = [
 ]
 
 function createData(region, total, population, deaths, today, hospitalized) {
-  const perHundredK = total ? (total / population) * 100000 : undefined
+  const per10k = total ? (total / population) * 10000 : undefined
   const deathsPerCase = deaths && total ? (deaths / total) * 100 : undefined
 
   const atHospital = hospitalized > 0 ? hospitalized : '?'
 
-  const density = perHundredK ? perHundredK.toFixed(1) : null
+  const density = per10k ? per10k.toFixed(1) : null
   const deathRatio =
     deathsPerCase < 100 && deathsPerCase > 0
-      ? `${deathsPerCase.toFixed(2)}%`
+      ? deathsPerCase.toFixed(2)
       : undefined
 
   return { region, total, density, deathRatio, deaths, today, atHospital }
@@ -67,7 +147,7 @@ const StickyHeadTable = () => {
       0,
       {
         id: 'density',
-        label: 'Antal fall per 100\xa0000',
+        label: 'Antal fall per 10\xa0000 inv',
         align: 'center',
         color: `${colors.lightgrey}`
       },
@@ -98,8 +178,8 @@ const StickyHeadTable = () => {
             Display_Name
             Region_Total
             Region_Deaths
-            Population
             Today
+            Population
             Hospital_Total
           }
         }
@@ -118,7 +198,7 @@ const StickyHeadTable = () => {
         (region.Display_Name && region.Region_Total > 0) ||
         (region.Display_Name && region.Region_Deaths > 0)
       ) {
-        const today = region.Today > 0 ? `+ ${region.Today}` : ' '
+        const today = region.Today > 0 ? region.Today : ' '
         const deaths =
           region.Region_Deaths > 0 ? `${region.Region_Deaths}` : ' '
 
@@ -169,7 +249,16 @@ const StickyHeadTable = () => {
             return (
               <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
                 {columns.map(column => {
-                  const value = row[column.id]
+                  var value = row[column.id]
+
+                  column.id === 'deathRatio' && row[column.id] !== undefined
+                    ? (value = <Bar value={row[column.id]}></Bar>)
+                    : null
+
+                  column.id === 'today' && row[column.id] != undefined
+                    ? (value = <Today value={row[column.id]}></Today>)
+                    : null
+
                   return (
                     <TableCell
                       key={column.id}
@@ -183,9 +272,7 @@ const StickyHeadTable = () => {
                         paddingLeft: isMobile ? 5 : 'default'
                       }}
                     >
-                      {column.format && typeof value === 'string'
-                        ? column.format(value)
-                        : value}
+                      {value}
                     </TableCell>
                   )
                 })}
