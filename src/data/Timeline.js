@@ -21,97 +21,97 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
       ></DeathElement>
-      <DeathElement
+      <TimelineListElement
         number={7}
         region={'Örebro'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></TimelineListElement>
+      <TimelineListElement
         number={21}
         region={'Östergötland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></TimelineListElement>
+      <TimelineListElement
         number={13}
         region={'Västra Götaland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></TimelineListElement>
+      <TimelineListElement
         number={20}
         region={'Uppsala'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></TimelineListElement>
+      <TimelineListElement
         number={33}
         region={'Sörmland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></TimelineListElement>
+      <TimelineListElement
         number={227}
         region={'Stockholm'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></TimelineListElement>
+      <TimelineListElement
         number={3}
         region={'Kalmar'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></TimelineListElement>
+      <TimelineListElement
         number={15}
         region={'Jönköping'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></TimelineListElement>
+      <TimelineListElement
         number={3}
         region={'Jämtland Härjedalen'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></TimelineListElement>
+      <TimelineListElement
         number={9}
         region={'Gävleborg'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></TimelineListElement>
+      <TimelineListElement
         number={2}
         region={'Gotland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></TimelineListElement>
+      <TimelineListElement
         number={14}
         region={'Blekinge'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></TimelineListElement>
+      <TimelineListElement
         number={1}
         region={'Skåne'}
         source={
           'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-27-mars-2986451'
         }
-      ></DeathElement>
+      ></TimelineListElement>
       <TimelineListElement
         number={10}
         region={'Skåne'}
