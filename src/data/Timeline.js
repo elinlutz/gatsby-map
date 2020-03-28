@@ -8,7 +8,7 @@ const Timeline = () => {
     <>
       <h3>28 mars 2020</h3>
       <TimelineListElement
-        number={7}
+        number={5}
         region={'Kronoberg'}
         source={
           'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
