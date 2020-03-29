@@ -7,6 +7,13 @@ const Timeline = () => {
   return (
     <>
       <h3>29 mars 2020</h3>
+      <DeathElement
+        number={5}
+        region={'Stockholm'}
+        source={
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/29-mars-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
+        }
+      ></DeathElement>
       <TimelineListElement
         number={1}
         region={'Sörmland'}
@@ -14,13 +21,6 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
       ></TimelineListElement>
-      <DeathElement
-        number={4}
-        region={'Stockholm'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></DeathElement>
       <TimelineListElement
         number={21}
         region={'Västra Götaland'}
