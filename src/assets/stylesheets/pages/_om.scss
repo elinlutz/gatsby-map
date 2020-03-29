@@ -1,7 +1,13 @@
 .page-om {
-  .main {
+  main {
     padding: 3.5em 1.5em;
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
   }
+
   .updatedAt {
     font-size: 11px;
     color: $light-black;

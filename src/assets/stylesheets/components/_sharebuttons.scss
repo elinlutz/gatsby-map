@@ -3,11 +3,12 @@
   .resp-sharing-button__link,
   .resp-sharing-button__icon {
     display: inline-block;
+    color: $white;
   }
 
   .resp-sharing-button__link {
     text-decoration: none;
-    color: #fff;
+    color: $white;
     margin-right: 0.5em;
   }
 

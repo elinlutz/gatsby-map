@@ -152,9 +152,8 @@ const InfoPage = ({ data }) => {
             .
           </p>
           <br />
-
-          <ShareButtons></ShareButtons>
         </Container>
+        {/* <ShareButtons></ShareButtons> */}
       </Container>
     </Layout>
   )
