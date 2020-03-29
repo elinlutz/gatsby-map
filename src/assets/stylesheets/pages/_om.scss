@@ -1,11 +1,6 @@
 .page-om {
   main {
     padding: 3.5em 1.5em;
-
-    a {
-      color: $white;
-      text-decoration: none;
-    }
   }
 
   .updatedAt {
@@ -21,6 +16,13 @@
     a {
       color: darken($map-blue, 20);
       text-decoration: none;
+    }
+
+    .share {
+      a {
+        color: $white;
+        text-decoration: none;
+      }
     }
 
     .inlineBubble {
