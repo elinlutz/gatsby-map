@@ -8,13 +8,15 @@ import { Link } from 'gatsby'
 const NotFoundPage = () => {
   return (
     <Layout pageName="404">
-      <Container type="content" className="text-center">
-        <h1>Sidan kan inte hittas</h1>
-        <p>Det finns tyvärr ingen sida på den här adressen.</p>
+      <Container className="main">
+        <Container type="content" className="text-center">
+          <h1>Sidan kan inte hittas</h1>
+          <p>Det finns tyvärr ingen sida på den här adressen.</p>
 
-        <Button className={'button'}>
-          <Link to={'/'}>Tillbaka till kartan</Link>
-        </Button>
+          <Button className={'button'}>
+            <Link to={'/'}>Tillbaka till kartan</Link>
+          </Button>
+        </Container>
       </Container>
     </Layout>
   )
