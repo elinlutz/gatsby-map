@@ -46,14 +46,14 @@
   max-width: 55em;
 
   .container-table-content {
-    max-width: 55em;
+    padding: 0em 1.5em;
   }
   .table {
     padding: 1em 1.5em;
   }
   @media screen and (max-width: 500px) {
     .container-table-content {
-      padding: 0em 0.7em;
+      padding: 0em 0 1em 0.7em;
     }
     .table {
       padding: 0em 0.7em;
