@@ -6,6 +6,8 @@ header {
   justify-content: space-between;
   height: 2.2em;
   line-height: 2.1em;
+  position: fixed;
+  min-width: 300px;
 
   ul {
     list-style: none;
