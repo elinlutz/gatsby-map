@@ -1,11 +1,12 @@
 .page-tabell {
   .main {
-    padding: 0em 0em;
-  }
-  .updatedAt {
-    font-size: 11px;
-    color: $light-black;
-    text-transform: uppercase;
-    margin-bottom: 0em;
+    padding: 3vh 0em;
+
+    .updatedAt {
+      font-size: 11px;
+      color: $light-black;
+      text-transform: uppercase;
+      margin-bottom: 0em;
+    }
   }
 }
