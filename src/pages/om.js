@@ -42,7 +42,9 @@ const InfoPage = ({ data }) => {
         </p>
         <br />
         <h2>Vanliga frågor</h2>
-        <Dropdown title={'Varför är siffrorna högre än Folkhälsomyndighetens?'}>
+        <Dropdown
+          title={'Varför är siffrorna högre än Folkhälsomyndighetens siffror?'}
+        >
           <p>
             Folkhälsomyndigheten meddelar antal fall som har inkommit fram till
             klockan 11.30 samma dag. Här tas fall in som rapporteras utav
