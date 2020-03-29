@@ -7,6 +7,13 @@ const Timeline = () => {
   return (
     <>
       <h3>29 mars 2020</h3>
+      <DeathElement
+        number={3}
+        region={'Jönköping'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid-19-ytterligare-tre-personer-har-avlidit--47208'
+        }
+      ></DeathElement>
       <TimelineListElement
         number={2}
         region={'Värmland'}
