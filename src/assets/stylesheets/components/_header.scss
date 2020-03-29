@@ -20,47 +20,38 @@ header {
   }
 
   a {
-    color: $accent;
+    color: $white;
     text-decoration: none;
+    text-transform: uppercase;
   }
 
   .titleContainer {
-    .title {
-      .icon {
-        position: relative;
-        margin-left: 0.5em;
-        top: 3px;
-        left: 0px;
-      }
-    }
+    display: flex;
+    padding-right: 10px;
+    margin-top: 1px;
+    margin-left: 0.5em;
 
-    a {
-      color: $white;
-      font-size: 20px;
-      font-weight: 500;
-      text-transform: uppercase;
+    .icon {
+      position: relative;
+      top: 4px;
     }
 
     @media (max-width: 440px) {
       .title {
-        font-size: 18px;
+        font-size: 3.5vw;
+        .icon {
+          width: 5.5vw;
+          height: 5.5vw;
+        }
       }
     }
-    @media (max-width: 400px) {
+    @media (max-width: 340px) {
       .title {
         font-size: 10px;
         margin-left: 10px;
-      }
-      .icon {
-        display: none;
-      }
-    }
-    @media (max-width: 360px) {
-      .title {
-        font-size: 10px;
-      }
-      .icon {
-        display: none;
+        .icon {
+          display: none;
+        }
       }
     }
   }
@@ -81,7 +72,7 @@ header {
       margin-right: 0.2em;
     }
 
-    @media (max-width: 520px) {
+    @media (max-width: 500px) {
       .text {
         display: none;
       }
