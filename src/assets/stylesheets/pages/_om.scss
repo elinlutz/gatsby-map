@@ -1,1 +1,38 @@
+.page-om {
+  main {
+    padding: 3.5em 1.5em;
+  }
 
+  .updatedAt {
+    font-size: 11px;
+    color: $light-black;
+    text-transform: uppercase;
+    margin-bottom: 0em;
+  }
+
+  .container-about {
+    max-width: 40em;
+
+    a {
+      color: darken($map-blue, 20);
+      text-decoration: none;
+    }
+
+    .share {
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+
+    .inlineBubble {
+      background-color: $red-bubble;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      display: block;
+      opacity: 0.8;
+      line-height: 25px;
+    }
+  }
+}

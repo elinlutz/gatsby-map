@@ -15,6 +15,10 @@ const CounterWorld = ({ number, deathNumber, recovered, view }) => {
 
   const updatedAt = data.site.buildTimeZone
 
+  const insertSpace = number => {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
+  }
+
   return (
     <Container className="counterCard">
       <Container className="header">
@@ -25,15 +29,7 @@ const CounterWorld = ({ number, deathNumber, recovered, view }) => {
       </Container>
       <div className="confirmedNumberContainerTop">
         <div className="numberContainer">
-          {number > 1000 ? (
-            <h2 className={view === 'world' ? 'hWorld' : 'hSweden'}>
-              {number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
-            </h2>
-          ) : (
-            <h1 className={view === 'world' ? 'hWorld' : 'hSweden'}>
-              {number}
-            </h1>
-          )}
+          <h2>{insertSpace(number)}</h2>
           <div className="textContainer">
             <h3>Bekräftade fall</h3>
           </div>
@@ -42,17 +38,13 @@ const CounterWorld = ({ number, deathNumber, recovered, view }) => {
 
       <div className="confirmedNumberContainerBottom">
         <div className="numberContainer">
-          <h2 className>
-            {recovered.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
-          </h2>
+          <h2 className="bottomWorld">{insertSpace(recovered)}</h2>
           <div className="textContainer">
             <h3>Tillfrisknade</h3>
           </div>
         </div>
         <div className="numberContainer">
-          <h2 className>
-            {deathNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
-          </h2>
+          <h2 className="bottomWorld">{insertSpace(deathNumber)}</h2>
           <div className="textContainer">
             <h3>Dödsfall</h3>
           </div>

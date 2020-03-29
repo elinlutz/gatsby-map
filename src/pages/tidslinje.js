@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
@@ -9,7 +9,7 @@ import SEO from '../components/SEO'
 
 import Timeline from '../data/Timeline'
 
-const Blog = ({ data }) => {
+const Development = ({ data }) => {
   return (
     <Layout pageName="tidslinje">
       <SEO />
@@ -25,8 +25,9 @@ const Blog = ({ data }) => {
       </Helmet>
 
       <Container type="timeline-content" className="text">
+        <h1>Utveckling</h1>
+
         <Container type="chart">
-          <h1>Utveckling</h1>
           <Chart className="chart" />
         </Container>
         {/* <p className="updatedAt">Uppdaterat {data.site.buildTimeZone}</p> */}
@@ -47,4 +48,4 @@ export const query = graphql`
   }
 `
 
-export default Blog
+export default Development
