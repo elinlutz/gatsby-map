@@ -1,8 +1,8 @@
 .map {
-  position: relative;
-
   &,
   .map-base {
+    top: 2.6em;
+    position: fixed;
     width: 100%;
     height: 100%;
     background: $blue-grey-50;
@@ -23,11 +23,12 @@
     align-items: center;
   }
 }
+
 @media (max-width: 500px) {
   .mapbox {
     position: fixed;
     bottom: 1.5em;
-    z-index: 2000;
+    z-index: 1000;
     display: flex wrap;
     align-items: flex-start;
     flex-flow: row;

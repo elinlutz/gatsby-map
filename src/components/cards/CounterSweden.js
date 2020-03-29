@@ -1,18 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Bubble from './Bubble'
 import Container from 'components/Container'
 
-const CounterSweden = ({
-  title,
-  number,
-  deathNumber,
-  view,
-  hospitalized,
-  type,
-  provinceState
-}) => {
+const CounterSweden = ({ number, deathNumber, view, hospitalized }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -21,14 +13,7 @@ const CounterSweden = ({
     }
   `)
 
-  const getUpdatedAt = () => {
-    const updatedAt = data.site.buildTimeZone
-    if (view == 'world') {
-      return updatedAt.substring(0, updatedAt.length - 6)
-    } else {
-      return updatedAt
-    }
-  }
+  const updatedAt = data.site.buildTimeZone
 
   return (
     <Container className="counterCard">
@@ -41,15 +26,7 @@ const CounterSweden = ({
 
       <div className="confirmedNumberContainerTop">
         <div className="numberContainer">
-          {number > 1000 ? (
-            <h2 className={view === 'world' ? 'hWorld' : 'hSweden'}>
-              {number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
-            </h2>
-          ) : (
-            <h1 className={view === 'world' ? 'hWorld' : 'hSweden'}>
-              {number}
-            </h1>
-          )}
+          <h2>{number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}</h2>
           <div className="textContainer">
             <h3>Bekräftade fall</h3>
           </div>
@@ -75,7 +52,7 @@ const CounterSweden = ({
         </div>
       </div>
       <Container className="updatedText">
-        <p>UPPDATERAT {getUpdatedAt()}</p>
+        <p>UPPDATERAT {updatedAt}</p>
       </Container>
     </Container>
   )

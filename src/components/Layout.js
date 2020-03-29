@@ -19,11 +19,11 @@ const Layout = ({ children, pageName }) => {
       <Helmet bodyAttributes={{ class: className }}>
         <title>Coronaviruset COVID-19 i Sverige - Karta</title>
       </Helmet>
+      <Header />
       <div className="wrapper">
-        <Header />
         <main>{children}</main>
-        {pageName == 'home' ? null : <Footer />}
       </div>
+      {pageName == 'home' ? null : <Footer />}
     </>
   )
 }

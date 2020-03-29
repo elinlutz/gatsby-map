@@ -3,32 +3,6 @@
   margin: 0 auto;
 }
 
-.container-content {
-  max-width: 80em;
-  padding: 0 0em;
-}
-
-.container-about {
-  max-width: 50em;
-  padding: 1em 2em;
-  margin-top: 5%;
-
-  a {
-    color: darken($map-blue, 20);
-    text-decoration: none;
-  }
-
-  .inlineBubble {
-    background-color: $red-bubble;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    display: block;
-    opacity: 0.8;
-    line-height: 25px;
-  }
-}
-
 .container-card {
   max-width: 50em;
   background-color: $grey-100;
@@ -50,8 +24,16 @@
 }
 
 .container-timeline-content {
-  max-width: 50em;
-  padding: 1em 1.5em;
+  max-width: 55em;
+  padding: 0em 1.5em;
+}
+.container-chart {
+  max-width: 55em;
+}
+
+.container-timeline {
+  max-width: 55em;
+  padding: 0em 1.5em;
 }
 
 @media screen and (max-width: 500px) {
@@ -60,32 +42,23 @@
   }
 }
 
-.container-chart {
-  max-width: 50em;
-}
-
 .container-table {
-  max-width: 60em;
-  padding-bottom: 3em;
+  max-width: 55em;
 
   .container-table-content {
-    max-width: 60em;
-    padding: 1em 1.5em;
+    max-width: 55em;
+    padding: 0em 1.5em;
   }
   .table {
-    padding-top: 20px;
+    padding: 1em 0em;
+    padding: 1em 1.5em;
   }
   @media screen and (max-width: 500px) {
     .container-table-content {
-      padding: 1em 1.5em;
+      padding: 0.5em 0.7em;
     }
     .table {
-      padding: 1em 0.8em;
+      padding: 0em 0.7em;
     }
   }
-}
-
-.container-timeline {
-  margin-top: 3em;
-  max-width: 50em;
 }

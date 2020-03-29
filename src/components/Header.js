@@ -14,21 +14,14 @@ import Container from 'components/Container'
 const Header = () => {
   return (
     <header>
-      <div className="titleContainer">
-        <Link className="title" to="/">
+      <Link className="titleContainer" to="/">
+        <div className="title">
           <BubbleChart className="icon" />
           Coronakartan
-        </Link>
-      </div>
+        </div>
+      </Link>
+
       <ul>
-        {/* <li>
-          <Link to="/tabell/">
-            <Button className="navigationLink">
-              <MapIcon className="icon" />
-              <div className="text">Karta</div>
-            </Button>
-          </Link>
-        </li> */}
         <li>
           <Link to="/tabell/">
             <Button className="navigationLink">

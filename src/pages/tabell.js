@@ -11,26 +11,28 @@ import SEO from '../components/SEO'
 const Tabell = ({ data }) => {
   return (
     <Layout pageName="tabell">
-      <Helmet>
-        <SEO />
+      <Container className="main">
+        <Helmet>
+          <SEO />
 
-        <title>Coronakartan: Coronaviruset i Sverige - Tabell</title>
-        <meta
-          name="description"
-          content={
-            'Samlad statistik över regionernas antal bekräftade fall av det nya oronaviruset COVID-19 i Sverige'
-          }
-        />
-        <link rel="canonical" href="https://www.coronakartan.se/tabell" />
-      </Helmet>
-      <Container type="table">
-        <Container type="table-content">
-          <h1>Antal bekräftade fall per region</h1>
-          <p className="updatedAt">Uppdaterat {data.site.buildTimeZone}</p>
+          <title>Coronakartan: Coronaviruset i Sverige - Tabell</title>
+          <meta
+            name="description"
+            content={
+              'Samlad statistik över regionernas antal bekräftade fall av det nya oronaviruset COVID-19 i Sverige'
+            }
+          />
+          <link rel="canonical" href="https://www.coronakartan.se/tabell" />
+        </Helmet>
+        <Container type="table">
+          <Container type="table-content">
+            <h1>Tabell</h1>
+            <p className="updatedAt">Uppdaterat {data.site.buildTimeZone}</p>
+          </Container>
+          <div className="table">
+            <StickyHeadTable></StickyHeadTable>
+          </div>
         </Container>
-        <div className="table">
-          <StickyHeadTable></StickyHeadTable>
-        </div>
       </Container>
     </Layout>
   )
