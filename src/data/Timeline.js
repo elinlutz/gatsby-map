@@ -8,6 +8,11 @@ const Timeline = () => {
     <>
       <h3>30 mars 2020</h3>
       <TimelineListElement
+        number={33}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/'}
+      ></TimelineListElement>
+      <TimelineListElement
         number={9}
         region={'Västernorrland'}
         source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
@@ -62,13 +67,6 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={1}
-        region={'Västerbotten'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
         number={4}
         region={'Uppsala'}
         source={
@@ -85,20 +83,6 @@ const Timeline = () => {
       <TimelineListElement
         number={5}
         region={'Skåne'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={6}
-        region={'Örebro'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={6}
-        region={'Jönköping'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
@@ -192,6 +176,13 @@ const Timeline = () => {
         region={'Värmland'}
         source={
           'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={3}
+        region={'Västerbotten'}
+        source={
+          'https://regionvasterbotten.mynewsdesk.com/?utm_campaign=Subscription&utm_medium=email&utm_source=realtime'
         }
       ></TimelineListElement>
       <TimelineListElement
