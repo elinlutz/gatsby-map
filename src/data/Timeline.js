@@ -7,6 +7,13 @@ const Timeline = () => {
   return (
     <>
       <h3>30 mars 2020</h3>
+      <TimelineListElement
+        number={43}
+        region={'Sörmland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+        }
+      ></TimelineListElement>
       <Death
         number={3}
         region={'Dalarna'}
