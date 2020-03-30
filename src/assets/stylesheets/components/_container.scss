@@ -23,6 +23,22 @@
   }
 }
 
+.container-about {
+  max-width: 55em;
+
+  a {
+    color: darken($map-blue, 20);
+    text-decoration: none;
+  }
+
+  .share {
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
 .container-timeline-content {
   max-width: 55em;
 }
