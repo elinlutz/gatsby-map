@@ -1,12 +1,40 @@
 import React from 'react'
 
 import TimelineListElement from 'components/TimelineListElement'
-import DeathElement from 'components/DeathElement'
+import Death from 'components/DeathElement'
 
 const Timeline = () => {
   return (
     <>
       <h3>30 mars 2020</h3>
+      <Death
+        number={3}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={5}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={1}
+        region={'Kalmar'}
+        source={
+          'https://www.regionkalmar.se/kontakta-oss/kontakta-sjukvarden/coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={1}
+        region={'Gävleborg'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={1}
         region={'Värmland'}
@@ -21,13 +49,13 @@ const Timeline = () => {
           'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
         }
       ></TimelineListElement>
-      <DeathElement
+      <Death
         number={1}
         region={'Norrbotten'}
         source={
           'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
         }
-      ></DeathElement>
+      ></Death>
       <TimelineListElement
         number={9}
         region={'Norrbotten'}
@@ -36,20 +64,20 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <h3>29 mars 2020</h3>
-      <DeathElement
+      <Death
         number={1}
         region={'Sörmland'}
         source={
           'https://regionsormland.se/nyheter/nyhetslista-2019/uppdatering-covid-19-patienter-i-region-sormland-293-2020/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></Death>
+      <Death
         number={5}
         region={'Stockholm'}
         source={
           'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/29-mars-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
         }
-      ></DeathElement>
+      ></Death>
       <TimelineListElement
         number={1}
         region={'Sörmland'}
@@ -148,13 +176,13 @@ const Timeline = () => {
           'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
         }
       ></TimelineListElement>
-      <DeathElement
+      <Death
         number={3}
         region={'Jönköping'}
         source={
           'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid-19-ytterligare-tre-personer-har-avlidit--47208'
         }
-      ></DeathElement>
+      ></Death>
       <TimelineListElement
         number={2}
         region={'Värmland'}
@@ -162,13 +190,13 @@ const Timeline = () => {
           'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
         }
       ></TimelineListElement>
-      <DeathElement
+      <Death
         number={1}
         region={'Östergötland'}
         source={
           'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
         }
-      ></DeathElement>
+      ></Death>
       <TimelineListElement
         number={13}
         region={'Västmanland'}
@@ -176,13 +204,13 @@ const Timeline = () => {
           'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/covid-19-laget-i-lanet/'
         }
       ></TimelineListElement>
-      <DeathElement
+      <Death
         number={1}
         region={'Skåne'}
         source={
           'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-29-mars-2986491'
         }
-      ></DeathElement>
+      ></Death>
       <TimelineListElement
         number={2}
         region={'Skåne'}
@@ -191,13 +219,13 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <h3>28 mars 2020</h3>
-      <DeathElement
+      <Death
         number={2}
         region={'Sörmland'}
         source={
           'https://regionsormland.se/nyheter/nyhetslista-2019/uppdatering-covid-19-patienter-i-region-sormland-283-2020/'
         }
-      ></DeathElement>
+      ></Death>
       <TimelineListElement
         number={5}
         region={'Kronoberg'}
@@ -205,20 +233,20 @@ const Timeline = () => {
           'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
         }
       ></TimelineListElement>
-      <DeathElement
+      <Death
         number={3}
         region={'Stockholm'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></Death>
+      <Death
         number={2}
         region={'Skåne'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
-      ></DeathElement>
+      ></Death>
       <TimelineListElement
         number={7}
         region={'Örebro'}
@@ -332,20 +360,20 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <h3>27 mars 2020</h3>
-      <DeathElement
+      <Death
         number={2}
         region={'Sörmland'}
         source={
           'https://regionsormland.se/nyheter/nyhetslista-2019/uppdatering-covid-19-patienter-i-region-sormland-273-2020/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></Death>
+      <Death
         number={1}
         region={'Jönköping'}
         source={
           'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid-19-ytterligare-en-person-har-avlidit-och-20-personer-i-jonkopings-lan-vardas-pa-sjukhus--47189'
         }
-      ></DeathElement>
+      ></Death>
       <TimelineListElement
         number={3}
         region={'Västerbotten'}
@@ -353,13 +381,13 @@ const Timeline = () => {
           'https://www.mynewsdesk.com/se/regionvasterbotten/pressreleases/aktuellt-om-region-vaesterbottens-arbete-med-corona-2986267'
         }
       ></TimelineListElement>
-      <DeathElement
+      <Death
         number={1}
         region={'Halland'}
         source={
           'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
         }
-      ></DeathElement>
+      ></Death>
       <TimelineListElement
         number={4}
         region={'Halland'}
@@ -374,13 +402,13 @@ const Timeline = () => {
           'https://www.rvn.se/sv/Vard-o-halsa/Fakta-och-rad/coronavirus---for-dig-som-vill-veta-mer/'
         }
       ></TimelineListElement>
-      <DeathElement
+      <Death
         number={2}
         region={'Dalarna'}
         source={
           'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-27-mars-2986312'
         }
-      ></DeathElement>
+      ></Death>
       <TimelineListElement
         number={8}
         region={'Dalarna'}
@@ -388,27 +416,27 @@ const Timeline = () => {
           'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-27-mars-2986312'
         }
       ></TimelineListElement>
-      <DeathElement
+      <Death
         number={1}
         region={'Skåne'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></Death>
+      <Death
         number={2}
         region={'Västra Götaland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></Death>
+      <Death
         number={17}
         region={'Stockholm'}
         source={
           'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/27-mars-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
         }
-      ></DeathElement>
+      ></Death>
       <TimelineListElement
         number={2}
         region={'Örebro'}
@@ -500,13 +528,13 @@ const Timeline = () => {
           'https://www.regionkalmar.se/nyhetslista/forsta-dodsfallet-i-covid-19-i-kalmar-lan/'
         }
       ></TimelineListElement>
-      <DeathElement
+      <Death
         number={1}
         region={'Kalmar'}
         source={
           'https://www.regionkalmar.se/nyhetslista/forsta-dodsfallet-i-covid-19-i-kalmar-lan/'
         }
-      ></DeathElement>
+      ></Death>
       <TimelineListElement
         number={6}
         region={'Skåne'}
@@ -522,13 +550,13 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <h3>26 mars 2020</h3>
-      <DeathElement
+      <Death
         number={1}
         region={'Blekinge (tillagt 27 mars)'}
         source={
           'https://regionblekinge.se/om-webb-platsen/nyheter/nyheter-och-pressmeddelande/2020-03-26-forsta-dodsfallet-i-coronavirus-i-blekinge---nya-fall-tyder-pa-samhallsspridning.html'
         }
-      ></DeathElement>
+      ></Death>
       <TimelineListElement
         number={3}
         region={'Värmland'}
@@ -543,34 +571,34 @@ const Timeline = () => {
           'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200326coronacovid19regionjamtlandharjedalen.5.613e2f39170d0c32a95112c5.html'
         }
       ></TimelineListElement>
-      <DeathElement
+      <Death
         number={3}
         region={'Sörmland'}
         source={
           'https://regionsormland.se/nyheter/nyhetslista-2019/uppdatering-covid-19-patienter-i-region-sormland-den-263-2020/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></Death>
+      <Death
         number={6}
         region={'Stockholm'}
         source={
           'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/26-mars-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
         }
-      ></DeathElement>
-      <DeathElement
+      ></Death>
+      <Death
         number={1}
         region={'Dalarna'}
         source={
           'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-26-mars-2985860'
         }
-      ></DeathElement>
-      <DeathElement
+      ></Death>
+      <Death
         number={2}
         region={'Halland'}
         source={
           'https://www.hn.se/nyheter/halland/sex-nya-coronafall-i-halland-tv%C3%A5-d%C3%B6da-1.25985406'
         }
-      ></DeathElement>
+      ></Death>
       <TimelineListElement
         number={11}
         region={'Halland'}
@@ -585,13 +613,13 @@ const Timeline = () => {
           'https://www.mynewsdesk.com/se/regionvasterbotten/pressreleases/haelso-och-sjukvaardsnaemnden-har-sammantraett-2985338'
         }
       ></TimelineListElement>
-      <DeathElement
+      <Death
         number={1}
         region={'Norrbotten'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
-      ></DeathElement>
+      ></Death>
       <TimelineListElement
         number={8}
         region={'Örebro'}
@@ -695,13 +723,13 @@ const Timeline = () => {
           'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-26-mars-2985741'
         }
       ></TimelineListElement>
-      <DeathElement
+      <Death
         number={1}
         region={'Jönköping'}
         source={
           'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid-19-13-personer-i-jonkopings-lan-vardas-pa-sjukhus-47082'
         }
-      ></DeathElement>
+      ></Death>
       <TimelineListElement
         number={8}
         region={'Västmanland'}
@@ -717,13 +745,13 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <h3>25 mars 2020</h3>
-      <DeathElement
+      <Death
         number={2}
         region={'Sörmland (tillagt 26 mars)'}
         source={
           'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200325coronacovid19.5.613e2f39170d0c32a95f8e5.html'
         }
-      ></DeathElement>
+      ></Death>
       <TimelineListElement
         number={4}
         region={'Jämtland Häjedalen (tillagt 26 mars)'}
