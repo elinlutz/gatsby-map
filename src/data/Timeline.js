@@ -7,6 +7,13 @@ const Timeline = () => {
   return (
     <>
       <h3>30 mars 2020</h3>
+      <Death
+        number={1}
+        region={'Örebro'}
+        source={
+          'https://via.tt.se/pressmeddelande/en-person-fran-lanet-har-avlidit-efter-att-ha-smittats-av-coronaviruset?publisherId=3235654&releaseId=3274054'
+        }
+      ></Death>
       <TimelineListElement
         number={7}
         region={'Jämtland Härjedalen'}
