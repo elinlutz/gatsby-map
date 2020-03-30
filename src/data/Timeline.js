@@ -7,6 +7,34 @@ const Timeline = () => {
   return (
     <>
       <h3>30 mars 2020</h3>
+      <Death
+        number={5}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={63}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Jönköping'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid-19-ytterligare-en-person-har-avlidit-och-22-personer-i-jonkopings-lan-vardas-pa-sjukhus--47264'
+        }
+      ></Death>
+      <Death
+        number={5}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-30-mars-2986673'
+        }
+      ></Death>
       <TimelineListElement
         number={5}
         region={'Skåne'}
