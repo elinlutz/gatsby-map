@@ -39,7 +39,7 @@ const DetailsCounter = ({
       <div className="confirmedNumberContainerBottom">
         {view === 'sweden' ? (
           <div className="numberContainer">
-            <h2>{hospitalized >= 0 ? hospitalized : '?'}</h2>
+            <h2>{hospitalized > 0 ? hospitalized : '?'}</h2>
             <div className="textContainer">
               <h3>På sjukhus</h3>
             </div>
