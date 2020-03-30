@@ -8,6 +8,11 @@ const Timeline = () => {
     <>
       <h3>30 mars 2020</h3>
       <Death
+        number={1}
+        region={'Gävleborg'}
+        source={'http://lg.cloudapp.net/Archive.aspx?CatID=83&ParID=0'}
+      ></Death>
+      <Death
         number={2}
         region={'Uppsala'}
         source={
