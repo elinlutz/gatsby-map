@@ -51,18 +51,25 @@ const Timeline = () => {
       ></Death>
       <Death
         number={1}
-        region={'Halland'}
+        region={'Dalarna'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
       ></Death>
       <Death
         number={1}
-        region={'Dalarna'}
+        region={'Halland'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
         }
       ></Death>
+      <TimelineListElement
+        number={11}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={27}
         region={'Västra Götaland'}
