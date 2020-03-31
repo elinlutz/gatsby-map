@@ -67,7 +67,7 @@ const Timeline = () => {
         number={10}
         region={'Västernorrland'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
+          'https://www.rvn.se/sv/Vard-o-halsa/Fakta-och-rad/coronavirus---for-dig-som-vill-veta-mer/'
         }
       ></TimelineListElement>
       <TimelineListElement
