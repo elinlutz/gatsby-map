@@ -8,6 +8,13 @@ const Timeline = () => {
     <>
       <h3>31 mars 2020</h3>
       <Death
+        number={1}
+        region={'Västernorrland'}
+        source={
+          'https://www.rvn.se/sv/Om-regionen/Pressrum/Pressmeddelanden/patient-med-covid-19-har-avlidit/'
+        }
+      ></Death>
+      <Death
         number={2}
         region={'Västra Götaland'}
         source={
