@@ -9,6 +9,20 @@ const Timeline = () => {
       <h3>31 mars 2020</h3>
       <Death
         number={1}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-31-mars-2987307'
+        }
+      ></Death>
+      <TimelineListElement
+        number={9}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-31-mars-2987307'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
         region={'Västernorrland'}
         source={
           'https://www.rvn.se/sv/Om-regionen/Pressrum/Pressmeddelanden/patient-med-covid-19-har-avlidit/'
@@ -45,13 +59,6 @@ const Timeline = () => {
       <Death
         number={1}
         region={'Jönköping'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></Death>
-      <Death
-        number={1}
-        region={'Dalarna'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
@@ -129,13 +136,6 @@ const Timeline = () => {
       <TimelineListElement
         number={11}
         region={'Gävleborg'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={4}
-        region={'Dalarna'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
