@@ -8,6 +8,20 @@ const Timeline = () => {
     <>
       <h3>31 mars 2020</h3>
       <Death
+        number={15}
+        region={'Stockholm'}
+        source={
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/03/31-mars-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={2}
+        region={'Jämtland Härjedalen'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200331coronacovid19regionjamtlandharjedalen.5.613e2f39170d0c32a95192e8.html'
+        }
+      ></TimelineListElement>
+      <Death
         number={1}
         region={'Gävleborg'}
         source={
@@ -59,13 +73,6 @@ const Timeline = () => {
       <Death
         number={1}
         region={'Uppsala'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></Death>
-      <Death
-        number={14}
-        region={'Stockholm'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
