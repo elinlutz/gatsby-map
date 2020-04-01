@@ -7,6 +7,20 @@ const Timeline = () => {
   return (
     <>
       <h3>1 april 2020</h3>
+      <Death
+        number={45}
+        region={'Stockholm'}
+        source={
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/04/1-april-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={245}
+        region={'Stockholm'}
+        source={
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/04/1-april-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={46}
         region={'Östergötland'}
@@ -57,13 +71,6 @@ const Timeline = () => {
         }
       ></Death>
       <Death
-        number={44}
-        region={'Stockholm'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></Death>
-      <Death
         number={1}
         region={'Gävleborg'}
         source={
@@ -101,13 +108,6 @@ const Timeline = () => {
       <TimelineListElement
         number={11}
         region={'Uppsala'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={245}
-        region={'Stockholm'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
