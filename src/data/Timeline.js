@@ -7,6 +7,27 @@ const Timeline = () => {
   return (
     <>
       <h3>1 april 2020</h3>
+      <TimelineListElement
+        number={2}
+        region={'Kalmar'}
+        source={
+          'https://www.regionkalmar.se/kontakta-oss/kontakta-sjukvarden/coronaviruset/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Örebro'}
+        source={
+          'https://via.tt.se/pressmeddelande/andra-dodsfallet-i-covid-19-i-orebro-lan---avled-pa-uso?publisherId=3235654&releaseId=3274311'
+        }
+      ></Death>
+      <TimelineListElement
+        number={5}
+        region={'Blekinge'}
+        source={
+          'https://regionblekinge.se/halsa-och-vard/for-vardgivare/smittskyddsenheten/information-om-coronaviruset.html'
+        }
+      ></TimelineListElement>
       <Death
         number={1}
         region={'Västmanland'}
