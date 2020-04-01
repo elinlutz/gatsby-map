@@ -8,6 +8,20 @@ const Timeline = () => {
     <>
       <h3>1 april 2020</h3>
       <Death
+        number={2}
+        region={'Jönköping'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid-19-29-personer-i-jonkopings-lan-vardas-pa-sjukhus--47401'
+        }
+      ></Death>
+      <Death
+        number={2}
+        region={'Kalmar'}
+        source={
+          'https://www.regionkalmar.se/nyhetslista/ytterligare-tva-dodsfall-i-covid-19/'
+        }
+      ></Death>
+      <Death
         number={1}
         region={'Uppsala'}
         source={
@@ -17,13 +31,6 @@ const Timeline = () => {
       <Death
         number={44}
         region={'Stockholm'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></Death>
-      <Death
-        number={1}
-        region={'Jönköping'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
