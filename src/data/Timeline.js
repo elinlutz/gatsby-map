@@ -7,6 +7,13 @@ const Timeline = () => {
   return (
     <>
       <h3>1 april 2020</h3>
+      <TimelineListElement
+        number={46}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
       <Death
         number={1}
         region={'Dalarna'}
@@ -137,14 +144,7 @@ const Timeline = () => {
         number={7}
         region={'Skåne'}
         source={
-          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={7}
-        region={'Skåne'}
-        source={
-          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-1-april-2987687'
         }
       ></TimelineListElement>
       <Death
@@ -154,13 +154,6 @@ const Timeline = () => {
           'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
         }
       ></Death>
-      <TimelineListElement
-        number={36}
-        region={'Östergötland'}
-        source={
-          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
-        }
-      ></TimelineListElement>
       <TimelineListElement
         number={2}
         region={'Kalmar'}
