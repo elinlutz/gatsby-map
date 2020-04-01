@@ -7,6 +7,20 @@ const Timeline = () => {
   return (
     <>
       <h3>1 april 2020</h3>
+      <Death
+        number={1}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-1-april-2987829'
+        }
+      ></Death>
+      <TimelineListElement
+        number={23}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-1-april-2987829'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={1}
         region={'Halland'}
@@ -115,13 +129,6 @@ const Timeline = () => {
       <TimelineListElement
         number={1}
         region={'Gävleborg'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={16}
-        region={'Dalarna'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
