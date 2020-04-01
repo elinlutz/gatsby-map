@@ -7,6 +7,46 @@ const Timeline = () => {
   return (
     <>
       <h3>1 april 2020</h3>
+      <TimelineListElement
+        number={8}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/'}
+      ></TimelineListElement>
+      <TimelineListElement
+        number={14}
+        region={'Gävleborg'}
+        source={
+          'https://www.regiongavleborg.se/a-o/Smittskydd/A-Y/c/Coronavirus-2019-nCoV/statistik-covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={8}
+        region={'Västmanland'}
+        source={
+          'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/covid-19-laget-i-lanet/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={5}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={6}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
       <h3>31 mars 2020</h3>
       <Death
         number={15}
