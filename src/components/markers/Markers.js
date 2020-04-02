@@ -43,19 +43,19 @@ const Markers = ({ loadTotal, onClick }) => {
     } else if (number < 10) {
       radius = 7
     } else if (number < 50) {
-      radius = 12
+      radius = 10
     } else if (number < 100) {
-      radius = 18
+      radius = 14
     } else if (number < 200) {
-      radius = 20
+      radius = 18
     } else if (number < 400) {
-      radius = 24
+      radius = 22
     } else if (number < 800) {
-      radius = 28
+      radius = 26
     } else if (number < 1600) {
-      radius = 30
+      radius = 28
     } else if (number < 3000) {
-      radius = 32
+      radius = 34
     } else if (number >= 3000) {
       radius = 34
     }
