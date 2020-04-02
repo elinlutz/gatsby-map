@@ -7,20 +7,20 @@ const Timeline = () => {
   return (
     <>
       <h3>2 april 2020</h3>
-      {/* <TimelineListElement
-        number={2}
+      <TimelineListElement
+        number={21}
         region={'Västmanland'}
         source={
-          'https://newsroom.notified.com/region-vastmanland/posts/pressreleases/pressinbjudan-webb-sand-presskonferens-2-apri'
+          'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/covid-19-laget-i-lanet/'
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={2}
+        number={1}
         region={'Kronoberg'}
         source={
-          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
         }
-      ></TimelineListElement> */}
+      ></TimelineListElement>
       <TimelineListElement
         number={16}
         region={'Örebro'}
