@@ -6,7 +6,7 @@ exports.onPostBuild = ({ reporter }) => {
 // Create blog pages dynamically
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
+  const blogPostTemplate = path.resolve(`src/templates/tabell.js`)
   const result = await graphql(`
     query {
       allTimeSeriesConfimedConfirmedCsv {
@@ -18,9 +18,9 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  result.data.allSamplePages.edges.forEach(edge => {
+  result.data.allTimeSeriesConfimedConfirmedCsv.edges.forEach(edge => {
     createPage({
-      path: `${edge.node.Display_Name}`,
+      path: `region/${edge.node.Display_Name}`.toLowerCase(),
       component: blogPostTemplate,
       context: {
         region: edge.node.Display_Name

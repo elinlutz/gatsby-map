@@ -8,6 +8,7 @@ import TableCell from '@material-ui/core/TableCell'
 import TableContainer from '@material-ui/core/TableContainer'
 import TableHead from '@material-ui/core/TableHead'
 import TableRow from '@material-ui/core/TableRow'
+import { Link } from 'gatsby'
 
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
@@ -258,6 +259,14 @@ const StickyHeadTable = () => {
 
                       column.id === 'today' && row[column.id] != undefined
                         ? (value = <Today value={row[column.id]}></Today>)
+                        : null
+
+                      column.id === 'region' && row[column.id] != undefined
+                        ? (value = (
+                            <Link to={`region/${row[column.id].toLowerCase()}`}>
+                              {row[column.id]}
+                            </Link>
+                          ))
                         : null
 
                       return (

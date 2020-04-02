@@ -86,7 +86,7 @@ const getOptions = (data, cumulative, scale) => ({
   },
   series: [
     {
-      name: 'Antal fall per dag',
+      name: 'Antal dödsfall per dag',
       data: data,
       color: colors.blue,
       type: 'column',
@@ -96,9 +96,9 @@ const getOptions = (data, cumulative, scale) => ({
       }
     },
     {
-      name: 'Antal fall totalt',
+      name: 'Antal dödsfall totalt',
       data: cumulative,
-      color: colors.sweden,
+      color: colors.black,
       type: 'column',
       marker: {
         enabled: false,
@@ -108,7 +108,7 @@ const getOptions = (data, cumulative, scale) => ({
   ]
 })
 
-const MiniChart = ({ tableData }) => {
+const DeathsChart = ({ tableData }) => {
   const dataObject = tableData
   var dataArr = [0]
   var cumulativeArr = [0]
@@ -147,4 +147,4 @@ const MiniChart = ({ tableData }) => {
   )
 }
 
-export default MiniChart
+export default DeathsChart
