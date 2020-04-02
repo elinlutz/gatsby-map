@@ -48,6 +48,22 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               value: 11, // Index of data point representing 2020-03-12
               width: 1,
               x: +6
+            },
+            {
+              show: true,
+              color: '#424242',
+              dashStyle: 'Dot',
+              value: 17, // Index of data point representing 2020-03-18
+              width: 1,
+              x: +6
+            },
+            {
+              show: true,
+              color: '#424242',
+              dashStyle: 'Dot',
+              value: 28, // Index of data point representing 2020-03-29
+              width: 1,
+              x: +6
             }
           ]
         : null,
@@ -59,9 +75,30 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               from: 11,
               to: 11,
               label: {
-                text: 'Ny teststrategi',
+                text: '<-Ny teststrategi',
                 align: 'left',
                 x: +4
+              }
+            },
+            {
+              color: 'none',
+              from: 17,
+              to: 17,
+              label: {
+                text: '<-Gymnasier och högskolor<br> distansundervisning',
+                align: 'left',
+                x: +4,
+                y: +100
+              }
+            },
+            {
+              color: 'none',
+              from: 28,
+              to: 28,
+              label: {
+                text: 'Förbud mot allmänna<br>sammankomster > 50 personer->',
+                align: 'right',
+                x: -4
               }
             }
           ]
