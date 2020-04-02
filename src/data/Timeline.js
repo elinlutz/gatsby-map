@@ -7,6 +7,13 @@ const Timeline = () => {
   return (
     <>
       <h3>2 april 2020</h3>
+      <TimelineListElement
+        number={37}
+        region={'Uppsala'}
+        source={
+          'https://secure.quickchannel.com/Qc/create/mainshow.asp?id=8jgt6q'
+        }
+      ></TimelineListElement>
       <Death
         number={4}
         region={'Sörmland'}
@@ -32,7 +39,7 @@ const Timeline = () => {
         number={4}
         region={'Halland'}
         source={
-          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
         }
       ></TimelineListElement>
       <Death
@@ -43,10 +50,10 @@ const Timeline = () => {
         }
       ></Death>
       <TimelineListElement
-        number={4}
-        region={'Halland'}
+        number={7}
+        region={'Västerbotten'}
         source={
-          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+          'https://www.regionvasterbotten.se/coronavirus/aktuellt-vardlage-i-region-vasterbotten-covid-19'
         }
       ></TimelineListElement>
       <Death
@@ -80,20 +87,6 @@ const Timeline = () => {
       <TimelineListElement
         number={2}
         region={'Västernorrland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={5}
-        region={'Västerbotten'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={28}
-        region={'Uppsala'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/aktuellt-epidemiologiskt-lage/'
         }
