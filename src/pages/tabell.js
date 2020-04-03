@@ -8,6 +8,8 @@ import Layout from 'components/Layout'
 import Container from 'components/Container'
 import SEO from '../components/SEO'
 
+import MiniChart from '../components/chart/MiniChart'
+
 const Tabell = ({ data }) => {
   return (
     <Layout pageName="tabell">

@@ -8,6 +8,7 @@ import TableCell from '@material-ui/core/TableCell'
 import TableContainer from '@material-ui/core/TableContainer'
 import TableHead from '@material-ui/core/TableHead'
 import TableRow from '@material-ui/core/TableRow'
+import { Link } from 'gatsby'
 
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
@@ -86,6 +87,43 @@ const Today = props => {
         </div>
       ) : null}
     </div>
+  )
+}
+
+const RegionLink = props => {
+  const [isHovering, setIsHovering] = useState(false)
+  return (
+    <Link
+      to={`region/${props.value.toLowerCase()}`}
+      style={{
+        textDecorationLine: 'none'
+      }}
+    >
+      <div
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+
+          borderRadius: '15px',
+          height: '30px',
+          width: '80px'
+        }}
+      >
+        <div
+          style={{
+            color: colors.black,
+            marginLeft: isHovering ? 5 : 0,
+            fontSize: 11,
+            fontWeight: 'bold',
+            textDecorationLine: 0
+          }}
+        >
+          {props.value}
+        </div>
+      </div>
+    </Link>
   )
 }
 
@@ -258,6 +296,14 @@ const StickyHeadTable = () => {
 
                       column.id === 'today' && row[column.id] != undefined
                         ? (value = <Today value={row[column.id]}></Today>)
+                        : null
+
+                      column.id === 'region' && row[column.id] != undefined
+                        ? (value = (
+                            <RegionLink value={row[column.id]}>
+                              {row[column.id]}
+                            </RegionLink>
+                          ))
                         : null
 
                       return (

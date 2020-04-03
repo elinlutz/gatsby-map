@@ -114,7 +114,6 @@ const IndexPage = ({ data }) => {
     return (
       <DetailsCounter
         title={region.Display_Name}
-        provinceState={region.Region}
         view={view}
         number={region.Region_Total}
         deaths={region.Region_Deaths}
