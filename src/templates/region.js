@@ -11,67 +11,113 @@ import SEO from '../components/SEO'
 import MiniChart from '../components/chart/MiniChart'
 import DeathsChart from '../components/chart/DeathsChart'
 
-const Tabell = ({ data }) => {
+import styled from 'styled-components'
+import colors from 'assets/stylesheets/settings/_colors.scss'
+
+const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: ${colors.bar};
+  align-items: center;
+  border-radius: 2px;
+  transition: border-radius 0.5s;
+  padding: 1em;
+  margin-top: 0.5em;
+  flex-grow: 1;
+`
+
+const Title = styled.div`
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+`
+
+const Description = styled.div`
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+`
+
+const CardContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+`
+
+const RegionPage = ({ data }) => {
   return (
     <Layout pageName="tabell">
       <Container className="main">
         <Helmet>
           <SEO />
-
-          <title>Coronakartan: Coronaviruset i Sverige - Tabell</title>
-          <meta
-            name="description"
-            content={
-              'Samlad statistik över regionernas antal bekräftade fall av det nya oronaviruset COVID-19 i Sverige'
-            }
-          />
-          <link rel="canonical" href="https://www.coronakartan.se/tabell" />
+          <title>
+            Coronakartan: Coronaviruset i Sverige -{' '}
+            {data.allTimeSeriesConfimedConfirmedCsv.edges[0].node.Display_Name}
+          </title>
         </Helmet>
         <Container type="table">
           <Container type="table-content">
             <h1>
-              {
-                data.allTimeSeriesConfimedConfirmedCsv.edges[0].node
-                  .Display_Name
-              }
+              {data.allTimeSeriesConfimedConfirmedCsv.edges[0].node.Region}
             </h1>
 
-            <h2>
-              Totala fall{' '}
-              {
-                data.allTimeSeriesConfimedConfirmedCsv.edges[0].node
-                  .Region_Total
-              }
-            </h2>
-            <h2>
-              Dödsfall{' '}
-              {
-                data.allTimeSeriesConfimedConfirmedCsv.edges[0].node
-                  .Region_Deaths
-              }
-            </h2>
-            <h2>
+            <CardContainer>
+              <Card>
+                <Title>
+                  {
+                    data.allTimeSeriesConfimedConfirmedCsv.edges[0].node
+                      .Region_Total
+                  }
+                </Title>
+                <Description>Bekräftade fall</Description>
+              </Card>
+
+              <Card>
+                <Title>
+                  {
+                    data.allTimeSeriesConfimedConfirmedCsv.edges[0].node
+                      .Hospital_Total
+                  }
+                </Title>
+                <Description> På sjukhus</Description>
+              </Card>
+
+              <Card>
+                <Title>
+                  {data.allTimeSeriesConfimedConfirmedCsv.edges[0].node.At_ICU}
+                </Title>
+                <Description>Får intensivvård </Description>
+              </Card>
+              <Card>
+                <Title>
+                  {
+                    data.allTimeSeriesConfimedConfirmedCsv.edges[0].node
+                      .Region_Deaths
+                  }
+                </Title>
+                <Description> Dödsfall </Description>
+              </Card>
+            </CardContainer>
+
+            {/* <h2>
               På avdelning{' '}
               {data.allTimeSeriesConfimedConfirmedCsv.edges[0].node.At_Hospital}
             </h2>
             <h2>
               På intensivvård{' '}
               {data.allTimeSeriesConfimedConfirmedCsv.edges[0].node.At_ICU}
-            </h2>
-            <h2>
-              På sjukhus totalt{' '}
-              {
-                data.allTimeSeriesConfimedConfirmedCsv.edges[0].node
-                  .Hospital_Total
-              }
-            </h2>
+            </h2> */}
             <MiniChart
               tableData={data.timeSeriesConfimedConfirmedCsv}
             ></MiniChart>
             <DeathsChart
               tableData={data.timeSeriesDeathsDeathsCsv}
             ></DeathsChart>
-            <p className="updatedAt">Uppdaterat {data.site.buildTimeZone}</p>
           </Container>
         </Container>
       </Container>
@@ -90,6 +136,7 @@ export const data = graphql`
       edges {
         node {
           Display_Name
+          Region
           Region_Total
           Region_Deaths
           At_Hospital
@@ -121,6 +168,7 @@ export const data = graphql`
       _2020_03_30
       _2020_03_31
       _2020_04_01
+      _2020_04_02
       Today
     }
     timeSeriesDeathsDeathsCsv(Display_Name: { eq: $region }) {
@@ -146,9 +194,10 @@ export const data = graphql`
       _2020_03_30
       _2020_03_31
       _2020_04_01
+      _2020_04_02
       Today
     }
   }
 `
 
-export default Tabell
+export default RegionPage

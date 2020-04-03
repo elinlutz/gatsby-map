@@ -114,7 +114,6 @@ const MiniChart = ({ tableData }) => {
   var cumulativeArr = [0]
 
   Object.entries(dataObject).map(([key, value], index) => {
-    console.log(value)
     var newElement = cumulativeArr[index] + parseInt(value)
     cumulativeArr.push(newElement)
     dataArr.push([key, parseInt(value)])
@@ -123,9 +122,6 @@ const MiniChart = ({ tableData }) => {
 
   const inData = dataArr
   const inCumulativeData = cumulativeArr
-
-  const [logType, setLogType] = useState('linear')
-  const [chartType, setChartType] = useState('column')
 
   const getScale = number => {
     if (number > 100) {
@@ -136,13 +132,13 @@ const MiniChart = ({ tableData }) => {
     } else return 10
   }
 
-  const scale = getScale(dataArr.pop()[1])
+  const scale = getScale(dataArr.pop[1])
 
-  const hospitalOptions = getOptions(inData, inCumulativeData, scale)
+  const chartOptions = getOptions(inData, inCumulativeData, scale)
 
   return (
     <>
-      <HighchartsReact highcharts={Highcharts} options={hospitalOptions} />
+      <HighchartsReact highcharts={Highcharts} options={chartOptions} />
     </>
   )
 }

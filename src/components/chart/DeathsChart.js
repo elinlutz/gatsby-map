@@ -114,7 +114,6 @@ const DeathsChart = ({ tableData }) => {
   var cumulativeArr = [0]
 
   Object.entries(dataObject).map(([key, value], index) => {
-    console.log(value)
     var newElement = cumulativeArr[index] + parseInt(value)
     cumulativeArr.push(newElement)
     dataArr.push([key, parseInt(value)])
@@ -123,9 +122,6 @@ const DeathsChart = ({ tableData }) => {
 
   const inData = dataArr
   const inCumulativeData = cumulativeArr
-
-  const [logType, setLogType] = useState('linear')
-  const [chartType, setChartType] = useState('column')
 
   const getScale = number => {
     if (number > 100) {
