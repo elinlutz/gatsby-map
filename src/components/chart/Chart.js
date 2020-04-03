@@ -6,7 +6,6 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import ToggleLogButton from './ToggleLogButton'
 import colors from 'assets/stylesheets/settings/_colors.scss'
-import { nominalTypeHack } from 'prop-types'
 import ToggleChartButton from './ToggleChartButton'
 
 const getOptions = (total, deaths, log, chartType, chart) => ({
@@ -151,7 +150,8 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['30 Mars 2020', 4113],
               ['31 Mars 2020', 4525],
               ['1 April 2020', 5009],
-              ['2 April 2020', total]
+              ['2 April 2020', 5567],
+              ['3 April 2020', total]
             ],
             type: `${chartType}`,
             color: colors.sweden,
@@ -195,7 +195,8 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['30 Mars 2020', 394],
               ['31 Mars 2020', 412],
               ['1 April 2020', 484],
-              ['2 April 2020', total - 5009]
+              ['2 April 2020', 558],
+              ['3 April 2020', total - 5567]
             ],
             type: `${chartType}`,
             color: colors.blue,
@@ -241,7 +242,8 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['30 Mars 2020', 165],
               ['31 Mars 2020', 198],
               ['1 April 2020', 259],
-              ['2 April 2020', deaths]
+              ['2 April 2020', 307],
+              ['3 April 2020', deaths]
             ],
             color: colors.black,
             type: `${chartType}`,
@@ -285,7 +287,8 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['30 Mars 2020', 42],
               ['31 Mars 2020', 33],
               ['1 April 2020', 61],
-              ['2 April 2020', deaths - 259]
+              ['2 April 2020', 48],
+              ['3 April 2020', deaths - 307]
             ],
             color: colors.blue,
             type: `${chartType}`,
