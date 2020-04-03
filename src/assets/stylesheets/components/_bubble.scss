@@ -1,21 +1,21 @@
 .world {
   background-color: $world;
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   border-radius: 50%;
+  line-height: 18px;
   display: block;
-  opacity: 0.9;
-  line-height: 25px;
+  opacity: 1;
   white-space: nowrap;
 }
 
 .sweden {
   background-color: $sweden;
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   border-radius: 50%;
   display: block;
-  opacity: 0.8;
-  line-height: 25px;
+  opacity: 1;
+  line-height: 18px;
   white-space: nowrap;
 }

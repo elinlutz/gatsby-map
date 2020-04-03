@@ -90,6 +90,43 @@ const Today = props => {
   )
 }
 
+const RegionLink = props => {
+  const [isHovering, setIsHovering] = useState(false)
+  return (
+    <Link
+      to={`region/${props.value.toLowerCase()}`}
+      style={{
+        textDecorationLine: 'none'
+      }}
+    >
+      <div
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+
+          borderRadius: '15px',
+          height: '30px',
+          width: '80px'
+        }}
+      >
+        <div
+          style={{
+            color: colors.black,
+            marginLeft: isHovering ? 5 : 0,
+            fontSize: 11,
+            fontWeight: 'bold',
+            textDecorationLine: 0
+          }}
+        >
+          {props.value}
+        </div>
+      </div>
+    </Link>
+  )
+}
+
 const columns = [
   { id: 'region', label: 'Region', minWidth: 0, fontWeight: 'bold' },
   { id: 'total', label: 'Antal fall', minWidth: 0, align: 'center' },
@@ -263,9 +300,9 @@ const StickyHeadTable = () => {
 
                       column.id === 'region' && row[column.id] != undefined
                         ? (value = (
-                            <Link to={`region/${row[column.id].toLowerCase()}`}>
+                            <RegionLink value={row[column.id]}>
                               {row[column.id]}
-                            </Link>
+                            </RegionLink>
                           ))
                         : null
 
