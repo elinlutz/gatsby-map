@@ -1,13 +1,7 @@
 import React, { useState } from 'react'
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
-
-import { useStaticQuery, graphql } from 'gatsby'
-
-import ToggleLogButton from './ToggleLogButton'
 import colors from 'assets/stylesheets/settings/_colors.scss'
-import { nominalTypeHack } from 'prop-types'
-import ToggleChartButton from './ToggleChartButton'
 
 const getOptions = (data, cumulative, scale) => ({
   title: {
@@ -76,11 +70,6 @@ const getOptions = (data, cumulative, scale) => ({
       cursor: 'pointer',
       marker: {
         lineWidth: 1
-      },
-      events: {
-        // legendItemClick: function() {
-        //   return false
-        // }
       }
     }
   },
@@ -116,9 +105,12 @@ const MiniChart = ({ tableData }) => {
   Object.entries(dataObject).map(([key, value], index) => {
     var newElement = cumulativeArr[index] + parseInt(value)
     cumulativeArr.push(newElement)
-    dataArr.push([key, parseInt(value)])
+    var label = key.replace(/_/g, ' ')
+    dataArr.push([label, parseInt(value)])
   })
-  dataArr.push([0])
+
+  dataArr.shift()
+  cumulativeArr.shift()
 
   const inData = dataArr
   const inCumulativeData = cumulativeArr

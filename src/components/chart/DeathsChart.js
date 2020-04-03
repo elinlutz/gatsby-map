@@ -112,13 +112,17 @@ const DeathsChart = ({ tableData }) => {
   const dataObject = tableData
   var dataArr = [0]
   var cumulativeArr = [0]
+  console.log(dataObject)
 
   Object.entries(dataObject).map(([key, value], index) => {
     var newElement = cumulativeArr[index] + parseInt(value)
     cumulativeArr.push(newElement)
-    dataArr.push([key, parseInt(value)])
+    var label = key.replace(/_/g, ' ')
+    dataArr.push([label, parseInt(value)])
   })
-  dataArr.push([0])
+
+  dataArr.shift()
+  cumulativeArr.shift()
 
   const inData = dataArr
   const inCumulativeData = cumulativeArr
@@ -127,9 +131,9 @@ const DeathsChart = ({ tableData }) => {
     if (number > 100) {
       return 100
     }
-    if (number > 50) {
-      return 50
-    } else return 10
+    if (number > 10) {
+      return 10
+    } else return 1
   }
 
   const scale = getScale(dataArr.pop()[1])
