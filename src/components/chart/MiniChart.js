@@ -106,6 +106,9 @@ const MiniChart = ({ tableData }) => {
     var newElement = cumulativeArr[index] + parseInt(value)
     cumulativeArr.push(newElement)
     var label = key.replace(/_/g, ' ')
+    {
+      key == 'Today' ? (label = 'Idag') : null
+    }
     dataArr.push([label, parseInt(value)])
   })
 
@@ -124,9 +127,9 @@ const MiniChart = ({ tableData }) => {
     } else return 10
   }
 
-  const scale = getScale(dataArr.pop()[1])
+  const lastElem = dataArr[1]
 
-  const chartOptions = getOptions(inData, inCumulativeData, scale)
+  const chartOptions = getOptions(inData, inCumulativeData, 100)
 
   return (
     <>
