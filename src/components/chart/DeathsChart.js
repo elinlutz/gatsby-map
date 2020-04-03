@@ -121,8 +121,6 @@ const DeathsChart = ({ tableData }) => {
     {
       key == 'Today' ? (label = 'Idag') : null
     }
-    console.log(label)
-
     dataArr.push([label, parseInt(value)])
   })
 

@@ -127,8 +127,6 @@ const MiniChart = ({ tableData }) => {
     } else return 10
   }
 
-  const lastElem = dataArr[1]
-
   const chartOptions = getOptions(inData, inCumulativeData, 100)
 
   return (
