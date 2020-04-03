@@ -124,7 +124,7 @@ const MiniChart = ({ tableData }) => {
     } else return 10
   }
 
-  const scale = getScale(dataArr.pop[1])
+  const scale = getScale(dataArr.pop()[1])
 
   const chartOptions = getOptions(inData, inCumulativeData, scale)
 
