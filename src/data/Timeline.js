@@ -7,6 +7,39 @@ const Timeline = () => {
   return (
     <>
       <h3>3 april 2020</h3>
+      <TimelineListElement
+        number={5}
+        region={'Kalmar'}
+        source={
+          'https://www.regionkalmar.se/kontakta-oss/kontakta-sjukvarden/coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={10}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-3-april-2988747'
+        }
+      ></Death>
+      <TimelineListElement
+        number={7}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-3-april-2988747'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={1}
+        region={'Gotland'}
+        source={'https://gotland.se/106615'}
+      ></TimelineListElement>
       <Death
         number={1}
         region={'Jönköping'}
@@ -71,29 +104,8 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={4}
-        region={'Kalmar'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
         number={32}
         region={'Jönköping'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={6}
-        region={'Halland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={4}
-        region={'Dalarna'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
