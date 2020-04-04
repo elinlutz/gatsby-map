@@ -68,7 +68,7 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
   },
 
   yAxis: {
-    tickInterval: log === 'logarithmic' ? 1 : chart == 'hospital' ? 10 : 100,
+    tickInterval: log === 'logarithmic' ? 1 : chart == 'hospital' ? 25 : 250,
     title: {
       text: null
     },
