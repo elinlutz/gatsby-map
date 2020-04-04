@@ -38,16 +38,26 @@ const WorldMarkers = ({ onClick }) => {
     }
 
     if (number == 1) {
-      radius = 5
-    } else if (number < 5) {
+      radius = 3
+    } else if (number < 100) {
       radius = 6
     } else if (number < 500) {
       radius = 10
     } else if (number < 2000) {
-      radius = 15
-    } else if (number < 5000) {
+      radius = 12
+    } else if (number < 4000) {
+      radius = 14
+    } else if (number < 8000) {
+      radius = 16
+    } else if (number < 16000) {
+      radius = 18
+    } else if (number < 25000) {
       radius = 20
-    } else if (number >= 5000) {
+    } else if (number < 100000) {
+      radius = 26
+    } else if (number < 200000) {
+      radius = 28
+    } else if (number >= 200000) {
       radius = 30
     }
 
