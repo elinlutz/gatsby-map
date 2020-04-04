@@ -7,6 +7,11 @@ const Timeline = () => {
   return (
     <>
       <h3>4 april 2020</h3>
+      <TimelineListElement
+        number={1}
+        region={'Gotland'}
+        source={'https://gotland.se/106624'}
+      ></TimelineListElement>
       <Death
         number={1}
         region={'Västmanland'}
