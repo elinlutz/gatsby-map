@@ -8,6 +8,25 @@ const Timeline = () => {
     <>
       <h3>4 april 2020</h3>
       <Death
+        number={1}
+        region={'Västmanland'}
+        source={
+          'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/covid-19-laget-i-lanet/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={23}
+        region={'Västmanland'}
+        source={
+          'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/covid-19-laget-i-lanet/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={45}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/'}
+      ></TimelineListElement>
+      <Death
         number={4}
         region={'Västra Götaland'}
         source={
@@ -31,13 +50,6 @@ const Timeline = () => {
       <TimelineListElement
         number={28}
         region={'Västra Götaland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={5}
-        region={'Västmanland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
