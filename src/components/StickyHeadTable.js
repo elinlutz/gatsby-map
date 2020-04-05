@@ -198,13 +198,13 @@ const StickyHeadTable = () => {
   const [render, setRender] = useState(false)
   useEffect(() => setRender(true), [])
 
-  if (!isMobile && columns.length <= 4) {
+  if (!isMobile && columns.length <= 5) {
     columns.splice(
       3,
       0,
       {
         id: 'atHospital',
-        label: 'Vårdas på sjukhus',
+        label: 'På sjukhus',
         align: 'center',
         color: `${colors.lightgrey}`,
         maxWidth: '20em'
@@ -215,7 +215,12 @@ const StickyHeadTable = () => {
         align: 'center',
         color: `${colors.lightgrey}`,
         maxWidth: '20em'
-      },
+      }
+    )
+
+    columns.splice(
+      7,
+      0,
       {
         id: 'deathRatio',
         label: 'Andel dödsfall',
@@ -249,12 +254,20 @@ const StickyHeadTable = () => {
           }
         }
       }
+      allTimeSeriesDeathsDeathsCsv {
+        edges {
+          node {
+            Today
+          }
+        }
+      }
     }
   `)
 
   let rows = []
 
   const edges = data.allTimeSeriesConfimedConfirmedCsv.edges
+  const edgesDeaths = data.allTimeSeriesDeathsDeathsCsv.edges
 
   const getData = () => {
     edges.map(edge => {
