@@ -6,6 +6,47 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
+      <h3>5 april 2020</h3>
+      <TimelineListElement
+        number={11}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-5-april-2988878'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={17}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/'}
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Jönköping'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid--19-48-personer-i-jonkopings-lan-vardas-pa-sjukhus--47691'
+        }
+      ></Death>
+      <TimelineListElement
+        number={2}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={2}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={4}
+        region={'Jämtland Härjedalen'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200405coronacovid19regionjamtlandharjedalen.5.613e2f39170d0c32a9523d66.html'
+        }
+      ></TimelineListElement>
       <h3>4 april 2020</h3>
       <TimelineListElement
         number={1}
