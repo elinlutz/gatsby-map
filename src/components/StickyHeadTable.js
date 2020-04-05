@@ -145,19 +145,39 @@ const columns = [
   }
 ]
 
-function createData(region, total, population, deaths, today, hospitalized) {
-  const per10k = total ? (total / population) * 10000 : undefined
+function createData(
+  region,
+  total,
+  population,
+  deaths,
+  today,
+  hospitalized,
+  icu
+) {
+  const deathsPer10k = deaths ? (deaths / population) * 100000 : undefined
+
   const deathsPerCase = deaths && total ? (deaths / total) * 100 : undefined
 
   const atHospital = hospitalized > 0 ? hospitalized : '?'
+  const atIcu = icu > 0 ? icu : '?'
 
-  const density = per10k ? per10k.toFixed(1) : null
+  const density = deathsPer10k ? deathsPer10k.toFixed(1) : null
+
   const deathRatio =
     deathsPerCase < 100 && deathsPerCase > 0
       ? deathsPerCase.toFixed(1)
       : undefined
 
-  return { region, total, density, deathRatio, deaths, today, atHospital }
+  return {
+    region,
+    total,
+    density,
+    deathRatio,
+    deaths,
+    today,
+    atHospital,
+    atIcu
+  }
 }
 
 const useStyles = makeStyles({
@@ -183,12 +203,6 @@ const StickyHeadTable = () => {
       3,
       0,
       {
-        id: 'density',
-        label: 'Antal fall per 10\xa0000 inv',
-        align: 'center',
-        color: `${colors.lightgrey}`
-      },
-      {
         id: 'atHospital',
         label: 'Vårdas på sjukhus',
         align: 'center',
@@ -196,8 +210,21 @@ const StickyHeadTable = () => {
         maxWidth: '20em'
       },
       {
+        id: 'atIcu',
+        label: 'Får intensivvård',
+        align: 'center',
+        color: `${colors.lightgrey}`,
+        maxWidth: '20em'
+      },
+      {
         id: 'deathRatio',
         label: 'Andel dödsfall',
+        align: 'center',
+        color: `${colors.lightgrey}`
+      },
+      {
+        id: 'density',
+        label: 'Dödsfall per 100\xa0000 inv',
         align: 'center',
         color: `${colors.lightgrey}`
       }
@@ -218,6 +245,7 @@ const StickyHeadTable = () => {
             Today
             Population
             Hospital_Total
+            At_ICU
           }
         }
       }
@@ -245,7 +273,8 @@ const StickyHeadTable = () => {
           region.Population,
           deaths,
           today,
-          region.Hospital_Total
+          region.Hospital_Total,
+          region.At_ICU
         )
         rows.push(newRow)
       }
