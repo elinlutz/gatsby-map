@@ -7,6 +7,32 @@ const Timeline = () => {
   return (
     <>
       <h3>6 april 2020</h3>
+      <TimelineListElement
+        number={12}
+        region={'Västerbotten'}
+        source={
+          'https://www.regionvasterbotten.se/coronavirus/aktuellt-vardlage-i-region-vasterbotten-covid-19'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={13}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/'}
+      ></TimelineListElement>
+      <TimelineListElement
+        number={9}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={9}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
       <Death
         number={4}
         region={'Västmanland'}
