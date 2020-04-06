@@ -7,6 +7,30 @@ const Timeline = () => {
   return (
     <>
       <h3>6 april 2020</h3>
+      <TimelineListElement
+        number={3}
+        region={'Västernorrland'}
+        source={
+          'https://www.rvn.se/sv/Vard-o-halsa/coronavirus---for-dig-som-vill-veta-mer/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={1}
+        region={'Gotland'}
+        source={'https://gotland.se/106633'}
+      ></TimelineListElement>
+      <Death
+        number={3}
+        region={'Sörmland'}
+        source={
+          'https://regionsormland.se/nyheter/nyhetslista-2019/uppdatering-covid-19-patienter-i-region-sormland-64-2020/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={1}
+        region={'Gotland'}
+        source={'https://gotland.se/106633'}
+      ></TimelineListElement>
       <Death
         number={6}
         region={'Dalarna'}
@@ -49,13 +73,6 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></Death>
-      <TimelineListElement
-        number={2}
-        region={'Västernorrland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
       <TimelineListElement
         number={15}
         region={'Uppsala'}
