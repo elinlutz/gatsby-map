@@ -8,6 +8,20 @@ const Timeline = () => {
     <>
       <h3>6 april 2020</h3>
       <Death
+        number={2}
+        region={'Kalmar'}
+        source={
+          'https://www.regionkalmar.se/nyhetslista/tva-nya-dodsfall-i-covid-19-i-lanet/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={6}
+        region={'Kalmar'}
+        source={
+          'https://www.regionkalmar.se/nyhetslista/tva-nya-dodsfall-i-covid-19-i-lanet/'
+        }
+      ></TimelineListElement>
+      <Death
         number={1}
         region={'Västerbotten'}
         source={
@@ -45,13 +59,6 @@ const Timeline = () => {
       <TimelineListElement
         number={28}
         region={'Sörmland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={3}
-        region={'Kalmar'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
