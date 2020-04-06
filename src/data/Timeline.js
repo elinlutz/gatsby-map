@@ -237,7 +237,7 @@ const Timeline = () => {
       ></TimelineListElement>
       <TimelineListElement
         number={4}
-        region={'Jämtland Härjedalen'}
+        region={'Jämtland'}
         source={
           'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200405coronacovid19regionjamtlandharjedalen.5.613e2f39170d0c32a9523d66.html'
         }
@@ -382,7 +382,7 @@ const Timeline = () => {
       <h3>3 april 2020</h3>
       <TimelineListElement
         number={1}
-        region={'Jämtland (tillagt 4 april)'}
+        region={'Jämtland'}
         source={
           'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200403coronacovid19regionjamtlandharjedalen.5.613e2f39170d0c32a9520ed3.html'
         }
