@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 const TimelineListElement = ({ number, region, source }) => {
   return (
     <li>
-      {number} {number == 1 ? 'nytt' : 'nya'} fall{' '}
+      {number} {number == 1 ? 'nytt' : 'nya'} dödsfall{' '}
       {region == 'Gotland' ? 'på' : 'i'}{' '}
       <Link
         className="sourceLink"
