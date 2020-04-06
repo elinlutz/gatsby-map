@@ -8,6 +8,20 @@ const Timeline = () => {
     <>
       <h3>6 april 2020</h3>
       <Death
+        number={4}
+        region={'Västmanland'}
+        source={
+          'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/covid-19-laget-i-lanet/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={9}
+        region={'Västmanland'}
+        source={
+          'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/covid-19-laget-i-lanet/'
+        }
+      ></TimelineListElement>
+      <Death
         number={1}
         region={'Kronoberg'}
         source={
