@@ -23,14 +23,14 @@ const Timeline = () => {
       ></TimelineListElement>
       <Death
         number={2}
-        region={'Kalmar'}
+        region={'Kalmar län'}
         source={
           'https://www.regionkalmar.se/nyhetslista/tva-nya-dodsfall-i-covid-19-i-lanet/'
         }
       ></Death>
       <TimelineListElement
         number={6}
-        region={'Kalmar'}
+        region={'Kalmar län'}
         source={
           'https://www.regionkalmar.se/nyhetslista/tva-nya-dodsfall-i-covid-19-i-lanet/'
         }
