@@ -52,7 +52,7 @@ const InfoPage = ({ data }) => {
               Folkhälsomyndigheten meddelar antal fall som har inkommit fram
               till klockan 11.30 samma dag. Här tas fall in som rapporteras utav
               regionerna via pressmeddelanden under hela dagen, så siffrorna
-              ligger närmre nuläget.
+              ligger närmare nuläget.
               <br />
               <br />
               Metoden för att samla in siffrorna är att i första hand ta
