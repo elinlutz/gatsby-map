@@ -9,6 +9,8 @@
     text-decoration: none;
     color: $white;
     margin-right: 0.5em;
+    font-size: 11px;
+    letter-spacing: 0.5px;
   }
 
   .resp-sharing-button {
@@ -22,8 +24,8 @@
   .resp-sharing-button__icon svg {
     width: 1em;
     height: 1em;
-    margin-top: 0.05em;
-    margin-right: 0.3em;
+    margin-top: 0.1em;
+    margin-right: 0.4em;
     vertical-align: top;
   }
 
