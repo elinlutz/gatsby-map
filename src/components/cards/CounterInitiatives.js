@@ -7,11 +7,21 @@ import styled from 'styled-components'
 const BigNumber = styled.div`
   display: flex;
   justify-content: center;
-  padding: 1em 0;
+  padding: 2em 0;
 `
 
 const CapitalLetters = styled.h4`
+  font-size: 12px;
   text-transform: uppercase;
+  text-decoration: none;
+
+  @media (max-width: 500px) {
+    font-size: 9px;
+  }
+`
+
+const Link = styled.a`
+  text-decoration: none;
 `
 
 const CounterInitiatives = ({ number, view }) => {
@@ -37,12 +47,12 @@ const CounterInitiatives = ({ number, view }) => {
         </div>
       </BigNumber>
       <CapitalLetters>
-        <a
+        <Link
           href="https://docs.google.com/spreadsheets/d/1TjN0ZV3vG31cYE2aeO5T4n1vcZkuja2JncRxWSr4wQU/edit#gid=0"
           target="_blank"
         >
           + Lägg till initiativ
-        </a>
+        </Link>
       </CapitalLetters>
 
       <Container className="updatedText"></Container>

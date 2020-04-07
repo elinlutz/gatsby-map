@@ -9,7 +9,7 @@ import colors from 'assets/stylesheets/settings/_colors.scss'
 
 const Content = styled.div`
   margin: 0;
-  padding: 0 5px;
+  padding: 0 6px;
   margin-block-end: 0;
   flex-direction: column;
   justify-content: center;
@@ -18,12 +18,22 @@ const Content = styled.div`
   line-height: 1;
   font-size: 12px;
   color: ${colors.black};
+
+  @media (max-width: 500px) {
+    padding: 0 5px;
+    font-size: 9px;
+  }
 `
 
 const Text = styled.p`
-  margin-bottom: 3;
+  margin-bottom: 5px;
   font-size: 12px;
   color: ${colors.black};
+
+  @media (max-width: 500px) {
+    margin-bottom: 0;
+    font-size: 9px;
+  }
 `
 
 const ContactButtons = styled.div`
@@ -53,21 +63,25 @@ const InitiativeDetails = ({ initiative }) => {
 
       <Content>
         <Text>
-          <h3>VAD </h3>
+          <Text>
+            <b>VAD</b>
+          </Text>
           {description}
         </Text>
         {need ? (
-          <text>
-            <h3>BEHÖVER </h3>
+          <Text>
+            <Text>
+              <b>BEHÖVER</b>
+            </Text>
             {need}
-          </text>
+          </Text>
         ) : null}
 
         <ContactButtons>
           {website ? (
             <a
               className="resp-sharing-button__link"
-              href={facebook}
+              href={website}
               target="_blank"
               rel="noopener"
             >
