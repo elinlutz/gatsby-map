@@ -33,14 +33,13 @@ const InfoPage = ({ data }) => {
         <Container type="about" className="container">
           <h2>Om {data.site.siteMetadata.title}</h2>
           <p>
-            Denna sida är till för att ge en överblick över det nya
-            coronavirusets utveckling i Sverige, på regionnivå. Jag som skapat
-            kartan heter{' '}
+            Denna sida är till för att ge en överblick över coronavirusets
+            spridning i Sverige, på regionnivå. Jag som skapat kartan heter{' '}
             <OutboundLink href={'https://twitter.com/utzle'} target={'_blank'}>
               Elin Lütz.
             </OutboundLink>{' '}
             Markeringarna på kartan visar inte exakta städer eller adresser,
-            utan är placerade i den stad som utgör regionens säte.
+            utan är placerade i den stad som utgör regionens säte.{' '}
           </p>
           <br />
           <h2>Vanliga frågor</h2>
@@ -53,7 +52,7 @@ const InfoPage = ({ data }) => {
               Folkhälsomyndigheten meddelar antal fall som har inkommit fram
               till klockan 11.30 samma dag. Här tas fall in som rapporteras utav
               regionerna via pressmeddelanden under hela dagen, så siffrorna
-              ligger om möjligt lite närmre realtid.
+              ligger närmre nuläget.
               <br />
               <br />
               Metoden för att samla in siffrorna är att i första hand ta
@@ -75,27 +74,11 @@ const InfoPage = ({ data }) => {
               Antal personer som testat positivt för coronaviruset och är
               inneliggande på sjukhus, inkluderat de personer som får
               intensivvård. Dessa siffror rapporteras varje dag utav de flesta
-              regioner. Ett fåtal regioner delger sina siffror för vilka som
-              vårdas på sjukhus varannan eller var tredje dag, så en viss
-              eftersläpning kan förekomma.
+              regioner och anger nuläget. Ett fåtal regioner delger sina siffror
+              för vilka som vårdas på sjukhus varannan eller var tredje dag, så
+              en viss eftersläpning kan förekomma.
             </p>
           </Dropdown>
-
-          <br />
-
-          <h2>Hjälp till</h2>
-          <p>
-            Har du idéer på förbättringar eller vill hjälpa till i projektet?
-            Hör av dig via <a href={'mailto:info@coronakartan.se'}>mejl</a>.
-            Projektet är byggt i React med Gatsby och Leaflet, repot finns{' '}
-            <a
-              href={'https://github.com/elinlutz/gatsby-map'}
-              target={'_blank'}
-            >
-              här
-            </a>
-            .
-          </p>
           <br />
 
           <h2>Data</h2>
@@ -129,29 +112,56 @@ const InfoPage = ({ data }) => {
           </p>
           <br />
 
-          <h2>Information om coronaviruset</h2>
+          <h2>Hjälp till</h2>
           <p>
-            För fakta och information om det nya coronaviruset SARS-CoV-2, se
+            Har du idéer på förbättringar eller vill hjälpa till i projektet?
+            Hör av dig via <a href={'mailto:info@coronakartan.se'}>mejl</a>.
+            Projektet är byggt i React med Gatsby och Leaflet, repot finns{' '}
             <a
-              href={
-                'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/smittsamma-sjukdomar/coronavirus/fragor-och-svar-om-nytt-coronavirus'
-              }
+              href={'https://github.com/elinlutz/gatsby-map'}
               target={'_blank'}
             >
-              {' Folkhälsomyndighetens hemsida'}
-            </a>
-            . En annan bra karta som följer globala fall är{' '}
-            <a
-              href={
-                'https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6'
-              }
-              target={'_blank'}
-            >
-              {' Johns Hopkins CSSE Dashboard'}
+              här
             </a>
             .
           </p>
           <br />
+          <h2>Om projektet i media</h2>
+          <li>
+            Di Digital,
+            <a
+              href={
+                'https://digital.di.se/artikel/besokarna-strommar-in-till-svenskans-coronakarta'
+              }
+              target={'_blank'}
+            >
+              {'  Besökarna strömmar in till svenskans coronakarta'}
+            </a>
+          </li>
+          <li>
+            Computer Sweden,
+            <a
+              href={
+                'https://computersweden.idg.se/2.2683/1.731846/coronakartan'
+              }
+              target={'_blank'}
+            >
+              {
+                ' Elin är utvecklaren bakom Coronakartan – ”utgår från ett Excelark”'
+              }
+            </a>
+          </li>
+          <li>
+            Ingenjören,
+            <a
+              href={
+                'https://www.ingenjoren.se/2020/03/31/hundratusentals-foljer-ingenjorens-coronakarta/'
+              }
+              target={'_blank'}
+            >
+              {' Hundratusentals följer ingenjörens Coronakarta'}
+            </a>
+          </li>
           <Container className="share">
             <ShareButtons></ShareButtons>
           </Container>
