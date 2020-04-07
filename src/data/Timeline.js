@@ -8,6 +8,27 @@ const Timeline = () => {
     <>
       <h3>7 april 2020</h3>
       <Death
+        number={7}
+        region={'Örebro'}
+        source={
+          'https://www.regionorebrolan.se/sv/Om-regionorebrolan/Press/Lagesrapport-corona-tisdag-7-april/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={13}
+        region={'Örebro'}
+        source={
+          'https://www.regionorebrolan.se/sv/Om-regionorebrolan/Press/Lagesrapport-corona-tisdag-7-april/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={8}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200407coronacovid19regionjamtlandharjedalen.5.4faf1114170d0bf514f34165.html'
+        }
+      ></TimelineListElement>
+      <Death
         number={4}
         region={'Västernorrland'}
         source={
@@ -386,11 +407,6 @@ const Timeline = () => {
         source={
           'https://www.regionvasterbotten.se/coronavirus/aktuellt-vardlage-i-region-vasterbotten-covid-19'
         }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={13}
-        region={'Örebro'}
-        source={'https://www.regionorebrolan.se/'}
       ></TimelineListElement>
       <TimelineListElement
         number={9}
