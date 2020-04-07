@@ -7,6 +7,48 @@ const Timeline = () => {
   return (
     <>
       <h3>7 april 2020</h3>
+      <TimelineListElement
+        number={9}
+        region={'Västernorrland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={24}
+        region={'Uppsala'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={2}
+        region={'Kalmar'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={21}
+        region={'Jönköping'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={5}
+        region={'Halland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={17}
+        region={'Dalarna'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
       <Death
         number={5}
         region={'Västra Götaland'}
