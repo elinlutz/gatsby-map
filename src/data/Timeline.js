@@ -7,6 +7,20 @@ const Timeline = () => {
   return (
     <>
       <h3>7 april 2020</h3>
+      <Death
+        number={1}
+        region={'Uppsala'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <Death
+        number={2}
+        region={'Halland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
       <TimelineListElement
         number={9}
         region={'Västernorrland'}
