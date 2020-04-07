@@ -19,6 +19,7 @@ import CounterInitiatives from 'components/cards/CounterInitiatives'
 
 import DetailsCounter from 'components/cards/DetailsCounter'
 import NoDetailsCounter from 'components/cards/NoDetailsCounter'
+import InitiativeDetails from 'components/cards/InitiativeDetails'
 
 import ToggleViewButton from 'components/ToggleViewButton'
 
@@ -63,7 +64,7 @@ const IndexPage = ({ data }) => {
   const [region, setRegion] = useState(null)
   const [country, setCountry] = useState(null)
   const [initiative, setInitiative] = useState(null)
-  const [view, setView] = useState('sweden')
+  const [view, setView] = useState('initiative')
   const [mapCenter, setMapCenter] = useState({ center: [58, 15], zoom: 5 })
 
   const mapSettings = {
@@ -75,6 +76,7 @@ const IndexPage = ({ data }) => {
 
   useEffect(() => {
     setView(view)
+    console.log('hi')
   })
 
   function onClickRegion(region) {
@@ -115,6 +117,11 @@ const IndexPage = ({ data }) => {
         recovered={country.Recovered}
       ></DetailsCounter>
     )
+  }
+
+  const InitiativeContent = () => {
+    console.log(initiative)
+    return <InitiativeDetails initiative={initiative}></InitiativeDetails>
   }
 
   function RegionContent() {
@@ -159,7 +166,7 @@ const IndexPage = ({ data }) => {
         ) : view === 'world' ? (
           <WorldMarkers onClick={onClickCountry} ref={markerRef} />
         ) : (
-          <InitiativeMarkers onClick={onClickRegion} ref={markerRef} />
+          <InitiativeMarkers onClick={onClickInitiative} ref={markerRef} />
         )}
         <div className="switchContainer">
           <ToggleViewButton
@@ -197,15 +204,21 @@ const IndexPage = ({ data }) => {
                 recovered={getTotal(data.allWorldCsv.edges, 'Recovered')}
               ></CounterWorld>
             ) : view === 'initiatives' ? (
-              <CounterInitiatives view={view} number={10}></CounterInitiatives>
+              <CounterInitiatives view={view} number={9}></CounterInitiatives>
             ) : (
               'hi'
             )}
 
             <Container className="info">
-              {region || country ? (
+              {region || country || initiative ? (
                 <div className="info-content">
-                  {region ? <RegionContent /> : <CountryContent />}
+                  {region ? (
+                    <RegionContent />
+                  ) : country ? (
+                    <CountryContent />
+                  ) : (
+                    <InitiativeContent />
+                  )}
                 </div>
               ) : (
                 <>

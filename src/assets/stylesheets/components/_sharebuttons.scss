@@ -121,6 +121,14 @@
     background-color: #25d366;
   }
 
+  .resp-sharing-button--website {
+    background-color: $initiatives;
+  }
+
+  .resp-sharing-button--website:hover {
+    background-color: darken($initiatives, 5);
+  }
+
   .resp-sharing-button--whatsapp:hover {
     background-color: #1da851;
   }

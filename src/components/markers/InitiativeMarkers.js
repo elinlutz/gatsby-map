@@ -13,8 +13,19 @@ const InitiativeMarkers = ({ loadTotal, onClick }) => {
         edges {
           node {
             id
+            Namn
             Latitud
             Longitud
+            Telefonnummer
+            Twitter
+            Involverade
+            Instagram
+            Hemsida
+            Facebook
+            Beskrivning
+            Mejl
+            Beh_ver
+            Annan_l_nk
           }
         }
       }
@@ -30,11 +41,11 @@ const InitiativeMarkers = ({ loadTotal, onClick }) => {
       return (
         <CircleMarker
           key={initiative.id}
-          radius={10}
+          radius={25}
           color={colors.initiatives}
           stroke={false}
           center={[initiative.Latitud, initiative.Longitud]}
-          fillOpacity={active === initiative.id ? 0.9 : 0.7}
+          fillOpacity={active === initiative.id ? 0.9 : 0.5}
           onClick={() => {
             onClick(initiative)
             setActive(initiative.id)
