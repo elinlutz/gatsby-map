@@ -72,13 +72,13 @@ const Today = props => {
             alignItems: 'center',
             justifyContent: 'center',
             borderRadius: '15px',
-            height: '30px'
+            height: '28px'
           }}
         >
           <p
             style={{
               color: 'white',
-              padding: '10px',
+              padding: '8px',
               fontWeight: 'bold'
             }}
           >
@@ -132,8 +132,16 @@ const columns = [
   { id: 'total', label: 'Antal fall', minWidth: 0, align: 'center' },
   {
     id: 'today',
-    label: 'Förändring idag',
-    align: 'center'
+    label: 'Fall idag',
+    align: 'center',
+    minWidth: 60
+  },
+  {
+    id: 'atIcu',
+    label: 'Intensivvårdas',
+    align: 'center',
+    color: `${colors.lightgrey}`,
+    maxWidth: '20em'
   },
   {
     id: 'deaths',
@@ -199,24 +207,13 @@ const StickyHeadTable = () => {
   useEffect(() => setRender(true), [])
 
   if (!isMobile && columns.length <= 5) {
-    columns.splice(
-      3,
-      0,
-      {
-        id: 'atHospital',
-        label: 'På sjukhus',
-        align: 'center',
-        color: `${colors.lightgrey}`,
-        maxWidth: '20em'
-      },
-      {
-        id: 'atIcu',
-        label: 'Får intensivvård',
-        align: 'center',
-        color: `${colors.lightgrey}`,
-        maxWidth: '20em'
-      }
-    )
+    columns.splice(3, 0, {
+      id: 'atHospital',
+      label: 'På sjukhus',
+      align: 'center',
+      color: `${colors.lightgrey}`,
+      maxWidth: '20em'
+    })
 
     columns.splice(
       7,
@@ -231,7 +228,8 @@ const StickyHeadTable = () => {
         id: 'density',
         label: 'Dödsfall per 100\xa0000 inv',
         align: 'center',
-        color: `${colors.lightgrey}`
+        color: `${colors.lightgrey}`,
+        maxWidth: '10em'
       }
     )
   }
