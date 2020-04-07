@@ -129,18 +129,18 @@ const InfoPage = ({ data }) => {
           <h2>Om projektet i media</h2>
           <li>
             Di Digital,
-            <a
+            <OutboundLink
               href={
                 'https://digital.di.se/artikel/besokarna-strommar-in-till-svenskans-coronakarta'
               }
               target={'_blank'}
             >
               {'  Besökarna strömmar in till svenskans coronakarta'}
-            </a>
+            </OutboundLink>
           </li>
           <li>
             Computer Sweden,
-            <a
+            <OutboundLink
               href={
                 'https://computersweden.idg.se/2.2683/1.731846/coronakartan'
               }
@@ -149,18 +149,18 @@ const InfoPage = ({ data }) => {
               {
                 ' Elin är utvecklaren bakom Coronakartan – ”utgår från ett Excelark”'
               }
-            </a>
+            </OutboundLink>
           </li>
           <li>
             Ingenjören,
-            <a
+            <OutboundLink
               href={
                 'https://www.ingenjoren.se/2020/03/31/hundratusentals-foljer-ingenjorens-coronakarta/'
               }
               target={'_blank'}
             >
               {' Hundratusentals följer ingenjörens Coronakarta'}
-            </a>
+            </OutboundLink>
           </li>
           <Container className="share">
             <ShareButtons></ShareButtons>
