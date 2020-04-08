@@ -62,12 +62,14 @@ const InitiativeDetails = ({ initiative }) => {
       </Container>
 
       <Content>
-        <Text>
+        {description ? (
           <Text>
-            <b>VAD</b>
+            <Text>
+              <b>VAD</b>
+            </Text>
+            {description}
           </Text>
-          {description}
-        </Text>
+        ) : null}
         {need ? (
           <Text>
             <Text>

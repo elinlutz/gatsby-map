@@ -204,7 +204,7 @@ const IndexPage = ({ data }) => {
                 recovered={getTotal(data.allWorldCsv.edges, 'Recovered')}
               ></CounterWorld>
             ) : view === 'initiatives' ? (
-              <CounterInitiatives view={view} number={6}></CounterInitiatives>
+              <CounterInitiatives view={view} number={8}></CounterInitiatives>
             ) : (
               'hi'
             )}
