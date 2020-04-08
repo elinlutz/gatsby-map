@@ -303,7 +303,7 @@ $red-bubble: $red-500;
 $orange-bubble: $orange-600;
 $world: $blue-900;
 $sweden: $amber-800;
-
+$initiatives: $light-green-800;
 $accent: $dark-theme;
 
 :export {
@@ -316,5 +316,7 @@ $accent: $dark-theme;
   accent: $accent;
   gray: $grey-800;
   lightgrey: $grey-500;
+  lightblack: $light-black;
   bar: $grey-50;
+  initiatives: $initiatives;
 }

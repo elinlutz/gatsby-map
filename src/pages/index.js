@@ -11,11 +11,15 @@ import Map from 'components/Map'
 
 import Markers from 'components/markers/Markers'
 import WorldMarkers from 'components/markers/WorldMarkers'
+import InitiativeMarkers from 'components/markers/InitiativeMarkers'
 
 import CounterSweden from 'components/cards/CounterSweden'
 import CounterWorld from 'components/cards/CounterWorld'
+import CounterInitiatives from 'components/cards/CounterInitiatives'
+
 import DetailsCounter from 'components/cards/DetailsCounter'
 import NoDetailsCounter from 'components/cards/NoDetailsCounter'
+import InitiativeDetails from 'components/cards/InitiativeDetails'
 
 import ToggleViewButton from 'components/ToggleViewButton'
 
@@ -59,6 +63,7 @@ const IndexPage = ({ data }) => {
 
   const [region, setRegion] = useState(null)
   const [country, setCountry] = useState(null)
+  const [initiative, setInitiative] = useState(null)
   const [view, setView] = useState('sweden')
   const [mapCenter, setMapCenter] = useState({ center: [58, 15], zoom: 5 })
 
@@ -71,10 +76,15 @@ const IndexPage = ({ data }) => {
 
   useEffect(() => {
     setView(view)
+    console.log('hi')
   })
 
   function onClickRegion(region) {
     setRegion(region)
+  }
+
+  function onClickInitiative(initiative) {
+    setInitiative(initiative)
   }
 
   function onClickDeaths(region) {
@@ -107,6 +117,11 @@ const IndexPage = ({ data }) => {
         recovered={country.Recovered}
       ></DetailsCounter>
     )
+  }
+
+  const InitiativeContent = () => {
+    console.log(initiative)
+    return <InitiativeDetails initiative={initiative}></InitiativeDetails>
   }
 
   function RegionContent() {
@@ -148,8 +163,10 @@ const IndexPage = ({ data }) => {
             <Markers onClick={onClickRegion} ref={markerRef} />
             {/* <DeathMarkers onClick={onClickDeaths} /> */}
           </>
-        ) : (
+        ) : view === 'world' ? (
           <WorldMarkers onClick={onClickCountry} ref={markerRef} />
+        ) : (
+          <InitiativeMarkers onClick={onClickInitiative} ref={markerRef} />
         )}
         <div className="switchContainer">
           <ToggleViewButton
@@ -157,6 +174,7 @@ const IndexPage = ({ data }) => {
             setView={setView}
             setRegion={setRegion}
             setCountry={setCountry}
+            setInitiative={setInitiative}
             view={view}
           />
         </div>
@@ -178,19 +196,29 @@ const IndexPage = ({ data }) => {
                   'Hospital_Total'
                 )}
               ></CounterSweden>
-            ) : (
+            ) : view === 'world' ? (
               <CounterWorld
                 view={view}
                 number={getTotal(data.allWorldCsv.edges, 'Confirmed')}
                 deathNumber={getTotal(data.allWorldCsv.edges, 'Deaths')}
                 recovered={getTotal(data.allWorldCsv.edges, 'Recovered')}
               ></CounterWorld>
+            ) : view === 'initiatives' ? (
+              <CounterInitiatives view={view} number={9}></CounterInitiatives>
+            ) : (
+              'hi'
             )}
 
             <Container className="info">
-              {region || country ? (
+              {region || country || initiative ? (
                 <div className="info-content">
-                  {region ? <RegionContent /> : <CountryContent />}
+                  {region ? (
+                    <RegionContent />
+                  ) : country ? (
+                    <CountryContent />
+                  ) : (
+                    <InitiativeContent />
+                  )}
                 </div>
               ) : (
                 <>
