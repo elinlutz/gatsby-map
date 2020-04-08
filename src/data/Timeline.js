@@ -7,6 +7,13 @@ const Timeline = () => {
   return (
     <>
       <h3>8 april 2020</h3>
+      <Death
+        number={3}
+        region={'Jönköping'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
       <TimelineListElement
         number={56}
         region={'Västra Götaland'}
@@ -145,13 +152,6 @@ const Timeline = () => {
           'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
         }
       ></TimelineListElement>
-      <Death
-        number={1}
-        region={'Jönköping'}
-        source={
-          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid--19-59-personer-i-jonkopings-lan-vardas-pa-sjukhus--47885'
-        }
-      ></Death>
       <TimelineListElement
         number={14}
         region={'Gävleborg'}
