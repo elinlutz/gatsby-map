@@ -33,24 +33,27 @@ const Markers = ({ loadTotal, onClick }) => {
   let maxSweDeathRate = 0
   for (let edge in edges){
     let conf = edges[edge].node.Region_Total
+    console.log(conf)
     
     if (conf > maxSweConfirmed){
       maxSweConfirmed = conf
     }
-    let dr = edges[edge].node.Region_Deaths/(conf+Number.EPSILON)
+    let dr = edges[edge].node.Region_Deaths/conf
     console.log(dr)
     if (dr > maxSweDeathRate){
       maxSweDeathRate = dr
     }
   }
-  const getBubble = confirmed => {
+  const getBubble = ({confirmed,deaths}) => {
     let color
     let number = confirmed
     let radius
-
     if (confirmed > 0) {
+      let deathRate = deaths/confirmed
+      let deathRateColorIndex = Math.floor(10*(deathRate/maxSweDeathRate))
       //color = colors.sweden
-      color = colors['deathrate-' + String(8)]
+      colorName = 'deathrate' + String(deathRateColorIndex)
+      color = colors[colorName]
     }
     radius = 10 * Math.sqrt((number/maxSweConfirmed)/Math.PI)
     
@@ -61,7 +64,7 @@ const Markers = ({ loadTotal, onClick }) => {
     const region = edge.node
 
     if (region.Region_Total > 0) {
-      const { color, radius } = getBubble(region.Region_Total)
+      const { color, radius } = getBubble(region.Region_Total,region.Region_Deaths)
 
       return (
         <CircleMarker
