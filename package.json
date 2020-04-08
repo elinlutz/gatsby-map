@@ -51,7 +51,6 @@
     "eslint-config-zurgbot": "^0.0.6",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
-    "jest": "^24.9.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "prettier-eslint": "^9.0.1",
