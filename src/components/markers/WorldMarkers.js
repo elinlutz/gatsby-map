@@ -29,13 +29,13 @@ const WorldMarkers = ({ onClick }) => {
   const edges = data.allWorldCsv.edges
   let maxConfirmed = 0
   let maxDeathRate = 0
-  console.log(ata.allWorldCsv.edges)
-  for (let edge in data.allWorldCsv.edges){
-    let conf = data.allWorldCsv.edges[edge].Confirmed
+  console.log(edges)
+  for (let edge in edges){
+    let conf = edges[edge].Confirmed
     if (conf > maxConfirmed){
       maxConfirmed = conf
     }
-    let dr = data.allWorldCsv.edges[edge].Deaths/(conf+Number.EPSILON)
+    let dr = edges[edge].Deaths/(conf+Number.EPSILON)
     if (dr > maxDeathRate){
       maxDeathRate = dr
     }
