@@ -31,12 +31,12 @@ const WorldMarkers = ({ onClick }) => {
   let maxDeathRate = 0
   console.log(edges)
   for (let edge in edges){
-    let conf = edges[edge].Confirmed
+    let conf = edges[edge].node.Confirmed
     console.log(conf)
     if (conf > maxConfirmed){
       maxConfirmed = conf
     }
-    let dr = edges[edge].Deaths/(conf+Number.EPSILON)
+    let dr = edges[edge].node.Deaths/(conf+Number.EPSILON)
     if (dr > maxDeathRate){
       maxDeathRate = dr
     }
