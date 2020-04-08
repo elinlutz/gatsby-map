@@ -28,6 +28,7 @@ const Markers = ({ loadTotal, onClick }) => {
   `)
 
   const edges = data.allTimeSeriesConfimedConfirmedCsv.edges
+  console.log(edges)
   let maxSweConfirmed = 0
   let maxSweDeathRate = 0
   for (let edge in edges){
@@ -48,9 +49,10 @@ const Markers = ({ loadTotal, onClick }) => {
     let radius
 
     if (confirmed > 0) {
-      color = colors.sweden
+      //color = colors.sweden
+      color = colors['deathrate-' + String(8)]
     }
-    radius = Math.sqrt(100*(number/maxSweConfirmed)/Math.PI)
+    radius = 100 * Math.sqrt((number/maxSweConfirmed)/Math.PI)
     
     return { color, radius }
   }

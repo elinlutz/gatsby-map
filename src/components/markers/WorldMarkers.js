@@ -36,7 +36,6 @@ const WorldMarkers = ({ onClick }) => {
       maxConfirmed = conf
     }
     let dr = edges[edge].node.Deaths/(conf+Number.EPSILON)
-    console.log(dr)
     if (dr > maxDeathRate){
       maxDeathRate = dr
     }
@@ -50,7 +49,7 @@ const WorldMarkers = ({ onClick }) => {
       color = colors.world
     }
     //console.log(Math.sqrt((1000*number/maxConfirmed)/Math.PI))
-    radius = Math.sqrt(100*(number/maxConfirmed)/Math.PI)
+    radius = 7 * Math.sqrt((number/maxConfirmed)/Math.PI)
 
     return { color, radius }
   }
