@@ -28,6 +28,8 @@ const Markers = ({ loadTotal, onClick }) => {
   `)
 
   const edges = data.allTimeSeriesConfimedConfirmedCsv.edges
+  let maxConfirmed = 0
+  let maxDeathRate = 0
   for (let edge in edges){
     let conf = edges[edge].node.Confirmed
     
