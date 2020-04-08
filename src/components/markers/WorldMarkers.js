@@ -5,7 +5,7 @@ import { CircleMarker } from 'react-leaflet'
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
 const getRepresentativeMarkerSize = ({count}) => {
-  return Math.sqrt((count/10000)/Math.PI)
+  return Math.sqrt((count/1000)/Math.PI)
 }
 
 const WorldMarkers = ({ onClick }) => {
