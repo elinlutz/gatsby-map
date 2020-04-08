@@ -32,6 +32,7 @@ const WorldMarkers = ({ onClick }) => {
   console.log(edges)
   for (let edge in edges){
     let conf = edges[edge].Confirmed
+    console.log(conf)
     if (conf > maxConfirmed){
       maxConfirmed = conf
     }
