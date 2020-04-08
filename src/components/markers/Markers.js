@@ -42,7 +42,7 @@ const Markers = ({ loadTotal, onClick }) => {
       maxSweDeathRate = dr
     }
   }
-  const getBubble = ({confirmed,deaths}) => {
+  const getBubble = (confirmed,deaths) => {
     let color
     let number = confirmed
     let radius
