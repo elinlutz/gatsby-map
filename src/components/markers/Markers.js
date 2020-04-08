@@ -33,13 +33,11 @@ const Markers = ({ loadTotal, onClick }) => {
   let maxSweDeathRate = 0
   for (let edge in edges){
     let conf = edges[edge].node.Region_Total
-    console.log(conf)
     
     if (conf > maxSweConfirmed){
       maxSweConfirmed = conf
     }
     let dr = edges[edge].node.Region_Deaths/conf
-    console.log(dr)
     if (dr > maxSweDeathRate){
       maxSweDeathRate = dr
     }
@@ -53,7 +51,9 @@ const Markers = ({ loadTotal, onClick }) => {
       let deathRateColorIndex = Math.floor(10*(deathRate/maxSweDeathRate))
       //color = colors.sweden
       colorName = 'deathrate' + String(deathRateColorIndex)
+      console.log(colorName)
       color = colors[colorName]
+      console.log(color)
     }
     radius = 10 * Math.sqrt((number/maxSweConfirmed)/Math.PI)
     
