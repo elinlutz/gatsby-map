@@ -46,6 +46,7 @@ const Markers = ({ loadTotal, onClick }) => {
     let color
     let number = confirmed
     let radius
+    let colorName
     if (confirmed > 0) {
       let deathRate = deaths/confirmed
       let deathRateColorIndex = Math.floor(10*(deathRate/maxSweDeathRate))
