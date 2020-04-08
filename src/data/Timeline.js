@@ -8,6 +8,20 @@ const Timeline = () => {
     <>
       <h3>8 april 2020</h3>
       <Death
+        number={5}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-8-april-2989981'
+        }
+      ></Death>
+      <TimelineListElement
+        number={25}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-8-april-2989981'
+        }
+      ></TimelineListElement>
+      <Death
         number={3}
         region={'Jönköping'}
         source={
@@ -49,20 +63,6 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-      <TimelineListElement
-        number={22}
-        region={'Dalarna'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <Death
-        number={5}
-        region={'Dalarna'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></Death>
       <Death
         number={4}
         region={'Ösergötland'}
