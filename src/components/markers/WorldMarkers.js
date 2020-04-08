@@ -27,7 +27,12 @@ const WorldMarkers = ({ onClick }) => {
   `)
 
   const edges = data.allWorldCsv.edges
-
+  let maxConfirmed = 0
+  for (edge in data.allWorldCsv.edges){
+    if (data.allWorldCsv.edges[edge].Confirmed > maxConfirmed){
+      maxConfirmed = data.allWorldCsv.edges[edge].Confirmed
+    }
+  }
   const getBubble = confirmed => {
     let color
     let number = confirmed
@@ -36,8 +41,8 @@ const WorldMarkers = ({ onClick }) => {
     if (confirmed > 0) {
       color = colors.world
     }
-    console.log(Math.sqrt((number/1000)/Math.PI))
-    radius = Math.sqrt((number/1000)/Math.PI)
+    //console.log(Math.sqrt((1000*number/maxConfirmed)/Math.PI))
+    radius = Math.sqrt((1000*number/maxConfirmed)/Math.PI)
 
     return { color, radius }
   }
