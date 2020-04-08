@@ -28,18 +28,18 @@ const Markers = ({ loadTotal, onClick }) => {
   `)
 
   const edges = data.allTimeSeriesConfimedConfirmedCsv.edges
-  let maxConfirmed = 0
-  let maxDeathRate = 0
+  let maxSweConfirmed = 0
+  let maxSweDeathRate = 0
   for (let edge in edges){
     let conf = edges[edge].node.Confirmed
     
-    if (conf > maxConfirmed){
-      maxConfirmed = conf
+    if (conf > maxSweConfirmed){
+      maxSweConfirmed = conf
     }
     let dr = edges[edge].node.Deaths/(conf+Number.EPSILON)
     console.log(dr)
-    if (dr > maxDeathRate){
-      maxDeathRate = dr
+    if (dr > maxSweDeathRate){
+      maxSweDeathRate = dr
     }
   }
   const getBubble = confirmed => {
@@ -50,7 +50,7 @@ const Markers = ({ loadTotal, onClick }) => {
     if (confirmed > 0) {
       color = colors.sweden
     }
-    radius = Math.sqrt((300*number/maxConfirmed)/Math.PI)
+    radius = Math.sqrt(100*(number/maxSweConfirmed)/Math.PI)
     
     return { color, radius }
   }
