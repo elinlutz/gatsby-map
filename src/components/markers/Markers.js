@@ -37,7 +37,7 @@ const Markers = ({ loadTotal, onClick }) => {
     if (confirmed > 0) {
       color = colors.sweden
     }
-    radius = Math.sqrt((1000*number/maxConfirmed)/Math.PI)
+    radius = Math.sqrt((1000*number/100000)/Math.PI)
     
     return { color, radius }
   }
