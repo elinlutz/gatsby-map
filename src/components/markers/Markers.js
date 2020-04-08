@@ -49,7 +49,7 @@ const Markers = ({ loadTotal, onClick }) => {
     let colorName
     if (confirmed > 0) {
       let deathRate = deaths/confirmed
-      let deathRateColorIndex = Math.floor(10*(deathRate/maxSweDeathRate))
+      let deathRateColorIndex = Math.floor(10*(deathRate/(maxSweDeathRate+0.0000001)))
       //color = colors.sweden
       colorName = 'deathrate' + String(deathRateColorIndex)
       console.log(colorName)
