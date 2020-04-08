@@ -32,12 +32,12 @@ const Markers = ({ loadTotal, onClick }) => {
   let maxSweConfirmed = 0
   let maxSweDeathRate = 0
   for (let edge in edges){
-    let conf = edges[edge].node.Confirmed
+    let conf = edges[edge].node.Region_Total
     
     if (conf > maxSweConfirmed){
       maxSweConfirmed = conf
     }
-    let dr = edges[edge].node.Deaths/(conf+Number.EPSILON)
+    let dr = edges[edge].node.Region_Deaths/(conf+Number.EPSILON)
     console.log(dr)
     if (dr > maxSweDeathRate){
       maxSweDeathRate = dr
@@ -52,7 +52,7 @@ const Markers = ({ loadTotal, onClick }) => {
       //color = colors.sweden
       color = colors['deathrate-' + String(8)]
     }
-    radius = 100 * Math.sqrt((number/maxSweConfirmed)/Math.PI)
+    radius = 10 * Math.sqrt((number/maxSweConfirmed)/Math.PI)
     
     return { color, radius }
   }
