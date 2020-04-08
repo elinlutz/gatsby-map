@@ -36,8 +36,8 @@ const WorldMarkers = ({ onClick }) => {
     if (confirmed > 0) {
       color = colors.world
     }
-    console.log(Math.sqrt((count/1000)/Math.PI))
-    radius = Math.sqrt((count/1000)/Math.PI)
+    console.log(Math.sqrt((number/1000)/Math.PI))
+    radius = Math.sqrt((number/1000)/Math.PI)
 
     return { color, radius }
   }
