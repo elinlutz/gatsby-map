@@ -4,11 +4,6 @@ import { CircleMarker } from 'react-leaflet'
 
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
-const getRepresentativeMarkerSize = ({count}) => {
-  console.log(Math.sqrt((count/1000)/Math.PI))
-  return Math.sqrt((count/1000)/Math.PI)
-}
-
 const WorldMarkers = ({ onClick }) => {
   const [active, setActive] = useState(false)
 
@@ -41,7 +36,8 @@ const WorldMarkers = ({ onClick }) => {
     if (confirmed > 0) {
       color = colors.world
     }
-    radius = getRepresentativeMarkerSize(number)
+    console.log(Math.sqrt((count/1000)/Math.PI))
+    radius = Math.sqrt((count/1000)/Math.PI)
 
     return { color, radius }
   }
