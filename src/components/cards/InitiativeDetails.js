@@ -27,7 +27,7 @@ const Content = styled.div`
 
 const Text = styled.p`
   margin-bottom: 5px;
-  font-size: 12px;
+  font-size: 13px;
   color: ${colors.black};
 
   @media (max-width: 500px) {
@@ -120,7 +120,6 @@ const InitiativeDetails = ({ initiative }) => {
               href={`mailto:${mail}`}
               target="_self"
               rel="noopener"
-              aria-label=""
             >
               <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
                 <div

@@ -64,7 +64,7 @@ const IndexPage = ({ data }) => {
   const [region, setRegion] = useState(null)
   const [country, setCountry] = useState(null)
   const [initiative, setInitiative] = useState(null)
-  const [view, setView] = useState('initiative')
+  const [view, setView] = useState('sweden')
   const [mapCenter, setMapCenter] = useState({ center: [58, 15], zoom: 5 })
 
   const mapSettings = {
