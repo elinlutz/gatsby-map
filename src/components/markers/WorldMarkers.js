@@ -29,20 +29,18 @@ const WorldMarkers = ({ onClick }) => {
   const edges = data.allWorldCsv.edges
   let maxConfirmed = 0
   let maxDeathRate = 0
-  console.log(edges)
   for (let edge in edges){
     let conf = edges[edge].node.Confirmed
-    console.log(conf)
+    
     if (conf > maxConfirmed){
       maxConfirmed = conf
     }
     let dr = edges[edge].node.Deaths/(conf+Number.EPSILON)
+    console.log(dr)
     if (dr > maxDeathRate){
       maxDeathRate = dr
     }
   }
-  console.log(maxConfirmed)
-  console.log(maxDeathRate)
   const getBubble = confirmed => {
     let color
     let number = confirmed
@@ -52,7 +50,7 @@ const WorldMarkers = ({ onClick }) => {
       color = colors.world
     }
     //console.log(Math.sqrt((1000*number/maxConfirmed)/Math.PI))
-    radius = Math.sqrt((1000*number/maxConfirmed)/Math.PI)
+    radius = Math.sqrt((300*number/maxConfirmed)/Math.PI)
 
     return { color, radius }
   }
