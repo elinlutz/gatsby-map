@@ -28,7 +28,7 @@ const WorldMarkers = ({ onClick }) => {
 
   const edges = data.allWorldCsv.edges
   let maxConfirmed = 0
-  for (edge in data.allWorldCsv.edges){
+  for (let edge in data.allWorldCsv.edges){
     if (data.allWorldCsv.edges[edge].Confirmed > maxConfirmed){
       maxConfirmed = data.allWorldCsv.edges[edge].Confirmed
     }
