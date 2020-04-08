@@ -43,7 +43,7 @@ const CardContainer = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 2em;
-  margin-bottom: 3em;
+  margin-bottom: 4em;
   @media (max-width: 650px) {
     flex-direction: column;
   }
@@ -112,9 +112,24 @@ const RegionPage = ({ data }) => {
               På intensivvård{' '}
               {data.allTimeSeriesConfimedConfirmedCsv.edges[0].node.At_ICU}
             </h2> */}
+            <h2>
+              Bekräftade fall i{' '}
+              {
+                data.allTimeSeriesConfimedConfirmedCsv.edges[0].node
+                  .Display_Name
+              }
+            </h2>
             <MiniChart
               tableData={data.timeSeriesConfimedConfirmedCsv}
             ></MiniChart>
+
+            <h2>
+              Dödsfall i{' '}
+              {
+                data.allTimeSeriesConfimedConfirmedCsv.edges[0].node
+                  .Display_Name
+              }
+            </h2>
             <DeathsChart
               tableData={data.timeSeriesDeathsDeathsCsv}
             ></DeathsChart>
