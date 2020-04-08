@@ -5,6 +5,7 @@ import { CircleMarker } from 'react-leaflet'
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
 const getRepresentativeMarkerSize = ({count}) => {
+  console.log(Math.sqrt((count/1000)/Math.PI))
   return Math.sqrt((count/1000)/Math.PI)
 }
 
