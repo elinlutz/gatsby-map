@@ -19,8 +19,8 @@ const Content = styled.div`
   font-size: 12px;
   color: ${colors.black};
 
-  @media (max-width: 500px) {
-    padding: 0 5px;
+  @media (max-width: 531px) {
+    padding: 0 1px;
     font-size: 9px;
   }
 `
@@ -30,7 +30,7 @@ const Text = styled.p`
   font-size: 13px;
   color: ${colors.black};
 
-  @media (max-width: 500px) {
+  @media (max-width: 531px) {
     margin-bottom: 0;
     font-size: 9px;
   }

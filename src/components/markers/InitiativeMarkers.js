@@ -16,7 +16,6 @@ const InitiativeMarkers = ({ loadTotal, onClick }) => {
             Namn
             Latitud
             Longitud
-            Telefonnummer
             Twitter
             Involverade
             Instagram
