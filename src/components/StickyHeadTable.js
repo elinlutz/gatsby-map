@@ -171,6 +171,8 @@ function createData(
 
   const density = deathsPer10k ? deathsPer10k.toFixed(1) : null
 
+  const icuRatio = ((atIcu / atHospital) * 100).toFixed(0) + '%'
+
   const deathRatio =
     deathsPerCase < 100 && deathsPerCase > 0
       ? deathsPerCase.toFixed(1)
@@ -184,7 +186,8 @@ function createData(
     deaths,
     today,
     atHospital,
-    atIcu
+    atIcu,
+    icuRatio
   }
 }
 
@@ -210,6 +213,14 @@ const StickyHeadTable = () => {
     columns.splice(3, 0, {
       id: 'atHospital',
       label: 'På sjukhus',
+      align: 'center',
+      color: `${colors.lightgrey}`,
+      maxWidth: '20em'
+    })
+
+    columns.splice(5, 0, {
+      id: 'icuRatio',
+      label: 'intensivvård/på sjukhus',
       align: 'center',
       color: `${colors.lightgrey}`,
       maxWidth: '20em'
