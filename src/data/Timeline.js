@@ -6,7 +6,49 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
+      <h3>9 april 2020</h3>
+      <Death
+        number={2}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={12}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={8}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={1}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Gotland'}
+        source={'https://gotland.se/106694'}
+      ></Death>
       <h3>8 april 2020</h3>
+      <TimelineListElement
+        number={4}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200408coronacovid19regionjamtlandharjedalen.5.4faf1114170d0bf514f35b59.html'
+        }
+      ></TimelineListElement>
+      (Tillagt 9 April)
       <Death
         number={5}
         region={'Dalarna'}
