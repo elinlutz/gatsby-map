@@ -7,6 +7,53 @@ const Timeline = () => {
   return (
     <>
       <h3>9 april 2020</h3>
+      <TimelineListElement
+        number={44}
+        region={'Uppsala'}
+        source={
+          'https://secure.quickchannel.com/Qc/create/mainshow.asp?id=sb9cuw'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={29}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-9-april-2990311'
+        }
+      ></TimelineListElement>
+      <Death
+        number={3}
+        region={'Västerbotten'}
+        source={
+          'https://www.regionvasterbotten.se/coronavirus/aktuellt-vardlage-i-region-vasterbotten-covid-19'
+        }
+      ></Death>
+      <Death
+        number={2}
+        region={'Västernorrland'}
+        source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
+      ></Death>
+      <Death
+        number={3}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={25}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={4}
+        region={'Jämtland Härjedalen'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200409coronacovid19regionjamtlandharjedalen.5.613e2f39170d0c32a952a897.html'
+        }
+      ></TimelineListElement>
       <Death
         number={1}
         region={'Gävleborg'}
@@ -36,13 +83,6 @@ const Timeline = () => {
         }
       ></Death>
       <TimelineListElement
-        number={25}
-        region={'Östergötland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
         number={7}
         region={'Västernorrland'}
         source={
@@ -66,13 +106,6 @@ const Timeline = () => {
       <TimelineListElement
         number={8}
         region={'Halland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={26}
-        region={'Dalarna'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
