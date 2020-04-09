@@ -79,7 +79,7 @@ const Timeline = () => {
       ></TimelineListElement>
       <Death
         number={6}
-        region={'Göteborg'}
+        region={'Västra Götaland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
@@ -107,7 +107,7 @@ const Timeline = () => {
       ></Death>
       <TimelineListElement
         number={97}
-        region={'Göteborg'}
+        region={'Västra Götaland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
