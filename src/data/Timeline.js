@@ -7,6 +7,27 @@ const Timeline = () => {
   return (
     <>
       <h3>9 april 2020</h3>
+      <TimelineListElement
+        number={2}
+        region={'Blekinge'}
+        source={
+          'https://regionblekinge.se/halsa-och-vard/for-vardgivare/smittskyddsenheten/information-om-coronaviruset.html'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Västmlanland'}
+        source={
+          'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/lagesbild/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={23}
+        region={'Västmanland'}
+        source={
+          'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/lagesbild/'
+        }
+      ></TimelineListElement>
       <Death
         number={2}
         region={'Jönköping'}
@@ -89,6 +110,14 @@ const Timeline = () => {
       ></Death>
       <h3>8 april 2020</h3>
       <TimelineListElement
+        number={13}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      (Tillagt 9 April)
+      <TimelineListElement
         number={4}
         region={'Jämtland'}
         source={
@@ -141,13 +170,6 @@ const Timeline = () => {
       <TimelineListElement
         number={16}
         region={'Jönköping'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={8}
-        region={'Halland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
