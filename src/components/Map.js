@@ -48,8 +48,6 @@ const Map = props => {
     attributionControl: true,
     ...rest
   }
-  console.log(mapRef)
-  console.log(mapRef.getZoom())
   return (
     <div className={mapClassName}>
       <BaseMap ref={mapRef} {...mapSettings}>
