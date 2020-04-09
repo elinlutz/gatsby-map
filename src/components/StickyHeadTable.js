@@ -220,7 +220,7 @@ const StickyHeadTable = () => {
 
     columns.splice(5, 0, {
       id: 'icuRatio',
-      label: 'intensivvård/på sjukhus',
+      label: 'Andel intensivvård',
       align: 'center',
       color: `${colors.lightgrey}`,
       maxWidth: '20em'
