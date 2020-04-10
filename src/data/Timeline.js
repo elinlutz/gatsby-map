@@ -7,6 +7,20 @@ const Timeline = () => {
   return (
     <>
       <h3>10 april 2020</h3>
+      <TimelineListElement
+        number={4}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={12}
+        region={'Västerbotten'}
+        source={
+          'https://www.regionvasterbotten.se/coronavirus/aktuellt-vardlage-i-region-vasterbotten-covid-19'
+        }
+      ></TimelineListElement>
       <h3>9 april 2020</h3>
       <TimelineListElement
         number={2}
@@ -14,6 +28,13 @@ const Timeline = () => {
         source={'https://gotland.se/106708'}
       ></TimelineListElement>
       (Tillagt 10 April)
+      <TimelineListElement
+        number={13}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={44}
         region={'Uppsala'}
@@ -106,13 +127,6 @@ const Timeline = () => {
       <TimelineListElement
         number={25}
         region={'Jönköping'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={8}
-        region={'Halland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
