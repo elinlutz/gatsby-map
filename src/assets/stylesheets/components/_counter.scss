@@ -122,6 +122,27 @@
     }
   }
 
+  .confirmedNumberContainerTopSweden {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5em 0;
+    margin-top: 1em;
+
+    .numberContainer {
+      margin: 2px;
+
+      h2 {
+        font-size: 35px;
+      }
+      .textContainer {
+        h3 {
+          text-transform: uppercase;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
   .confirmedNumberContainerBottom {
     display: flex;
     justify-content: space-evenly;
@@ -213,13 +234,37 @@
           font-size: 60px;
         }
         h2 {
-          font-size: 32px;
+          font-size: 25px;
         }
         .textContainer {
           height: 1em;
           h3 {
             text-transform: uppercase;
             font-size: 10px;
+          }
+        }
+      }
+    }
+
+    .confirmedNumberContainerTopSweden {
+      padding: 0em 0;
+      margin-top: 0.4em;
+      .numberContainer {
+        width: 100%;
+        h2 {
+          font-size: 22px;
+        }
+
+        .bottomWorld {
+          font-size: 16px;
+        }
+
+        .textContainer {
+          height: 1em;
+
+          h3 {
+            text-transform: uppercase;
+            font-size: 8px;
           }
         }
       }

@@ -16,6 +16,7 @@ const Markers = ({ loadTotal, onClick }) => {
             id
             Region
             Display_Name
+            Population
             Lat
             Long
             Region_Total
@@ -68,6 +69,12 @@ const Markers = ({ loadTotal, onClick }) => {
 
     if (region.Region_Total > 0) {
       const { color, radius } = getBubble(region.Region_Total)
+
+      const deathsPer100k = region.Region_Deaths
+        ? (region.Region_Deaths / region.Population) * 100000
+        : null
+
+      region['deathsPer100k'] = deathsPer100k.toFixed(0)
 
       return (
         <CircleMarker
