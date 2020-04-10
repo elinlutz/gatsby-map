@@ -11,13 +11,24 @@
 
 .sweden {
   background-color: $sweden;
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
-  display: block;
-  opacity: 0.8;
   line-height: 18px;
   white-space: nowrap;
+  display: block;
+  width: 14px;
+  height: 19px;
+  background-color: $sweden;
+  background-image: linear-gradient(
+    to bottom,
+    #ffb452,
+    #ffb14b,
+    #ffa32b,
+    #ff950a,
+    #ff8f00
+  );
+
+  -webkit-border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+  -moz-border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
 }
 
 .initiatives {
