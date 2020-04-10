@@ -53,7 +53,7 @@ const Timeline = () => {
         }
       ></Death>
       <TimelineListElement
-        number={6}
+        number={8}
         region={'Örebro'}
         source={'https://www.regionorebrolan.se/'}
       ></TimelineListElement>
