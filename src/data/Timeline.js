@@ -9,6 +9,12 @@ const Timeline = () => {
       <h3>10 april 2020</h3>
       <h3>9 april 2020</h3>
       <TimelineListElement
+        number={2}
+        region={'Gotland'}
+        source={'https://gotland.se/106708'}
+      ></TimelineListElement>
+      (Tillagt 10 April)
+      <TimelineListElement
         number={44}
         region={'Uppsala'}
         source={
@@ -276,7 +282,6 @@ const Timeline = () => {
           'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
         }
       ></TimelineListElement>
-      (Tillagt 9 April)
       <TimelineListElement
         number={4}
         region={'Jämtland'}
@@ -284,7 +289,6 @@ const Timeline = () => {
           'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200408coronacovid19regionjamtlandharjedalen.5.4faf1114170d0bf514f35b59.html'
         }
       ></TimelineListElement>
-      (Tillagt 9 April)
       <Death
         number={5}
         region={'Dalarna'}
