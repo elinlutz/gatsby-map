@@ -8,6 +8,62 @@ const Timeline = () => {
     <>
       <h3>11 april 2020</h3>
       <Death
+        number={0}
+        region={'Västra Götaland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <Death
+        number={0}
+        region={'Uppsala'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <Death
+        number={1}
+        region={'Sörmland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <Death
+        number={13}
+        region={'Stockholm'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <TimelineListElement
+        number={90}
+        region={'Västra Götaland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={6}
+        region={'Uppsala'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={42}
+        region={'Sörmland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={144}
+        region={'Stockholm'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <Death
         number={1}
         region={'Västmanland'}
         source={
