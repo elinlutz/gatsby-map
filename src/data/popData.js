@@ -1,8 +1,4 @@
-;[
-  {
-    country: '',
-    population: ''
-  },
+export const popData = [
   {
     country: 'Aruba',
     population: 105845

@@ -87,10 +87,6 @@ const IndexPage = ({ data }) => {
     setInitiative(initiative)
   }
 
-  function onClickDeaths(region) {
-    setRegion(region)
-  }
-
   function onClickCountry(country) {
     setCountry(country)
   }
@@ -115,6 +111,7 @@ const IndexPage = ({ data }) => {
             : country.Deaths
         }
         recovered={country.Recovered}
+        deathsPer100k={country.deathsPer100k}
       ></DetailsCounter>
     )
   }

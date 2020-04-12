@@ -4,6 +4,23 @@ import { CircleMarker } from 'react-leaflet'
 
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
+import { popData } from '../../data/popData'
+
+function addDeathRatio(popData, country) {
+  const populationItem = popData.filter(
+    item => item.country == country.Country_Region
+  )
+
+  if (populationItem[0]) {
+    const population = populationItem[0].population
+    const deathsPer100k = country.Deaths
+      ? (country.Deaths / population) * 100000
+      : null
+
+    country['deathsPer100k'] = deathsPer100k.toFixed(0)
+  }
+}
+
 const WorldMarkers = ({ onClick }) => {
   const [active, setActive] = useState(false)
 
@@ -20,6 +37,7 @@ const WorldMarkers = ({ onClick }) => {
             Province_State
             Lat
             Long_
+            Admin2
           }
         }
       }
@@ -70,9 +88,14 @@ const WorldMarkers = ({ onClick }) => {
     if (country.Confirmed > 0) {
       const { color, radius } = getBubble(country.Confirmed)
 
+      if (!country.Admin2 && !country.Province_State) {
+        addDeathRatio(popData, country)
+      }
+
       const latitude = country.Lat === 0 ? null : country.Lat.substring(0, 10)
       const longitude =
         country.Long_ === 0 ? null : country.Long_.substring(0, 10)
+
       return (
         <CircleMarker
           key={country.id}
