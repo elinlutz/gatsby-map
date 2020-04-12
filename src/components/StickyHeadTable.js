@@ -168,7 +168,7 @@ function createData(
 
   const atHospital = hospitalized
   const atIcu = icu
-  const density = deathsPer10k ? deathsPer10k.toFixed(1) : undefined
+  const density = deathsPer100k ? deathsPer100k.toFixed(1) : undefined
   const icuRatio = ((atIcu / atHospital) * 100).toFixed(0) + '%'
 
   const deathRatio =
