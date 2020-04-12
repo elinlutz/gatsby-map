@@ -11,10 +11,6 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import SEO from '../components/SEO'
 import Dropdown from 'components/Dropdown'
 
-const InlineBubble = () => {
-  return <span className={'inlineBubble'}></span>
-}
-
 const InfoPage = ({ data }) => {
   return (
     <Layout pageName="om">
@@ -109,6 +105,10 @@ const InfoPage = ({ data }) => {
             . Det är samma siffror som ligger till grund för WHO:s dagliga
             rapporteringar. Siffrorna för världen uppdateras en gång om dagen
             och visar gårdagens antal fall.
+          </p>
+          <p>
+            Befolkningsstatistiken är hämtad från SCB för Sverige och från
+            Världsbanken för övriga världen.
           </p>
           <br />
 

@@ -87,10 +87,6 @@ const IndexPage = ({ data }) => {
     setInitiative(initiative)
   }
 
-  function onClickDeaths(region) {
-    setRegion(region)
-  }
-
   function onClickCountry(country) {
     setCountry(country)
   }
@@ -115,6 +111,7 @@ const IndexPage = ({ data }) => {
             : country.Deaths
         }
         recovered={country.Recovered}
+        deathsPer100k={country.deathsPer100k}
       ></DetailsCounter>
     )
   }
@@ -124,7 +121,7 @@ const IndexPage = ({ data }) => {
     return <InitiativeDetails initiative={initiative}></InitiativeDetails>
   }
 
-  function RegionContent() {
+  const RegionContent = () => {
     return (
       <DetailsCounter
         title={region.Display_Name}
@@ -132,6 +129,7 @@ const IndexPage = ({ data }) => {
         number={region.Region_Total}
         deaths={region.Region_Deaths}
         hospitalized={region.Hospital_Total}
+        deathsPer100k={region.deathsPer100k}
       ></DetailsCounter>
     )
   }
