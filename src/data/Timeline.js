@@ -7,6 +7,11 @@ const Timeline = () => {
   return (
     <>
       <h3>13 april 2020</h3>
+      <TimelineListElement
+        number={5}
+        region={'Västernorrland'}
+        source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
+      ></TimelineListElement>
       <Death
         number={1}
         region={'Västra Götaland'}
@@ -31,13 +36,6 @@ const Timeline = () => {
       <TimelineListElement
         number={7}
         region={'Västmanland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={5}
-        region={'Västernorrland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
