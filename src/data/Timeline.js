@@ -6,7 +6,84 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
+      <h3>13 april 2020</h3>
+      <TimelineListElement
+        number={17}
+        region={'Gävleborg'}
+        source={
+          'https://www.regiongavleborg.se/a-o/Smittskydd/A-Y/c/Coronavirus-2019-nCoV/statistik-covid-19/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={3}
+        region={'Jönköping'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid--19-55-personer-i-jonkopings-lan-vardas-pa-sjukhus-48013'
+        }
+      ></Death>
+      <TimelineListElement
+        number={10}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/'}
+      ></TimelineListElement>
+      <Death
+        number={4}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={34}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={4}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={14}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-13-april-2990612'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-13-april-2990612'
+        }
+      ></Death>
       <h3>12 april 2020</h3>
+      <Death
+        number={2}
+        region={'Västerbotten'}
+        source={
+          'https://www.regionvasterbotten.se/coronavirus/aktuellt-vardlage-i-region-vasterbotten-covid-19'
+        }
+      ></Death>
+      <Death
+        number={4}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-13-april-2990612'
+        }
+      ></Death>
+      (Tillagt den 13 April)
+      <TimelineListElement
+        number={3}
+        region={'Kalmar'}
+        source={
+          'https://www.regionkalmar.se/nyhetslista/uppdatering-av-laget-avseende-covid-19/'
+        }
+      ></TimelineListElement>
       <Death
         number={2}
         region={'Östergötland'}
@@ -68,20 +145,6 @@ const Timeline = () => {
         region={'Jönköping'}
         source={'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/'}
       ></Death>
-      <TimelineListElement
-        number={3}
-        region={'Kalmar'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={3}
-        region={'Kalmar'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
       <TimelineListElement
         number={4}
         region={'Jönköping'}
