@@ -8,6 +8,34 @@ const Timeline = () => {
     <>
       <h3>13 april 2020</h3>
       <TimelineListElement
+        number={23}
+        region={'Västmanland'}
+        source={
+          'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/lagesbild/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={3}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={3}
+        region={'Jämtland Härjedalen'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200413coronacovid19regionjamtlandharjedalen.5.613e2f39170d0c32a9530ce5.html'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={5}
         region={'Västernorrland'}
         source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
@@ -23,7 +51,7 @@ const Timeline = () => {
         number={15}
         region={'Stockholm'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/04/13-april-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
         }
       ></Death>
       <TimelineListElement
@@ -65,7 +93,7 @@ const Timeline = () => {
         number={178}
         region={'Stockholm'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/04/13-april-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
         }
       ></TimelineListElement>
       <TimelineListElement
