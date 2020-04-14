@@ -7,6 +7,34 @@ const Timeline = () => {
   return (
     <>
       <h3>14 april 2020</h3>
+      <TimelineListElement
+        number={3}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={3}
+        region={'Kronoberg'}
+        source={'https://www.regionorebrolan.se/sv/'}
+      ></Death>
+      <TimelineListElement
+        number={5}
+        region={'Kronoberg'}
+        source={'https://www.regionorebrolan.se/sv/'}
+      ></TimelineListElement>
+      <TimelineListElement
+        number={35}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/sv/'}
+      ></TimelineListElement>
+      <br />
+      Viss rapportering saknas från påskhelgen. Jag kommer eventuellt behöva
+      korrigera vilket datum fallen rapporterats in på i efterhand, utefter hur
+      regionerna och FHM väljer att korrigera sin data. Extra viktigt att notera
+      är att det är rapporteringsdatum som fortfarande gäller, det vill säga nya
+      fall idag betyder att fallen är inrapporterade idag.
       <h3>13 april 2020</h3>
       <TimelineListElement
         number={23}
