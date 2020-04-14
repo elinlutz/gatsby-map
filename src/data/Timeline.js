@@ -50,6 +50,13 @@ const Timeline = () => {
       är att det är rapporteringsdatum som fortfarande gäller, det vill säga nya
       fall idag betyder att fallen är inrapporterade idag.
       <h3>13 april 2020</h3>
+      <TimelineListElement
+        number={5}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
       <Death
         number={5}
         region={'Sörmland'}
