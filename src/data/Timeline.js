@@ -8,6 +8,13 @@ const Timeline = () => {
     <>
       <h3>14 april 2020</h3>
       <TimelineListElement
+        number={7}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200414coronacovid19regionjamtlandharjedalen.5.613e2f39170d0c32a95327c6.html'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={23}
         region={'Dalarna'}
         source={
@@ -122,13 +129,6 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></Death>
-      <TimelineListElement
-        number={4}
-        region={'Jämtland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
       <TimelineListElement
         number={17}
         region={'Västmanland'}
