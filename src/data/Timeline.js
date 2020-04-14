@@ -31,7 +31,9 @@ const Timeline = () => {
       <Death
         number={3}
         region={'Örebro'}
-        source={'https://www.regionorebrolan.se/corona-live'}
+        source={
+          'https://www.regionorebrolan.se/sv/Om-regionorebrolan/Press/Lagesrapport-corona-26-mars-kl-15001/'
+        }
       ></Death>
       <TimelineListElement
         number={22}
@@ -100,15 +102,22 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <Death
-        number={6}
-        region={'Dalarna'}
+        number={2}
+        region={'Halland'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
         }
       ></Death>
-      <Death
-        number={1}
+      <TimelineListElement
+        number={3}
         region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={6}
+        region={'Dalarna'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
