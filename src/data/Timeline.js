@@ -28,6 +28,11 @@ const Timeline = () => {
           'https://via.tt.se/pressmeddelande/covid--19-i-region-uppsala-fler-vardas-pa-sjukhus-men-laget-bedoms-relativt-stabilt?publisherId=3235664&releaseId=3275196'
         }
       ></Death>
+      <Death
+        number={3}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/corona-live'}
+      ></Death>
       <TimelineListElement
         number={22}
         region={'Uppsala'}
@@ -224,9 +229,9 @@ const Timeline = () => {
         source={'https://www.regionorebrolan.se/sv/'}
       ></TimelineListElement>
       <TimelineListElement
-        number={35}
+        number={44}
         region={'Örebro'}
-        source={'https://www.regionorebrolan.se/sv/'}
+        source={'https://www.regionorebrolan.se/corona-live'}
       ></TimelineListElement>
       <br />
       Viss rapportering saknas från påskhelgen. Jag kommer eventuellt behöva
