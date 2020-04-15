@@ -7,6 +7,20 @@ const Timeline = () => {
   return (
     <>
       <h3>15 april 2020</h3>
+      <Death
+        number={2}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={6}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={2}
         region={'Gotland'}
@@ -64,13 +78,6 @@ const Timeline = () => {
       <TimelineListElement
         number={12}
         region={'Jönköping'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={2}
-        region={'Halland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }

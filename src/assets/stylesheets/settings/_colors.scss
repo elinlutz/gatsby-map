@@ -305,6 +305,7 @@ $world: $blue-900;
 $sweden: $amber-800;
 $initiatives: $light-green-800;
 $accent: $dark-theme;
+
 $deathrate0: $amber-700;
 $deathrate1: $amber-700;
 $deathrate2: $amber-800;
@@ -315,6 +316,17 @@ $deathrate6: $orange-700;
 $deathrate7: $orange-700;
 $deathrate8: $orange-800;
 $deathrate9: $orange-800;
+
+$deathrateworld0: $blue-700;
+$deathrateworld1: $blue-700;
+$deathrateworld2: $blue-800;
+$deathrateworld3: $blue-800;
+$deathrateworld4: $blue-900;
+$deathrateworld5: $blue-900;
+$deathrateworld6: $blue-700;
+$deathrateworld7: $blue-700;
+$deathrateworld8: $blue-800;
+$deathrateworld9: $blue-800;
 
 :export {
   red: $red-500;
@@ -339,4 +351,14 @@ $deathrate9: $orange-800;
   deathrate7: $deathrate7;
   deathrate8: $deathrate8;
   deathrate9: $deathrate9;
+  deathrateworld0: $deathrateworld0;
+  deathrateworld1: $deathrateworld1;
+  deathrateworld2: $deathrateworld2;
+  deathrateworld3: $deathrateworld3;
+  deathrateworld4: $deathrateworld4;
+  deathrateworld5: $deathrateworld5;
+  deathrateworld6: $deathrateworld6;
+  deathrateworld7: $deathrateworld7;
+  deathrateworld8: $deathrateworld8;
+  deathrateworld9: $deathrateworld9;
 }
