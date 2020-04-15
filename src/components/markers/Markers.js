@@ -4,8 +4,7 @@ import { CircleMarker } from 'react-leaflet'
 
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
-const Markers = ({ loadTotal, onClick }) => {
-  const [clicked, setClicked] = useState(false)
+const Markers = ({ onClick }) => {
   const [active, setActive] = useState(false)
 
   const data = useStaticQuery(graphql`
@@ -29,36 +28,49 @@ const Markers = ({ loadTotal, onClick }) => {
   `)
 
   const edges = data.allTimeSeriesConfimedConfirmedCsv.edges
-  console.log(edges)
-  let maxSweConfirmed = 0
+
+  let maxRegionConf = 0
+  let maxRegionPop = 0
   let maxSweDeathRate = 0
-  for (let edge in edges){
+
+  for (let edge in edges) {
     let conf = edges[edge].node.Region_Total
-    
-    if (conf > maxSweConfirmed){
-      maxSweConfirmed = conf
+    let pop = edges[edge].node.Population
+
+    if (conf > maxRegionConf) {
+      maxRegionConf = conf
     }
-    let dr = edges[edge].node.Region_Deaths/conf
-    if (dr > maxSweDeathRate){
+
+    if (pop > maxRegionPop) {
+      maxRegionPop = pop
+    }
+
+    let dr = (edges[edge].node.Region_Deaths / pop) * 100000
+
+    console.log(dr)
+
+    if (dr > maxSweDeathRate) {
       maxSweDeathRate = dr
     }
   }
-  const getBubble = (confirmed,deaths) => {
+
+  const getBubble = (confirmed, deaths, population) => {
     let color
     let number = confirmed
     let radius
     let colorName
+
     if (confirmed > 0) {
-      let deathRate = deaths/confirmed
-      let deathRateColorIndex = Math.floor(10*(deathRate/(maxSweDeathRate+0.0000001)))
-      //color = colors.sweden
+      let deathRate = (deaths / population) * 100000
+      let deathRateColorIndex = Math.floor(
+        10 * (deathRate / (maxSweDeathRate + 0.0000001))
+      )
       colorName = 'deathrate' + String(deathRateColorIndex)
-      console.log(colorName)
       color = colors[colorName]
-      console.log(color)
     }
-    radius = 10 * Math.sqrt((number/maxSweConfirmed)/Math.PI)
-    
+
+    radius = 5 + 8 * Math.sqrt(number / maxRegionConf / Math.PI)
+
     return { color, radius }
   }
 
@@ -66,7 +78,11 @@ const Markers = ({ loadTotal, onClick }) => {
     const region = edge.node
 
     if (region.Region_Total > 0) {
-      const { color, radius } = getBubble(region.Region_Total,region.Region_Deaths)
+      const { color, radius } = getBubble(
+        region.Region_Total,
+        region.Region_Deaths,
+        region.Population
+      )
 
       const deathsPer100k = region.Region_Deaths
         ? (region.Region_Deaths / region.Population) * 100000
@@ -81,7 +97,7 @@ const Markers = ({ loadTotal, onClick }) => {
           color={color}
           stroke={false}
           center={[region.Lat, region.Long]}
-          fillOpacity={active === region.id ? 0.9 : 0.7}
+          fillOpacity={active === region.id ? 0.95 : 0.75}
           onClick={() => {
             onClick(region)
             setActive(region.id)

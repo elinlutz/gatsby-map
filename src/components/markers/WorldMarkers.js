@@ -47,14 +47,14 @@ const WorldMarkers = ({ onClick }) => {
   const edges = data.allWorldCsv.edges
   let maxConfirmed = 0
   let maxDeathRate = 0
-  for (let edge in edges){
+  for (let edge in edges) {
     let conf = edges[edge].node.Confirmed
-    
-    if (conf > maxConfirmed){
+
+    if (conf > maxConfirmed) {
       maxConfirmed = conf
     }
-    let dr = edges[edge].node.Deaths/(conf+Number.EPSILON)
-    if (dr > maxDeathRate){
+    let dr = edges[edge].node.Deaths / (conf + Number.EPSILON)
+    if (dr > maxDeathRate) {
       maxDeathRate = dr
     }
   }
@@ -67,7 +67,7 @@ const WorldMarkers = ({ onClick }) => {
       color = colors.world
     }
     //console.log(Math.sqrt((1000*number/maxConfirmed)/Math.PI))
-    radius = 7 * Math.sqrt((number/maxConfirmed)/Math.PI)
+    radius = 3 + 5 * Math.sqrt(number / maxConfirmed / Math.PI)
 
     return { color, radius }
   }
