@@ -29,38 +29,36 @@ const Markers = ({ loadTotal, onClick }) => {
   `)
 
   const edges = data.allTimeSeriesConfimedConfirmedCsv.edges
-
-  const getBubble = confirmed => {
+  console.log(edges)
+  let maxSweConfirmed = 0
+  let maxSweDeathRate = 0
+  for (let edge in edges){
+    let conf = edges[edge].node.Region_Total
+    
+    if (conf > maxSweConfirmed){
+      maxSweConfirmed = conf
+    }
+    let dr = edges[edge].node.Region_Deaths/conf
+    if (dr > maxSweDeathRate){
+      maxSweDeathRate = dr
+    }
+  }
+  const getBubble = (confirmed,deaths) => {
     let color
     let number = confirmed
     let radius
-
+    let colorName
     if (confirmed > 0) {
-      color = colors.sweden
+      let deathRate = deaths/confirmed
+      let deathRateColorIndex = Math.floor(10*(deathRate/(maxSweDeathRate+0.0000001)))
+      //color = colors.sweden
+      colorName = 'deathrate' + String(deathRateColorIndex)
+      console.log(colorName)
+      color = colors[colorName]
+      console.log(color)
     }
-
-    if (number == 1) {
-      radius = 4
-    } else if (number < 10) {
-      radius = 4
-    } else if (number < 50) {
-      radius = 10
-    } else if (number < 100) {
-      radius = 13
-    } else if (number < 200) {
-      radius = 14
-    } else if (number < 400) {
-      radius = 18
-    } else if (number < 800) {
-      radius = 22
-    } else if (number < 1600) {
-      radius = 26
-    } else if (number < 3000) {
-      radius = 28
-    } else if (number >= 3000) {
-      radius = 30
-    }
-
+    radius = 10 * Math.sqrt((number/maxSweConfirmed)/Math.PI)
+    
     return { color, radius }
   }
 
@@ -68,7 +66,7 @@ const Markers = ({ loadTotal, onClick }) => {
     const region = edge.node
 
     if (region.Region_Total > 0) {
-      const { color, radius } = getBubble(region.Region_Total)
+      const { color, radius } = getBubble(region.Region_Total,region.Region_Deaths)
 
       const deathsPer100k = region.Region_Deaths
         ? (region.Region_Deaths / region.Population) * 100000
