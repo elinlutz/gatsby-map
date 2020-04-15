@@ -157,12 +157,12 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['6 April 2020', 7340],
               ['7 April 2020', 7837],
               ['8 April 2020', 8570],
-              ['9 April 2020', 9254],
-              ['10 April 2020', 9787],
-              ['11 April 2020', 10303],
-              ['12 April 2020', 10649],
-              ['13 April 2020', 11048],
-              ['14 April 2020', 11552],
+              ['9 April 2020', 9253],
+              ['10 April 2020', 9786],
+              ['11 April 2020', 10302],
+              ['12 April 2020', 10648],
+              ['13 April 2020', 11047],
+              ['14 April 2020', 11551],
               ['15 April 2020', total]
             ],
             type: `${chartType}`,
@@ -173,7 +173,7 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
             }
           },
           {
-            name: 'Antal bekräftade fall per dag',
+            name: 'Bekräftade fall per dag',
             data: [
               ['1 Mars 2020', 1],
               ['2 Mars 2020', 1],
@@ -214,7 +214,7 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['6 April 2020', 352],
               ['7 April 2020', 497],
               ['8 April 2020', 733],
-              ['9 April 2020', 684],
+              ['9 April 2020', 683],
               ['10 April 2020', 533],
               ['11 April 2020', 516],
               ['12 April 2020', 346],
@@ -232,7 +232,7 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
         ]
       : [
           {
-            name: 'Antal dödsfall totalt',
+            name: 'Rapporterade dödsfall totalt',
             data: [
               ['1 Mars 2020', 0],
               ['2 Mars 2020', 0],
@@ -289,7 +289,7 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
             }
           },
           {
-            name: 'Antal dödsfall per dag',
+            name: 'Rapporterade dödsfall per dag',
             data: [
               ['1 Mars 2020', 0],
               ['2 Mars 2020', 0],

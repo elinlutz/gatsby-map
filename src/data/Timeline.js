@@ -8,6 +8,25 @@ const Timeline = () => {
     <>
       <h3>15 april 2020</h3>
       <TimelineListElement
+        number={2}
+        region={'Gotland'}
+        source={'https://gotland.se/106753'}
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Jämtland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <TimelineListElement
+        number={20}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200415coronacovid19regionjamtlandharjedalen.5.613e2f39170d0c32a9534118.html'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={1}
         region={'Blekinge'}
         source={
@@ -45,13 +64,6 @@ const Timeline = () => {
       <TimelineListElement
         number={12}
         region={'Jönköping'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={15}
-        region={'Jämtland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
@@ -217,14 +229,14 @@ const Timeline = () => {
         number={4}
         region={'Norrbotten'}
         source={
-          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+          'https://www.norrbotten.se/sv/Om-Region-Norrbotten/Press/Pressmeddelanden-2020/Information-fran-presstraff-15-april/'
         }
       ></Death>
       <TimelineListElement
         number={8}
         region={'Norrbotten'}
         source={
-          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+          'https://www.norrbotten.se/sv/Om-Region-Norrbotten/Press/Pressmeddelanden-2020/Information-fran-presstraff-15-april/'
         }
       ></TimelineListElement>
       <Death
