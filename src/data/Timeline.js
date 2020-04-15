@@ -236,12 +236,16 @@ const Timeline = () => {
       <Death
         number={3}
         region={'Kronoberg'}
-        source={'https://www.regionorebrolan.se/sv/'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
       ></Death>
       <TimelineListElement
         number={5}
         region={'Kronoberg'}
-        source={'https://www.regionorebrolan.se/sv/'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
       ></TimelineListElement>
       <TimelineListElement
         number={44}
