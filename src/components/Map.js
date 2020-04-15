@@ -48,7 +48,6 @@ const Map = props => {
     attributionControl: true,
     ...rest
   }
-
   return (
     <div className={mapClassName}>
       <BaseMap ref={mapRef} {...mapSettings}>

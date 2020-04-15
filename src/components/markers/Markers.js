@@ -4,8 +4,7 @@ import { CircleMarker } from 'react-leaflet'
 
 import colors from 'assets/stylesheets/settings/_colors.scss'
 
-const Markers = ({ loadTotal, onClick }) => {
-  const [clicked, setClicked] = useState(false)
+const Markers = ({ onClick }) => {
   const [active, setActive] = useState(false)
 
   const data = useStaticQuery(graphql`
@@ -30,36 +29,47 @@ const Markers = ({ loadTotal, onClick }) => {
 
   const edges = data.allTimeSeriesConfimedConfirmedCsv.edges
 
-  const getBubble = confirmed => {
+  let maxRegionConf = 0
+  let maxRegionPop = 0
+  let maxSweDeathRate = 0
+
+  for (let edge in edges) {
+    let conf = edges[edge].node.Region_Total
+    let pop = edges[edge].node.Population
+
+    if (conf > maxRegionConf) {
+      maxRegionConf = conf
+    }
+
+    if (pop > maxRegionPop) {
+      maxRegionPop = pop
+    }
+
+    let dr = (edges[edge].node.Region_Deaths / pop) * 100000
+
+    console.log(dr)
+
+    if (dr > maxSweDeathRate) {
+      maxSweDeathRate = dr
+    }
+  }
+
+  const getBubble = (confirmed, deaths, population) => {
     let color
     let number = confirmed
     let radius
+    let colorName
 
     if (confirmed > 0) {
-      color = colors.sweden
+      let deathRate = (deaths / population) * 100000
+      let deathRateColorIndex = Math.floor(
+        10 * (deathRate / (maxSweDeathRate + 0.0000001))
+      )
+      colorName = 'deathrate' + String(deathRateColorIndex)
+      color = colors[colorName]
     }
 
-    if (number == 1) {
-      radius = 4
-    } else if (number < 10) {
-      radius = 4
-    } else if (number < 50) {
-      radius = 10
-    } else if (number < 100) {
-      radius = 13
-    } else if (number < 200) {
-      radius = 14
-    } else if (number < 400) {
-      radius = 18
-    } else if (number < 800) {
-      radius = 22
-    } else if (number < 1600) {
-      radius = 26
-    } else if (number < 3000) {
-      radius = 28
-    } else if (number >= 3000) {
-      radius = 30
-    }
+    radius = 5 + 8 * Math.sqrt(number / maxRegionConf / Math.PI)
 
     return { color, radius }
   }
@@ -68,7 +78,11 @@ const Markers = ({ loadTotal, onClick }) => {
     const region = edge.node
 
     if (region.Region_Total > 0) {
-      const { color, radius } = getBubble(region.Region_Total)
+      const { color, radius } = getBubble(
+        region.Region_Total,
+        region.Region_Deaths,
+        region.Population
+      )
 
       const deathsPer100k = region.Region_Deaths
         ? (region.Region_Deaths / region.Population) * 100000
@@ -83,7 +97,7 @@ const Markers = ({ loadTotal, onClick }) => {
           color={color}
           stroke={false}
           center={[region.Lat, region.Long]}
-          fillOpacity={active === region.id ? 0.9 : 0.7}
+          fillOpacity={active === region.id ? 0.95 : 0.75}
           onClick={() => {
             onClick(region)
             setActive(region.id)

@@ -45,7 +45,19 @@ const WorldMarkers = ({ onClick }) => {
   `)
 
   const edges = data.allWorldCsv.edges
+  let maxConfirmed = 0
+  let maxDeathRate = 0
+  for (let edge in edges) {
+    let conf = edges[edge].node.Confirmed
 
+    if (conf > maxConfirmed) {
+      maxConfirmed = conf
+    }
+    let dr = edges[edge].node.Deaths / (conf + Number.EPSILON)
+    if (dr > maxDeathRate) {
+      maxDeathRate = dr
+    }
+  }
   const getBubble = confirmed => {
     let color
     let number = confirmed
@@ -54,30 +66,8 @@ const WorldMarkers = ({ onClick }) => {
     if (confirmed > 0) {
       color = colors.world
     }
-
-    if (number == 1) {
-      radius = 3
-    } else if (number < 100) {
-      radius = 6
-    } else if (number < 500) {
-      radius = 10
-    } else if (number < 2000) {
-      radius = 12
-    } else if (number < 4000) {
-      radius = 14
-    } else if (number < 8000) {
-      radius = 16
-    } else if (number < 16000) {
-      radius = 18
-    } else if (number < 25000) {
-      radius = 20
-    } else if (number < 100000) {
-      radius = 26
-    } else if (number < 200000) {
-      radius = 28
-    } else if (number >= 200000) {
-      radius = 30
-    }
+    //console.log(Math.sqrt((1000*number/maxConfirmed)/Math.PI))
+    radius = 3 + 5 * Math.sqrt(number / maxConfirmed / Math.PI)
 
     return { color, radius }
   }
