@@ -40,11 +40,11 @@ const InitiativeMarkers = ({ loadTotal, onClick }) => {
       return (
         <CircleMarker
           key={initiative.id}
-          radius={25}
+          radius={20}
           color={colors.initiatives}
           stroke={false}
           center={[initiative.Latitud, initiative.Longitud]}
-          fillOpacity={active === initiative.id ? 0.9 : 0.5}
+          fillOpacity={active === initiative.id ? 1 : 0.5}
           onClick={() => {
             onClick(initiative)
             setActive(initiative.id)
