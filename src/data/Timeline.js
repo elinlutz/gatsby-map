@@ -7,6 +7,55 @@ const Timeline = () => {
   return (
     <>
       <h3>15 april 2020</h3>
+      <Death
+        number={6}
+        region={'Västra Götaland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <Death
+        number={22}
+        region={'Sörmland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <Death
+        number={86}
+        region={'Stockholm'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <TimelineListElement
+        number={65}
+        region={'Västra Götaland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={30}
+        region={'Uppsala'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={17}
+        region={'Sörmland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={184}
+        region={'Stockholm'}
+        source={
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/04/11-april-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={12}
         region={'Skåne'}
