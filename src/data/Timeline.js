@@ -8,6 +8,20 @@ const Timeline = () => {
     <>
       <h3>16 april 2020</h3>
       <Death
+        number={4}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200416-Nul%c3%a4gesbild%20Regioin%20Uppsala.pdf'
+        }
+      ></Death>
+      <TimelineListElement
+        number={42}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200416-Nul%c3%a4gesbild%20Regioin%20Uppsala.pdf'
+        }
+      ></TimelineListElement>
+      <Death
         number={2}
         region={'Halland'}
         source={
@@ -172,13 +186,6 @@ const Timeline = () => {
       <TimelineListElement
         number={71}
         region={'Västra Götaland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={32}
-        region={'Uppsala'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
