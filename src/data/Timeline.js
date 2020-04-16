@@ -7,12 +7,34 @@ const Timeline = () => {
   return (
     <>
       <h3>16 april 2020</h3>
+      <Death
+        number={2}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={11}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={44}
         region={'Örebro'}
         source={'https://www.regionorebrolan.se/'}
       ></TimelineListElement>
       <h3>15 april 2020</h3>
+      <TimelineListElement
+        number={17}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-15-april-2991282'
+        }
+      ></TimelineListElement>
+      (Tillagt 16 April)
       <Death
         number={2}
         region={'Halland'}
@@ -98,13 +120,6 @@ const Timeline = () => {
       <TimelineListElement
         number={7}
         region={'Gävleborg'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={10}
-        region={'Dalarna'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
