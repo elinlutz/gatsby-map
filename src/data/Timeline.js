@@ -9,6 +9,48 @@ const Timeline = () => {
       <h3>16 april 2020</h3>
       <Death
         number={2}
+        region={'Jönköping'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid--19-55-personer-i-jonkopings-lan-vardas-pa-sjukhus-48246'
+        }
+      ></Death>
+      <TimelineListElement
+        number={14}
+        region={'Västerbotten'}
+        source={
+          'https://www.regionvasterbotten.se/coronavirus/aktuellt-vardlage-i-region-vasterbotten-covid-19'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={3}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={3}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={3}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={42}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
         region={'Kronoberg'}
         source={
           'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
