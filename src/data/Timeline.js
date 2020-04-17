@@ -8,6 +8,30 @@ const Timeline = () => {
     <>
       <h3>17 april 2020</h3>
       <TimelineListElement
+        number={19}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-17-april-2992106'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={58}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/'}
+      ></TimelineListElement>
+      <Death
+        number={16}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/'}
+      ></Death>
+      <Death
+        number={3}
+        region={'Jämtland'}
+        source={
+          'https://www.ostersund.se/om-webbplatsen/nyhetsarkiv/nyhetsarkiv/2020-04-17-fler-har-avlidit-pa-smittade-aldreboenden.html'
+        }
+      ></Death>
+      <TimelineListElement
         number={11}
         region={'Örebro'}
         source={
@@ -35,11 +59,18 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
+      <Death
+        number={21}
+        region={'Stockholm'}
+        source={
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/04/17-april-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
+        }
+      ></Death>
       <TimelineListElement
         number={181}
         region={'Stockholm'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/04/17-april-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
         }
       ></TimelineListElement>
       <TimelineListElement
@@ -73,13 +104,6 @@ const Timeline = () => {
       <TimelineListElement
         number={7}
         region={'Gävleborg'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={13}
-        region={'Dalarna'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
@@ -122,13 +146,6 @@ const Timeline = () => {
       <Death
         number={2}
         region={'Sörmland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></Death>
-      <Death
-        number={21}
-        region={'Stockholm'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
@@ -256,6 +273,14 @@ const Timeline = () => {
         source={'https://www.regionorebrolan.se/'}
       ></TimelineListElement>
       <h3>16 april 2020</h3>
+      <Death
+        number={2}
+        region={'Jämtland'}
+        source={
+          'https://www.ostersund.se/om-webbplatsen/nyhetsarkiv/nyhetsarkiv/2020-04-17-fler-har-avlidit-pa-smittade-aldreboenden.html'
+        }
+      ></Death>
+      (Tillagt 17 april)
       <Death
         number={4}
         region={'Uppsala'}
