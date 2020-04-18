@@ -7,6 +7,32 @@ const Timeline = () => {
   return (
     <>
       <h3>18 april 2020</h3>{' '}
+      <TimelineListElement
+        number={12}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={5}
+        region={'Västernorrland'}
+        source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={16}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></TimelineListElement>
       <Death
         number={5}
         region={'Västra Götaland'}
@@ -25,26 +51,19 @@ const Timeline = () => {
         number={81}
         region={'Stockholm'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/04/18-april-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
         }
       ></Death>
-      <TimelineListElement
-        number={89}
-        region={'Västra Götaland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
       <TimelineListElement
         number={264}
         region={'Stockholm'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/04/18-april-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={5}
-        region={'Västernorrland'}
+        number={89}
+        region={'Västra Götaland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
@@ -71,20 +90,6 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={6}
-        region={'Norrbotten'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={2}
-        region={'Kronoberg'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
         number={2}
         region={'Kalmar'}
         source={
@@ -94,13 +99,6 @@ const Timeline = () => {
       <TimelineListElement
         number={33}
         region={'Jönköping'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={6}
-        region={'Jämtland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
@@ -196,6 +194,14 @@ const Timeline = () => {
       ></TimelineListElement>
       <h3>17 april 2020</h3>
       <TimelineListElement
+        number={15}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200417coronacovid19regionjamtlandharjedalen.5.de9af55171844b127158c.html'
+        }
+      ></TimelineListElement>
+      (Tillagt 18 april)
+      <TimelineListElement
         number={19}
         region={'Dalarna'}
         source={
@@ -271,13 +277,6 @@ const Timeline = () => {
       <TimelineListElement
         number={22}
         region={'Jönköping'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={6}
-        region={'Jämtland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
