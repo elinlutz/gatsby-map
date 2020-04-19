@@ -47,8 +47,6 @@ const Markers = ({ onClick }) => {
 
     let dr = (edges[edge].node.Region_Deaths / pop) * 100000
 
-    console.log(dr)
-
     if (dr > maxSweDeathRate) {
       maxSweDeathRate = dr
     }

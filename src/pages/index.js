@@ -76,7 +76,6 @@ const IndexPage = ({ data }) => {
 
   useEffect(() => {
     setView(view)
-    console.log('hi')
   })
 
   function onClickRegion(region) {
@@ -213,10 +212,8 @@ const IndexPage = ({ data }) => {
                 recovered={getTotal(data.allWorldCsv.edges, 'Recovered')}
               ></CounterWorld>
             ) : view === 'initiatives' ? (
-              <CounterInitiatives view={view} number={15}></CounterInitiatives>
-            ) : (
-              'hi'
-            )}
+              <CounterInitiatives view={view} number={17}></CounterInitiatives>
+            ) : null}
 
             <Container className="info">
               {region || country || initiative ? (
