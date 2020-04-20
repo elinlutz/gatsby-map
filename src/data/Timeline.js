@@ -7,6 +7,20 @@ const Timeline = () => {
   return (
     <>
       <h3>20 april 2020</h3>
+      <TimelineListElement
+        number={5}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200420coronacovid19regionjamtlandharjedalen.5.6e9a4ea7171845f1b5747ea.html'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={13}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-20-april-2992493'
+        }
+      ></TimelineListElement>
       <Death
         number={1}
         region={'Norrbotten'}
@@ -36,13 +50,6 @@ const Timeline = () => {
         }
       ></Death>
       <TimelineListElement
-        number={8}
-        region={'Dalarna'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
         number={4}
         region={'Kalmar'}
         source={
@@ -60,7 +67,7 @@ const Timeline = () => {
         number={10}
         region={'Halland'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
         }
       ></TimelineListElement>
       <TimelineListElement
