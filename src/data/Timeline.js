@@ -8,6 +8,69 @@ const Timeline = () => {
     <>
       <h3>20 april 2020</h3>
       <Death
+        number={1}
+        region={'Norrbotten'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <Death
+        number={1}
+        region={'Kronoberg'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <Death
+        number={1}
+        region={'Jönköping'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <Death
+        number={2}
+        region={'Gävleborg'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <TimelineListElement
+        number={8}
+        region={'Dalarna'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={4}
+        region={'Kalmar'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={16}
+        region={'Jönköping'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={10}
+        region={'Halland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={6}
+        region={'Gävleborg'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <Death
         number={2}
         region={'Västernorrland'}
         source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
