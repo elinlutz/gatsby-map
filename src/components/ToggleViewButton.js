@@ -29,7 +29,7 @@ function ToggleViewButton({
           Världen
         </ToggleButton>
         <ToggleButton className="toggleViewButtonWorld" value="initiatives">
-          Initativ
+          Initiativ
         </ToggleButton>
       </ToggleButtonGroup>
     </>
