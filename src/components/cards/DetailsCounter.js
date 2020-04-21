@@ -56,7 +56,9 @@ const DetailsCounter = ({
               </div>
             </div>
             <div className="numberContainer">
-              <h2>{hospitalized > 0 ? hospitalized : '?'}</h2>
+              <h2>
+                {hospitalized.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+              </h2>
               <div className="textContainer">
                 <h3>På sjukhus</h3>
               </div>

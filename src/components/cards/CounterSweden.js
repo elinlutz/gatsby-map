@@ -35,7 +35,9 @@ const CounterSweden = ({ number, deathNumber, view, hospitalized }) => {
 
       <div className="confirmedNumberContainerBottom">
         <div className="numberContainer">
-          <h2 className>{hospitalized > 0 ? hospitalized : '?'}</h2>
+          <h2 className>
+            {hospitalized.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+          </h2>
           <div className="textContainer">
             <h3>På sjukhus</h3>
           </div>
