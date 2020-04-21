@@ -130,13 +130,6 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={10}
-        region={'Kalmar'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
         number={17}
         region={'Jönköping'}
         source={
