@@ -7,6 +7,39 @@ const Timeline = () => {
   return (
     <>
       <h3>21 april 2020</h3>
+      <Death
+        number={3}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200421-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></Death>
+      <TimelineListElement
+        number={35}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200421-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></TimelineListElement>
+      <Death
+        number={3}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={10}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={8}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/'}
+      ></TimelineListElement>
       <h3>20 april 2020</h3>
       <TimelineListElement
         number={5}
