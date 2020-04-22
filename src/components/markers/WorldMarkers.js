@@ -71,7 +71,7 @@ const WorldMarkers = ({ onClick }) => {
     }
 
     //console.log(Math.sqrt((1000*number/maxConfirmed)/Math.PI))
-    radius = 3 + 13 * Math.sqrt(number / maxConfirmed / Math.PI)
+    radius = 3 + 17 * Math.sqrt(number / 10000 / Math.PI)
 
     return { color, radius }
   }
