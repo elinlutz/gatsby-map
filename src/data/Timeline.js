@@ -6,6 +6,19 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
+      <h3>22 april 2020</h3>
+      <TimelineListElement
+        number={28}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/'}
+      ></TimelineListElement>
+      <TimelineListElement
+        number={4}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
       <h3>21 april 2020</h3>
       <Death
         number={6}
