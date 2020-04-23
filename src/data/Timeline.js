@@ -6,7 +6,16 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
+      <h3>23 april 2020</h3>
       <h3>22 april 2020</h3>
+      <TimelineListElement
+        number={34}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-22-april-2993318'
+        }
+      ></TimelineListElement>
+      (Tillagt 23 april)
       <TimelineListElement
         number={16}
         region={'Västmanland'}
@@ -31,13 +40,6 @@ const Timeline = () => {
       <TimelineListElement
         number={13}
         region={'Jämtland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={24}
-        region={'Dalarna'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
