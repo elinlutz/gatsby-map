@@ -7,6 +7,62 @@ const Timeline = () => {
   return (
     <>
       <h3>23 april 2020</h3>
+      <Death
+        number={5}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={30}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={8}
+        region={'Västmanland'}
+        source={
+          'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/lagesbild/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={31}
+        region={'Västmanland'}
+        source={
+          'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/lagesbild/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={34}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-23-april-2993809'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={5}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200423coronacovid19regionjamtlandharjedalen.5.de9af55171844b1271df5f.html'
+        }
+      ></TimelineListElement>
+      <Death
+        number={58}
+        region={'Stockholm'}
+        source={
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/04/23-april-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={280}
+        region={'Stockholm'}
+        source={
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/04/23-april-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={5}
         region={'Västernorrland'}
@@ -75,13 +131,6 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-      <TimelineListElement
-        number={23}
-        region={'Dalarna'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
       <Death
         number={1}
         region={'Östergötland'}
@@ -145,13 +194,6 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></Death>
-      <Death
-        number={58}
-        region={'Stockholm'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></Death>
       <TimelineListElement
         number={78}
         region={'Västra Götaland'}
@@ -162,13 +204,6 @@ const Timeline = () => {
       <TimelineListElement
         number={60}
         region={'Sörmland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={280}
-        region={'Stockholm'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
@@ -349,13 +384,6 @@ const Timeline = () => {
       <Death
         number={3}
         region={'Örebro'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></Death>
-      <Death
-        number={4}
-        region={'Västmanland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
@@ -551,6 +579,12 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <h3>21 april 2020</h3>
+      <TimelineListElement
+        number={-1}
+        region={'Gotland'}
+        source={'https://gotland.se/106753'}
+      ></TimelineListElement>
+      Anm. Dubbelrapportering
       <Death
         number={6}
         region={'Örebro'}
