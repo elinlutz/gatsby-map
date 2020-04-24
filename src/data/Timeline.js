@@ -7,6 +7,39 @@ const Timeline = () => {
   return (
     <>
       <h3>24 april 2020</h3>
+      <TimelineListElement
+        number={2}
+        region={'Gotland'}
+        source={'https://gotland.se/106917'}
+      ></TimelineListElement>
+      <TimelineListElement
+        number={13}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200424coronacovid19regionjamtlandharjedalen.5.6e9a4ea7171845f1b57102bb.html'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={42}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200424-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={11}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
+        }
+      ></TimelineListElement>
       <Death
         number={1}
         region={'Jämtland'}
@@ -45,27 +78,6 @@ const Timeline = () => {
       <TimelineListElement
         number={21}
         region={'Örebro'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={31}
-        region={'Uppsala'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={12}
-        region={'Jämtland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={10}
-        region={'Halland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
@@ -276,19 +288,18 @@ const Timeline = () => {
           'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
         }
       ></TimelineListElement>
-      <Death
-        number={1}
-        region={'Halland'}
-        source={
-          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
-        }
-      ></Death>
       <TimelineListElement
         number={28}
         region={'Örebro'}
         source={'https://www.regionorebrolan.se/'}
       ></TimelineListElement>
       <h3>23 april 2020</h3>
+      <TimelineListElement
+        number={3}
+        region={'Gotland'}
+        source={'https://gotland.se/106892'}
+      ></TimelineListElement>
+      (Tillagt 24 april)
       <Death
         number={5}
         region={'Östergötland'}
