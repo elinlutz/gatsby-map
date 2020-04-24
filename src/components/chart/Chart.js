@@ -116,7 +116,7 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
     chart === 'confirmed'
       ? [
           {
-            name: 'Antal bekräftade fall totalt',
+            name: 'Rapporterade fall totalt',
             data: [
               ['1 Mars 2020', 14],
               ['2 Mars 2020', 15],
@@ -182,7 +182,7 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
             }
           },
           {
-            name: 'Bekräftade fall per dag',
+            name: 'Rapporterade fall per dag',
             data: [
               ['1 Mars 2020', 1],
               ['2 Mars 2020', 1],

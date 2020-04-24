@@ -75,7 +75,7 @@ const getOptions = (data, cumulative, scale) => ({
   },
   series: [
     {
-      name: 'Antal fall per dag',
+      name: 'Rapporterade fall per dag',
       data: data,
       color: colors.blue,
       type: 'column',
@@ -85,7 +85,7 @@ const getOptions = (data, cumulative, scale) => ({
       }
     },
     {
-      name: 'Antal fall totalt',
+      name: 'Rapporterade fall totalt',
       data: cumulative,
       color: colors.sweden,
       type: 'column',
