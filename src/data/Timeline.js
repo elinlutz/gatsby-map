@@ -7,6 +7,55 @@ const Timeline = () => {
   return (
     <>
       <h3>26 april 2020</h3>
+      <Death
+        number={1}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-26-april-2994295'
+        }
+      ></Death>
+      <TimelineListElement
+        number={12}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-26-april-2994295'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={23}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200426coronacovid19regionjamtlandharjedalen.5.6e9a4ea7171845f1b5717230.html'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={31}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Jönköping'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid--19-64-personer-i-jonkopings-lan-vardas-pa-sjukhus--48742'
+        }
+      ></Death>
+      <TimelineListElement
+        number={10}
+        region={'Västerbotten'}
+        source={
+          'https://www.regionvasterbotten.se/coronavirus/aktuellt-vardlage-i-region-vasterbotten-covid-19'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={5}
         region={'Värmland'}
