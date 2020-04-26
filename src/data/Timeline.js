@@ -81,7 +81,7 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <br />
-      Idag har Folkhälsomyndigheten rapporterat 2 dödsfall totalt (kl 14.16).
+      Idag har Folkhälsomyndigheten rapporterat 2 st nya dödsfall totalt (kl 14.16).
       <br />
       <br />
       <Death
