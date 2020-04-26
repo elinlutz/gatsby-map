@@ -173,7 +173,8 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['22 April 2020', 16091],
               ['23 April 2020', 16834],
               ['24 April 2020', 17678],
-              ['25 April 2020', total]
+              ['25 April 2020', 18273],
+              ['26 April 2020', total]
             ],
             type: `${chartType}`,
             color: colors.sweden,
@@ -240,7 +241,8 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['22 April 2020', 718],
               ['23 April 2020', 743],
               ['24 April 2020', 844],
-              ['25 April 2020', total - 17678]
+              ['25 April 2020', 595],
+              ['26 April 2020', total - 18273]
             ],
             type: `${chartType}`,
             color: colors.blue,
@@ -309,7 +311,8 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['22 April 2020', 1939],
               ['23 April 2020', 2035],
               ['24 April 2020', 2159],
-              ['25 April 2020', deaths]
+              ['25 April 2020', 2202],
+              ['26 April 2020', deaths]
             ],
             color: colors.black,
             type: `${chartType}`,
@@ -376,7 +379,8 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['22 April 2020', 137],
               ['23 April 2020', 96],
               ['24 April 2020', 124],
-              ['25 April 2020', deaths - 2159]
+              ['25 April 2020', 43],
+              ['26 April 2020', deaths - 2202]
             ],
             color: colors.blue,
             type: `${chartType}`,
