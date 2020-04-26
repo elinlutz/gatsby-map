@@ -7,6 +7,43 @@ const Timeline = () => {
   return (
     <>
       <h3>26 april 2020</h3>
+      Idag den 26 april har Folkhälsomyndigheten rapporterat 2 dödsfall totalt
+      (kl 14.16).
+      <br />
+      <br />
+      <Death
+        number={1}
+        region={'Västra Götaland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <Death
+        number={1}
+        region={'Stockholm'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <TimelineListElement
+        number={93}
+        region={'Västra Götaland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={142}
+        region={'Stockholm'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={22}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/'}
+      ></TimelineListElement>
       <Death
         number={1}
         region={'Skåne'}
