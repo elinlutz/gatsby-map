@@ -7,6 +7,20 @@ const Timeline = () => {
   return (
     <>
       <h3>27 april 2020</h3>
+      <Death
+        number={2}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={13}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={15}
         region={'Dalarna'}
@@ -34,13 +48,6 @@ const Timeline = () => {
       <Death
         number={1}
         region={'Norrbotten'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></Death>
-      <Death
-        number={1}
-        region={'Halland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
@@ -76,13 +83,6 @@ const Timeline = () => {
       <TimelineListElement
         number={2}
         region={'Jönköping'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={5}
-        region={'Halland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
