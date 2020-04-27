@@ -436,7 +436,7 @@ export const popData = [
     population: 4867309
   },
   {
-    country: 'Iran, Islamic Rep.',
+    country: 'Iran',
     population: 81800269
   },
   {
@@ -492,7 +492,7 @@ export const popData = [
     population: 52441
   },
   {
-    country: 'Korea, Rep.',
+    country: 'Korea, South',
     population: 51606633
   },
   {
@@ -796,7 +796,7 @@ export const popData = [
     population: 19466145
   },
   {
-    country: 'Russian Federation',
+    country: 'Russia',
     population: 144478050
   },
   {
