@@ -208,7 +208,7 @@ export const popData = [
     population: 1189265
   },
   {
-    country: 'Czech Republic',
+    country: 'Czechia',
     population: 10629928
   },
   {
@@ -872,7 +872,7 @@ export const popData = [
     population: 575991
   },
   {
-    country: 'Slovak Republic',
+    country: 'Slovakia',
     population: 5446771
   },
   {
