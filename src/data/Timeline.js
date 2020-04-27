@@ -7,13 +7,23 @@ const Timeline = () => {
   return (
     <>
       <h3>27 april 2020</h3>
+      <TimelineListElement
+        number={15}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-27-april-2994510'
+        }
+      ></TimelineListElement>
       <Death
         number={7}
         region={'Västernorrland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
+        source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
       ></Death>
+      <TimelineListElement
+        number={17}
+        region={'Västernorrland'}
+        source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
+      ></TimelineListElement>
       <Death
         number={2}
         region={'Uppsala'}
@@ -112,13 +122,6 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></Death>
-      <TimelineListElement
-        number={4}
-        region={'Dalarna'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
       <TimelineListElement
         number={43}
         region={'Västra Götaland'}
