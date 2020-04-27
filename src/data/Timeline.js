@@ -6,6 +6,7 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
+      <h3>27 april 2020</h3>
       <h3>26 april 2020</h3>
       <TimelineListElement
         number={2}
@@ -23,13 +24,6 @@ const Timeline = () => {
         number={5}
         region={'Västernorrland'}
         source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
-      ></TimelineListElement>
-      <TimelineListElement
-        number={13}
-        region={'Uppsala'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
       ></TimelineListElement>
       <TimelineListElement
         number={13}
@@ -80,10 +74,6 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-      <br />
-      Idag har Folkhälsomyndigheten rapporterat 2 st nya dödsfall totalt (kl 14.16).
-      <br />
-      <br />
       <Death
         number={1}
         region={'Västra Götaland'}
@@ -95,7 +85,7 @@ const Timeline = () => {
         number={1}
         region={'Stockholm'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/04/26-april-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
         }
       ></Death>
       <TimelineListElement
@@ -109,7 +99,7 @@ const Timeline = () => {
         number={142}
         region={'Stockholm'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/04/26-april-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
         }
       ></TimelineListElement>
       <TimelineListElement
