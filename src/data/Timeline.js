@@ -8,6 +8,30 @@ const Timeline = () => {
     <>
       <h3>27 april 2020</h3>
       <Death
+        number={28}
+        region={'Stockolm'}
+        source={
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyhetslista-halsa-och-vard/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={88}
+        region={'Stockolm'}
+        source={
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyhetslista-halsa-och-vard/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={4}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/'}
+      ></Death>
+      <TimelineListElement
+        number={15}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/'}
+      ></TimelineListElement>
+      <Death
         number={2}
         region={'Halland'}
         source={
@@ -115,13 +139,6 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></Death>
-      <Death
-        number={28}
-        region={'Stockolm'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></Death>
       <TimelineListElement
         number={43}
         region={'Västra Götaland'}
@@ -132,13 +149,6 @@ const Timeline = () => {
       <TimelineListElement
         number={3}
         region={'Sörmland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={88}
-        region={'Stockolm'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
