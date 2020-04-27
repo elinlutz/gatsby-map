@@ -9,6 +9,55 @@ const Timeline = () => {
       <h3>27 april 2020</h3>
       <Death
         number={3}
+        region={'Jönköping'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid--19-63-personer-i-jonkopings-lan-vardas-pa-sjukhus--48771'
+        }
+      ></Death>
+      <Death
+        number={1}
+        region={'Västerbotten'}
+        source={
+          'https://www.regionvasterbotten.se/coronavirus/aktuellt-vardlage-i-region-vasterbotten-covid-19'
+        }
+      ></Death>
+      <TimelineListElement
+        number={4}
+        region={'Västerbotten'}
+        source={
+          'https://www.regionvasterbotten.se/coronavirus/aktuellt-vardlage-i-region-vasterbotten-covid-19'
+        }
+      ></TimelineListElement>
+      <Death
+        number={12}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200427-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></Death>
+      <TimelineListElement
+        number={8}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200427-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></TimelineListElement>
+      <Death
+        number={3}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={8}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={3}
         region={'Värmland'}
         source={
           'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
