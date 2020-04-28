@@ -8,6 +8,25 @@ const Timeline = () => {
     <>
       <h3>28 april 2020</h3>
       <Death
+        number={1}
+        region={'Dalarna'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={11}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-28-april-2994936'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={6}
+        region={'Gotland'}
+        source={'https://gotland.se/106944'}
+      ></TimelineListElement>
+      <Death
         number={4}
         region={'Västmanland'}
         source={
@@ -25,7 +44,7 @@ const Timeline = () => {
         number={1}
         region={'Kalmar'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+          'https://www.regionkalmar.se/nyhetslista/ytterligare-ett-dodsfall-i-covid-192/'
         }
       ></Death>
       <TimelineListElement
@@ -102,13 +121,6 @@ const Timeline = () => {
       <TimelineListElement
         number={4}
         region={'Gävleborg'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={7}
-        region={'Gotland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
