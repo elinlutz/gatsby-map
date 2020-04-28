@@ -6,6 +6,56 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
+      <h3>28 april 2020</h3>
+      <Death
+        number={3}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Vard-halsa/Information-om-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={47}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Vard-halsa/Information-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={3}
+        region={'Västerbotten'}
+        source={
+          'https://www.regionvasterbotten.se/coronavirus/aktuellt-vardlage-i-region-vasterbotten-covid-19'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={21}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={3}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={11}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
       <h3>27 april 2020</h3>
       <Death
         number={28}
