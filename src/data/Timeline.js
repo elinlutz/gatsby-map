@@ -8,12 +8,69 @@ const Timeline = () => {
     <>
       <h3>29 april 2020</h3>
       <Death
-        number={8}
-        region={'Jönköping'}
+        number={3}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/'}
+      ></Death>
+      <TimelineListElement
+        number={47}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/'}
+      ></TimelineListElement>
+      <TimelineListElement
+        number={6}
+        region={'Värmland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={4}
+        region={'Kalmar'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={5}
+        region={'Gävleborg'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Östergötland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></Death>
+      <Death
+        number={1}
+        region={'Västernorrland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <Death
+        number={3}
+        region={'Uppsala'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <Death
+        number={7}
+        region={'Dalarna'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <TimelineListElement
+        number={8}
+        region={'Västernorrland'}
+        source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
+      ></TimelineListElement>
       <Death
         number={16}
         region={'Västra Götaland'}
@@ -21,13 +78,13 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></Death>
-      <TimelineListElement
+      <Death
         number={4}
         region={'Sörmland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
-      ></TimelineListElement>
+      ></Death>
       <Death
         number={32}
         region={'Stockholm'}
