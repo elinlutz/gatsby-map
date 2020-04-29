@@ -8,6 +8,55 @@ const Timeline = () => {
     <>
       <h3>29 april 2020</h3>
       <Death
+        number={2}
+        region={'Jönköping'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid--19-63-personer-i-jonkopings-lan-vardas-pa-sjukhus-48941'
+        }
+      ></Death>
+      <Death
+        number={4}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200429-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></Death>
+      <TimelineListElement
+        number={39}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200429-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={7}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={4}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={35}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-29-april-2995207'
+        }
+      ></TimelineListElement>
+      <Death
         number={1}
         region={'Västerbotten'}
         source={
