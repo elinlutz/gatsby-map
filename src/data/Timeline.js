@@ -7,6 +7,34 @@ const Timeline = () => {
   return (
     <>
       <h3>30 april 2020</h3>
+      <Death
+        number={17}
+        region={'Västra Götaland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <Death
+        number={87}
+        region={'Stockholm'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></Death>
+      <TimelineListElement
+        number={168}
+        region={'Västra Götaland'}
+        source={
+          'https://www.vgregion.se/aktuellt/nyhetslista/regional-lagesrapport-covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={198}
+        region={'Stockholm'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={7}
         region={'Östergötland'}
@@ -35,13 +63,6 @@ const Timeline = () => {
           'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/'
         }
       ></Death>
-      <TimelineListElement
-        number={13}
-        region={'Västmanland'}
-        source={
-          'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/'
-        }
-      ></TimelineListElement>
       <TimelineListElement
         number={13}
         region={'Västmanland'}
