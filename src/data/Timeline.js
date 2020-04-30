@@ -56,13 +56,6 @@ const Timeline = () => {
           'https://regionblekinge.se/halsa-och-vard/for-vardgivare/smittskyddsenheten/information-om-coronaviruset.html'
         }
       ></TimelineListElement>
-      <Death
-        number={37}
-        region={'Skåne'}
-        source={
-          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-30-april-2995584'
-        }
-      ></Death>
       <TimelineListElement
         number={37}
         region={'Skåne'}
