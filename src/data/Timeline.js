@@ -7,6 +7,74 @@ const Timeline = () => {
   return (
     <>
       <h3>1 maj 2020</h3>
+      <Death
+        number={2}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-31-april-2995784'
+        }
+      ></Death>
+      <TimelineListElement
+        number={33}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-31-april-2995784'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Jönköping'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid--19-59-personer-i-jonkopings-lan-vardas-pa-sjukhus-49147'
+        }
+      ></Death>
+      <Death
+        number={4}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/20200501%20Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></Death>
+      <TimelineListElement
+        number={41}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/20200501%20Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={9}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={9}
+        region={'Norrotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={20}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={4}
+        region={'Västerbotten'}
+        source={'https://coronarapportering.regionvasterbotten.se/'}
+      ></TimelineListElement>
       <h3>30 april 2020</h3>
       <Death
         number={2}
@@ -124,7 +192,7 @@ const Timeline = () => {
         number={87}
         region={'Stockholm'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/04/30-april-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
         }
       ></Death>
       <TimelineListElement
@@ -138,7 +206,7 @@ const Timeline = () => {
         number={198}
         region={'Stockholm'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/04/30-april-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
         }
       ></TimelineListElement>
       <TimelineListElement
