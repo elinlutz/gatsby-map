@@ -6,7 +6,40 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
+      <h3>1 maj 2020</h3>
       <h3>30 april 2020</h3>
+      <Death
+        number={2}
+        region={'Gotland'}
+        source={'https://gotland.se/107011'}
+      ></Death>
+      <TimelineListElement
+        number={5}
+        region={'Gotland'}
+        source={'https://gotland.se/107011'}
+      ></TimelineListElement>
+      <TimelineListElement
+        number={49}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200430coronacovid19regionjamtlandharjedalen.5.de9af55171844b12712429c.html'
+        }
+      ></TimelineListElement>
+      (Tillagt 1 maj)
+      <TimelineListElement
+        number={41}
+        region={'Örebro'}
+        source={
+          'https://www.regionorebrolan.se/sv/Halsa-och-vard/Mikrobiologi1/Coronavirus/Coronavirus-info-till-vardgivare/Fall-av-covid-19-Orebro-lan/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={53}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-30-april-2995669'
+        }
+      ></TimelineListElement>
       <Death
         number={2}
         region={'Västernorrland'}
@@ -29,13 +62,6 @@ const Timeline = () => {
         region={'Halland'}
         source={
           'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={32}
-        region={'Örebro'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
       <TimelineListElement
@@ -66,7 +92,6 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-
       <Death
         number={3}
         region={'Sörmland'}

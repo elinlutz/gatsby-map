@@ -226,6 +226,7 @@ export const data = graphql`
       _2020_04_27
       _2020_04_28
       _2020_04_29
+      _2020_04_30
       Today
     }
     timeSeriesDeathsDeathsCsv(Display_Name: { eq: $region }) {
@@ -294,6 +295,7 @@ export const data = graphql`
       _2020_04_27
       _2020_04_28
       _2020_04_29
+      _2020_04_30
       Today
     }
   }
