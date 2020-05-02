@@ -145,13 +145,6 @@ const Timeline = () => {
           'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-2-maj-2995832'
         }
       ></TimelineListElement>
-      <Death
-        number={19}
-        region={'Östergötland'}
-        source={
-          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
-        }
-      ></Death>
       <TimelineListElement
         number={19}
         region={'Östergötland'}
