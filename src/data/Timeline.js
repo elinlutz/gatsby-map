@@ -152,13 +152,6 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={3}
-        region={'Sörmland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
         number={71}
         region={'Stockholm'}
         source={
@@ -187,20 +180,12 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={3}
-        region={'Jämtland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
         number={14}
         region={'Gävleborg'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-
       <h3>2 maj 2020</h3>
       <Death
         number={1}
