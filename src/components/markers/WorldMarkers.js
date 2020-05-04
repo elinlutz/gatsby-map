@@ -6,7 +6,25 @@ import colors from 'assets/stylesheets/settings/_colors.scss'
 
 import { popData } from '../../data/popData'
 
-function addDeathRatio(popData, country) {
+function addDeathRatios(popData, country) {
+  const deathRatio = ((country.Deaths / country.Confirmed) * 100).toFixed(0)
+  country['deathRate'] = deathRatio
+
+  const populationItem = popData.filter(
+    item => item.country == country.Country_Region
+  )
+
+  if (populationItem[0]) {
+    const population = populationItem[0].population
+    const deathsPer100k = country.Deaths
+      ? (country.Deaths / population) * 100000
+      : null
+
+    country['deathsPer100k'] = deathsPer100k.toFixed(0)
+  }
+}
+
+function addDeathsPer100k(popData, country) {
   const populationItem = popData.filter(
     item => item.country == country.Country_Region
   )
@@ -83,7 +101,7 @@ const WorldMarkers = ({ onClick }) => {
       const { color, radius } = getBubble(country.Confirmed)
 
       if (!country.Admin2 && !country.Province_State) {
-        addDeathRatio(popData, country)
+        addDeathRatios(popData, country)
       }
 
       const latitude = country.Lat === 0 ? null : country.Lat.substring(0, 10)
