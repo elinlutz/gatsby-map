@@ -160,7 +160,8 @@ const DetailsCounter = ({
             <div className="numberContainer">
               <h2>{deathRate}%</h2>
               <div className="textContainer">
-                <h3>Dödsfall / Fall</h3>
+                <h3>Dödsfall</h3>
+                <h3>Frekvens</h3>
               </div>
             </div>
             <div className="numberContainer">
