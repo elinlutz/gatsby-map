@@ -7,19 +7,39 @@ const Timeline = () => {
   return (
     <>
       <h3>4 maj 2020</h3>
-
+      <TimelineListElement
+        number={14}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200504coronacovid19regionjamtlandharjedalen.5.de9af55171844b12712f4d4.html'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={2}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={12}
+        region={'Örebro'}
+        source={
+          'https://www.regionorebrolan.se/sv/Halsa-och-vard/Mikrobiologi1/Coronavirus/Coronavirus-info-till-vardgivare/Fall-av-covid-19-Orebro-lan/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={14}
+        region={'Örebro'}
+        source={
+          'https://www.regionorebrolan.se/sv/Halsa-och-vard/Mikrobiologi1/Coronavirus/Coronavirus-info-till-vardgivare/Fall-av-covid-19-Orebro-lan/'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={10}
         region={'Västmanland'}
         source={
           'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/lagesbild/'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={4}
-        region={'Örebro'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
       <TimelineListElement
@@ -100,13 +120,6 @@ const Timeline = () => {
       <Death
         number={3}
         region={'Östergötland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></Death>
-      <Death
-        number={10}
-        region={'Örebro'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
