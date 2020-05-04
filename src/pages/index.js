@@ -122,6 +122,21 @@ const IndexPage = ({ data }) => {
               ).toFixed(0)
             : country.deathsPer100k
         }
+        deathRate={
+          country.Country_Region == 'Sweden'
+            ? (
+                (getTotal(
+                  data.allTimeSeriesDeathsDeathsCsv.edges,
+                  'Region_Deaths'
+                ) /
+                  getTotal(
+                    data.allTimeSeriesConfimedConfirmedCsv.edges,
+                    'Region_Total'
+                  )) *
+                100
+              ).toFixed(0)
+            : country.deathRate
+        }
       ></DetailsCounter>
     )
   }

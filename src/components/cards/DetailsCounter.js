@@ -10,6 +10,7 @@ const DetailsCounter = ({
   number,
   deaths,
   deathsPer100k,
+  deathRate,
   hospitalized,
   recovered,
   view,
@@ -146,22 +147,20 @@ const DetailsCounter = ({
             </div>
             <div className="numberContainer">
               <h2>
-                {recovered.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+                {deaths > 1000
+                  ? deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
+                  : deaths}{' '}
               </h2>
               <div className="textContainer">
-                <h3>Tillfrisknade</h3>
+                <h3>Dödsfall</h3>
               </div>
             </div>
           </div>
           <div className="confirmedNumberContainerBottom">
             <div className="numberContainer">
-              <h2>
-                {deaths > 1000
-                  ? deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
-                  : deaths}
-              </h2>
+              <h2>{deathRate}%</h2>
               <div className="textContainer">
-                <h3>Dödsfall</h3>
+                <h3>Dödsfall / Fall</h3>
               </div>
             </div>
             <div className="numberContainer">
