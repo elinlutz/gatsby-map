@@ -6,7 +6,77 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
-          <h3>4 maj 2020</h3>
+      <h3>4 maj 2020</h3>
+      <Death
+        number={8}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200504-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></Death>
+      <TimelineListElement
+        number={10}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200504-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={17}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-4-maj-2995986'
+        }
+      ></Death>
+      <TimelineListElement
+        number={6}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-4-maj-2995986'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Gävleborg'}
+        source={
+          'https://www.regiongavleborg.se/a-o/Smittskydd/A-Y/c/Coronavirus-2019-nCoV/statistik-covid-19/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={6}
+        region={'Gävleborg'}
+        source={
+          'https://www.regiongavleborg.se/a-o/Smittskydd/A-Y/c/Coronavirus-2019-nCoV/statistik-covid-19/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={5}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={3}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
       <h3>3 maj 2020</h3>
       <Death
         number={1}
