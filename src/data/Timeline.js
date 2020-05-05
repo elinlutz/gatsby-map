@@ -49,6 +49,13 @@ const Timeline = () => {
           'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-5-maj-2996497'
         }
       ></TimelineListElement>
+                  <TimelineListElement
+        number={93}
+        region={'Västra Götaland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
             <TimelineListElement
         number={10}
         region={'Kalmar'}
@@ -57,7 +64,7 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={10}
+        number={19}
         region={'Jönköping'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
