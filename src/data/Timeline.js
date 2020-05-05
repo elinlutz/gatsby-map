@@ -7,6 +7,60 @@ const Timeline = () => {
   return (
     <>
       <h3>5 maj 2020</h3>
+      <Death
+        number={2}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-5-maj-ny-version-2996458'
+        }
+      ></Death>
+      <TimelineListElement
+        number={40}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-5-maj-ny-version-2996458'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Jönköping'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid--19-72-personer-i-jonkopings-lan-vardas-pa-sjukhus-49272'
+        }
+      ></Death>
+      <TimelineListElement
+        number={2}
+        region={'Västerbotten'}
+        source={'https://coronarapportering.regionvasterbotten.se/'}
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={22}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200505-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></Death>
+      <TimelineListElement
+        number={19}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200505-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={6}
         region={'Gotland'}
