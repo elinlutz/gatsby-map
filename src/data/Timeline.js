@@ -6,8 +6,14 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
-          <h3>5 maj 2020</h3>
-
+      <h3>5 maj 2020</h3>
+      <TimelineListElement
+        number={6}
+        region={'Gotland'}
+        source={
+          'http://www.bilddump.se/bilder/20200505101203-2a01:2b0:309f:10:b483:4ce8:30a1:90de.png'
+        }
+      ></TimelineListElement>
       <h3>4 maj 2020</h3>
       <TimelineListElement
         number={14}
