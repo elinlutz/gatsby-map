@@ -8,6 +8,34 @@ const Timeline = () => {
     <>
       <h3>6 maj 2020</h3>
       <Death
+        number={4}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={34}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={6}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Vard-halsa/Information-om-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={55}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Vard-halsa/Information-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <Death
         number={1}
         region={'Jönköping'}
         source={
