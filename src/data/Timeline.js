@@ -8,6 +8,18 @@ const Timeline = () => {
     <>
       <h3>6 maj 2020</h3>
       <TimelineListElement
+        number={3}
+        region={'Gotland'}
+        source={'https://gotland.se/107046'}
+      ></TimelineListElement>
+      <TimelineListElement
+        number={21}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={52}
         region={'Örebro'}
         source={
@@ -100,27 +112,12 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={20}
-        region={'Halland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
         number={9}
         region={'Gävleborg'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-      <TimelineListElement
-        number={2}
-        region={'Gotland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-
       <Death
         number={7}
         region={'Östergötland'}
