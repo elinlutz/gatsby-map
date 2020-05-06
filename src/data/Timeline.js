@@ -8,6 +8,41 @@ const Timeline = () => {
     <>
       <h3>6 maj 2020</h3>
       <Death
+        number={7}
+        region={'Östergötland'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></Death>
+      <Death
+        number={12}
+        region={'Västra Götaland'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></Death>
+      <Death
+        number={2}
+        region={'Sörmland'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></Death>
+      <Death
+        number={27}
+        region={'Stockholm'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></Death>
+      <Death
+        number={1}
+        region={'Kalmar'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></Death>
+      <Death
+        number={3}
+        region={'Jönköping'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></Death>
+      <Death
+        number={3}
+        region={'Gävleborg'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></Death>
+      <Death
         number={1}
         region={'Västerbotten'}
         source={'https://coronarapportering.regionvasterbotten.se/'}
