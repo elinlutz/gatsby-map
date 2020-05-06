@@ -8,6 +8,20 @@ const Timeline = () => {
     <>
       <h3>6 maj 2020</h3>
       <TimelineListElement
+        number={52}
+        region={'Örebro'}
+        source={
+          'https://www.regionorebrolan.se/sv/Halsa-och-vard/Corona/Lagesbilder-och-statistik/Fall-av-covid-19-i-Orebro-lan/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={30}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-6-maj-2996854'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={8}
         region={'Jämtland'}
         source={
@@ -28,13 +42,7 @@ const Timeline = () => {
           'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/lagesbild/'
         }
       ></TimelineListElement>
-      <TimelineListElement
-        number={46}
-        region={'Örebro'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
+
       <TimelineListElement
         number={158}
         region={'Västra Götaland'}
@@ -112,13 +120,7 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-      <TimelineListElement
-        number={12}
-        region={'Dalarna'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
+
       <Death
         number={7}
         region={'Östergötland'}
