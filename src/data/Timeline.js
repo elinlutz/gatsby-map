@@ -8,6 +8,34 @@ const Timeline = () => {
     <>
       <h3>7 maj 2020</h3>
       <TimelineListElement
+        number={27}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={20}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200507coronacovid19regionjamtlandharjedalen.5.6e9a4ea7171845f1b573897c.html'
+        }
+      ></TimelineListElement>
+      <Death
+        number={3}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-7-maj-2997187'
+        }
+      ></Death>
+      <TimelineListElement
+        number={41}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-7-maj-2997187'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={7}
         region={'Västerbotten'}
         source={'https://coronarapportering.regionvasterbotten.se/'}
