@@ -8,6 +8,34 @@ const Timeline = () => {
     <>
       <h3>8 maj 2020</h3>
       <TimelineListElement
+        number={7}
+        region={'Västerbotten'}
+        source={
+          'https://coronarapportering.regionvasterbotten.se/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={30}
+        region={'Västernorrland'}
+        source={
+          'https://www.rvn.se/sv/Om-regionen/Pressrum/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={2}
+        region={'Gotland'}
+        source={
+          'https://gotland.se/107070'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={19}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-8-maj-2997557'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={8}
         region={'Örebro'}
         source={
@@ -24,20 +52,6 @@ const Timeline = () => {
       <TimelineListElement
         number={16}
         region={'Västmanland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={23}
-        region={'Västernorrland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={7}
-        region={'Västerbotten'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
@@ -91,13 +105,7 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-      <TimelineListElement
-        number={2}
-        region={'Gotland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
+
       <Death
         number={1}
         region={'Örebro'}
