@@ -6,7 +6,57 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
+      <h3>9 maj 2020</h3>
+      <TimelineListElement
+        number={22}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-9-maj-2997707'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={4}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={11}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={7}
+        region={'Västerbotten'}
+        source={
+          'https://coronarapportering.regionvasterbotten.se/'
+        }
+      ></TimelineListElement>
       <h3>8 maj 2020</h3>
+      <Death
+        number={1}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={13}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
+        }
+      ></TimelineListElement>
       <Death
         number={2}
         region={'Örebro'}
@@ -99,13 +149,7 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-      <TimelineListElement
-        number={12}
-        region={'Halland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
+
       <TimelineListElement
         number={21}
         region={'Gävleborg'}
@@ -165,13 +209,6 @@ const Timeline = () => {
       <Death
         number={1}
         region={'Jämtland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></Death>
-      <Death
-        number={1}
-        region={'Halland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
