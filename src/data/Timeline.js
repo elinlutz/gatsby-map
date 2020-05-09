@@ -64,13 +64,6 @@ const Timeline = () => {
         }
       ></Death>
       <Death
-        number={1}
-        region={'Halland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></Death>
-      <Death
         number={4}
         region={'Dalarna'}
         source={
