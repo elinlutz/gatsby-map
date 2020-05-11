@@ -188,7 +188,7 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['7 Maj 2020', 24730],
               ['8 Maj 2020', 25397],
               ['9 Maj 2020', 25983],
-              ['10 Maj 2020', 26394],
+              ['10 Maj 2020', 26401],
               ['11 Maj 2020', total]
             ],
             type: `${chartType}`,
@@ -271,8 +271,8 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['7 Maj 2020', 711],
               ['8 Maj 2020', 667],
               ['9 Maj 2020', 586],
-              ['10 Maj 2020', 411],
-              ['11 Maj 2020', total - 26394]
+              ['10 Maj 2020', 418],
+              ['11 Maj 2020', total - 26401]
             ],
             type: `${chartType}`,
             color: colors.blue,

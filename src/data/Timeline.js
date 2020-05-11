@@ -7,6 +7,48 @@ const Timeline = () => {
   return (
     <>
       <h3>11 maj 2020</h3>
+      <Death
+        number={8}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200511-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></Death>
+      <TimelineListElement
+        number={24}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200511-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={8}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={3}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={4}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></Death>
       <h3>10 maj 2020</h3>
       <Death
         number={2}
@@ -50,6 +92,13 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></Death>
+            <TimelineListElement
+        number={7}
+        region={'Västerbotten'}
+        source={
+          'https://coronarapportering.regionvasterbotten.se/'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={23}
         region={'Örebro'}
