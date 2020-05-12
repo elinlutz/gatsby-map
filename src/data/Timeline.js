@@ -8,6 +8,34 @@ const Timeline = () => {
     <>
       <h3>12 maj 2020</h3>
       <Death
+        number={2}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200512-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></Death>
+      <TimelineListElement
+        number={18}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200512-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={7}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Jönköping'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid--19-65-personer-i-jonkopings-lan-vardas-pa-sjukhus-49769'
+        }
+      ></Death>
+      <Death
         number={8}
         region={'Skåne'}
         source={
