@@ -6,8 +6,84 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
-          <h3>12 maj 2020</h3>
-
+      <h3>12 maj 2020</h3>
+      <Death
+        number={8}
+        region={'Skåne'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200512coronacovid19regionjamtlandharjedalen.5.de9af55171844b1271461fc.html'
+        }
+      ></Death>
+      <TimelineListElement
+        number={22}
+        region={'Skåne'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200512coronacovid19regionjamtlandharjedalen.5.de9af55171844b1271461fc.html'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={13}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200512coronacovid19regionjamtlandharjedalen.5.de9af55171844b1271461fc.html'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Gävleborg'}
+        source={
+          'https://www.regiongavleborg.se/a-o/Smittskydd/A-Y/c/Coronavirus-2019-nCoV/statistik-covid-19/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={14}
+        region={'Gävleborg'}
+        source={
+          'https://www.regiongavleborg.se/a-o/Smittskydd/A-Y/c/Coronavirus-2019-nCoV/statistik-covid-19/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Kalmar'}
+        source={
+          'https://www.regionkalmar.se/kontakta-oss/kontakta-sjukvarden/coronaviruset/'
+        }
+      ></Death>
+      <Death
+        number={3}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={17}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={11}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={3}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
       <h3>11 maj 2020</h3>
       <TimelineListElement
         number={26}
@@ -35,7 +111,6 @@ const Timeline = () => {
         region={'Västernorrland'}
         source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
       ></TimelineListElement>
-
       <TimelineListElement
         number={87}
         region={'Västra Götaland'}
@@ -99,7 +174,6 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-
       <Death
         number={7}
         region={'Örebro'}
@@ -114,7 +188,6 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></Death>
-
       <Death
         number={12}
         region={'Stockholm'}
