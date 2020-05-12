@@ -11,14 +11,14 @@ const Timeline = () => {
         number={8}
         region={'Skåne'}
         source={
-          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200512coronacovid19regionjamtlandharjedalen.5.de9af55171844b1271461fc.html'
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-12-maj-2998328'
         }
       ></Death>
       <TimelineListElement
         number={22}
         region={'Skåne'}
         source={
-          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200512coronacovid19regionjamtlandharjedalen.5.de9af55171844b1271461fc.html'
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-12-maj-2998328'
         }
       ></TimelineListElement>
       <TimelineListElement
