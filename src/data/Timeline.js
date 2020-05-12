@@ -6,14 +6,36 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
+          <h3>12 maj 2020</h3>
+
       <h3>11 maj 2020</h3>
       <TimelineListElement
-        number={18}
+        number={26}
         region={'Örebro'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+          'https://www.regionorebrolan.se/sv/Halsa-och-vard/Corona/Lagesbilder-och-statistik/Fall-av-covid-19-i-Orebro-lan/'
         }
       ></TimelineListElement>
+      <TimelineListElement
+        number={31}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-11-maj-2998050'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Västernorrland'}
+        source={
+          'https://www.rvn.se/sv/Vard-o-halsa/coronavirus---for-dig-som-vill-veta-mer/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={7}
+        region={'Västernorrland'}
+        source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
+      ></TimelineListElement>
+
       <TimelineListElement
         number={87}
         region={'Västra Götaland'}
@@ -29,35 +51,27 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={4}
-        region={'Västernorrland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
         number={19}
         region={'Skåne'}
         source={
           'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-11-maj-2997965'
         }
       ></TimelineListElement>
-
-                        <TimelineListElement
+      <TimelineListElement
         number={3}
         region={'Värmland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-                  <TimelineListElement
+      <TimelineListElement
         number={3}
         region={'Sörmland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-            <TimelineListElement
+      <TimelineListElement
         number={71}
         region={'Stockholm'}
         source={
@@ -85,13 +99,7 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-      <TimelineListElement
-        number={12}
-        region={'Dalarna'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
+
       <Death
         number={7}
         region={'Örebro'}
@@ -106,13 +114,7 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></Death>
-      <Death
-        number={1}
-        region={'Västernorrland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></Death>
+
       <Death
         number={12}
         region={'Stockholm'}
@@ -168,7 +170,7 @@ const Timeline = () => {
         source={
           'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200511coronacovid19regionjamtlandharjedalen.5.de9af55171844b12714325c.html'
         }
-      ></TimelineListElement> 
+      ></TimelineListElement>
       <TimelineListElement
         number={2}
         region={'Norrbotten'}
@@ -261,12 +263,10 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></Death>
-            <TimelineListElement
+      <TimelineListElement
         number={7}
         region={'Västerbotten'}
-        source={
-          'https://coronarapportering.regionvasterbotten.se/'
-        }
+        source={'https://coronarapportering.regionvasterbotten.se/'}
       ></TimelineListElement>
       <TimelineListElement
         number={23}
@@ -355,9 +355,7 @@ const Timeline = () => {
       <TimelineListElement
         number={1}
         region={'Gotland'}
-        source={
-          'https://gotland.se/107075'
-        }
+        source={'https://gotland.se/107075'}
       ></TimelineListElement>
       <TimelineListElement
         number={25}
@@ -383,9 +381,7 @@ const Timeline = () => {
       <TimelineListElement
         number={9}
         region={'Västernorrland'}
-        source={
-          'https://www.rvn.se/sv/Om-regionen/Pressrum/'
-        }
+        source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
       ></TimelineListElement>
       <h3>9 maj 2020</h3>
       <Death
@@ -580,9 +576,7 @@ const Timeline = () => {
       <TimelineListElement
         number={7}
         region={'Västerbotten'}
-        source={
-          'https://coronarapportering.regionvasterbotten.se/'
-        }
+        source={'https://coronarapportering.regionvasterbotten.se/'}
       ></TimelineListElement>
       <h3>8 maj 2020</h3>
       <Death
@@ -616,23 +610,17 @@ const Timeline = () => {
       <TimelineListElement
         number={7}
         region={'Västerbotten'}
-        source={
-          'https://coronarapportering.regionvasterbotten.se/'
-        }
+        source={'https://coronarapportering.regionvasterbotten.se/'}
       ></TimelineListElement>
       <TimelineListElement
         number={30}
         region={'Västernorrland'}
-        source={
-          'https://www.rvn.se/sv/Om-regionen/Pressrum/'
-        }
+        source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
       ></TimelineListElement>
       <TimelineListElement
         number={2}
         region={'Gotland'}
-        source={
-          'https://gotland.se/107070'
-        }
+        source={'https://gotland.se/107070'}
       ></TimelineListElement>
       <TimelineListElement
         number={19}
@@ -641,7 +629,6 @@ const Timeline = () => {
           'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-8-maj-2997557'
         }
       ></TimelineListElement>
-
       <TimelineListElement
         number={137}
         region={'Västra Götaland'}
@@ -691,7 +678,6 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-
       <TimelineListElement
         number={21}
         region={'Gävleborg'}
