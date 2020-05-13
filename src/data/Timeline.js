@@ -7,6 +7,41 @@ const Timeline = () => {
   return (
     <>
       <h3>13 maj 2020</h3>
+      <Death
+        number={4}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={4}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={19}
+        region={'Västernorrland'}
+        source={
+          'https://www.rvn.se/sv/Om-regionen/Pressrum/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={3}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200513-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></Death>
+      <TimelineListElement
+        number={25}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200513-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={4}
         region={'Blekinge'}
@@ -31,9 +66,7 @@ const Timeline = () => {
       <TimelineListElement
         number={11}
         region={'Västerbotten'}
-        source={
-          'https://coronarapportering.regionvasterbotten.se/'
-        }
+        source={'https://coronarapportering.regionvasterbotten.se/'}
       ></TimelineListElement>
       <TimelineListElement
         number={12}
