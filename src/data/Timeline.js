@@ -8,6 +8,41 @@ const Timeline = () => {
     <>
       <h3>13 maj 2020</h3>
       <TimelineListElement
+        number={4}
+        region={'Blekinge'}
+        source={
+          'https://regionblekinge.se/halsa-och-vard/for-vardgivare/smittskyddsenheten/information-om-coronaviruset.html'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={11}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200513coronacovid19regionjamtlandharjedalen.5.6e9a4ea7171845f1b5749d91.html'
+        }
+      ></TimelineListElement>
+      <Death
+        number={3}
+        region={'Västerbotten'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid--19-58-personer-i-jonkopings-lan-vardas-pa-sjukhus--49848'
+        }
+      ></Death>
+      <TimelineListElement
+        number={11}
+        region={'Västerbotten'}
+        source={
+          'https://coronarapportering.regionvasterbotten.se/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={12}
+        region={'Gävleborg'}
+        source={
+          'https://www.regiongavleborg.se/a-o/Smittskydd/A-Y/c/Coronavirus-2019-nCoV/statistik-covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={5}
         region={'Värmland'}
         source={
