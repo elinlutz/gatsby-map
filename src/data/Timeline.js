@@ -106,7 +106,7 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={6}
+        number={34}
         region={'Gävleborg'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
