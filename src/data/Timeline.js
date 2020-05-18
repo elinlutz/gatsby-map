@@ -7,6 +7,48 @@ const Timeline = () => {
   return (
     <>
       <h3>18 maj 2020</h3>
+      <TimelineListElement
+        number={1}
+        region={'Blekinge'}
+        source={
+          'https://regionblekinge.se/halsa-och-vard/for-vardgivare/smittskyddsenheten/information-om-coronaviruset.html'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Jönköping'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid--19-44-personer-i-jonkopings-lan-vardas-pa-sjukhus--51229'
+        }
+      ></Death>
+      <TimelineListElement
+        number={18}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200518coronacovid19regionjamtlandharjedalen.5.3a2bee0717214e747e148af.html'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={3}
+        region={'Gävleborg'}
+        source={
+          'https://www.regiongavleborg.se/a-o/Smittskydd/A-Y/c/Coronavirus-2019-nCoV/statistik-covid-19/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200518-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></Death>
+      <Death
+        number={1}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></Death>
       <h3>17 maj 2020</h3>
       <Death
         number={1}
