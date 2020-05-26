@@ -67,7 +67,7 @@ const Markers = ({ onClick }) => {
       color = colors[colorName]
     }
 
-    radius = 5 + 11 * Math.sqrt(number / maxRegionConf / Math.PI)
+    radius = 5 + 14 * Math.sqrt(number / maxRegionConf / Math.PI)
 
     return { color, radius }
   }
