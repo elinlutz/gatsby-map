@@ -6,57 +6,288 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
-<h3>27 maj 2020</h3>
-<Death
+      <h3>28 maj 2020</h3>
+      <Death
+        number={1}
+        region={'Västra Götaland'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></Death>
+      <Death
+        number={2}
+        region={'Uppsala'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></Death>
+      <Death
+        number={1}
+        region={'Sörmland'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></Death>
+      <Death
+        number={4}
+        region={'Kalmar'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></Death>
+      <Death
+        number={1}
+        region={'Jönköping'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></Death>
+      <Death
+        number={1}
+        region={'Jämtland'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></Death>
+      <TimelineListElement
+        number={103}
+        region={'Västra Götaland'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></TimelineListElement>
+      <TimelineListElement
+        number={20}
+        region={'Sörmland'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></TimelineListElement>
+      <TimelineListElement
+        number={3}
+        region={'Skåne'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></TimelineListElement>
+      <TimelineListElement
+        number={5}
+        region={'Kalmar'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></TimelineListElement>
+      <TimelineListElement
+        number={48}
+        region={'Jönköping'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></TimelineListElement>
+      <TimelineListElement
+        number={14}
+        region={'Gävleborg'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></TimelineListElement>
+      <Death
+        number={6}
+        region={'Dalarna'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></Death>
+      <TimelineListElement
+        number={2}
+        region={'Dalarna'}
+        source={'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'}
+      ></TimelineListElement>
+      <Death
+        number={3}
+        region={'Östergötland'}
+        source={'https://app.powerbi.com/view?r=eyJrIjoiNmNjOTE1MmMtNDhlOS00MzJhLTllYzItZDQ1NWFmZjQxZmRiIiwidCI6ImYwODczMzkzLWMzNGMtNGFlYy1iMWM1LTM4MjEyOTgyYTViOSIsImMiOjl9'}
+      ></Death>
+      <TimelineListElement
+        number={37}
+        region={'Östergötland'}
+        source={'https://app.powerbi.com/view?r=eyJrIjoiNmNjOTE1MmMtNDhlOS00MzJhLTllYzItZDQ1NWFmZjQxZmRiIiwidCI6ImYwODczMzkzLWMzNGMtNGFlYy1iMWM1LTM4MjEyOTgyYTViOSIsImMiOjl9'}
+      ></TimelineListElement>
+            <Death
+        number={1}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/sv/Halsa-och-vard/Corona/Lagesbilder-och-statistik/Fall-av-covid-19-i-Orebro-lan/'}
+      ></Death>
+      <TimelineListElement
+        number={37}
+        region={'Örebro'}
+        source={'https://www.regionorebrolan.se/sv/Halsa-och-vard/Corona/Lagesbilder-och-statistik/Fall-av-covid-19-i-Orebro-lan/'}
+      ></TimelineListElement>
+
+      <TimelineListElement
+        number={31}
+        region={'Västmanland'}
+        source={'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/lagesbild/'}
+      ></TimelineListElement>
+      <Death
+        number={4}
+        region={'Västernorrland'}
+        source={
+          'https://www.rvn.se/sv/Vard-o-halsa/coronavirus---for-dig-som-vill-veta-mer/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={33}
+        region={'Västernorrland'}
+        source={'https://coronarapportering.regionvasterbotten.se/'}
+      ></TimelineListElement>
+            <Death
+        number={1}
+        region={'Västerbotten'}
+        source={'https://coronarapportering.regionvasterbotten.se/'}
+      ></Death>
+      <TimelineListElement
+        number={13}
+        region={'Västerbotten'}
+        source={'https://coronarapportering.regionvasterbotten.se/'}
+      ></TimelineListElement>
+      <TimelineListElement
+        number={10}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={33}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200528-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></TimelineListElement>
+      <Death
+        number={8}
+        region={'Stockholm'}
+        source={
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/05/28-maj-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={79}
+        region={'Stockholm'}
+        source={
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/05/28-maj-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={12}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-28-maj-3002843'
+        }
+      ></Death>
+      <TimelineListElement
+        number={32}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-28-maj-3002843'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={10}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={18}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={9}
+        region={'Kalmar'}
+        source={
+          'https://www.regionkalmar.se/globalassets/covid19_regionwebben.pdf'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={22}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200528coronacovid19regionjamtlandharjedalen.5.44cb8c4917214ea93672a84f.html'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={30}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={1}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-28-maj-3003211'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={16}
+        region={'Blekinge'}
+        source={
+          'https://regionblekinge.se/halsa-och-vard/for-vardgivare/smittskyddsenheten/information-om-coronaviruset.html'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Gävleborg'}
+        source={
+          'https://www.regiongavleborg.se/a-o/Smittskydd/A-Y/c/Coronavirus-2019-nCoV/statistik-covid-19/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={15}
+        region={'Gävleborg'}
+        source={
+          'https://www.regiongavleborg.se/a-o/Smittskydd/A-Y/c/Coronavirus-2019-nCoV/statistik-covid-19/'
+        }
+      ></TimelineListElement>
+      <h3>27 maj 2020</h3>
+      <Death
         number={33}
         region={'Västra Götaland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></Death>
-<Death
+      <Death
         number={1}
         region={'Uppsala'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></Death>
-<Death
+      <Death
         number={1}
         region={'Kalmar'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></Death>
-<Death
+      <Death
         number={2}
         region={'Jönköping'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></Death>
-<TimelineListElement
+      <TimelineListElement
         number={110}
         region={'Västra Götaland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-<TimelineListElement
+      <TimelineListElement
         number={17}
         region={'Värmland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-<TimelineListElement
+      <TimelineListElement
         number={1}
         region={'Sörmland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-<TimelineListElement
+      <TimelineListElement
         number={5}
         region={'Skåne'}
         source={
@@ -70,203 +301,194 @@ const Timeline = () => {
           'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
         }
       ></Death>
-<TimelineListElement
+      <TimelineListElement
         number={7}
         region={'Norrbotten'}
         source={
           'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
         }
       ></TimelineListElement>
-<TimelineListElement
+      <TimelineListElement
         number={42}
         region={'Jönköping'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-<TimelineListElement
+      <TimelineListElement
         number={5}
         region={'Jämtland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-<TimelineListElement
+      <TimelineListElement
         number={4}
         region={'Halland'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-<TimelineListElement
+      <TimelineListElement
         number={4}
         region={'Gävleborg'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-<TimelineListElement
+      <TimelineListElement
         number={3}
         region={'Blekinge'}
         source={
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-<Death
+      <Death
         number={8}
         region={'Östergötland'}
         source={
           'https://app.powerbi.com/view?r=eyJrIjoiNmNjOTE1MmMtNDhlOS00MzJhLTllYzItZDQ1NWFmZjQxZmRiIiwidCI6ImYwODczMzkzLWMzNGMtNGFlYy1iMWM1LTM4MjEyOTgyYTViOSIsImMiOjl9'
         }
       ></Death>
-<TimelineListElement
+      <TimelineListElement
         number={58}
         region={'Östergötland'}
         source={
           'https://app.powerbi.com/view?r=eyJrIjoiNmNjOTE1MmMtNDhlOS00MzJhLTllYzItZDQ1NWFmZjQxZmRiIiwidCI6ImYwODczMzkzLWMzNGMtNGFlYy1iMWM1LTM4MjEyOTgyYTViOSIsImMiOjl9'
         }
       ></TimelineListElement>
-<Death
+      <Death
         number={1}
         region={'Örebro'}
         source={
           'https://www.regionorebrolan.se/sv/Halsa-och-vard/Corona/Lagesbilder-och-statistik/Fall-av-covid-19-i-Orebro-lan/'
         }
       ></Death>
-<TimelineListElement
+      <TimelineListElement
         number={27}
         region={'Örebro'}
         source={
           'https://www.regionorebrolan.se/sv/Halsa-och-vard/Corona/Lagesbilder-och-statistik/Fall-av-covid-19-i-Orebro-lan/'
         }
       ></TimelineListElement>
-<Death
+      <Death
         number={6}
         region={'Västmanland'}
         source={
           'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/lagesbild/'
         }
       ></Death>
-<TimelineListElement
+      <TimelineListElement
         number={47}
         region={'Västmanland'}
         source={
           'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/lagesbild/'
         }
       ></TimelineListElement>
-<Death
+      <Death
         number={2}
         region={'Västernorrland'}
-        source={
-          'https://www.rvn.se/sv/Om-regionen/Pressrum/'
-        }
+        source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
       ></Death>
       <TimelineListElement
         number={7}
         region={'Västernorrland'}
-        source={
-          'https://www.rvn.se/sv/Om-regionen/Pressrum/'
-        }
+        source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
       ></TimelineListElement>
-<Death
+      <Death
         number={1}
         region={'Västerbotten'}
-        source={
-          'https://coronarapportering.regionvasterbotten.se/'
-        }
+        source={'https://coronarapportering.regionvasterbotten.se/'}
       ></Death>
-<TimelineListElement
+      <TimelineListElement
         number={2}
         region={'Västerbotten'}
-        source={
-          'https://coronarapportering.regionvasterbotten.se/'
-        }
+        source={'https://coronarapportering.regionvasterbotten.se/'}
       ></TimelineListElement>
-<Death
+      <Death
         number={1}
         region={'Värmland'}
         source={
           'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
         }
       ></Death>
-<TimelineListElement
+      <TimelineListElement
         number={13}
         region={'Värmland'}
         source={
           'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
         }
       ></TimelineListElement>
-<TimelineListElement
+      <TimelineListElement
         number={49}
         region={'Uppsala'}
         source={
           'https://www.regionuppsala.se/Global/Corona/200527-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
         }
       ></TimelineListElement>
-<Death
+      <Death
         number={37}
         region={'Stockholm'}
         source={
           'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/05/27-maj-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
         }
       ></Death>
-<TimelineListElement
+      <TimelineListElement
         number={154}
         region={'Stockholm'}
         source={
           'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/05/27-maj-lagesrapport-om-arbetet-med-det-nya-coronaviruset/'
         }
       ></TimelineListElement>
-<TimelineListElement
+      <TimelineListElement
         number={38}
         region={'Skåne'}
         source={
           'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-27-maj-3002676'
         }
       ></TimelineListElement>
-<Death
+      <Death
         number={3}
         region={'Kronoberg'}
         source={
           'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
         }
       ></Death>
-<TimelineListElement
+      <TimelineListElement
         number={20}
         region={'Kronoberg'}
         source={
           'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
         }
       ></TimelineListElement>
-<TimelineListElement
+      <TimelineListElement
         number={21}
         region={'Halland'}
         source={
           'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
         }
       ></TimelineListElement>
-<TimelineListElement
+      <TimelineListElement
         number={15}
         region={'Gävleborg'}
         source={
           'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-27-maj-3002750'
         }
       ></TimelineListElement>
-<TimelineListElement
+      <TimelineListElement
         number={17}
         region={'Dalarna'}
         source={
           'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-27-maj-3002750'
         }
       ></TimelineListElement>
-<TimelineListElement
+      <TimelineListElement
         number={12}
         region={'Blekinge'}
         source={
           'https://regionblekinge.se/halsa-och-vard/for-vardgivare/smittskyddsenheten/information-om-coronaviruset.html'
         }
       ></TimelineListElement>
-
       <h3>26 maj 2020</h3>
       <Death
         number={1}
@@ -432,9 +654,7 @@ const Timeline = () => {
       <Death
         number={1}
         region={'Västerbotten'}
-        source={
-          'https://coronarapportering.regionvasterbotten.se/'
-        }
+        source={'https://coronarapportering.regionvasterbotten.se/'}
       ></Death>
       <Death
         number={5}
@@ -453,16 +673,12 @@ const Timeline = () => {
       <Death
         number={1}
         region={'Västernorrland'}
-        source={
-          'https://www.rvn.se/sv/Om-regionen/Pressrum/'
-        }
+        source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
       ></Death>
-            <TimelineListElement
+      <TimelineListElement
         number={39}
         region={'Västernorrland'}
-        source={
-          'https://www.rvn.se/sv/Om-regionen/Pressrum/'
-        }
+        source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
       ></TimelineListElement>
       <TimelineListElement
         number={3}
