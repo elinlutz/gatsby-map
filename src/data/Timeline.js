@@ -7,6 +7,62 @@ const Timeline = () => {
   return (
     <>
       <h3>31 maj 2020</h3>
+      <TimelineListElement
+        number={10}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={6}
+        region={'Blekinge'}
+        source={
+          'https://regionblekinge.se/halsa-och-vard/for-vardgivare/smittskyddsenheten/information-om-coronaviruset.html'
+        }
+      ></TimelineListElement>
+      <Death
+        number={1}
+        region={'Jönköping'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid--19-65-personer-i-jonkopings-lan-vardas-pa-sjukhus-49154'
+        }
+      ></Death>
+      <TimelineListElement
+        number={3}
+        region={'Gotland'}
+        source={
+          'https://gotland.se/107235'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={3}
+        region={'Västernorrland'}
+        source={
+          'https://www.rvn.se/sv/Om-regionen/Pressrum/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={6}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-31-maj-3003785'
+        }
+      ></Death>
+      <TimelineListElement
+        number={3}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+            <TimelineListElement
+        number={33}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-31-maj-3003785'
+        }
+      ></TimelineListElement>
       <h3>30 maj 2020</h3>
       <TimelineListElement
         number={56}
