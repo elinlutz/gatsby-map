@@ -7,6 +7,20 @@ const Timeline = () => {
   return (
     <>
       <h3>1 juni 2020</h3>
+      <TimelineListElement
+        number={12}
+        region={'Västernorrland'}
+        source={
+          'https://www.rvn.se/sv/Om-regionen/Pressrum/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={9}
+        region={'Sörmland'}
+        source={
+          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+        }
+      ></TimelineListElement>
       <Death
         number={1}
         region={'Västra Götaland'}
