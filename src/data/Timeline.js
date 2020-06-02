@@ -8,6 +8,13 @@ const Timeline = () => {
     <>
       <h3>2 juni 2020</h3>
       <TimelineListElement
+        number={35}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200602-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={3}
         region={'Gotland'}
         source={
@@ -98,13 +105,7 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-      <TimelineListElement
-        number={6}
-        region={'Uppsala'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
+
       <TimelineListElement
         number={5}
         region={'Sörmland'}
