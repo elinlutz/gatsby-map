@@ -18,7 +18,7 @@ const Timeline = () => {
         number={3}
         region={'Gotland'}
         source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
+          'https://gotland.se/107264'
         }
       ></TimelineListElement>
       <TimelineListElement
