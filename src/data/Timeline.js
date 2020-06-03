@@ -6,6 +6,63 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
+      <h3>3 juni 2020</h3>
+      <Death
+        number={2}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={11}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></Death>
+            <TimelineListElement
+        number={19}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></TimelineListElement>
+            <Death
+        number={2}
+        region={'Gävleborg'}
+        source={
+          'https://www.regiongavleborg.se/a-o/Smittskydd/A-Y/c/Coronavirus-2019-nCoV/statistik-covid-19/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={21}
+        region={'Gävleborg'}
+        source={
+          'https://www.regiongavleborg.se/a-o/Smittskydd/A-Y/c/Coronavirus-2019-nCoV/statistik-covid-19/'
+        }
+      ></TimelineListElement>
+                  <Death
+        number={3}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></Death>
+            <TimelineListElement
+        number={11}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
       <h3>2 juni 2020</h3>
       <TimelineListElement
         number={35}
