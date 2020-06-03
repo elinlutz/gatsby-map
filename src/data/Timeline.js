@@ -7,6 +7,41 @@ const Timeline = () => {
   return (
     <>
       <h3>3 juni 2020</h3>
+      <TimelineListElement
+        number={1554}
+        region={'Stockholm'}
+        source={
+          'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/06/efterrapportering-av-smittade-med-covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={26}
+        region={'Västernorrland'}
+        source={
+          'https://www.rvn.se/sv/Om-regionen/Pressrum/'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Örebro'}
+        source={
+          'https://www.regionorebrolan.se/sv/Halsa-och-vard/Corona/Lagesbilder-och-statistik/Fall-av-covid-19-i-Orebro-lan/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={10}
+        region={'Örebro'}
+        source={
+          'https://www.regionorebrolan.se/sv/Halsa-och-vard/Corona/Lagesbilder-och-statistik/Fall-av-covid-19-i-Orebro-lan/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={58}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200603-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></TimelineListElement>
       <Death
         number={10}
         region={'Skåne'}
