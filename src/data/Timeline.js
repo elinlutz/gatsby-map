@@ -8,7 +8,7 @@ const Timeline = () => {
     <>
       <h3>3 juni 2020</h3>
       <TimelineListElement
-        number={1554}
+        number={1385}
         region={'Stockholm'}
         source={
           'https://www.sll.se/verksamhet/halsa-och-vard/nyheter-halsa-och-vard/2020/06/efterrapportering-av-smittade-med-covid-19/'
