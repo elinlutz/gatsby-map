@@ -7,6 +7,27 @@ const Timeline = () => {
   return (
     <>
           <h3>4 juni 2020</h3>
+          <TimelineListElement
+        number={33}
+        region={'Dalarna'}
+        source={
+          'https://www.mynewsdesk.com/se/regiondalarna/pressreleases/laegesrapport-covid-19-i-dalarna-4-juni-3005267'
+        }
+      ></TimelineListElement>
+          <Death
+        number={1}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
+        }
+      ></Death>
+          <TimelineListElement
+        number={16}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
+        }
+      ></TimelineListElement>
           <Death
         number={3}
         region={'Västra Götaland'}
@@ -92,13 +113,6 @@ const Timeline = () => {
         }
       ></TimelineListElement>
           <TimelineListElement
-        number={5}
-        region={'Halland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-          <TimelineListElement
         number={21}
         region={'Gävleborg'}
         source={
@@ -112,13 +126,7 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-          <TimelineListElement
-        number={14}
-        region={'Dalarna'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
+
           <TimelineListElement
         number={23}
         region={'Västernorrland'}
@@ -246,13 +254,7 @@ const Timeline = () => {
           'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
         }
       ></TimelineListElement>
-          <TimelineListElement
-        number={5}
-        region={'Halland'}
-        source={
-          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
-        }
-      ></TimelineListElement>
+
 
       <h3>3 juni 2020</h3>
       <Death
