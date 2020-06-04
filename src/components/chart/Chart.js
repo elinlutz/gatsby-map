@@ -320,7 +320,7 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['1 Juni 2020', 369],
               ['2 Juni 2020', 675],
               ['3 Juni 2020', 2208],
-              ['4 Juni 2020', total - 38774]
+              ['4 Juni 2020', total - 40928]
             ],
             type: `${chartType}`,
             color: colors.blue,
