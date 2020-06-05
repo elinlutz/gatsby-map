@@ -7,6 +7,25 @@ const Timeline = () => {
   return (
     <>
       <h3>5 juni 2020</h3>
+      <TimelineListElement
+        number={29}
+        region={'Västernorrland'}
+        source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
+      ></TimelineListElement>
+      <TimelineListElement
+        number={14}
+        region={'Örebro'}
+        source={
+          'https://www.regionorebrolan.se/sv/Halsa-och-vard/Corona/Lagesbilder-och-statistik/1/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={22}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
+        }
+      ></TimelineListElement>
       <Death
         number={4}
         region={'Östergötland'}
@@ -78,13 +97,6 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={22}
-        region={'Västernorrland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
         number={4}
         region={'Värmland'}
         source={
@@ -127,13 +139,6 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <TimelineListElement
-        number={21}
-        region={'Halland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
         number={9}
         region={'Gävleborg'}
         source={
@@ -171,16 +176,12 @@ const Timeline = () => {
       <Death
         number={1}
         region={'Västerbotten'}
-        source={
-          'https://coronarapportering.regionvasterbotten.se/'
-        }
+        source={'https://coronarapportering.regionvasterbotten.se/'}
       ></Death>
       <TimelineListElement
         number={5}
         region={'Västerbotten'}
-        source={
-          'https://coronarapportering.regionvasterbotten.se/'
-        }
+        source={'https://coronarapportering.regionvasterbotten.se/'}
       ></TimelineListElement>
       <TimelineListElement
         number={60}
@@ -192,9 +193,7 @@ const Timeline = () => {
       <TimelineListElement
         number={10}
         region={'Blekinge'}
-        source={
-          'https://regionblekinge.se/4.169c1cc217085943a1f11b43.html'
-        }
+        source={'https://regionblekinge.se/4.169c1cc217085943a1f11b43.html'}
       ></TimelineListElement>
       <Death
         number={2}
@@ -224,7 +223,7 @@ const Timeline = () => {
           'https://www.regiongavleborg.se/a-o/Smittskydd/A-Y/c/Coronavirus-2019-nCoV/statistik-covid-19/'
         }
       ></Death>
-            <TimelineListElement
+      <TimelineListElement
         number={26}
         region={'Gävleborg'}
         source={
