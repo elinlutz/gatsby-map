@@ -6,7 +6,24 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
+          <h3>8 juni 2020</h3>
+          <TimelineListElement
+        number={9}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
+
       <h3>7 juni 2020</h3>
+      
+      <TimelineListElement
+        number={7}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={7}
         region={'Norrbotten'}
@@ -165,6 +182,20 @@ const Timeline = () => {
         }
       ></TimelineListElement>
       <h3>6 juni 2020</h3>
+      <Death
+        number={3}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={49}
+        region={'Östergötland'}
+        source={
+          'https://www.regionostergotland.se/Halsa-och-vard/aktuellt-om-coronaviruset/'
+        }
+      ></TimelineListElement>
       <Death
         number={2}
         region={'Västra Götaland'}
