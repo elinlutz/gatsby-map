@@ -6,17 +6,71 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
-          <h3>8 juni 2020</h3>
-          <TimelineListElement
+      <h3>8 juni 2020</h3>
+      <Death
+        number={1}
+        region={'Jönköping'}
+        source={
+          'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid--19-51-personer-i-jonkopings-lan-vardas-pa-sjukhus--52712'
+        }
+      ></Death>
+      <TimelineListElement
+        number={18}
+        region={'Blekinge'}
+        source={
+          'https://regionblekinge.se/halsa-och-vard/for-vardgivare/smittskyddsenheten/information-om-coronaviruset.html'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={11}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></TimelineListElement>
+            <Death
+        number={1}
+        region={'Kronoberg'}
+        source={
+          'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={3}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200608coronacovid19regionjamtlandharjedalen.5.44cb8c4917214ea936759989.html'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-8-juni-3005964'
+        }
+      ></Death>
+      <TimelineListElement
+        number={13}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-8-juni-3005964'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
         number={9}
         region={'Värmland'}
         source={
           'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
         }
       ></TimelineListElement>
-
+            <TimelineListElement
+        number={24}
+        region={'Örebro'}
+        source={
+          'https://www.regionorebrolan.se/sv/Halsa-och-vard/Corona/Lagesbilder-och-statistik/1/'
+        }
+      ></TimelineListElement>
       <h3>7 juni 2020</h3>
-      
       <TimelineListElement
         number={7}
         region={'Östergötland'}
