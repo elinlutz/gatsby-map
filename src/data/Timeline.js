@@ -7,6 +7,41 @@ const Timeline = () => {
   return (
     <>
       <h3>9 juni 2020</h3>
+      <Death
+        number={4}
+        region={'Västmanland'}
+        source={
+          'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/lagesbild/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={83}
+        region={'Västmanland'}
+        source={
+          'https://regionvastmanland.se/uppdateringar-fran-region-vastmanland-om-covid-19/lagesbild/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={32}
+        region={'Uppsala'}
+        source={
+          'https://www.regionuppsala.se/Global/Corona/200609-Nul%c3%a4gesbild%20Region%20Uppsala.pdf'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={1}
+        region={'Gotland'}
+        source={
+          'https://gotland.se/107372'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={12}
+        region={'Västernorrland'}
+        source={
+          'https://www.rvn.se/sv/Om-regionen/Pressrum/'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={5}
         region={'Jämtland'}
@@ -21,20 +56,8 @@ const Timeline = () => {
           'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
         }
       ></TimelineListElement>
-      <TimelineListElement
-        number={70}
-        region={'Västmanland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
-      <TimelineListElement
-        number={9}
-        region={'Västernorrland'}
-        source={
-          'https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige'
-        }
-      ></TimelineListElement>
+
+
       <TimelineListElement
         number={3}
         region={'Västerbotten'}
