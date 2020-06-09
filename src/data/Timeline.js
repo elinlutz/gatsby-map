@@ -6,79 +6,133 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
-          <h3>9 juni 2020</h3>
-          <Death
+      <h3>9 juni 2020</h3>
+      <Death
+        number={2}
+        region={'Örebro'}
+        source={
+          'https://www.regionorebrolan.se/sv/Halsa-och-vard/Corona/Lagesbilder-och-statistik/1/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={6}
+        region={'Örebro'}
+        source={
+          'https://www.regionorebrolan.se/sv/Halsa-och-vard/Corona/Lagesbilder-och-statistik/1/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={29}
+        region={'Östergötland'}
+        source={
+          'https://app.powerbi.com/view?r=eyJrIjoiNmNjOTE1MmMtNDhlOS00MzJhLTllYzItZDQ1NWFmZjQxZmRiIiwidCI6ImYwODczMzkzLWMzNGMtNGFlYy1iMWM1LTM4MjEyOTgyYTViOSIsImMiOjl9'
+        }
+      ></TimelineListElement>
+      <Death
+        number={2}
+        region={'Blekinge'}
+        source={
+          'https://regionblekinge.se/halsa-och-vard/for-vardgivare/smittskyddsenheten/information-om-coronaviruset.html'
+        }
+      ></Death>
+      <TimelineListElement
+        number={10}
+        region={'Blekinge'}
+        source={
+          'https://regionblekinge.se/halsa-och-vard/for-vardgivare/smittskyddsenheten/information-om-coronaviruset.html'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={22}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={3}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200609coronacovid19regionjamtlandharjedalen.5.44cb8c4917214ea93675e701.html'
+        }
+      ></TimelineListElement>
+      <Death
+        number={5}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-9-juni-3006329'
+        }
+      ></Death>
+      <TimelineListElement
+        number={33}
+        region={'Skåne'}
+        source={
+          'https://www.mynewsdesk.com/se/region_skane/pressreleases/pressbulletin-om-covid-19-9-juni-3006329'
+        }
+      ></TimelineListElement>
+      <Death
         number={1}
         region={'Jönköping'}
         source={
           'https://www.rjl.se/nyheter/nyheter-och-pressmeddelanden/uppdatering-om-covid--19-47-personer-i-jonkopings-lan-vardas-pa-sjukhus--52848'
         }
       ></Death>
-          <Death
+      <Death
         number={2}
         region={'Kronoberg'}
         source={
           'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
         }
       ></Death>
-                <TimelineListElement
+      <TimelineListElement
         number={3}
         region={'Kronoberg'}
         source={
           'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
         }
       ></TimelineListElement>
-          <TimelineListElement
+      <TimelineListElement
         number={15}
         region={'Värmland'}
         source={
           'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
         }
       ></TimelineListElement>
-          <Death
+      <Death
         number={3}
         region={'Värmland'}
         source={
           'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
         }
       ></Death>
-                <TimelineListElement
+      <TimelineListElement
         number={15}
         region={'Värmland'}
         source={
           'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
         }
       ></TimelineListElement>
-          <Death
+      <Death
         number={2}
         region={'Norrbotten'}
         source={
           'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
         }
       ></Death>
-          <TimelineListElement
+      <TimelineListElement
         number={30}
         region={'Norrbotten'}
         source={
           'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
         }
       ></TimelineListElement>
-
-          <Death
+      <Death
         number={1}
         region={'Halland'}
         source={
           'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
         }
       ></Death>
-                <TimelineListElement
-        number={3}
-        region={'Halland'}
-        source={
-          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
-        }
-      ></TimelineListElement>
-
       <h3>8 juni 2020</h3>
       <Death
         number={1}
@@ -202,23 +256,17 @@ const Timeline = () => {
       <TimelineListElement
         number={29}
         region={'Västernorrland'}
-        source={
-          'https://www.rvn.se/sv/Om-regionen/Pressrum/'
-        }
+        source={'https://www.rvn.se/sv/Om-regionen/Pressrum/'}
       ></TimelineListElement>
       <Death
         number={1}
         region={'Västerbotten'}
-        source={
-          'https://coronarapportering.regionvasterbotten.se/'
-        }
+        source={'https://coronarapportering.regionvasterbotten.se/'}
       ></Death>
       <TimelineListElement
         number={4}
         region={'Västerbotten'}
-        source={
-          'https://coronarapportering.regionvasterbotten.se/'
-        }
+        source={'https://coronarapportering.regionvasterbotten.se/'}
       ></TimelineListElement>
       <Death
         number={4}
@@ -237,9 +285,7 @@ const Timeline = () => {
       <TimelineListElement
         number={1}
         region={'Gotland'}
-        source={
-          'https://gotland.se/107350'
-        }
+        source={'https://gotland.se/107350'}
       ></TimelineListElement>
       <Death
         number={1}
@@ -262,7 +308,7 @@ const Timeline = () => {
           'http://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
         }
       ></TimelineListElement>
-            <Death
+      <Death
         number={1}
         region={'Kronoberg'}
         source={
@@ -297,7 +343,7 @@ const Timeline = () => {
           'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
         }
       ></TimelineListElement>
-            <TimelineListElement
+      <TimelineListElement
         number={24}
         region={'Örebro'}
         source={
