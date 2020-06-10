@@ -218,7 +218,8 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['6 Juni 2020', 44020],
               ['7 Juni 2020', 44855],
               ['8 Juni 2020', 45312],
-              ['9 Juni 2020', total]
+              ['9 Juni 2020', 46127],
+              ['10 Juni 2020', total]
             ],
             type: `${chartType}`,
             color: colors.sweden,
@@ -330,7 +331,8 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['6 Juni 2020', 877],
               ['7 Juni 2020', 835],
               ['8 Juni 2020', 457],
-              ['9 Juni 2020', total - 45312]
+              ['9 Juni 2020', 815],
+              ['10 Juni 2020', total - 46127]
             ],
             type: `${chartType}`,
             color: colors.blue,
@@ -444,7 +446,8 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['6 Juni 2020', 4688],
               ['7 Juni 2020', 4691],
               ['8 Juni 2020', 4724],
-              ['9 Juni 2020', deaths]
+              ['9 Juni 2020', 4757],
+              ['10 Juni 2020', deaths]
             ],
             color: colors.black,
             type: `${chartType}`,
@@ -556,7 +559,8 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['6 Juni 2020', 14],
               ['7 Juni 2020', 3],
               ['8 Juni 2020', 33],
-              ['9 Juni 2020', deaths - 4724]
+              ['9 Juni 2020', 33],
+              ['10 Juni 2020', deaths - 4757]
             ],
             color: colors.blue,
             type: `${chartType}`,
