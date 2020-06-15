@@ -7,6 +7,60 @@ const Timeline = () => {
   return (
     <>
       <h3>15 juni 2020</h3>
+      <Death
+        number={3}
+        region={'Östergötland'}
+        source={
+          'https://app.powerbi.com/view?r=eyJrIjoiNmNjOTE1MmMtNDhlOS00MzJhLTllYzItZDQ1NWFmZjQxZmRiIiwidCI6ImYwODczMzkzLWMzNGMtNGFlYy1iMWM1LTM4MjEyOTgyYTViOSIsImMiOjl9'
+        }
+      ></Death>
+      <TimelineListElement
+        number={124}
+        region={'Östergötland'}
+        source={
+          'https://app.powerbi.com/view?r=eyJrIjoiNmNjOTE1MmMtNDhlOS00MzJhLTllYzItZDQ1NWFmZjQxZmRiIiwidCI6ImYwODczMzkzLWMzNGMtNGFlYy1iMWM1LTM4MjEyOTgyYTViOSIsImMiOjl9'
+        }
+      ></TimelineListElement>
+      <Death
+        number={4}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></Death>
+      <TimelineListElement
+        number={3}
+        region={'Värmland'}
+        source={
+          'https://www.regionvarmland.se/halsa-och-vard/coronavirus---covid-19/aktuellt-lage-i-varmland--covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={3}
+        region={'Västerbotten'}
+        source={'https://coronarapportering.regionvasterbotten.se/'}
+      ></TimelineListElement>
+      <TimelineListElement
+        number={21}
+        region={'Halland'}
+        source={
+          'https://www.regionhalland.se/om-region-halland/smittskydd/information-om-det-nya-coronaviruset/laget-i-halland-covid-19/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={8}
+        region={'Gävleborg'}
+        source={
+          'https://www.regiongavleborg.se/globalassets/landstinget_a-o/smittskyddsenhet/statistik/covid-19/covid_statistik.pdf'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={4}
+        region={'Jämtland'}
+        source={
+          'https://www.regionjh.se/nyheter/pressmeddelanden/rjhpress/lagesrapport200615coronacovid19regionjamtlandharjedalen.5.1e5efba0172a4d49cbb86a1.html'
+        }
+      ></TimelineListElement>
       <TimelineListElement
         number={1}
         region={'Kronoberg'}
