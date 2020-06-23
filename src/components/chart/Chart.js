@@ -227,7 +227,12 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['15 Juni 2020', 52606],
               ['16 Juni 2020', 53550],
               ['17 Juni 2020', 54832],
-              ['18 Juni 2020', total]
+              ['18 Juni 2020', 56358],
+              ['19 Juni 2020', 57171],
+              ['20 Juni 2020', 57744],
+              ['21 Juni 2020', 58041],
+              ['22 Juni 2020', 59302],
+              ['23 Juni 2020', total]
             ],
             type: `${chartType}`,
             color: colors.sweden,
@@ -348,7 +353,12 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['15 Juni 2020', 867],
               ['16 Juni 2020', 944],
               ['17 Juni 2020', 1282],
-              ['18 Juni 2020', total - 54832]
+              ['18 Juni 2020', 1526],
+              ['19 Juni 2020', 813],
+              ['20 Juni 2020', 573],
+              ['21 Juni 2020', 297],
+              ['22 Juni 2020', 1261],
+              ['23 Juni 2020', total - 59302]
             ],
             type: `${chartType}`,
             color: colors.blue,
@@ -471,7 +481,12 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['15 Juni 2020', 4917],
               ['16 Juni 2020', 4968],
               ['17 Juni 2020', 5063],
-              ['18 Juni 2020', deaths]
+              ['18 Juni 2020', 5079],
+              ['19 Juni 2020', 5079],
+              ['20 Juni 2020', 5080],
+              ['21 Juni 2020', 5080],
+              ['22 Juni 2020', 5151],
+              ['23 Juni 2020', deaths]
             ],
             color: colors.black,
             type: `${chartType}`,
@@ -592,7 +607,12 @@ const getOptions = (total, deaths, log, chartType, chart) => ({
               ['15 Juni 2020', 27],
               ['16 Juni 2020', 51],
               ['17 Juni 2020', 95],
-              ['18 Juni 2020', deaths - 5063]
+              ['18 Juni 2020', 16],
+              ['19 Juni 2020', 0],
+              ['20 Juni 2020', 1],
+              ['21 Juni 2020', 0],
+              ['22 Juni 2020', 71],
+              ['23 Juni 2020', deaths - 5151]
             ],
             color: colors.blue,
             type: `${chartType}`,
