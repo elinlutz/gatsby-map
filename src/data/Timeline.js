@@ -6,7 +6,53 @@ import Death from 'components/DeathElement'
 const Timeline = () => {
   return (
     <>
+          <h3>29 juni 2020</h3>
+          <TimelineListElement
+        number={10}
+        region={'Kronoberg'}
+        source={
+          'https://www.regionkronoberg.se/halsa-vard-tandvard/coronavirus/'
+        }
+      ></TimelineListElement>
+
+          <h3>28 juni 2020</h3>
+          <TimelineListElement
+        number={2}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+            <TimelineListElement
+        number={3}
+        region={'Östergötland'}
+        source={
+          'https://app.powerbi.com/view?r=eyJrIjoiNmNjOTE1MmMtNDhlOS00MzJhLTllYzItZDQ1NWFmZjQxZmRiIiwidCI6ImYwODczMzkzLWMzNGMtNGFlYy1iMWM1LTM4MjEyOTgyYTViOSIsImMiOjl9'
+        }
+      ></TimelineListElement>
+
       <h3>27 juni 2020</h3>
+      <TimelineListElement
+        number={10}
+        region={'Örebro'}
+        source={
+          'https://www.regionorebrolan.se/sv/Halsa-och-vard/Corona/Lagesbilder-och-statistik/1/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={67}
+        region={'Norrbotten'}
+        source={
+          'https://www.norrbotten.se/Halsa-och-sjukvard/Smittskydd-i-Norrbotten/Information-om-nya-coronaviruset/'
+        }
+      ></TimelineListElement>
+      <TimelineListElement
+        number={21}
+        region={'Östergötland'}
+        source={
+          'https://app.powerbi.com/view?r=eyJrIjoiNmNjOTE1MmMtNDhlOS00MzJhLTllYzItZDQ1NWFmZjQxZmRiIiwidCI6ImYwODczMzkzLWMzNGMtNGFlYy1iMWM1LTM4MjEyOTgyYTViOSIsImMiOjl9'
+        }
+      ></TimelineListElement>
       <h3>26 juni 2020</h3>
       <Death
         number={29}
